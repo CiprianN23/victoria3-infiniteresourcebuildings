@@ -1,0 +1,37 @@
+﻿############ GOVERNMENT BUILDINGS
+
+building_infres_port = {
+	building_group = bg_infres_z_public_infrastructure
+	city_type = port
+	texture = "gfx/interface/icons/building_icons/building_port.dds"
+
+	has_max_level = no
+	ignore_stateregion_max_level = yes
+	port = yes
+
+	unlocking_technologies = { navigation }
+
+	production_method_groups = {
+		pmg_base_building_port
+	}
+
+	required_construction = construction_cost_medium
+
+	terrain_manipulator = urban_port
+	
+	can_build_government = {
+		owner = { is_player = yes }
+		error_check = {
+			severity = fail
+			is_coastal = yes
+		}
+	}
+
+	can_build_private = {
+		owner = { is_player = yes }
+		error_check = {
+			severity = fail
+			is_coastal = yes
+		}
+	}
+}

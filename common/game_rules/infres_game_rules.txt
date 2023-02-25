@@ -1,0 +1,19 @@
+﻿infres_allows_ai_to_build = {
+    default = infres_player_only
+
+    infres_player_only = {
+    }
+
+    infres_player_and_ai_allowed = {
+    }
+}
+
+infres_allow_private_construction = {
+    default = infres_private_construction_not_allowed
+
+    infres_private_construction_allowed = {
+    }
+
+    infres_private_construction_not_allowed = {
+    }
+}

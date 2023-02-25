@@ -1,0 +1,365 @@
+﻿# Agriculture
+
+bg_infres_agriculture = {
+	always_possible = yes
+
+	category = rural
+
+	lens = agriculture
+	
+	economy_of_scale = yes
+	
+	can_use_slaves = yes
+	
+	urbanization = 5
+	infrastructure_usage_per_level = 1
+	
+	should_auto_expand = { 
+		default_auto_expand_rule = yes
+	}
+	fired_pops_become_radical = no
+}
+
+bg_infres_f_rye_farms = {
+	parent_group = bg_infres_agriculture
+	
+	default_building = building_infres_rye_farm
+	
+	cash_reserves_max = 25000
+}
+
+bg_infres_f_wheat_farms = {
+	parent_group = bg_infres_agriculture
+	
+	default_building = building_infres_wheat_farm
+	
+	cash_reserves_max = 25000
+}
+
+bg_infres_f_rice_farms = {
+	parent_group = bg_infres_agriculture
+	
+	default_building = building_infres_rice_farm
+	
+	cash_reserves_max = 25000
+}
+
+bg_infres_f_maize_farms = {
+	parent_group = bg_infres_agriculture
+	
+	default_building = building_infres_maize_farm
+	
+	cash_reserves_max = 25000
+}
+
+bg_infres_f_millet_farms = {
+	parent_group = bg_infres_agriculture
+	
+	default_building = building_infres_millet_farm
+	
+	cash_reserves_max = 25000
+}
+
+# Ranching
+
+bg_infres_ranching = {
+	parent_group = bg_infres_agriculture
+	always_possible = yes
+	category = rural
+
+	lens = agriculture
+	
+	economy_of_scale = yes
+	
+	can_use_slaves = yes
+	
+	urbanization = 5
+	infrastructure_usage_per_level = 1
+	
+	should_auto_expand = { 
+		default_auto_expand_rule = yes
+	}
+	fired_pops_become_radical = no
+}
+
+bg_infres_g_livestock_ranches = {
+	parent_group = bg_infres_ranching
+	
+	default_building = building_infres_livestock_ranch
+	
+	cash_reserves_max = 25000
+}
+
+# Plantations
+
+bg_infres_plantations = {
+	always_possible = yes
+	category = rural
+
+	economy_of_scale = yes
+	
+	lens = plantation
+	
+	can_use_slaves = yes
+	cash_reserves_max = 25000
+	
+	urbanization = 5
+	infrastructure_usage_per_level = 1
+	
+	should_auto_expand = { 
+		default_auto_expand_rule = yes
+	}
+	fired_pops_become_radical = no
+}
+
+bg_infres_p_coffee_plantations = {
+	parent_group = bg_infres_plantations
+	
+	default_building = building_infres_coffee_plantation
+}
+
+
+bg_infres_p_cotton_plantations = {
+	parent_group = bg_infres_plantations
+	
+	default_building = building_infres_cotton_plantation
+}
+
+bg_infres_p_silk_plantations = {
+	parent_group = bg_infres_plantations
+	
+	default_building = building_infres_silk_plantation
+}
+
+bg_infres_p_dye_plantations = {
+	parent_group = bg_infres_plantations
+	
+	default_building = building_infres_dye_plantation
+}
+
+bg_infres_p_opium_plantations = {
+	parent_group = bg_infres_plantations
+	
+	default_building = building_infres_opium_plantation
+}
+
+bg_infres_p_tea_plantations = {
+	parent_group = bg_infres_plantations
+	
+	default_building = building_infres_tea_plantation
+}
+
+bg_infres_p_tobacco_plantations = {
+	parent_group = bg_infres_plantations
+	
+	default_building = building_infres_tobacco_plantation
+}
+
+bg_infres_p_sugar_plantations = {
+	parent_group = bg_infres_plantations
+	
+	default_building = building_infres_sugar_plantation
+}
+
+bg_infres_p_banana_plantations = {
+	parent_group = bg_infres_plantations
+	
+	default_building = building_infres_banana_plantation
+}
+
+# Mining
+
+bg_infres_mining = {
+	parent_group = bg_mining
+	always_possible = yes
+	capped_by_resources = no
+	fired_pops_become_radical = no
+}
+
+bg_infres_m_gold_fields = {
+	parent_group = bg_infres_mining
+
+	pays_taxes = no
+
+	default_building = building_infres_gold_fields
+}
+
+bg_infres_m_gold_mining = {
+	parent_group = bg_infres_mining
+	
+	default_building = building_infres_gold_mine
+
+	can_use_slaves = yes
+}
+
+bg_infres_m_coal_mining = {
+	parent_group = bg_infres_mining
+	
+	default_building = building_infres_coal_mine
+
+	can_use_slaves = yes
+}
+
+bg_infres_m_iron_mining = {
+	parent_group = bg_infres_mining
+	
+	default_building = building_infres_iron_mine
+
+	can_use_slaves = yes
+}
+
+bg_infres_m_lead_mining = {
+	parent_group = bg_infres_mining
+	
+	default_building = building_infres_lead_mine
+
+	can_use_slaves = yes
+}
+
+bg_infres_m_sulfur_mining = {
+	parent_group = bg_infres_mining
+	
+	default_building = building_infres_sulfur_mine
+
+	can_use_slaves = yes
+}
+
+# Logging
+
+bg_infres_x_logging = {
+	parent_group = bg_logging
+	always_possible = yes
+	capped_by_resources = no
+	fired_pops_become_radical = no
+	default_building = building_infres_logging_camp
+}
+
+bg_infres_p_rubber = {
+	always_possible = yes
+	category = rural 
+	
+	capped_by_resources = no
+	
+	economy_of_scale = yes
+	
+	default_building = building_infres_rubber_plantation
+	
+	lens = forestry	
+	
+	cash_reserves_max = 25000 
+	
+	urbanization = 5
+	infrastructure_usage_per_level = 1
+	
+	should_auto_expand = { 
+		default_auto_expand_rule = yes
+	}
+	fired_pops_become_radical = no
+}
+
+# Fishing
+
+bg_infres_y_whaling = {
+	parent_group = bg_whaling
+	category = rural
+
+	capped_by_resources = no
+	always_possible = yes
+	
+	economy_of_scale = yes
+	
+	default_building = building_infres_whaling_station
+	
+	lens = fishing
+	
+	cash_reserves_max = 25000
+	
+	urbanization = 5
+	infrastructure_usage_per_level = 1
+	
+	should_auto_expand = { 
+		default_auto_expand_rule = yes
+	}
+}
+
+bg_infres_y_fishing = {
+	parent_group = bg_fishing
+	category = rural
+
+	capped_by_resources = no
+	always_possible = yes
+	
+	economy_of_scale = yes
+	
+	default_building = building_infres_fishing_wharf
+	
+	lens = fishing
+	
+	cash_reserves_max = 25000
+	
+	urbanization = 5
+	infrastructure_usage_per_level = 1
+	
+	should_auto_expand = { 
+		default_auto_expand_rule = yes
+	}
+}
+
+# Oil Extraction
+
+bg_infres_n_oil_extraction = {
+	parent_group = bg_oil_extraction
+	category = rural
+
+	capped_by_resources = no
+	always_possible = yes
+	
+	economy_of_scale = yes
+	
+	default_building = building_infres_oil_rig
+	
+	lens = mine
+	
+	cash_reserves_max = 25000
+	
+	urbanization = 10
+	infrastructure_usage_per_level = 1
+	
+	should_auto_expand = { 
+		default_auto_expand_rule = yes
+	}
+}
+
+# Infrastructure
+
+bg_infres_z_public_infrastructure = {
+	parent_group = bg_infrastructure
+	
+	is_government_funded = yes
+	
+	urbanization = 5
+}
+
+# Military
+
+bg_infres_military = {
+	category = development
+
+	always_possible = yes
+	
+	is_military = yes
+	
+	is_government_funded = yes
+	
+	lens = military
+	
+	urbanization = 2
+}
+
+bg_infres_z_army = {
+	parent_group = bg_infres_military
+}
+
+bg_infres_z_navy = {
+	parent_group = bg_infres_military
+}

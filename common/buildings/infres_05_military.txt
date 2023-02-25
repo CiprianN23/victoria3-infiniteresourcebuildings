@@ -1,0 +1,64 @@
+﻿############ BARRACKS
+
+building_infres_barracks = {
+	can_build_private = { owner = { is_player = yes } }
+	can_build_government = { owner = { is_player = yes } }
+	ai_value = 0
+	building_group = bg_infres_z_army
+	recruits_combat_unit = combat_unit_regular
+	texture = "gfx/interface/icons/building_icons/building_barracks.dds"
+	city_type = city
+	levels_per_mesh = 25
+
+	unlocking_technologies = {
+		standing_army
+	}
+
+	production_method_groups = {
+		pmg_organization
+		pmg_artillery
+		pmg_reconaissance
+		pmg_specialist_companies
+		pmg_medical_aid
+	}
+
+	required_construction = construction_cost_very_low
+}
+
+building_infres_naval_base = {
+	ai_value = 0
+	building_group = bg_infres_z_navy
+	recruits_combat_unit = combat_unit_flotilla
+	city_type = port
+	levels_per_mesh = 25
+	
+	texture = "gfx/interface/icons/building_icons/naval_base.dds"
+	naval = yes
+	unlocking_technologies = { admiralty }
+	
+	production_method_groups = {
+		pmg_ship_class
+		pmg_escorts
+		pmg_raiders
+		pmg_naval_theory
+	}
+	
+	required_construction = construction_cost_very_low
+	
+	# Can only build naval bases on the coast
+	can_build_private = {
+		owner = { is_player = yes }
+		error_check = {
+			severity = fail
+			is_coastal = yes
+		}
+	}
+
+	can_build_government = {
+		owner = { is_player = yes }
+		error_check = {
+			severity = fail
+			is_coastal = yes
+		}
+	}
+}

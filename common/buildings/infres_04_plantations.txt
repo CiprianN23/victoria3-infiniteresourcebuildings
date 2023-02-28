@@ -21,7 +21,7 @@ building_infres_coffee_plantation = {
 		} 
 	}
 	
-	ai_value = 10 # Make AI less likely to build if there is still potentional of normal resources
+	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_p_coffee_plantations
 	texture = "gfx/interface/icons/building_icons/coffee_plantation.dds"
@@ -62,7 +62,7 @@ building_infres_cotton_plantation = {
 		} 
 	}
 	
-	ai_value = 10 # Make AI less likely to build if there is still potentional of normal resources
+	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_p_cotton_plantations
 	texture = "gfx/interface/icons/building_icons/cotton_plantation.dds"
@@ -103,7 +103,7 @@ building_infres_dye_plantation = {
 		} 
 	}
 	
-	ai_value = 10 # Make AI less likely to build if there is still potentional of normal resources
+	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_p_dye_plantations
 	texture = "gfx/interface/icons/building_icons/dye_plantation.dds"
@@ -152,7 +152,7 @@ building_infres_opium_plantation = {
 		}
 	}
 
-	ai_value = 10 # Make AI less likely to build if there is still potentional of normal resources
+	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_p_opium_plantations
 	texture = "gfx/interface/icons/building_icons/opium_plantation.dds"
@@ -193,7 +193,7 @@ building_infres_tea_plantation = {
 		} 
 	}
 	
-	ai_value = 10 # Make AI less likely to build if there is still potentional of normal resources
+	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_p_tea_plantations
 	texture = "gfx/interface/icons/building_icons/tea_plantation.dds"
@@ -234,7 +234,7 @@ building_infres_tobacco_plantation = {
 		} 
 	}
 	
-	ai_value = 10 # Make AI less likely to build if there is still potentional of normal resources
+	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_p_tobacco_plantations
 	texture = "gfx/interface/icons/building_icons/tobacco_plantation.dds"
@@ -275,7 +275,7 @@ building_infres_sugar_plantation = {
 		} 
 	}
 	
-	ai_value = 10 # Make AI less likely to build if there is still potentional of normal resources
+	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_p_sugar_plantations
 	texture = "gfx/interface/icons/building_icons/sugar_plantation.dds"
@@ -316,7 +316,7 @@ building_infres_banana_plantation = {
 		} 
 	}
 	
-	ai_value = 10 # Make AI less likely to build if there is still potentional of normal resources
+	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_p_banana_plantations
 	texture = "gfx/interface/icons/building_icons/banana_plantation.dds"
@@ -357,7 +357,7 @@ building_infres_silk_plantation = {
 		} 
 	}
 	
-	ai_value = 10 # Make AI less likely to build if there is still potentional of normal resources
+	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_p_silk_plantations
 	texture = "gfx/interface/icons/building_icons/silk_plantation.dds"

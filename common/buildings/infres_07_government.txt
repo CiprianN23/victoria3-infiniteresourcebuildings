@@ -28,7 +28,10 @@ building_infres_port = {
 	}
 
 	can_build_private = {
-		owner = { is_player = yes }
+		AND = {
+			owner = { is_player = yes }
+			has_game_rule = infres_private_construction_allowed
+		}
 		error_check = {
 			severity = fail
 			is_coastal = yes

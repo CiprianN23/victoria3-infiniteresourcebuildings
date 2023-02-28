@@ -1,9 +1,15 @@
 ﻿############ BARRACKS
 
 building_infres_barracks = {
-	can_build_private = { owner = { is_player = yes } }
+	can_build_private = {
+		AND = {
+			owner = { is_player = yes }
+			has_game_rule = infres_private_construction_allowed
+		}
+	}	
 	can_build_government = { owner = { is_player = yes } }
-	ai_value = 0
+
+	ai_value = 1
 	building_group = bg_infres_z_army
 	recruits_combat_unit = combat_unit_regular
 	texture = "gfx/interface/icons/building_icons/building_barracks.dds"
@@ -26,7 +32,7 @@ building_infres_barracks = {
 }
 
 building_infres_naval_base = {
-	ai_value = 0
+	ai_value = 1
 	building_group = bg_infres_z_navy
 	recruits_combat_unit = combat_unit_flotilla
 	city_type = port
@@ -47,7 +53,10 @@ building_infres_naval_base = {
 	
 	# Can only build naval bases on the coast
 	can_build_private = {
-		owner = { is_player = yes }
+		AND = {
+			owner = { is_player = yes }
+			has_game_rule = infres_private_construction_allowed
+		}
 		error_check = {
 			severity = fail
 			is_coastal = yes

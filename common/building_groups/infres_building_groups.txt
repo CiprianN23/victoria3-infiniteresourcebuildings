@@ -17,7 +17,10 @@ bg_infres_agriculture = {
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
+
 	fired_pops_become_radical = no
+
+	economy_of_scale_ai_factor = 2.0
 }
 
 bg_infres_f_rye_farms = {
@@ -79,7 +82,10 @@ bg_infres_ranching = {
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
+
 	fired_pops_become_radical = no
+
+	economy_of_scale_ai_factor = 2.0
 }
 
 bg_infres_g_livestock_ranches = {
@@ -109,7 +115,10 @@ bg_infres_plantations = {
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
+
 	fired_pops_become_radical = no
+
+	economy_of_scale_ai_factor = 2.0
 }
 
 bg_infres_p_coffee_plantations = {
@@ -174,6 +183,7 @@ bg_infres_mining = {
 	always_possible = yes
 	capped_by_resources = no
 	fired_pops_become_radical = no
+	economy_of_scale_ai_factor = 3.0
 }
 
 bg_infres_m_gold_fields = {
@@ -232,6 +242,7 @@ bg_infres_x_logging = {
 	capped_by_resources = no
 	fired_pops_become_radical = no
 	default_building = building_infres_logging_camp
+	economy_of_scale_ai_factor = 2.0
 }
 
 bg_infres_p_rubber = {
@@ -254,7 +265,10 @@ bg_infres_p_rubber = {
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
+
 	fired_pops_become_radical = no
+
+	economy_of_scale_ai_factor = 2.0
 }
 
 # Fishing
@@ -280,6 +294,10 @@ bg_infres_y_whaling = {
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
+
+	fired_pops_become_radical = no
+
+	economy_of_scale_ai_factor = 3.0
 }
 
 bg_infres_y_fishing = {
@@ -303,6 +321,10 @@ bg_infres_y_fishing = {
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
+
+	fired_pops_become_radical = no
+
+	economy_of_scale_ai_factor = 2.0
 }
 
 # Oil Extraction
@@ -328,6 +350,10 @@ bg_infres_n_oil_extraction = {
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
+
+	fired_pops_become_radical = no
+
+	economy_of_scale_ai_factor = 3.0
 }
 
 # Infrastructure
@@ -338,6 +364,7 @@ bg_infres_z_public_infrastructure = {
 	is_government_funded = yes
 	
 	urbanization = 5
+	
 }
 
 # Military
@@ -354,6 +381,9 @@ bg_infres_military = {
 	lens = military
 	
 	urbanization = 2
+
+	fired_pops_become_radical = no
+
 }
 
 bg_infres_z_army = {

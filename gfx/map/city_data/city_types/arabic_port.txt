@@ -42,7 +42,7 @@
 		position = 0.0
 		rotation = 0.0
 	}
-	
+
 	building_fishing_wharf = {}
 	building_whaling_station = {}
 	building_port = {}

@@ -32,6 +32,7 @@
   building_infres_naval_base:0 "Inf. Naval Base"
   building_infres_port:0 "Inf. Port"
   building_infres_barracks:0 "Inf. Barracks"
+  building_infres_construction_sector:0 "Inf. Construction Sector"
 
   bg_infres_agriculture:0 "Inf. Agriculture"
   bg_infres_ranching:0 "Inf. Ranches"

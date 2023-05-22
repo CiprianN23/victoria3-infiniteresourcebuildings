@@ -2,7 +2,7 @@
 
 building_infres_rye_farm = {
 
-	can_build_private = { 
+	can_build_private = {
 		OR = {
 			AND = {
 				owner = { is_player = yes }
@@ -12,20 +12,20 @@ building_infres_rye_farm = {
 				has_game_rule = infres_player_and_ai_allowed
 				has_game_rule = infres_private_construction_allowed
 			}
-		}  
+		}
 	}
 
-	can_build_government = { 
+	can_build_government = {
 		OR = {
 			owner = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
-		} 
+		}
 	}
 
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_f_rye_farms
-	
+
 	texture = "gfx/interface/icons/building_icons/rye_farm.dds"
 
 	city_type = farm
@@ -43,12 +43,12 @@ building_infres_rye_farm = {
 	}
 
 	required_construction = construction_cost_low
-	
+
 	terrain_manipulator = farmland_rye
 }
 
 building_infres_wheat_farm = {
-	can_build_private = { 
+	can_build_private = {
 		OR = {
 			AND = {
 				owner = { is_player = yes }
@@ -58,20 +58,20 @@ building_infres_wheat_farm = {
 				has_game_rule = infres_player_and_ai_allowed
 				has_game_rule = infres_private_construction_allowed
 			}
-		}  
+		}
 	}
 
-	can_build_government = { 
+	can_build_government = {
 		OR = {
 			owner = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
-		} 
+		}
 	}
 
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_f_wheat_farms
-	
+
 	texture = "gfx/interface/icons/building_icons/wheat_farm.dds"
 
 	city_type = farm
@@ -89,12 +89,12 @@ building_infres_wheat_farm = {
 	}
 
 	required_construction = construction_cost_low
-	
+
 	terrain_manipulator = farmland_wheat
 }
 
 building_infres_rice_farm = {
-	can_build_private = { 
+	can_build_private = {
 		OR = {
 			AND = {
 				owner = { is_player = yes }
@@ -104,20 +104,20 @@ building_infres_rice_farm = {
 				has_game_rule = infres_player_and_ai_allowed
 				has_game_rule = infres_private_construction_allowed
 			}
-		}  
+		}
 	}
 
-	can_build_government = { 
+	can_build_government = {
 		OR = {
 			owner = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
-		} 
+		}
 	}
 
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_f_rice_farms
-	
+
 	texture = "gfx/interface/icons/building_icons/rice_farm.dds"
 
 	city_type = farm
@@ -135,12 +135,12 @@ building_infres_rice_farm = {
 	}
 
 	required_construction = construction_cost_low
-	
+
 	terrain_manipulator = farmland_rice
 }
 
 building_infres_maize_farm = {
-	can_build_private = { 
+	can_build_private = {
 		OR = {
 			AND = {
 				owner = { is_player = yes }
@@ -150,20 +150,20 @@ building_infres_maize_farm = {
 				has_game_rule = infres_player_and_ai_allowed
 				has_game_rule = infres_private_construction_allowed
 			}
-		}  
+		}
 	}
 
-	can_build_government = { 
+	can_build_government = {
 		OR = {
 			owner = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
-		} 
+		}
 	}
 
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_f_maize_farms
-	
+
 	texture = "gfx/interface/icons/building_icons/maize_farm.dds"
 
 	city_type = farm
@@ -172,7 +172,7 @@ building_infres_maize_farm = {
 	unlocking_technologies = {
 		enclosure
 	}
-	
+
 	production_method_groups = {
 		pmg_base_building_maize_farm
 		pmg_secondary_building_maize_farm
@@ -181,12 +181,12 @@ building_infres_maize_farm = {
 	}
 
 	required_construction = construction_cost_low
-	
+
 	terrain_manipulator = farmland_maize
 }
 
 building_infres_millet_farm = {
-	can_build_private = { 
+	can_build_private = {
 		OR = {
 			AND = {
 				owner = { is_player = yes }
@@ -196,20 +196,20 @@ building_infres_millet_farm = {
 				has_game_rule = infres_player_and_ai_allowed
 				has_game_rule = infres_private_construction_allowed
 			}
-		}  
+		}
 	}
 
-	can_build_government = { 
+	can_build_government = {
 		OR = {
 			owner = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
-		} 
+		}
 	}
 
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_f_millet_farms
-	
+
 	texture = "gfx/interface/icons/building_icons/millet_farm.dds"
 
 	city_type = farm
@@ -227,12 +227,12 @@ building_infres_millet_farm = {
 	}
 
 	required_construction = construction_cost_low
-	
+
 	terrain_manipulator = farmland_millet
 }
 
 building_infres_livestock_ranch = {
-	can_build_private = { 
+	can_build_private = {
 		OR = {
 			AND = {
 				owner = { is_player = yes }
@@ -242,22 +242,22 @@ building_infres_livestock_ranch = {
 				has_game_rule = infres_player_and_ai_allowed
 				has_game_rule = infres_private_construction_allowed
 			}
-		}  
+		}
 	}
 
-	can_build_government = { 
+	can_build_government = {
 		OR = {
 			owner = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
-		} 
+		}
 	}
-	
+
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_g_livestock_ranches
 
 	texture = "gfx/interface/icons/building_icons/cattle_ranch.dds"
-	
+
 	city_type = farm
 	levels_per_mesh = 5
 

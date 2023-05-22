@@ -2,7 +2,7 @@
 	graphical_culture = "african"
 	city_type = wood
 	center_building_mesh = "african_forestryhub_01_mesh"
-	
+
 	min_residential_buildings = 2
 	max_residential_buildings = 50
 	max_residence_points = 100
@@ -42,7 +42,7 @@
 		position = 0.2
 		rotation = 360.0
 	}
-	
+
 	building_logging_camp = {
 		"african_forestry_lumberdepo_01_mesh"
 		"african_forestry_lumberdepo_02_mesh"

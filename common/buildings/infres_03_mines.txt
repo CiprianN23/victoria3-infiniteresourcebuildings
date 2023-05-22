@@ -1,5 +1,5 @@
 ﻿building_infres_coal_mine = {
-	can_build_private = { 
+	can_build_private = {
 		OR = {
 			AND = {
 				owner = { is_player = yes }
@@ -9,16 +9,16 @@
 				has_game_rule = infres_player_and_ai_allowed
 				has_game_rule = infres_private_construction_allowed
 			}
-		}  
+		}
 	}
 
-	can_build_government = { 
+	can_build_government = {
 		OR = {
 			owner = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
-		} 
+		}
 	}
-	
+
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_m_coal_mining
@@ -39,9 +39,9 @@
 		pmg_ownership_capital_building_coal_mine
 	}
 }
- 
+
 building_infres_iron_mine = {
-	can_build_private = { 
+	can_build_private = {
 		OR = {
 			AND = {
 				owner = { is_player = yes }
@@ -51,16 +51,16 @@ building_infres_iron_mine = {
 				has_game_rule = infres_player_and_ai_allowed
 				has_game_rule = infres_private_construction_allowed
 			}
-		}  
+		}
 	}
 
-	can_build_government = { 
+	can_build_government = {
 		OR = {
 			owner = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
-		} 
+		}
 	}
-	
+
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_m_iron_mining
@@ -69,7 +69,7 @@ building_infres_iron_mine = {
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
 	terrain_manipulator = mining
-	
+
 	unlocking_technologies = {
 		shaft_mining
 	}
@@ -84,7 +84,7 @@ building_infres_iron_mine = {
  }
 
 building_infres_lead_mine = {
-	can_build_private = { 
+	can_build_private = {
 		OR = {
 			AND = {
 				owner = { is_player = yes }
@@ -94,16 +94,16 @@ building_infres_lead_mine = {
 				has_game_rule = infres_player_and_ai_allowed
 				has_game_rule = infres_private_construction_allowed
 			}
-		}  
+		}
 	}
 
-	can_build_government = { 
+	can_build_government = {
 		OR = {
 			owner = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
-		} 
+		}
 	}
-	
+
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_m_lead_mining
@@ -126,7 +126,7 @@ building_infres_lead_mine = {
  }
 
 building_infres_sulfur_mine = {
-	can_build_private = { 
+	can_build_private = {
 		OR = {
 			AND = {
 				owner = { is_player = yes }
@@ -136,16 +136,16 @@ building_infres_sulfur_mine = {
 				has_game_rule = infres_player_and_ai_allowed
 				has_game_rule = infres_private_construction_allowed
 			}
-		}  
+		}
 	}
 
-	can_build_government = { 
+	can_build_government = {
 		OR = {
 			owner = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
-		} 
+		}
 	}
-	
+
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_m_sulfur_mining
@@ -166,11 +166,11 @@ building_infres_sulfur_mine = {
 		pmg_ownership_capital_building_sulfur_mine
 	}
  }
- 
+
 building_infres_gold_mine = {
 	can_build_private = { always = no }
 	can_build_government = { owner = { is_player = yes } }
-	
+
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_m_gold_mining
@@ -179,7 +179,7 @@ building_infres_gold_mine = {
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
 	terrain_manipulator = mining
-	
+
 	unlocking_technologies = {
 		prospecting
 	}
@@ -196,7 +196,7 @@ building_infres_gold_mine = {
 building_infres_gold_fields = {
 	can_build_private = { always = no }
 	can_build_government = { owner = { is_player = yes } }
-	
+
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
 	building_group = bg_infres_m_gold_fields
@@ -206,7 +206,7 @@ building_infres_gold_fields = {
 	buildable = no
 	expandable = no
 	terrain_manipulator = mining
-	
+
 	unlocking_technologies = {
 		prospecting
 	}

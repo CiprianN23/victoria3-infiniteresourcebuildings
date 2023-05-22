@@ -3,7 +3,7 @@
 	city_type = farm
 	center_building_mesh = "latin_rural_farm_centerpiece_01_mesh"
 	center_building_size = { 2 2 }
-	
+
 	min_residential_buildings = 4
 	max_residential_buildings = 50
 	max_residence_points = 100
@@ -43,7 +43,7 @@
 	building_infres_rye_farm = {
 		"latin_province_farm_01_mesh"
 	}
-	
+
 	building_rye_farm = {
 		"latin_province_farm_01_mesh"
 	}
@@ -62,13 +62,13 @@
 	building_livestock_ranch = {
 		"latin_rural_ranch_01_mesh"
 	}
-	
+
 	building_coffee_plantation = {
 		"latin_rural_plantation_01_mesh"
 	}
 	building_silk_plantation = {
 		"latin_rural_plantation_01_mesh"
-	}	
+	}
 	building_cotton_plantation = {
 		"latin_rural_plantation_01_mesh"
 	}
@@ -111,13 +111,13 @@
 	building_infres_livestock_ranch = {
 		"latin_rural_ranch_01_mesh"
 	}
-	
+
 	building_infres_coffee_plantation = {
 		"latin_rural_plantation_01_mesh"
 	}
 	building_infres_silk_plantation = {
 		"latin_rural_plantation_01_mesh"
-	}	
+	}
 	building_infres_cotton_plantation = {
 		"latin_rural_plantation_01_mesh"
 	}

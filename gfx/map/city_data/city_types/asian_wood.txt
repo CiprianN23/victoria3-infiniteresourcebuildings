@@ -2,7 +2,7 @@
 	graphical_culture = "asian"
 	city_type = wood
 	center_building_mesh = "asian_forestryhub_01_mesh"
-	
+
 	min_residential_buildings = 2
 	max_residential_buildings = 50
 	max_residence_points = 100

@@ -3,7 +3,7 @@
 	city_type = farm
 	center_building_mesh = "asian_rural_farm_centerpiece_01_mesh"
 	center_building_size = { 2 2 }
-	
+
 	min_residential_buildings = 4
 	max_residential_buildings = 50
 	max_residence_points = 100
@@ -39,7 +39,7 @@
 		position = 0.2
 		rotation = 360.0
 	}
-	
+
 	building_rye_farm = {
 		"asian_province_farm_01_mesh"
 	}
@@ -58,7 +58,7 @@
 	building_livestock_ranch = {
 		"asian_rural_ranch_01_mesh"
 	}
-	
+
 	building_coffee_plantation = {
 		"asian_rural_plantation_01_mesh"
 	}
@@ -67,7 +67,7 @@
 	}
 	building_silk_plantation = {
 		"asian_rural_plantation_01_mesh"
-	}		
+	}
 	building_dye_plantation = {
 		"asian_rural_plantation_01_mesh"
 	}
@@ -107,7 +107,7 @@
 	building_infres_livestock_ranch = {
 		"asian_rural_ranch_01_mesh"
 	}
-	
+
 	building_infres_coffee_plantation = {
 		"asian_rural_plantation_01_mesh"
 	}
@@ -116,7 +116,7 @@
 	}
 	building_infres_silk_plantation = {
 		"asian_rural_plantation_01_mesh"
-	}		
+	}
 	building_infres_dye_plantation = {
 		"asian_rural_plantation_01_mesh"
 	}

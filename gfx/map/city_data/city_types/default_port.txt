@@ -9,9 +9,9 @@
 	modifier_key_prefix = "european_port_01"
 	modifier_key_suffix = "entity"
 	center_building_size = { 1 1 }
-	
+
 	weight = -1 #default port is always down prioritized
-	
+
 	min_residential_buildings = 2
 	max_residential_buildings = 100
 	max_residence_points = 100
@@ -47,7 +47,7 @@
 		position = 0.0
 		rotation = 0.0
 	}
-	
+
 	building_fishing_wharf = {}
 	building_whaling_station = {}
 	building_port = {}

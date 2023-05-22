@@ -18,7 +18,7 @@ building_infres_port = {
 	required_construction = construction_cost_medium
 
 	terrain_manipulator = urban_port
-	
+
 	can_build_government = {
 		owner = { is_player = yes }
 		error_check = {

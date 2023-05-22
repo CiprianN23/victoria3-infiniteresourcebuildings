@@ -333,6 +333,9 @@ law_industry_banned = {
 		country_subsidies_bg_plantations = yes
 		country_subsidies_bg_infrastructure = yes
 		country_subsidies_bg_trade = yes
+		country_subsidies_bg_infres_agriculture = yes
+		country_subsidies_bg_infres_ranching = yes
+		country_subsidies_bg_infres_plantations = yes
 	}
 
 	build_from_investment_pool = {
@@ -340,6 +343,9 @@ law_industry_banned = {
 		bg_plantations
 		bg_ranching
 		bg_infrastructure
+		bg_infres_agriculture
+		bg_infres_plantations
+		bg_infres_ranching
 	}
 
 	possible_political_movements = {

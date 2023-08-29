@@ -26,7 +26,7 @@
 	}
 
 	weight = 1
-
+		
 	min_residential_buildings = 4
 	max_residential_buildings = 50
 	max_residence_points = 100
@@ -54,7 +54,7 @@
 		"european_rural_building_poor_01_mesh"
 		"european_rural_building_poor_02_mesh"
 		"european_rural_building_poor_03_mesh"
-	}
+	}	
 	poor_building_offsets = {
 		position = 0.2
 		rotation = 360.0
@@ -63,7 +63,7 @@
 		position = 0.0
 		rotation = 0.0
 	}
-
+	
 	building_rye_farm = {
 		"european_province_farm_01_mesh"
 		"european_province_farm_02_mesh"
@@ -87,13 +87,13 @@
 	building_livestock_ranch = {
 		"european_rural_ranch_01_mesh"
 	}
-
+	
 	building_coffee_plantation = {
 		"southern_plantation_mesh"
 	}
 	building_silk_plantation = {
 		"southern_plantation_mesh"
-	}
+	}	
 	building_cotton_plantation = {
 		"southern_plantation_mesh"
 	}

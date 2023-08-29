@@ -3,9 +3,9 @@
 	city_type = mine
 	center_building_mesh = "african_mininghub_centerpiece_01_mesh"
 	center_building_size = { 3 3 }
+	
 
-
-
+	
 	min_residential_buildings = 4
 	max_residential_buildings = 50
 	max_residence_points = 100
@@ -41,7 +41,7 @@
 		position = 0.2
 		rotation = 360.0
 	}
-
+	
 	building_coal_mine = {
 		"african_mining_coaldepo_01_mesh"
 	}
@@ -56,7 +56,7 @@
 	}
 	building_gold_mine = {
 		"african_mining_processing_01_mesh"
-	}
+	}	
 	building_gold_fields = {
 		"african_mining_processing_01_mesh"
 	}

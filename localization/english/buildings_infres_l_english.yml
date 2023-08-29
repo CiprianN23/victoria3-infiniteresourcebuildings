@@ -64,3 +64,17 @@
   setting_infres_private_construction_not_allowed:0 "Autonomous Investment not allowed"
   setting_infres_private_construction_allowed_desc:0 "Allows the Autonomous Investment to build Infinite Resource Buildings"
   setting_infres_private_construction_not_allowed_desc:0 "Disallows the Autonomous Investment to build Infinite Resource Buildings"
+
+  pmg_mining_equipment_building_gold_mine_infres:0 "Mining Equipment"
+
+  pm_picks_and_shovels_building_gold_mine_infres:0 "Picks and Shovels | No Minting"
+  pm_atmospheric_engine_pump_building_gold_mine_infres:0 "Atmospheric Engine Pump | No Minting"
+
+
+  pmg_explosives_building_gold_mine_infres:0 "Explosives"
+
+  pm_nitroglycerin_building_gold_mine_infres:0 "Nitroglycerin | No Minting"
+  pm_dynamite_building_gold_mine_infres:0 "Dynamite | No Minting"
+
+  pm_condensing_engine_pump_building_gold_mine_infres:0 "Condensing Engine Pump | No Minting"
+  pm_diesel_pump_building_gold_mine_infres:0 "Diesel Pump | No Minting"

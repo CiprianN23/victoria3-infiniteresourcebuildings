@@ -3,9 +3,9 @@
 	city_type = mine
 	center_building_mesh = "latin_mininghub_centerpiece_01_mesh"
 	center_building_size = { 3 3 }
+	
 
-
-
+	
 	min_residential_buildings = 4
 	max_residential_buildings = 50
 	max_residence_points = 100
@@ -41,7 +41,7 @@
 		position = 0.2
 		rotation = 360.0
 	}
-
+	
 	building_coal_mine = {
 		"latin_mining_coaldepo_01_mesh"
 	}
@@ -56,13 +56,14 @@
 	}
 	building_gold_mine = {
 		"latin_mining_processing_01_mesh"
-	}
+	}	
 	building_gold_fields = {
 		"latin_mining_processing_01_mesh"
 	}
 	building_sulfur_mine = {
 		"latin_colonial_manufactory_01_mesh"
 	}
+
 
 	# Infres
 	building_infres_coal_mine = {

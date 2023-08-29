@@ -363,6 +363,8 @@ bg_infres_z_public_infrastructure = {
 
 	is_government_funded = yes
 
+	always_possible = yes
+
 	urbanization = 5
 
 }

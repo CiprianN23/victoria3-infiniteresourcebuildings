@@ -86,6 +86,9 @@
 	building_banana_plantation = {
 		"asian_rural_plantation_01_mesh"
 	}
+	building_vineyard_plantation = {
+		"asian_rural_plantation_01_mesh"
+	}
 
 
 
@@ -134,6 +137,9 @@
 		"asian_rural_plantation_01_mesh"
 	}
 	building_infres_banana_plantation = {
+		"asian_rural_plantation_01_mesh"
+	}
+	building_infres_vineyard_plantation = {
 		"asian_rural_plantation_01_mesh"
 	}
 }

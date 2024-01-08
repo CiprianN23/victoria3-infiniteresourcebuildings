@@ -75,7 +75,6 @@
 		"rubber_lodge_01_mesh"
 	}
 
-
 	# Infres
 	building_infres_logging_camp = {
 		"french_forestry_lumberdepo_01_mesh"
@@ -85,4 +84,3 @@
 	building_infres_rubber_plantation = {
 		"rubber_lodge_01_mesh"
 	}
-}

@@ -115,6 +115,9 @@
 	building_banana_plantation = {
 		"southern_plantation_mesh"
 	}
+	building_vineyard_plantation = {
+		"southern_plantation_mesh"
+	}
 
 
 	# Infres
@@ -167,6 +170,9 @@
 		"southern_plantation_mesh"
 	}
 	building_infres_banana_plantation = {
+		"southern_plantation_mesh"
+	}
+	building_infres_vineyard_plantation = {
 		"southern_plantation_mesh"
 	}
 }

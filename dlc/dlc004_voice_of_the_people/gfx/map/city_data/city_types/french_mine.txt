@@ -91,7 +91,6 @@
 		"generic_rural_mining_processing_01_mesh"
 	}
 	
-
 	# Infres
 	building_infres_coal_mine = {
 		"french_mining_coaldepot_01_mesh"

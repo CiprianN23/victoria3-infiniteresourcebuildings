@@ -87,6 +87,9 @@
 	building_banana_plantation = {
 		"african_farm_plantation_01_mesh"
 	}
+	building_vineyard_plantation = {
+		"african_farm_plantation_01_mesh"
+	}
 
 	# Infres
 	building_infres_rye_farm = {
@@ -133,6 +136,9 @@
 		"african_farm_plantation_01_mesh"
 	}
 	building_infres_banana_plantation = {
+		"african_farm_plantation_01_mesh"
+	}
+	building_infres_vineyard_plantation = {
 		"african_farm_plantation_01_mesh"
 	}
 }

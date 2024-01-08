@@ -376,3 +376,45 @@ building_infres_silk_plantation = {
 		pmg_ownership_land_building_silk_plantation
 	}
 }
+
+building_infres_vineyard_plantation = {
+
+	can_build_private = {
+		OR = {
+			AND = {
+				owner = { is_player = yes }
+				has_game_rule = infres_private_construction_allowed
+			}
+			AND = {
+				has_game_rule = infres_player_and_ai_allowed
+				has_game_rule = infres_private_construction_allowed
+			}
+		}
+	}
+
+	can_build_government = {
+		OR = {
+			owner = { is_player = yes }
+			has_game_rule = infres_player_and_ai_allowed
+		}
+	}
+
+	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+
+	building_group = bg_infres_p_vineyard_plantations
+	texture = "gfx/interface/icons/building_icons/vineyards.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_base_building_vineyard_plantation
+		pmg_train_automation_building_vineyard_plantation
+		pmg_ownership_land_building_vineyard_plantation
+	}
+}

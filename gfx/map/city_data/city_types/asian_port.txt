@@ -48,10 +48,10 @@
 	building_port = {}
 	building_naval_base = {"asian_port_navalbase_01_mesh"}
 	building_shipyards = {}
+	building_military_shipyards = {}
 
 	# Infres
 	building_infres_fishing_wharf = {}
 	building_infres_whaling_station = {}
 	building_infres_port = {}
-	building_infres_naval_base = {"asian_port_navalbase_01_mesh"}
 }

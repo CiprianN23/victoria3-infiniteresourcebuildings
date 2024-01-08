@@ -176,6 +176,12 @@ bg_infres_p_banana_plantations = {
 	default_building = building_infres_banana_plantation
 }
 
+bg_infres_p_vineyard_plantations = {
+	parent_group = bg_infres_plantations
+
+	default_building = building_vineyard_plantation
+}
+
 # Mining
 
 bg_infres_mining = {
@@ -372,7 +378,7 @@ bg_infres_z_public_infrastructure = {
 bg_infres_construction = {
 	parent_group = bg_infres_z_public_infrastructure
 
-	infrastructure_usage_per_level = 0.2
+	infrastructure_usage_per_level = 2
 
 	lens = government
 
@@ -385,31 +391,4 @@ bg_infres_construction = {
 	urbanization = 5
 
 	economy_of_scale_ai_factor = 2.0
-}
-
-# Military
-
-bg_infres_military = {
-	category = development
-
-	always_possible = yes
-
-	is_military = yes
-
-	is_government_funded = yes
-
-	lens = military
-
-	urbanization = 2
-
-	fired_pops_become_radical = no
-
-}
-
-bg_infres_z_army = {
-	parent_group = bg_infres_military
-}
-
-bg_infres_z_navy = {
-	parent_group = bg_infres_military
 }

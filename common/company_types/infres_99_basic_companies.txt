@@ -37,6 +37,7 @@
 	
 	prosperity_modifier = {
 		building_livestock_ranch_throughput_add = 0.1
+		building_infres_livestock_ranch_throughput_add = 0.1
 	}	
 }
 

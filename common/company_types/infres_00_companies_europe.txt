@@ -438,6 +438,7 @@ company_lkab = {
 	
 	prosperity_modifier = {
 		building_iron_mine_throughput_add = 0.2
+		building_infres_iron_mine_throughput_add = 0.2
 	}	
 	
 	ai_weight = {
@@ -534,6 +535,7 @@ company_aker_mek = {
 	prosperity_modifier = {
 		country_convoys_capacity_mult = 0.15
 		building_fishing_wharf_throughput_add = 0.05
+		building_infres_fishing_wharf_throughput_add = 0.05
 	}	
 	
 	ai_weight = {
@@ -626,6 +628,7 @@ company_ursus = {
 	
 	prosperity_modifier = {
 		building_wheat_farm_throughput_add = 0.2
+		building_infres_wheat_farm_throughput_add = 0.2
 	}
 	
 	ai_weight = {
@@ -1018,6 +1021,9 @@ company_chr_hansens = {
 	prosperity_modifier = {
 		building_livestock_ranch_throughput_add = 0.1
 		building_fishing_wharf_throughput_add = 0.1
+
+		building_infres_livestock_ranch_throughput_add = 0.1
+		building_infres_fishing_wharf_throughput_add = 0.1
 	}	
 	
 	ai_weight = {

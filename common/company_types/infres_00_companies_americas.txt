@@ -38,6 +38,7 @@ company_fundidora_monterrey = {
 	prosperity_modifier = {
 		building_railway_throughput_add = 0.05
 		building_iron_mine_throughput_add = 0.1
+		building_infres_iron_mine_throughput_add = 0.1
 	}
 	
 	ai_weight = {
@@ -298,6 +299,7 @@ company_la_rosada = {
 	prosperity_modifier = {
 		unit_defense_mult = 0.05
 		building_iron_mine_throughput_add = 0.1
+		building_infres_iron_mine_throughput_add = 0.1
 	}
 	
 	ai_weight = {

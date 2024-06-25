@@ -17,7 +17,7 @@
 		building_rye_farm
 
 		building_infres_wheat_farm
-		building_infres_rye_farm	
+		building_infres_rye_farm
 	}
 
 	possible = { 
@@ -37,7 +37,6 @@
 	
 	prosperity_modifier = {
 		building_livestock_ranch_throughput_add = 0.1
-		building_infres_livestock_ranch_throughput_add = 0.1
 	}	
 }
 
@@ -328,9 +327,6 @@ company_basic_fishing = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
-					is_building_type = building_fishing_wharf
-					is_building_type = building_whaling_station
-
 					is_building_type = building_infres_fishing_wharf
 					is_building_type = building_infres_whaling_station
 				}
@@ -412,17 +408,14 @@ company_basic_oil = {
 
 	possible = { 
 		any_scope_state = {
-			OR = {
-				any_scope_building = {
-					OR = {
-						is_building_type = building_oil_rig
-						is_building_type = building_infres_oil_rig
-					}
-					
-					level >= 5
+			any_scope_building = {
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
 				}
+				
+				level >= 5
 			}
-			
 		}
 	}
 	
@@ -497,6 +490,9 @@ company_basic_metal_mining = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
+					is_building_type = building_iron_mine
+					is_building_type = building_lead_mine
+
 					is_building_type = building_infres_iron_mine
 					is_building_type = building_infres_lead_mine
 				}
@@ -951,4 +947,40 @@ company_basic_electrics = {
 	prosperity_modifier = {
 		building_power_plant_throughput_add = 0.1
 	}
+}
+
+company_construction_power_bloc = {
+	icon = "gfx/interface/icons/company_icons/basic_construction.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	
+	building_types = {  
+		building_steel_mills
+		building_tooling_workshops
+		building_glassworks
+	}
+
+	potential = {
+		is_in_power_bloc = yes
+	}
+
+	unlocking_principles = {
+		principle_construction_3
+	}
+
+	possible = { 
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_steel_mills
+					is_building_type = building_tooling_workshops
+					is_building_type = building_glassworks
+				}
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = { 
+		building_construction_sector_throughput_add = 0.2
+	}	
 }

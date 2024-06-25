@@ -43,7 +43,6 @@ company_mitsui = {
 	prosperity_modifier = {
 		interest_group_ig_industrialists_pol_str_mult = 0.2
 		building_iron_mine_throughput_add = 0.1
-		building_infres_iron_mine_throughput_add = 0.1
 	}	
 	
 	ai_weight = {
@@ -89,7 +88,6 @@ company_mantetsu = {
 	prosperity_modifier = {
 		state_non_homeland_colony_growth_speed_mult = 0.1
 		building_wheat_farm_throughput_add = 0.15
-		building_infres_wheat_farm_throughput_add = 0.15
 	}	
 	
 	ai_weight = {

@@ -36,8 +36,11 @@
 		pmg_explosives_building_coal_mine
 		pmg_steam_automation_building_coal_mine
 		pmg_train_automation_building_coal_mine
-		pmg_ownership_capital_building_coal_mine
 	}
+
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }
 
 building_infres_iron_mine = {
@@ -79,8 +82,11 @@ building_infres_iron_mine = {
 		pmg_explosives_building_iron_mine
 		pmg_steam_automation_building_iron_mine
 		pmg_train_automation_building_iron_mine
-		pmg_ownership_capital_building_iron_mine
 	}
+
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
  }
 
 building_infres_lead_mine = {
@@ -121,9 +127,11 @@ building_infres_lead_mine = {
 		pmg_explosives_building_lead_mine
 		pmg_steam_automation_building_lead_mine
 		pmg_train_automation_building_lead_mine
-		pmg_ownership_capital_building_lead_mine
 	}
- }
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+}
 
 building_infres_sulfur_mine = {
 	can_build_private = {
@@ -163,8 +171,10 @@ building_infres_sulfur_mine = {
 		pmg_explosives_building_sulfur_mine
 		pmg_steam_automation_building_sulfur_mine
 		pmg_train_automation_building_sulfur_mine
-		pmg_ownership_capital_building_sulfur_mine
 	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
  }
 
 building_infres_gold_mine = {
@@ -189,8 +199,11 @@ building_infres_gold_mine = {
 		pmg_explosives_building_gold_mine_infres
 		pmg_steam_automation_building_gold_mine
 		pmg_train_automation_building_gold_mine
-		pmg_ownership_capital_building_gold_mine
 	}
+
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }
 
 building_infres_gold_fields = {
@@ -214,4 +227,7 @@ building_infres_gold_fields = {
 	production_method_groups = {
 		pmg_base_building_gold_fields
 	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }

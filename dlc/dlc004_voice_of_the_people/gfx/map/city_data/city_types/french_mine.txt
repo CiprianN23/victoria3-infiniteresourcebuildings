@@ -90,27 +90,31 @@
 	building_gold_fields = {
 		"generic_rural_mining_processing_01_mesh"
 	}
-	
-	# Infres
+
+
 	building_infres_coal_mine = {
 		"french_mining_coaldepot_01_mesh"
 	}
+	building_infres_sulfur_mine = {
+		"french_mining_sulfurdepot_01_mesh"
+	}
+	
 	building_infres_iron_mine = {
 		"french_mining_processing_iron_01_mesh"
 	}
 	building_infres_lead_mine = {
 		"french_mining_processing_lead_01_mesh"
 	}
+
+#does not appear in France
 	building_infres_oil_rig = {
 		"generic_oil_drill_01_mesh"
 	}
 	building_infres_gold_mine = {
 		"generic_rural_mining_processing_01_mesh"
-	}
+	}	
 	building_infres_gold_fields = {
 		"generic_rural_mining_processing_01_mesh"
 	}
-	building_infres_sulfur_mine = {
-		"french_mining_sulfurdepot_01_mesh"
-	}
+	
 }

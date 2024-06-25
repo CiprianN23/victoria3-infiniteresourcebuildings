@@ -1,0 +1,120 @@
+﻿building_infres_iron_mine_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_construction_sector_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_lead_mine_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_cotton_plantation_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	} 
+}
+building_infres_rubber_plantation_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_livestock_ranch_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_wheat_farm_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_fishing_wharf_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_vineyard_plantation_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_coffee_plantation_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_opium_plantation_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_coffee_plantations_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_plantations_throughput_add = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_bg_infres_oil_extraction_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_oil_extraction_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}

@@ -33,6 +33,7 @@ company_societe_mokta_el_hadid = {
 					is_building_type = building_iron_mine
 					is_building_type = building_infres_iron_mine
 				}
+				
 				level >= 3
 			}
 		}
@@ -166,6 +167,7 @@ company_cgv = {
 			any_scope_building = {
 				OR = {
 					is_building_type = building_vineyard_plantation
+					is_building_type = building_infres_vineyard_plantation
 				}
 				
 				level >= 3
@@ -178,7 +180,6 @@ company_cgv = {
 	prosperity_modifier = {
 		country_prestige_mult = 0.15
 		building_vineyard_plantation_throughput_add = 0.1
-		building_infres_vineyard_plantation_throughput_add = 0.1
 	}	
 	
 	ai_weight = {

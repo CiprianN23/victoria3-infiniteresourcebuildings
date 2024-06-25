@@ -65,7 +65,6 @@
 	}
 
 
-	# Infres
 	building_infres_coal_mine = {
 		"generic_rural_mining_coaldepo_02_mesh"
 	}
@@ -80,7 +79,7 @@
 	}
 	building_infres_gold_mine = {
 		"generic_rural_mining_processing_sandstone_01_mesh"
-	}
+	}	
 	building_infres_gold_fields = {
 		"generic_rural_mining_processing_sandstone_01_mesh"
 	}

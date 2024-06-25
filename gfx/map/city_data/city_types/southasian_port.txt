@@ -1,5 +1,5 @@
-﻿arabic_port = {
-	graphical_culture = "arabic"
+﻿southasian_port = {
+	graphical_culture = "southasian"
 	city_type = port
 	center_building_entity = "arabic_port_centerpiece_02_entity"
 	center_modifiers = {
@@ -49,7 +49,6 @@
 	building_naval_base = {"arabic_port_navalbase_01_mesh"}
 	building_shipyards = {}
 	building_military_shipyards = {}
-
 
 	building_infres_fishing_wharf = {}
 	building_infres_whaling_station = {}

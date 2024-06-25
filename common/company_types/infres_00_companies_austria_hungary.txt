@@ -180,6 +180,7 @@ company_galician_carpathian_oil = {
 					is_building_type = building_oil_rig
 					is_building_type = building_infres_oil_rig
 				}
+				
 				level >= 5
 			}
 		}

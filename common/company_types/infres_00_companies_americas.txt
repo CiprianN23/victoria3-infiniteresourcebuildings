@@ -38,7 +38,6 @@ company_fundidora_monterrey = {
 	prosperity_modifier = {
 		building_railway_throughput_add = 0.05
 		building_iron_mine_throughput_add = 0.1
-		building_infres_iron_mine_throughput_add = 0.1
 	}
 	
 	ai_weight = {
@@ -79,7 +78,6 @@ company_el_aguila = {
 					is_building_type = building_oil_rig
 					is_building_type = building_infres_oil_rig
 				}
-				
 				level >= 5
 			}
 			is_coastal = yes
@@ -131,6 +129,7 @@ company_csfa = {
 					is_building_type = building_sulfur_mine
 					is_building_type = building_infres_sulfur_mine
 				}
+				
 				level >= 5
 			}
 		}
@@ -299,7 +298,6 @@ company_la_rosada = {
 	prosperity_modifier = {
 		unit_defense_mult = 0.05
 		building_iron_mine_throughput_add = 0.1
-		building_infres_iron_mine_throughput_add = 0.1
 	}
 	
 	ai_weight = {

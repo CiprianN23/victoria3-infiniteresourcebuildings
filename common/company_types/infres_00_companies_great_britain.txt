@@ -36,7 +36,6 @@ company_j_p_coats = {
 	prosperity_modifier = {
 		building_textile_mills_throughput_add = 0.15
 		building_cotton_plantation_throughput_add = 0.05
-		building_infres_cotton_plantation_throughput_add = 0.05
 	}	
 	
 	ai_weight = {
@@ -231,8 +230,8 @@ company_bolckow_vaughan = {
 			any_scope_building = {
 				OR = {
 					is_building_type = building_coal_mine
-					is_building_type = building_iron_mine
 					is_building_type = building_infres_coal_mine
+					is_building_type = building_iron_mine
 					is_building_type = building_infres_iron_mine
 					is_building_type = building_steel_mills
 				}

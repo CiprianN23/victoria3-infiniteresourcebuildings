@@ -52,7 +52,6 @@
 	}
 
 
-	# Infres
 	building_infres_logging_camp = {
 		"generic_forestry_lumberdepo_01_mesh"
 		"generic_forestry_lumberdepo_02_mesh"

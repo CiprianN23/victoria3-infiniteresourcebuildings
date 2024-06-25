@@ -28,7 +28,7 @@ company_standard_oil = {
 			region = sr:region_the_midwest
 			is_incorporated = yes
 			any_scope_building = {
-				OR  = {
+				OR = {
 					is_building_type = building_oil_rig
 					is_building_type = building_infres_oil_rig
 				}
@@ -98,6 +98,7 @@ company_united_fruit = {
 						is_building_type = building_banana_plantation
 						is_building_type = building_infres_banana_plantation
 					}
+					
 					level >= 5
 				}
 			}

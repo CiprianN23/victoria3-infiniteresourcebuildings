@@ -39,12 +39,15 @@ building_infres_rye_farm = {
 		pmg_base_building_rye_farm
 		pmg_secondary_building_rye_farm
 		pmg_harvesting_process_building_rye_farm
-		pmg_ownership_land_building_rye_farm
 	}
 
 	required_construction = construction_cost_low
 
+	ownership_type = self
+
 	terrain_manipulator = farmland_rye
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
 building_infres_wheat_farm = {
@@ -85,12 +88,15 @@ building_infres_wheat_farm = {
 		pmg_base_building_wheat_farm
 		pmg_secondary_building_wheat_farm
 		pmg_harvesting_process_building_wheat_farm
-		pmg_ownership_land_building_wheat_farm
 	}
 
 	required_construction = construction_cost_low
 
+	ownership_type = self
+
 	terrain_manipulator = farmland_wheat
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
 building_infres_rice_farm = {
@@ -131,12 +137,15 @@ building_infres_rice_farm = {
 		pmg_base_building_rice_farm
 		pmg_secondary_building_rice_farm
 		pmg_harvesting_process_building_rice_farm
-		pmg_ownership_land_building_rice_farm
 	}
 
 	required_construction = construction_cost_low
 
+	ownership_type = self
+
 	terrain_manipulator = farmland_rice
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
 building_infres_maize_farm = {
@@ -177,12 +186,15 @@ building_infres_maize_farm = {
 		pmg_base_building_maize_farm
 		pmg_secondary_building_maize_farm
 		pmg_harvesting_process_building_maize_farm
-		pmg_ownership_land_building_maize_farm
 	}
 
 	required_construction = construction_cost_low
 
+	ownership_type = self
+
 	terrain_manipulator = farmland_maize
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
 building_infres_millet_farm = {
@@ -223,12 +235,15 @@ building_infres_millet_farm = {
 		pmg_base_building_millet_farm
 		pmg_secondary_building_millet_farm
 		pmg_harvesting_process_building_millet_farm
-		pmg_ownership_land_building_millet_farm
 	}
 
 	required_construction = construction_cost_low
 
+	ownership_type = self
+
 	terrain_manipulator = farmland_millet
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
 building_infres_livestock_ranch = {
@@ -267,13 +282,16 @@ building_infres_livestock_ranch = {
 
 	production_method_groups = {
 		pmg_base_building_livestock_ranch
-		pmg_slaughtering
+		pmg_sheep_ranch
 		pmg_fencing
 		pmg_refrigeration_building_livestock_ranch
-		pmg_ownership_land_building_livestock_ranch
 	}
 
 	required_construction = construction_cost_low
 
+	ownership_type = self
+
 	terrain_manipulator = pasture
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }

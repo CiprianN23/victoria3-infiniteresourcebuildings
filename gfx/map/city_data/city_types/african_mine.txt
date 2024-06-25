@@ -64,7 +64,8 @@
 		"african_colonial_manufactory_01_mesh"
 	}
 
-	# Infres
+
+
 	building_infres_coal_mine = {
 		"african_mining_coaldepo_01_mesh"
 	}
@@ -79,7 +80,7 @@
 	}
 	building_infres_gold_mine = {
 		"african_mining_processing_01_mesh"
-	}
+	}	
 	building_infres_gold_fields = {
 		"african_mining_processing_01_mesh"
 	}

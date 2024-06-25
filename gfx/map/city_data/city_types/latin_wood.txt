@@ -52,7 +52,6 @@
 	}
 
 
-	# Infres
 	building_infres_logging_camp = {
 		"latin_forestry_loggingcamp_01_mesh"
 		"latin_forestry_loggingcamp_02_mesh"

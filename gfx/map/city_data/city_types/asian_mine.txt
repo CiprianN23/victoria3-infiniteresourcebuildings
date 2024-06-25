@@ -64,7 +64,8 @@
 		"asian_colonial_manufactory_01_mesh"
 	}
 
-	# Infres
+
+
 	building_infres_coal_mine = {
 		"generic_rural_mining_coaldepo_02_mesh"
 	}
@@ -79,7 +80,7 @@
 	}
 	building_infres_gold_mine = {
 		"asian_mining_processing_01_mesh"
-	}
+	}	
 	building_infres_gold_fields = {
 		"asian_mining_processing_01_mesh"
 	}

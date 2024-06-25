@@ -336,7 +336,6 @@ company_tata = {
 	
 	prosperity_modifier = {
 		building_construction_sector_throughput_add = 0.05
-		building_infres_construction_sector_throughput_add = 0.05
 		country_max_weekly_construction_progress_add = 10
 	}	
 	
@@ -385,7 +384,7 @@ company_sunhwaguk = {
 					is_building_type = building_infres_tobacco_plantation
 				}
 				
-				level = 10
+				level >= 10
 			}
 		}
 		has_technology_researched = central_planning
@@ -623,7 +622,7 @@ company_b_grimm = {
 	}
 	
 	prosperity_modifier = {
-		state_infrastructure_from_population_add = 0.1
+		state_infrastructure_from_population_mult = 0.1
 		building_food_industry_throughput_add = 0.1
 	}	
 	

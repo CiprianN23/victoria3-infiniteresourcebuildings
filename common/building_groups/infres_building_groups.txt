@@ -1,25 +1,25 @@
 ﻿# Agriculture
 
 bg_infres_agriculture = {
-	always_possible = yes
-
 	category = rural
-
+	
 	lens = agriculture
-
+	
 	economy_of_scale = yes
-
+	
 	can_use_slaves = yes
-
+	
 	urbanization = 5
 	infrastructure_usage_per_level = 1
-
-	should_auto_expand = {
+	
+	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
 
+	always_possible = yes
 	fired_pops_become_radical = no
-
+	
+	
 	economy_of_scale_ai_factor = 1.5
 	foreign_investment_ai_factor = 0.75
 }
@@ -67,24 +67,24 @@ bg_infres_f_millet_farms = {
 # Ranching
 
 bg_infres_ranching = {
-	always_possible = yes
 	category = rural
-
+	
 	lens = agriculture
-
+	
 	economy_of_scale = yes
-
+	
 	can_use_slaves = yes
-
+	
 	urbanization = 5
 	infrastructure_usage_per_level = 1
-
-	should_auto_expand = {
+	
+	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
 
+	always_possible = yes
 	fired_pops_become_radical = no
-
+	
 	economy_of_scale_ai_factor = 1.5
 	foreign_investment_ai_factor = 0.75
 }
@@ -100,25 +100,25 @@ bg_infres_g_livestock_ranches = {
 # Plantations
 
 bg_infres_plantations = {
-	always_possible = yes
 	category = rural
-
+	
 	economy_of_scale = yes
-
+	
 	lens = plantation
-
+	
 	can_use_slaves = yes
 	cash_reserves_max = 25000
-
+	
 	urbanization = 5
 	infrastructure_usage_per_level = 1
-
-	should_auto_expand = {
+	
+	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
 
+	always_possible = yes
 	fired_pops_become_radical = no
-
+	
 	economy_of_scale_ai_factor = 1.5
 	foreign_investment_ai_factor = 1.25
 }
@@ -189,22 +189,25 @@ bg_infres_p_vineyard_plantations = {
 bg_infres_mining = {
 	category = rural
 
+	economy_of_scale = yes
+	
+	capped_by_resources = yes
+	
 	lens = mine
-
+	
+	cash_reserves_max = 25000
+	
 	urbanization = 10
-
 	infrastructure_usage_per_level = 2
-
-	always_possible = yes
-
+	
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
 
+	always_possible = yes
 	capped_by_resources = no
-
 	fired_pops_become_radical = no
-
+	
 	economy_of_scale_ai_factor = 2.0
 	foreign_investment_ai_factor = 1.0
 }
@@ -262,16 +265,16 @@ bg_infres_m_sulfur_mining = {
 bg_infres_x_logging = {
 	category = rural
 
-	lens = forestry
-
-	always_possible = yes
-
-	capped_by_resources = no
-
-	fired_pops_become_radical = no
-
+	economy_of_scale = yes
+	
+	can_use_slaves = yes
+	
 	default_building = building_infres_logging_camp
-
+	
+	lens = forestry	
+	
+	cash_reserves_max = 25000
+	
 	urbanization = 5
 	infrastructure_usage_per_level = 1
 	
@@ -279,32 +282,40 @@ bg_infres_x_logging = {
 		default_auto_expand_rule = yes
 	}
 
+	always_possible = yes
+	capped_by_resources = no
+	fired_pops_become_radical = no
+	
 	economy_of_scale_ai_factor = 1.5
 	foreign_investment_ai_factor = 1.0
 }
 
 bg_infres_p_rubber = {
-	always_possible = yes
-
-	category = rural
-
-	lens = forestry
-
-	capped_by_resources = no
-
+	category = rural 
+	
 	economy_of_scale = yes
 
+	can_use_slaves = yes
+	
+	discoverable_resource = no
+	
+	depletable_resource = no
+	
 	default_building = building_infres_rubber_plantation
-
-	cash_reserves_max = 25000
-
+	
+	lens = forestry	
+	
+	cash_reserves_max = 25000 
+	
 	urbanization = 5
 	infrastructure_usage_per_level = 1
-
-	should_auto_expand = {
+	
+	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
-
+	
+	always_possible = yes
+	capped_by_resources = no
 	fired_pops_become_radical = no
 
 	economy_of_scale_ai_factor = 1.5
@@ -316,53 +327,51 @@ bg_infres_p_rubber = {
 bg_infres_y_whaling = {
 	category = rural
 
-	capped_by_resources = no
-	always_possible = yes
-
 	economy_of_scale = yes
-
+	
 	default_building = building_infres_whaling_station
-
+	
 	lens = fishing
-
+	
 	cash_reserves_max = 25000
-
+	
 	urbanization = 5
 	infrastructure_usage_per_level = 1
-
-	should_auto_expand = {
+	
+	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
 
+	always_possible = yes
 	fired_pops_become_radical = no
-
+	capped_by_resources = no
+	
 	economy_of_scale_ai_factor = 2.0
 	foreign_investment_ai_factor = 0.75
 }
 
 bg_infres_y_fishing = {
 	category = rural
-
-	capped_by_resources = no
-	always_possible = yes
-
+	
 	economy_of_scale = yes
-
+	
 	default_building = building_infres_fishing_wharf
-
+	
 	lens = fishing
-
+	
 	cash_reserves_max = 25000
-
+	
 	urbanization = 5
 	infrastructure_usage_per_level = 1
-
-	should_auto_expand = {
+	
+	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
 
+	always_possible = yes
 	fired_pops_become_radical = no
-
+	capped_by_resources = no
+	
 	economy_of_scale_ai_factor = 1.5
 	foreign_investment_ai_factor = 0.75
 }
@@ -371,34 +380,49 @@ bg_infres_y_fishing = {
 
 bg_infres_n_oil_extraction = {
 	category = rural
-
-	capped_by_resources = no
-	always_possible = yes
-
+	
 	economy_of_scale = yes
-
+	
+	discoverable_resource = yes
+	
 	default_building = building_infres_oil_rig
-
+	
 	lens = mine
-
+	
 	cash_reserves_max = 25000
-
+	
 	urbanization = 10
-	infrastructure_usage_per_level = 1
-
-	should_auto_expand = {
+	infrastructure_usage_per_level = 2
+	
+	should_auto_expand = { 
 		default_auto_expand_rule = yes
 	}
 
+	always_possible = yes
 	fired_pops_become_radical = no
-
+	capped_by_resources = no
+	
 	economy_of_scale_ai_factor = 2.0
 	foreign_investment_ai_factor = 1.0
 }
 
 # Infrastructure
 
+bg_infres_infrastructure = {
+	category = development
+
+	always_possible = yes
+	
+	lens = infrastructure
+	
+	stateregion_max_level = no
+	
+	economy_of_scale_ai_factor = 1.5
+	foreign_investment_ai_factor = 0.75
+}
+
 bg_infres_z_public_infrastructure = {
+	parent_group = bg_infres_infrastructure
 	is_government_funded = yes
 
 	always_possible = yes
@@ -414,12 +438,13 @@ bg_infres_construction = {
 	lens = government
 
 	is_government_funded = yes
+	
+	can_use_slaves = yes
+	
+	urbanization = 5
+	
+	economy_of_scale_ai_factor = 5.0
 
 	always_possible = yes
-
-	can_use_slaves = yes
-
-	urbanization = 5
-
-	economy_of_scale_ai_factor = 5.0
+	fired_pops_become_radical = no
 }

@@ -20,11 +20,7 @@ building_infres_port = {
 	terrain_manipulator = urban_port
 
 	can_build_government = {
-		owner = { is_player = yes }
-		error_check = {
-			severity = fail
-			is_coastal = yes
-		}
+		owner = { is_player = yes } 
 	}
 
 	can_build_private = {
@@ -32,10 +28,10 @@ building_infres_port = {
 			owner = { is_player = yes }
 			has_game_rule = infres_private_construction_allowed
 		}
-		error_check = {
-			severity = fail
-			is_coastal = yes
-		}
+	}
+
+	possible = {
+		is_coastal = yes
 	}
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"

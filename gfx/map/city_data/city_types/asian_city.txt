@@ -75,5 +75,7 @@
 
 
 	building_infres_construction_sector = {"asian_manufactory_03_mesh"}
+	building_infres_barracks = {"asian_city_barracks_01_mesh"}
+
 
 }

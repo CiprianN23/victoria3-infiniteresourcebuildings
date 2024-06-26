@@ -1,73 +1,59 @@
-﻿############ BARRACKS
-
-building_infres_barracks = {
-	can_build_private = {
-		AND = {
-			owner = { is_player = yes }
-			has_game_rule = infres_private_construction_allowed
-		}
-	}
-	can_build_government = { owner = { is_player = yes } }
-
-	ai_value = 1
-	building_group = bg_infres_z_army
-	recruits_combat_unit = combat_unit_regular
+﻿building_infres_barracks = {
+	building_group = bg_infres_army
+	recruits_combat_units = no
 	texture = "gfx/interface/icons/building_icons/building_barracks.dds"
 	city_type = city
+
+	can_build_government = { owner = { is_player = yes } }
+	can_build_private = { always = no }
+	
+	has_max_level = no
+	
 	levels_per_mesh = 25
 
 	unlocking_technologies = {
 		standing_army
 	}
 
-	production_method_groups = {
-		pmg_organization
-		pmg_artillery
-		pmg_reconaissance
-		pmg_specialist_companies
-		pmg_medical_aid
+    production_method_groups = {
+		pmg_infres_barracks
 	}
 
+    ownership_type = no_ownership
+
 	required_construction = construction_cost_very_low
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_military.dds"
 }
 
 building_infres_naval_base = {
-	ai_value = 1
-	building_group = bg_infres_z_navy
-	recruits_combat_unit = combat_unit_flotilla
+	building_group = bg_infres_navy
+	recruits_combat_units = no
+	naval = no
+	texture = "gfx/interface/icons/building_icons/naval_base.dds"
 	city_type = port
+
+	can_build_government = { owner = { is_player = yes } }
+	can_build_private = { always = no }
+	
+	has_max_level = no
+	
 	levels_per_mesh = 25
 
-	texture = "gfx/interface/icons/building_icons/naval_base.dds"
-	naval = yes
 	unlocking_technologies = { admiralty }
 
-	production_method_groups = {
-		pmg_ship_class
-		pmg_escorts
-		pmg_raiders
-		pmg_naval_theory
+    production_method_groups = {
+		pmg_infres_naval_base
 	}
+
+    ownership_type = no_ownership
 
 	required_construction = construction_cost_very_low
 
 	# Can only build naval bases on the coast
-	can_build_private = {
-		AND = {
-			owner = { is_player = yes }
-			has_game_rule = infres_private_construction_allowed
-		}
-		error_check = {
-			severity = fail
-			is_coastal = yes
-		}
+	possible = {
+		is_coastal = yes
 	}
 
-	can_build_government = {
-		owner = { is_player = yes }
-		error_check = {
-			severity = fail
-			is_coastal = yes
-		}
-	}
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_military.dds"
 }

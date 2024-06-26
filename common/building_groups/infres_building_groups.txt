@@ -448,3 +448,25 @@ bg_infres_construction = {
 	always_possible = yes
 	fired_pops_become_radical = no
 }
+
+bg_infres_military = {
+	category = development
+
+	always_possible = yes
+	
+	lens = infrastructure
+	
+	stateregion_max_level = no
+
+	is_government_funded = yes
+
+	fired_pops_become_radical = no
+}
+
+bg_infres_army = {
+	parent_group = bg_infres_military
+}
+
+bg_infres_navy = {
+	parent_group = bg_infres_military
+}

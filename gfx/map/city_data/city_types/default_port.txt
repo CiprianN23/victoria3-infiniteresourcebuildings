@@ -58,4 +58,6 @@
 
 	building_infres_fishing_wharf = {}
 	building_infres_whaling_station = {}
+	building_infres_naval_base = {"european_port_naval_base_01_mesh"}
+
 }

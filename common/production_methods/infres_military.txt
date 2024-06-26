@@ -1,0 +1,82 @@
+﻿pm_infres_basic_barracks = {
+	texture = "gfx/interface/icons/production_method_icons/no_specialists.dds"
+	is_default = yes
+	
+    country_modifiers = {
+        level_scaled = {
+            state_building_barracks_max_level_add = 25
+        }
+    }
+}
+
+pm_infres_advanced_barracks = {
+	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
+	
+    country_modifiers = {
+        level_scaled = {
+            state_building_barracks_max_level_add = 50
+        }
+    }
+}
+
+pm_infres_extreme_barracks = {
+	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+
+    country_modifiers = {
+        level_scaled = {
+            state_building_barracks_max_level_add = 100
+        }
+    }
+}
+
+pm_infres_legendary_barracks = {
+	texture = "gfx/interface/icons/production_method_icons/skirmish_infantry.dds"
+
+    country_modifiers = {
+        level_scaled = {
+            state_building_barracks_max_level_add = 1000
+        }
+    }
+}
+
+
+pm_infres_basic_naval_base = {
+	texture = "gfx/interface/icons/production_method_icons/no_naval_theory.dds"
+	is_default = yes
+	
+    country_modifiers = {
+        level_scaled = {
+            state_building_naval_base_max_level_add = 25
+        }
+    }
+}
+
+pm_infres_advanced_naval_base = {
+	texture = "gfx/interface/icons/production_method_icons/power_of_the_purse.dds"
+	
+    country_modifiers = {
+        level_scaled = {
+            state_building_naval_base_max_level_add = 50
+        }
+    }
+}
+
+pm_infres_extreme_naval_base = {
+	texture = "gfx/interface/icons/production_method_icons/jeune_ecole.dds"
+
+    country_modifiers = {
+        level_scaled = {
+            state_building_naval_base_max_level_add = 100
+        }
+    }
+}
+
+pm_infres_legendary_naval_base = {
+	texture = "gfx/interface/icons/production_method_icons/mahanian_thought.dds"
+
+    country_modifiers = {
+        level_scaled = {
+            state_building_naval_base_max_level_add = 1000
+        }
+    }
+}

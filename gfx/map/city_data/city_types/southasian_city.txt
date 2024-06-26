@@ -83,5 +83,7 @@
 
 
 	building_infres_construction_sector = {"arabic_factory_03_mesh"}
+	building_infres_barracks = {"arabic_city_barracks_01_mesh"}
+
 
 }

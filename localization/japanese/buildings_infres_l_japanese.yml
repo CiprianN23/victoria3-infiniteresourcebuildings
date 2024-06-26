@@ -62,3 +62,16 @@
 
   modifier_building_group_bg_infres_p_coffee_plantations_throughput_add:0 "Inf. Coffee Plantation [concept_throughput]"
   modifier_building_group_bg_infres_p_coffee_plantations_throughput_add_desc:0 "A bonus or penalty to both input and output of Inf. Coffee Plantations"
+
+  pmg_infres_barracks:0 "Inf. Barracks PMG"
+  pmg_infres_naval_base:0 "Inf. Naval Base PMG"
+
+  pm_infres_basic_barracks:0 "Inf. Barracks Basic"
+  pm_infres_advanced_barracks:0 "Inf. Barracks Advanced"
+  pm_infres_extreme_barracks:0 "Inf. Barracks Extreme"
+  pm_infres_legendary_barracks:0 "Inf. Barracks Legendary"
+
+  pm_infres_basic_naval_base:0 "Inf. Naval Base Basic"
+  pm_infres_advanced_naval_base:0 "Inf. Naval Base Advanced"
+  pm_infres_extreme_naval_base:0 "Inf. Naval Base Extreme"
+  pm_infres_legendary_naval_base:0 "Inf. Naval Base Legendary"

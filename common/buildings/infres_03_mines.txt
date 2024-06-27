@@ -2,7 +2,7 @@
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -14,7 +14,7 @@
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -47,7 +47,7 @@ building_infres_iron_mine = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -59,7 +59,7 @@ building_infres_iron_mine = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -93,7 +93,7 @@ building_infres_lead_mine = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -105,7 +105,7 @@ building_infres_lead_mine = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -137,7 +137,7 @@ building_infres_sulfur_mine = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -149,7 +149,7 @@ building_infres_sulfur_mine = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -179,7 +179,7 @@ building_infres_sulfur_mine = {
 
 building_infres_gold_mine = {
 	can_build_private = { always = no }
-	can_build_government = { owner = { is_player = yes } }
+	can_build_government = { scope:investor_country = { is_player = yes } }
 
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 
@@ -208,7 +208,7 @@ building_infres_gold_mine = {
 
 building_infres_gold_fields = {
 	can_build_private = { always = no }
-	can_build_government = { owner = { is_player = yes } }
+	can_build_government = { scope:investor_country = { is_player = yes } }
 
 	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
 

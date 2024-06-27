@@ -2,7 +2,7 @@
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -14,7 +14,7 @@
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -43,7 +43,7 @@ building_infres_rubber_plantation = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -55,7 +55,7 @@ building_infres_rubber_plantation = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -88,7 +88,7 @@ building_infres_fishing_wharf = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -100,7 +100,7 @@ building_infres_fishing_wharf = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -130,7 +130,7 @@ building_infres_whaling_station = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -142,7 +142,7 @@ building_infres_whaling_station = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -177,7 +177,7 @@ building_infres_oil_rig = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -189,7 +189,7 @@ building_infres_oil_rig = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}

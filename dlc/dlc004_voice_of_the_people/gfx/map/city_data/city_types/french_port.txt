@@ -81,8 +81,9 @@
 	building_shipyards = {}
 	building_military_shipyards = {}
 
+
 	building_infres_fishing_wharf = {}
 	building_infres_whaling_station = {}
+	building_infres_port = {}
 	building_infres_naval_base = {"french_port_navalbase_01_mesh"}
-
 }

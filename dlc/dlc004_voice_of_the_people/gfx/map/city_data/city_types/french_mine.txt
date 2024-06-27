@@ -90,6 +90,7 @@
 	building_gold_fields = {
 		"generic_rural_mining_processing_01_mesh"
 	}
+	
 
 
 	building_infres_coal_mine = {
@@ -116,5 +117,4 @@
 	building_infres_gold_fields = {
 		"generic_rural_mining_processing_01_mesh"
 	}
-	
 }

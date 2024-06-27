@@ -4,7 +4,7 @@ building_infres_coffee_plantation = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -16,7 +16,7 @@ building_infres_coffee_plantation = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -47,7 +47,7 @@ building_infres_cotton_plantation = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -59,7 +59,7 @@ building_infres_cotton_plantation = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -90,7 +90,7 @@ building_infres_dye_plantation = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -102,7 +102,7 @@ building_infres_dye_plantation = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -188,7 +188,7 @@ building_infres_tea_plantation = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -200,7 +200,7 @@ building_infres_tea_plantation = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -231,7 +231,7 @@ building_infres_tobacco_plantation = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -243,7 +243,7 @@ building_infres_tobacco_plantation = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -274,7 +274,7 @@ building_infres_sugar_plantation = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -286,7 +286,7 @@ building_infres_sugar_plantation = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -317,7 +317,7 @@ building_infres_banana_plantation = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -329,7 +329,7 @@ building_infres_banana_plantation = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -360,7 +360,7 @@ building_infres_silk_plantation = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { is_player = yes }
+				scope:investor_country = { is_player = yes }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -372,7 +372,7 @@ building_infres_silk_plantation = {
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
@@ -393,50 +393,6 @@ building_infres_silk_plantation = {
 	production_method_groups = {
 		pmg_base_building_silk_plantation
 		pmg_train_automation_building_silk_plantation
-	}
-	ownership_type = self
-
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
-}
-
-building_infres_vineyard_plantation = {
-
-	can_build_private = {
-		OR = {
-			AND = {
-				owner = { is_player = yes }
-				has_game_rule = infres_private_construction_allowed
-			}
-			AND = {
-				has_game_rule = infres_player_and_ai_allowed
-				has_game_rule = infres_private_construction_allowed
-			}
-		}
-	}
-
-	can_build_government = {
-		OR = {
-			owner = { is_player = yes }
-			has_game_rule = infres_player_and_ai_allowed
-		}
-	}
-
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
-
-	building_group = bg_infres_p_vineyard_plantations
-	texture = "gfx/interface/icons/building_icons/vineyards.dds"
-	required_construction = construction_cost_low
-
-	unlocking_technologies = {
-		enclosure
-	}
-
-	city_type = farm
-	levels_per_mesh = 5
-
-	production_method_groups = {
-		pmg_base_building_vineyard_plantation
-		pmg_train_automation_building_vineyard_plantation
 	}
 	ownership_type = self
 

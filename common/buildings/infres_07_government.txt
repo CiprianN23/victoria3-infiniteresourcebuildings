@@ -20,12 +20,12 @@ building_infres_port = {
 	terrain_manipulator = urban_port
 
 	can_build_government = {
-		owner = { is_player = yes } 
+		scope:investor_country = { is_player = yes } 
 	}
 
 	can_build_private = {
 		AND = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_private_construction_allowed
 		}
 	}

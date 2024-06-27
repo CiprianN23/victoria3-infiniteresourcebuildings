@@ -4,7 +4,7 @@
 	texture = "gfx/interface/icons/building_icons/building_barracks.dds"
 	city_type = city
 
-	can_build_government = { owner = { is_player = yes } }
+	can_build_government = { scope:investor_country = { is_player = yes } }
 	can_build_private = { always = no }
 	
 	has_max_level = no
@@ -33,7 +33,7 @@ building_infres_naval_base = {
 	texture = "gfx/interface/icons/building_icons/naval_base.dds"
 	city_type = port
 
-	can_build_government = { owner = { is_player = yes } }
+	can_build_government = { scope:investor_country = { is_player = yes } }
 	can_build_private = { always = no }
 	
 	has_max_level = no

@@ -6,7 +6,7 @@
 
 	can_build_government = {
 		OR = {
-			owner = { is_player = yes }
+			scope:investor_country = { is_player = yes }
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}

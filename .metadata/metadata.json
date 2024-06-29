@@ -1,9 +1,10 @@
 {
-  "name": "Infinite Resources Buildings with Investment Pool",
-  "id": "",
-  "version": "0.2.5",
+  "name": "Infinite Resources Buildings",
+  "id": "2933097584",
+  "version": "0.2.6",
   "supported_game_version": "1.7*",
-  "short_description": "It might not be compatible with any mod that changes the economic laws, i will try to figure something up\nI'm not the original creator, all credit goes to msg7086 for this amaizing mod , i just tried to update it to 1.2 and add the Investment Pool feature. Report any issues.\nOriginal mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2900363837\nIf the mod creator request i will take the mod down\n\nBuild any resource buildings on any land, including farms, plantations, mines and a few other resources.\nInfinity Naval Base, Port, and Barracks are also added with no max level limitation.\nThe precondition to build those buildings are unchanged. That means you cannot build inland ports, and you must research first to unlock certain resource buildings.\nThis mod should not conflict with any other mod.\nGitHub: https://github.com/msg7086-random-stuff/Vic3-Infinite-Resource-Buildings\n\nUSE AT YOUR OWN RISK.",
+  "game_id" : "victoria3",
+  "short_description": "Provides infinite resources buildings to grow your economy",
   "tags": [],
   "relationships": [],
   "game_custom_data": {

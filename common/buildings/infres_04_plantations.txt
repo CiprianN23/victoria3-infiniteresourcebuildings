@@ -133,12 +133,8 @@ building_infres_opium_plantation = {
 	can_build_private = {
 		OR = {
 			AND = {
-				owner = { 
-					AND = {
-						is_player = yes 
-						NOT = { is_banning_goods = g:opium }
-					}
-				}
+				scope:investor_country = { is_player = yes }
+				owner = { NOT = { is_banning_goods = g:opium } }
 				has_game_rule = infres_private_construction_allowed
 			}
 			AND = {
@@ -151,12 +147,11 @@ building_infres_opium_plantation = {
 
 	can_build_government = {
 		OR = {
-			owner = { 
-					AND = {
-						is_player = yes 
-						NOT = { is_banning_goods = g:opium }
-					}
-				}
+			AND = {
+				scope:investor_country = { is_player = yes }
+				owner = { NOT = { is_banning_goods = g:opium } }
+			}
+			
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}

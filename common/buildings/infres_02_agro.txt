@@ -22,7 +22,7 @@ building_infres_rye_farm = {
 		}
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
 	building_group = bg_infres_f_rye_farms
 
@@ -71,7 +71,7 @@ building_infres_wheat_farm = {
 		}
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
 	building_group = bg_infres_f_wheat_farms
 
@@ -120,7 +120,7 @@ building_infres_rice_farm = {
 		}
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
 	building_group = bg_infres_f_rice_farms
 
@@ -169,7 +169,7 @@ building_infres_maize_farm = {
 		}
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
 	building_group = bg_infres_f_maize_farms
 
@@ -218,7 +218,7 @@ building_infres_millet_farm = {
 		}
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
 	building_group = bg_infres_f_millet_farms
 
@@ -267,7 +267,7 @@ building_infres_livestock_ranch = {
 		}
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
 	building_group = bg_infres_g_livestock_ranches
 
@@ -318,7 +318,7 @@ building_infres_vineyard_plantation = {
 		}
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
 	building_group = bg_infres_f_vineyard_plantations
 	texture = "gfx/interface/icons/building_icons/vineyards.dds"

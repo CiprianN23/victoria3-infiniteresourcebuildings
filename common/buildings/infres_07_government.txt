@@ -1,7 +1,7 @@
 ﻿############ GOVERNMENT BUILDINGS
 
 building_infres_port = {
-	building_group = bg_infres_z_public_infrastructure
+	building_group = bg_infres_public_infrastructure
 	city_type = port
 	texture = "gfx/interface/icons/building_icons/building_port.dds"
 

@@ -10,7 +10,7 @@ bg_infres_agriculture = {
 	can_use_slaves = yes
 	
 	urbanization = 5
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 	
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
@@ -84,7 +84,7 @@ bg_infres_ranching = {
 	can_use_slaves = yes
 	
 	urbanization = 5
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 	
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
@@ -118,7 +118,7 @@ bg_infres_plantations = {
 	cash_reserves_max = 25000
 	
 	urbanization = 5
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 	
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
@@ -198,7 +198,7 @@ bg_infres_mining = {
 	cash_reserves_max = 25000
 	
 	urbanization = 10
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 	
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
@@ -217,9 +217,23 @@ bg_infres_mining = {
 bg_infres_m_gold_fields = {
 	parent_group = bg_infres_mining
 
+	auto_place_buildings = no
+
+	discoverable_resource = no
+	
+	depletable_resource = no
+	
+	always_self_owning = yes
+	
 	pays_taxes = no
 
+	always_possible = yes
+
+	infrastructure_usage_per_level = 0.0
+
 	default_building = building_infres_gold_fields
+	
+	fired_pops_become_radical = no
 }
 
 bg_infres_m_gold_mining = {
@@ -264,7 +278,7 @@ bg_infres_m_sulfur_mining = {
 
 # Logging
 
-bg_infres_x_logging = {
+bg_infres_logging = {
 	category = rural
 
 	economy_of_scale = yes
@@ -278,7 +292,7 @@ bg_infres_x_logging = {
 	cash_reserves_max = 25000
 	
 	urbanization = 5
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 	
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
@@ -292,7 +306,7 @@ bg_infres_x_logging = {
 	foreign_investment_ai_factor = 1.0
 }
 
-bg_infres_p_rubber = {
+bg_infres_rubber = {
 	category = rural 
 	
 	economy_of_scale = yes
@@ -310,7 +324,7 @@ bg_infres_p_rubber = {
 	cash_reserves_max = 25000 
 	
 	urbanization = 5
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 	
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
@@ -326,7 +340,7 @@ bg_infres_p_rubber = {
 
 # Fishing
 
-bg_infres_y_whaling = {
+bg_infres_whaling = {
 	category = rural
 
 	economy_of_scale = yes
@@ -338,7 +352,7 @@ bg_infres_y_whaling = {
 	cash_reserves_max = 25000
 	
 	urbanization = 5
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 	
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
@@ -352,7 +366,7 @@ bg_infres_y_whaling = {
 	foreign_investment_ai_factor = 0.75
 }
 
-bg_infres_y_fishing = {
+bg_infres_fishing = {
 	category = rural
 	
 	economy_of_scale = yes
@@ -364,7 +378,7 @@ bg_infres_y_fishing = {
 	cash_reserves_max = 25000
 	
 	urbanization = 5
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 	
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
@@ -380,7 +394,7 @@ bg_infres_y_fishing = {
 
 # Oil Extraction
 
-bg_infres_n_oil_extraction = {
+bg_infres_oil_extraction = {
 	category = rural
 	
 	economy_of_scale = yes
@@ -394,7 +408,7 @@ bg_infres_n_oil_extraction = {
 	cash_reserves_max = 25000
 	
 	urbanization = 10
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 	
 	should_auto_expand = { 
 		default_auto_expand_rule = yes
@@ -417,7 +431,7 @@ bg_infres_infrastructure = {
 	
 	lens = infrastructure
 
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 	
 	stateregion_max_level = no
 	
@@ -425,7 +439,7 @@ bg_infres_infrastructure = {
 	foreign_investment_ai_factor = -1000
 }
 
-bg_infres_z_public_infrastructure = {
+bg_infres_public_infrastructure = {
 	parent_group = bg_infres_infrastructure
 	is_government_funded = yes
 
@@ -435,9 +449,9 @@ bg_infres_z_public_infrastructure = {
 }
 
 bg_infres_construction = {
-	parent_group = bg_infres_z_public_infrastructure
+	parent_group = bg_infres_public_infrastructure
 
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 
 	lens = government
 
@@ -466,7 +480,7 @@ bg_infres_military = {
 
 	fired_pops_become_radical = no
 
-	infrastructure_usage_per_level = 0
+	infrastructure_usage_per_level = 0.0
 }
 
 bg_infres_army = {

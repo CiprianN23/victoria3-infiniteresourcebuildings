@@ -7,7 +7,7 @@
 			goods_input_tools_add = 5
 			
 			# output goods
-			goods_output_gold_add = 10
+			goods_output_gold_add = 8
 		}
 
 		level_scaled = {
@@ -36,7 +36,7 @@ pm_atmospheric_engine_pump_building_gold_mine_infres = {
 			goods_input_coal_add = 10
 			
 			# output goods
-			goods_output_gold_add = 20
+			goods_output_gold_add = 15
 		}
 
 		level_scaled = {
@@ -45,7 +45,7 @@ pm_atmospheric_engine_pump_building_gold_mine_infres = {
 			building_employment_machinists_add = 500
 			building_employment_engineers_add = 250
 		}
-	}	
+	}
 }
 
 pm_condensing_engine_pump_building_gold_mine_infres = {
@@ -67,7 +67,7 @@ pm_condensing_engine_pump_building_gold_mine_infres = {
 			goods_input_coal_add = 15
 			
 			# output goods
-			goods_output_gold_add = 30
+			goods_output_gold_add = 25
 		}
 
 		level_scaled = {
@@ -76,7 +76,7 @@ pm_condensing_engine_pump_building_gold_mine_infres = {
 			building_employment_machinists_add = 1000
 			building_employment_engineers_add = 500
 		}
-	}	
+	}
 }
 
 pm_diesel_pump_building_gold_mine_infres = {
@@ -98,7 +98,7 @@ pm_diesel_pump_building_gold_mine_infres = {
 			goods_input_oil_add = 5
 			
 			# output goods
-			goods_output_gold_add = 40
+			goods_output_gold_add = 30
 		}
 
 		level_scaled = {
@@ -140,7 +140,7 @@ pm_nitroglycerin_building_gold_mine_infres = {
 			building_machinists_mortality_mult = 0.2
 			building_engineers_mortality_mult = 0.1
 		}
-	}
+	}	
 }
 
 pm_dynamite_building_gold_mine_infres = {
@@ -160,7 +160,7 @@ pm_dynamite_building_gold_mine_infres = {
 			goods_input_explosives_add = 10
 			
 			# output goods
-			goods_output_gold_add = 10
+			goods_output_gold_add = 5
 		}
 
 		level_scaled = {

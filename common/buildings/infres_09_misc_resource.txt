@@ -19,9 +19,9 @@
 		}
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
-	building_group = bg_infres_x_logging
+	building_group = bg_infres_logging
 	texture = "gfx/interface/icons/building_icons/logging_camp.dds"
 	city_type = wood
 	required_construction = construction_cost_low
@@ -60,9 +60,9 @@ building_infres_rubber_plantation = {
 		}
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
-	building_group = bg_infres_p_rubber
+	building_group = bg_infres_rubber
 	texture = "gfx/interface/icons/building_icons/rubber_lodge.dds"
 	required_construction = construction_cost_low
 
@@ -109,9 +109,9 @@ building_infres_fishing_wharf = {
 		is_sea_adjacent = yes
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
-	building_group = bg_infres_y_fishing
+	building_group = bg_infres_fishing
 	texture = "gfx/interface/icons/building_icons/fishing_wharf.dds"
 	city_type = port
 	required_construction = construction_cost_low
@@ -151,9 +151,9 @@ building_infres_whaling_station = {
 		is_sea_adjacent = yes
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
-	building_group = bg_infres_y_whaling
+	building_group = bg_infres_whaling
 	texture = "gfx/interface/icons/building_icons/whaling_station.dds"
 	city_type = port
 	required_construction = construction_cost_low
@@ -194,9 +194,9 @@ building_infres_oil_rig = {
 		}
 	}
 
-	ai_value = 1 # Make AI less likely to build if there is still potentional of normal resources
+	ai_nationalization_desire = 0
 
-	building_group = bg_infres_n_oil_extraction
+	building_group = bg_infres_oil_extraction
 	texture = "gfx/interface/icons/building_icons/oil_rig.dds"
 	city_type = mine
 	levels_per_mesh = 5

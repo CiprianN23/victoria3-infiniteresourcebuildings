@@ -122,3 +122,9 @@
   pm_infres_advanced_naval_base:0 "Инф. Продвинутая военно-морская база"
   pm_infres_extreme_naval_base:0 "Инф. Экстремальная военно-морская база"
   pm_infres_legendary_naval_base:0 "Инф. Легендарная военно-морская база"
+
+  pmg_infres_base_building_construction_sector:0 "Extra construction sectors"
+  pm_infres_no_bonus_construction:0 "No extra construction sectors"
+  pm_infres_twenty_five_construction:0 "25 extra construction sectors"
+  pm_infres_fifty_construction:0 "50 extra construction sectors"
+  pm_infres_one_hundred_construction:0 "100 extra construction sectors"

@@ -9,6 +9,7 @@
   building_infres_sugar_plantation:0 "∞ 糖料种植园"
   building_infres_tea_plantation:0 "∞ 茶叶种植园"
   building_infres_tobacco_plantation:0 "∞ 烟草种植园"
+  building_infres_vineyard_plantation:0 "∞ 葡萄种植园"
 
   building_infres_maize_farm:0 "∞ 玉米农场"
   building_infres_millet_farm:0 "∞ 杂谷农场"
@@ -32,10 +33,8 @@
   building_infres_naval_base:0 "∞ 海军基地"
   building_infres_port:0 "∞ 港口"
   building_infres_barracks:0 "∞ 兵营"
-
-  building_infres_vineyard_plantation:0 "∞ 葡萄种植园"
-  building_inres_construction_sector:0 "∞ 建造部门"
-
+  building_infres_construction_sector:0 "∞ 建造部门"
+  
   modifier_building_infres_construction_sector_throughput_add:0 "$building_infres_construction_sector$ building [concept_throughput]"
   modifier_building_infres_construction_sector_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_construction_sector$"
 
@@ -44,6 +43,18 @@
 
   modifier_building_infres_lead_mine_throughput_add:0 "$building_infres_lead_mine$ building [concept_throughput]"
   modifier_building_infres_lead_mine_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_lead_mine$"
+
+  rule_infres_allows_ai_to_build:0 "IRB: 允许建造无限的资源建筑"
+  setting_infres_player_only:0 "只玩家"
+  setting_infres_player_and_ai_allowed:0 "玩家 和 AI"
+  setting_infres_player_only_desc:0 "只允许玩家建造无限的资源建筑"
+  setting_infres_player_and_ai_allowed_desc:0 "允许玩家和AI建造无限的资源建筑"
+
+  rule_infres_allow_private_construction:0 "IRB: 允许自主投资建造无限资源建筑"
+  setting_infres_private_construction_allowed:0 "允许自主投资"
+  setting_infres_private_construction_not_allowed:0 "不允许自主投资"
+  setting_infres_private_construction_allowed_desc:0 "允许自主投资建造无限资源建筑"
+  setting_infres_private_construction_not_allowed_desc:0 "禁止自主投资建造无限资源建筑"
 
   modifier_building_infres_cotton_plantation_throughput_add:0 "$building_infres_cotton_plantation$ building [concept_throughput]"
   modifier_building_infres_cotton_plantation_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_cotton_plantation$"

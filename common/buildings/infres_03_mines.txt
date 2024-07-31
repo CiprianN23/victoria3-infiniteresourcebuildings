@@ -19,9 +19,9 @@
 		}
 	}
 
-	ai_nationalization_desire = 0
+	ai_nationalization_desire = -0.25
 
-	building_group = bg_infres_m_coal_mining
+	building_group = bg_infres_coal_mining
 	texture = "gfx/interface/icons/building_icons/coal_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
@@ -64,9 +64,9 @@ building_infres_iron_mine = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	ai_nationalization_desire = -0.25
 
-	building_group = bg_infres_m_iron_mining
+	building_group = bg_infres_iron_mining
 	texture = "gfx/interface/icons/building_icons/iron_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
@@ -110,9 +110,9 @@ building_infres_lead_mine = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	ai_nationalization_desire = -0.25
 
-	building_group = bg_infres_m_lead_mining
+	building_group = bg_infres_lead_mining
 	texture = "gfx/interface/icons/building_icons/lead_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
@@ -154,9 +154,9 @@ building_infres_sulfur_mine = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	ai_nationalization_desire = -0.25
 
-	building_group = bg_infres_m_sulfur_mining
+	building_group = bg_infres_sulfur_mining
 	texture = "gfx/interface/icons/building_icons/sulfur_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
@@ -181,9 +181,9 @@ building_infres_gold_mine = {
 	can_build_private = { always = no }
 	can_build_government = { scope:investor_country = { is_player = yes } }
 
-	ai_nationalization_desire = 0
+	ai_nationalization_desire = -0.25
 
-	building_group = bg_infres_m_gold_mining
+	building_group = bg_infres_gold_mining
 	texture = "gfx/interface/icons/building_icons/gold_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
@@ -212,7 +212,7 @@ building_infres_gold_fields = {
 
 	ai_value = -1000
 
-	building_group = bg_infres_m_gold_fields
+	building_group = bg_infres_gold_fields
 	texture = "gfx/interface/icons/building_icons/gold_fields.dds"
 	city_type = mine
 	levels_per_mesh = 5

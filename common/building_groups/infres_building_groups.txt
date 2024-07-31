@@ -24,7 +24,7 @@ bg_infres_agriculture = {
 	foreign_investment_ai_factor = 0.75
 }
 
-bg_infres_f_rye_farms = {
+bg_infres_rye_farms = {
 	parent_group = bg_infres_agriculture
 
 	default_building = building_infres_rye_farm
@@ -32,7 +32,7 @@ bg_infres_f_rye_farms = {
 	cash_reserves_max = 25000
 }
 
-bg_infres_f_wheat_farms = {
+bg_infres_wheat_farms = {
 	parent_group = bg_infres_agriculture
 
 	default_building = building_infres_wheat_farm
@@ -40,7 +40,7 @@ bg_infres_f_wheat_farms = {
 	cash_reserves_max = 25000
 }
 
-bg_infres_f_rice_farms = {
+bg_infres_rice_farms = {
 	parent_group = bg_infres_agriculture
 
 	default_building = building_infres_rice_farm
@@ -48,7 +48,7 @@ bg_infres_f_rice_farms = {
 	cash_reserves_max = 25000
 }
 
-bg_infres_f_maize_farms = {
+bg_infres_maize_farms = {
 	parent_group = bg_infres_agriculture
 
 	default_building = building_infres_maize_farm
@@ -56,7 +56,7 @@ bg_infres_f_maize_farms = {
 	cash_reserves_max = 25000
 }
 
-bg_infres_f_millet_farms = {
+bg_infres_millet_farms = {
 	parent_group = bg_infres_agriculture
 
 	default_building = building_infres_millet_farm
@@ -64,7 +64,7 @@ bg_infres_f_millet_farms = {
 	cash_reserves_max = 25000
 }
 
-bg_infres_f_vineyard_plantations = {
+bg_infres_vineyard_plantations = {
 	parent_group = bg_infres_agriculture
 	
 	default_building = building_infres_vineyard_plantation
@@ -97,7 +97,7 @@ bg_infres_ranching = {
 	foreign_investment_ai_factor = 0.75
 }
 
-bg_infres_g_livestock_ranches = {
+bg_infres_livestock_ranches = {
 	parent_group = bg_infres_ranching
 
 	default_building = building_infres_livestock_ranch
@@ -131,56 +131,56 @@ bg_infres_plantations = {
 	foreign_investment_ai_factor = 1.25
 }
 
-bg_infres_p_coffee_plantations = {
+bg_infres_coffee_plantations = {
 	parent_group = bg_infres_plantations
 
 	default_building = building_infres_coffee_plantation
 }
 
 
-bg_infres_p_cotton_plantations = {
+bg_infres_cotton_plantations = {
 	parent_group = bg_infres_plantations
 
 	default_building = building_infres_cotton_plantation
 }
 
-bg_infres_p_silk_plantations = {
+bg_infres_silk_plantations = {
 	parent_group = bg_infres_plantations
 
 	default_building = building_infres_silk_plantation
 }
 
-bg_infres_p_dye_plantations = {
+bg_infres_dye_plantations = {
 	parent_group = bg_infres_plantations
 
 	default_building = building_infres_dye_plantation
 }
 
-bg_infres_p_opium_plantations = {
+bg_infres_opium_plantations = {
 	parent_group = bg_infres_plantations
 
 	default_building = building_infres_opium_plantation
 }
 
-bg_infres_p_tea_plantations = {
+bg_infres_tea_plantations = {
 	parent_group = bg_infres_plantations
 
 	default_building = building_infres_tea_plantation
 }
 
-bg_infres_p_tobacco_plantations = {
+bg_infres_tobacco_plantations = {
 	parent_group = bg_infres_plantations
 
 	default_building = building_infres_tobacco_plantation
 }
 
-bg_infres_p_sugar_plantations = {
+bg_infres_sugar_plantations = {
 	parent_group = bg_infres_plantations
 
 	default_building = building_infres_sugar_plantation
 }
 
-bg_infres_p_banana_plantations = {
+bg_infres_banana_plantations = {
 	parent_group = bg_infres_plantations
 
 	default_building = building_infres_banana_plantation
@@ -214,7 +214,7 @@ bg_infres_mining = {
 	foreign_investment_ai_factor = 1.0
 }
 
-bg_infres_m_gold_fields = {
+bg_infres_gold_fields = {
 	parent_group = bg_infres_mining
 
 	auto_place_buildings = no
@@ -236,7 +236,7 @@ bg_infres_m_gold_fields = {
 	fired_pops_become_radical = no
 }
 
-bg_infres_m_gold_mining = {
+bg_infres_gold_mining = {
 	parent_group = bg_infres_mining
 
 	default_building = building_infres_gold_mine
@@ -244,7 +244,7 @@ bg_infres_m_gold_mining = {
 	can_use_slaves = yes
 }
 
-bg_infres_m_coal_mining = {
+bg_infres_coal_mining = {
 	parent_group = bg_infres_mining
 
 	default_building = building_infres_coal_mine
@@ -252,7 +252,7 @@ bg_infres_m_coal_mining = {
 	can_use_slaves = yes
 }
 
-bg_infres_m_iron_mining = {
+bg_infres_iron_mining = {
 	parent_group = bg_infres_mining
 
 	default_building = building_infres_iron_mine
@@ -260,7 +260,7 @@ bg_infres_m_iron_mining = {
 	can_use_slaves = yes
 }
 
-bg_infres_m_lead_mining = {
+bg_infres_lead_mining = {
 	parent_group = bg_infres_mining
 
 	default_building = building_infres_lead_mine
@@ -268,7 +268,7 @@ bg_infres_m_lead_mining = {
 	can_use_slaves = yes
 }
 
-bg_infres_m_sulfur_mining = {
+bg_infres_sulfur_mining = {
 	parent_group = bg_infres_mining
 
 	default_building = building_infres_sulfur_mine

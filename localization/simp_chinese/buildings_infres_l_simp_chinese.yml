@@ -84,3 +84,8 @@
   pm_infres_twenty_five_construction:0 "25 extra construction sectors"
   pm_infres_fifty_construction:0 "50 extra construction sectors"
   pm_infres_one_hundred_construction:0 "100 extra construction sectors"
+
+  building_group_bg_infres_agriculture_allowed_collectivization_add: "工人所有的$bg_infres_agriculture$$concept_building$等级下限"
+  building_group_bg_infres_agriculture_allowed_collectivization_add_desc: "工人所有的$bg_infres_agriculture$[Concept('concept_building','$concept_buildings$')]最低数值。"
+  building_group_bg_infres_ranching_allowed_collectivization_add: "工人所有的$bg_infres_ranching$$concept_building$等级下限"
+  building_group_bg_infres_ranching_allowed_collectivization_add_desc: "工人所有的$bg_infres_ranching$[Concept('concept_building','$concept_buildings$')]最低数值。"

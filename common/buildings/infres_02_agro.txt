@@ -24,7 +24,7 @@ building_infres_rye_farm = {
 
 	ai_nationalization_desire = 0
 
-	building_group = bg_infres_f_rye_farms
+	building_group = bg_infres_rye_farms
 
 	texture = "gfx/interface/icons/building_icons/rye_farm.dds"
 
@@ -73,7 +73,7 @@ building_infres_wheat_farm = {
 
 	ai_nationalization_desire = 0
 
-	building_group = bg_infres_f_wheat_farms
+	building_group = bg_infres_wheat_farms
 
 	texture = "gfx/interface/icons/building_icons/wheat_farm.dds"
 
@@ -122,7 +122,7 @@ building_infres_rice_farm = {
 
 	ai_nationalization_desire = 0
 
-	building_group = bg_infres_f_rice_farms
+	building_group = bg_infres_rice_farms
 
 	texture = "gfx/interface/icons/building_icons/rice_farm.dds"
 
@@ -171,7 +171,7 @@ building_infres_maize_farm = {
 
 	ai_nationalization_desire = 0
 
-	building_group = bg_infres_f_maize_farms
+	building_group = bg_infres_maize_farms
 
 	texture = "gfx/interface/icons/building_icons/maize_farm.dds"
 
@@ -220,7 +220,7 @@ building_infres_millet_farm = {
 
 	ai_nationalization_desire = 0
 
-	building_group = bg_infres_f_millet_farms
+	building_group = bg_infres_millet_farms
 
 	texture = "gfx/interface/icons/building_icons/millet_farm.dds"
 
@@ -269,7 +269,7 @@ building_infres_livestock_ranch = {
 
 	ai_nationalization_desire = 0
 
-	building_group = bg_infres_g_livestock_ranches
+	building_group = bg_infres_livestock_ranches
 
 	texture = "gfx/interface/icons/building_icons/cattle_ranch.dds"
 
@@ -320,7 +320,7 @@ building_infres_vineyard_plantation = {
 
 	ai_nationalization_desire = 0
 
-	building_group = bg_infres_f_vineyard_plantations
+	building_group = bg_infres_vineyard_plantations
 	texture = "gfx/interface/icons/building_icons/vineyards.dds"
 	required_construction = construction_cost_low
 

@@ -128,3 +128,8 @@
   pm_infres_twenty_five_construction:0 "25 extra construction sectors"
   pm_infres_fifty_construction:0 "50 extra construction sectors"
   pm_infres_one_hundred_construction:0 "100 extra construction sectors"
+
+  building_group_bg_infres_agriculture_allowed_collectivization_add: "Minimum Worker-Owned $bg_infres_agriculture$ $concept_building$ Levels"
+  building_group_bg_infres_agriculture_allowed_collectivization_add_desc: "The minimum amount of $bg_infres_agriculture$ [Concept('concept_building','$concept_buildings$')] that will be worker-owned."
+  building_group_bg_infres_ranching_allowed_collectivization_add: "Minimum Worker-Owned $bg_infres_ranching$ $concept_building$ Levels"
+  building_group_bg_infres_ranching_allowed_collectivization_add_desc: "The minimum amount of $bg_infres_ranching$ [Concept('concept_building','$concept_buildings$')] that will be worker-owned."

@@ -36,6 +36,7 @@ company_j_p_coats = {
 	prosperity_modifier = {
 		building_textile_mills_throughput_add = 0.15
 		building_cotton_plantation_throughput_add = 0.05
+		building_infres_cotton_plantation_throughput_add = 0.05
 	}	
 	
 	ai_weight = {

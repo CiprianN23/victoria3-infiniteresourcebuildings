@@ -128,3 +128,8 @@
   pm_infres_twenty_five_construction:0 "25 extra construction sectors"
   pm_infres_fifty_construction:0 "50 extra construction sectors"
   pm_infres_one_hundred_construction:0 "100 extra construction sectors"
+
+  building_group_bg_infres_agriculture_allowed_collectivization_add: "Niveau minimal des bâtiments d’$bg_infres_agriculture$ détenus par les travailleurs"
+  building_group_bg_infres_agriculture_allowed_collectivization_add_desc: "Le nombre minimum de [Concept('concept_building','$concept_buildings$')|l] d’$bg_infres_agriculture$ qui seront détenus par les travailleurs."
+  building_group_bg_infres_ranching_allowed_collectivization_add: "Niveau minimal des bâtiments d’$bg_infres_ranching$ détenus par les travailleurs"
+  building_group_bg_infres_ranching_allowed_collectivization_add_desc: "Le nombre minimum de [Concept('concept_building','$concept_buildings$')|l] d’$bg_infres_ranching$ qui seront détenus par les travailleurs."

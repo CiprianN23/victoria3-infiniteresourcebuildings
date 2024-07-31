@@ -276,6 +276,7 @@ company_basf = {
 	prosperity_modifier = {
 		country_weekly_innovation_mult = 0.1
 		building_group_bg_oil_extraction_throughput_add = 0.05
+		building_group_bg_infres_oil_extraction_throughput_add = 0.05
 	}	
 	
 	ai_weight = {

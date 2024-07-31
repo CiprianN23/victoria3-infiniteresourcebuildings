@@ -128,3 +128,8 @@
   pm_infres_twenty_five_construction:0 "25 extra construction sectors"
   pm_infres_fifty_construction:0 "50 extra construction sectors"
   pm_infres_one_hundred_construction:0 "100 extra construction sectors"
+
+  building_group_bg_infres_agriculture_allowed_collectivization_add: "İşçi Mülkü Olan $bg_infres_agriculture$ $concept_building$sı Minimum Seviyesi"
+  building_group_bg_infres_agriculture_allowed_collectivization_add_desc: "İşçi mülkü olacak $bg_infres_agriculture$ [Concept('concept_building','$concept_buildings$ının')] minimum miktarı."
+  building_group_bg_infres_ranching_allowed_collectivization_add: "İşçi Mülkü Olan Çiftlik $concept_building$sı Minimum Seviyesi"
+  building_group_bg_infres_ranching_allowed_collectivization_add_desc: "İşçi mülkü olacak Çiftlik [Concept('concept_building','$concept_buildings$ının')] minimum miktarı."

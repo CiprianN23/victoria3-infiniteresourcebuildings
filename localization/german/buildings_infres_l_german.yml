@@ -128,3 +128,8 @@
   pm_infres_twenty_five_construction:0 "25 extra construction sectors"
   pm_infres_fifty_construction:0 "50 extra construction sectors"
   pm_infres_one_hundred_construction:0 "100 extra construction sectors"
+
+  building_group_bg_infres_agriculture_allowed_collectivization_add: "Mindeststufen an Landwirtschaftsgebäuden im Besitz der Arbeiter"
+  building_group_bg_infres_agriculture_allowed_collectivization_add_desc: "Der Mindestanteil von [Concept('concept_building','Landwirtschaftsgebäuden')], die im Besitz von Arbeitern sind."
+  building_group_bg_infres_ranching_allowed_collectivization_add: "Mindeststufen an Viehzuchtgebäuden im Besitz der Arbeiter"
+  building_group_bg_infres_ranching_allowed_collectivization_add_desc: "Der Mindestanteil von [Concept('concept_building','Viehzuchtgebäuden')], die im Besitz von Arbeitern sind."

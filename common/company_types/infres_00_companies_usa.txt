@@ -107,6 +107,7 @@ company_united_fruit = {
 	
 	prosperity_modifier = {
 		building_group_bg_plantations_throughput_add = 0.2
+		building_group_bg_infres_plantations_throughput_add = 0.2
 		country_infamy_decay_mult = -0.25
 	}	
 	

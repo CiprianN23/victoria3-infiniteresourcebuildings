@@ -180,6 +180,7 @@ company_cgv = {
 	prosperity_modifier = {
 		country_prestige_mult = 0.15
 		building_vineyard_plantation_throughput_add = 0.1
+		building_infres_vineyard_plantation_throughput_add = 0.1
 	}	
 	
 	ai_weight = {

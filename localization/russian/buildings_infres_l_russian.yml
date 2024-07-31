@@ -128,3 +128,8 @@
   pm_infres_twenty_five_construction:0 "25 extra construction sectors"
   pm_infres_fifty_construction:0 "50 extra construction sectors"
   pm_infres_one_hundred_construction:0 "100 extra construction sectors"
+
+  building_group_bg_infres_agriculture_allowed_collectivization_add: "Минимум уровней сельскохозяйственных сооружений в собственности рабочих"
+  building_group_bg_infres_agriculture_allowed_collectivization_add_desc: "Минимальное количество сельскохозяйственных [Concept('concept_building','сооружений')], которые будут находиться в собственности рабочих."
+  building_group_bg_infres_ranching_allowed_collectivization_add: "Минимум уровней ферм в собственности рабочих"
+  building_group_bg_infres_ranching_allowed_collectivization_add_desc: "Минимальное количество фермерских [Concept('concept_building','сооружений')], которые будут находиться в собственности рабочих."

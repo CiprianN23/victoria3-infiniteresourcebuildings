@@ -1,0 +1,190 @@
+﻿decree_encourage_agricultural_industry = {
+	texture = "gfx/interface/icons/decree/decree_encourage_agricultural_industry.dds"
+	unlocking_technologies = {
+		enclosure
+	}	
+	valid = {
+		NOR = { 
+			has_decree = decree_encourage_manufacturing_industry 
+			has_decree = decree_encourage_resource_industry
+		}
+	}		
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.2
+		building_group_bg_plantations_throughput_add = 0.2
+		building_group_bg_ranching_throughput_add = 0.2
+
+        building_group_bg_infres_agriculture_throughput_add = 0.2
+		building_group_bg_infres_plantations_throughput_add = 0.2
+		building_group_bg_infres_ranching_throughput_add = 0.2
+	}
+	cost = 100
+	
+	ai_weight = {
+		value = 0
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_agriculture
+						is_building_group = bg_ranching
+						is_building_group = bg_plantations
+
+                        is_building_group = bg_infres_agriculture
+						is_building_group = bg_infres_ranching
+						is_building_group = bg_infres_plantations
+					}				
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_agriculture
+						is_building_group = bg_ranching
+						is_building_group = bg_plantations
+
+                        is_building_group = bg_infres_agriculture
+						is_building_group = bg_infres_ranching
+						is_building_group = bg_infres_plantations
+					}
+					count >= 3
+				}		
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_agriculture
+						is_building_group = bg_ranching
+						is_building_group = bg_plantations
+
+                        is_building_group = bg_infres_agriculture
+						is_building_group = bg_infres_ranching
+						is_building_group = bg_infres_plantations
+					}	
+					count >= 5
+				}			
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_plantation_economy
+						has_strategy = ai_strategy_agricultural_expansion
+					}					
+				}
+			}
+			multiply = 1.5
+		}		
+	}
+}
+
+decree_encourage_resource_industry = {
+	texture = "gfx/interface/icons/decree/decree_encourage_resource_industry.dds"
+	unlocking_technologies = {
+		shaft_mining
+	}	
+	valid = {
+		NOR = { 
+			has_decree = decree_encourage_manufacturing_industry 
+			has_decree = decree_encourage_agricultural_industry
+		}
+	}		
+	modifier = {
+		building_group_bg_mining_throughput_add = 0.2
+		building_group_bg_logging_throughput_add = 0.2
+		building_group_bg_fishing_throughput_add = 0.2
+		building_group_bg_whaling_throughput_add = 0.2
+		building_group_bg_oil_extraction_throughput_add = 0.2
+		building_group_bg_rubber_throughput_add = 0.2
+
+        building_group_bg_infres_mining_throughput_add = 0.2
+		building_group_bg_infres_logging_throughput_add = 0.2
+		building_group_bg_infres_fishing_throughput_add = 0.2
+		building_group_bg_infres_whaling_throughput_add = 0.2
+		building_group_bg_infres_oil_extraction_throughput_add = 0.2
+		building_group_bg_infres_rubber_throughput_add = 0.2
+	}
+	cost = 100
+	
+	ai_weight = {
+		value = 0
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_mining
+						is_building_group = bg_logging
+						is_building_group = bg_fishing
+						is_building_group = bg_whaling
+						is_building_group = bg_oil_extraction
+
+                        is_building_group = bg_infres_mining
+						is_building_group = bg_infres_logging
+						is_building_group = bg_infres_fishing
+						is_building_group = bg_infres_whaling
+						is_building_group = bg_infres_oil_extraction
+					}				
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_mining
+						is_building_group = bg_logging
+						is_building_group = bg_fishing
+						is_building_group = bg_whaling
+						is_building_group = bg_oil_extraction
+
+                        is_building_group = bg_infres_mining
+						is_building_group = bg_infres_logging
+						is_building_group = bg_infres_fishing
+						is_building_group = bg_infres_whaling
+						is_building_group = bg_infres_oil_extraction
+					}	
+					count >= 3
+				}			
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_mining
+						is_building_group = bg_logging
+						is_building_group = bg_fishing
+						is_building_group = bg_whaling
+						is_building_group = bg_oil_extraction
+
+                        is_building_group = bg_infres_mining
+						is_building_group = bg_infres_logging
+						is_building_group = bg_infres_fishing
+						is_building_group = bg_infres_whaling
+						is_building_group = bg_infres_oil_extraction
+					}	
+					count >= 5
+				}			
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				scope:country = {
+					has_strategy = ai_strategy_resource_expansion				
+				}
+			}
+			multiply = 1.5
+		}		
+	}
+}

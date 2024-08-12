@@ -130,3 +130,123 @@ building_group_bg_infres_oil_extraction_throughput_add = {
 		ai_value=0
 	}
 }
+building_group_bg_infres_ranching_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_mining_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_logging_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_fishing_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_whaling_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_rubber_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_agriculture_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_silk_plantation_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_coal_mine_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_sulfur_mine_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_tobacco_plantations_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_sugar_plantations_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_dye_plantation_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_infres_silk_plantations_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_rice_farm_throughput_add = {
+    decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}

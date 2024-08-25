@@ -78,17 +78,12 @@
   modifier_building_group_bg_infres_p_coffee_plantations_throughput_add_desc:0 "A bonus or penalty to both input and output of Inf. Coffee Plantations"
 
   pmg_infres_barracks:0 "Inf. Barracks PMG"
+  pmg_infres_barracks_conscription:0 "Inf. Conscripts PMG"
   pmg_infres_naval_base:0 "Inf. Naval Base PMG"
 
-  pm_infres_basic_barracks:0 "Inf. Barracks Basic"
-  pm_infres_advanced_barracks:0 "Inf. Barracks Advanced"
-  pm_infres_extreme_barracks:0 "Inf. Barracks Extreme"
-  pm_infres_legendary_barracks:0 "Inf. Barracks Legendary"
-
-  pm_infres_basic_naval_base:0 "Inf. Naval Base Basic"
-  pm_infres_advanced_naval_base:0 "Inf. Naval Base Advanced"
-  pm_infres_extreme_naval_base:0 "Inf. Naval Base Extreme"
-  pm_infres_legendary_naval_base:0 "Inf. Naval Base Legendary"
+  pm_infres_barracks:0 "Inf. Barracks"
+  pm_infres_barracks_conscripts:0 "Inf. Conscription Centers"
+  pm_infres_naval_base:0 "Inf. Naval Bases"
 
   pmg_infres_base_building_construction_sector:0 "Extra construction sectors"
   pm_infres_no_bonus_construction:0 "No extra construction sectors"

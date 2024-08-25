@@ -3,10 +3,16 @@
 	ai_selection = most_productive
 
 	production_methods = {
-		pm_infres_basic_barracks
-		pm_infres_advanced_barracks
-		pm_infres_extreme_barracks
-		pm_infres_legendary_barracks
+		pm_infres_barracks
+	}
+}
+
+pmg_infres_barracks_conscription = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_infres_barracks_conscripts
 	}
 }
 
@@ -15,9 +21,6 @@ pmg_infres_naval_base = {
 	ai_selection = most_productive
 
 	production_methods = {
-		pm_infres_basic_naval_base
-		pm_infres_advanced_naval_base
-		pm_infres_extreme_naval_base
-		pm_infres_legendary_naval_base
+		pm_infres_naval_base
 	}
 }

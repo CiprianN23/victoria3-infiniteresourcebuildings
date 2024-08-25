@@ -17,6 +17,7 @@
 
     production_method_groups = {
 		pmg_infres_barracks
+		pmg_infres_barracks_conscription
 	}
 
     ownership_type = no_ownership

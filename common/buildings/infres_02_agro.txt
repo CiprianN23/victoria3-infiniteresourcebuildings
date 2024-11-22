@@ -26,7 +26,7 @@ building_infres_rye_farm = {
 
 	building_group = bg_infres_rye_farms
 
-	texture = "gfx/interface/icons/building_icons/rye_farm.dds"
+	icon = "gfx/interface/icons/building_icons/rye_farm.dds"
 
 	city_type = farm
 	levels_per_mesh = 5
@@ -75,7 +75,7 @@ building_infres_wheat_farm = {
 
 	building_group = bg_infres_wheat_farms
 
-	texture = "gfx/interface/icons/building_icons/wheat_farm.dds"
+	icon = "gfx/interface/icons/building_icons/wheat_farm.dds"
 
 	city_type = farm
 	levels_per_mesh = 5
@@ -124,7 +124,7 @@ building_infres_rice_farm = {
 
 	building_group = bg_infres_rice_farms
 
-	texture = "gfx/interface/icons/building_icons/rice_farm.dds"
+	icon = "gfx/interface/icons/building_icons/rice_farm.dds"
 
 	city_type = farm
 	levels_per_mesh = 5
@@ -173,7 +173,7 @@ building_infres_maize_farm = {
 
 	building_group = bg_infres_maize_farms
 
-	texture = "gfx/interface/icons/building_icons/maize_farm.dds"
+	icon = "gfx/interface/icons/building_icons/maize_farm.dds"
 
 	city_type = farm
 	levels_per_mesh = 5
@@ -222,7 +222,7 @@ building_infres_millet_farm = {
 
 	building_group = bg_infres_millet_farms
 
-	texture = "gfx/interface/icons/building_icons/millet_farm.dds"
+	icon = "gfx/interface/icons/building_icons/millet_farm.dds"
 
 	city_type = farm
 	levels_per_mesh = 5
@@ -271,7 +271,7 @@ building_infres_livestock_ranch = {
 
 	building_group = bg_infres_livestock_ranches
 
-	texture = "gfx/interface/icons/building_icons/cattle_ranch.dds"
+	icon = "gfx/interface/icons/building_icons/cattle_ranch.dds"
 
 	city_type = farm
 	levels_per_mesh = 5
@@ -321,7 +321,7 @@ building_infres_vineyard_plantation = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_vineyard_plantations
-	texture = "gfx/interface/icons/building_icons/vineyards.dds"
+	icon = "gfx/interface/icons/building_icons/vineyards.dds"
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {

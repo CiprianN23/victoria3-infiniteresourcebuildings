@@ -24,7 +24,7 @@ building_infres_coffee_plantation = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_coffee_plantations
-	texture = "gfx/interface/icons/building_icons/coffee_plantation.dds"
+	icon = "gfx/interface/icons/building_icons/coffee_plantation.dds"
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {
@@ -67,7 +67,7 @@ building_infres_cotton_plantation = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_cotton_plantations
-	texture = "gfx/interface/icons/building_icons/cotton_plantation.dds"
+	icon = "gfx/interface/icons/building_icons/cotton_plantation.dds"
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {
@@ -110,7 +110,7 @@ building_infres_dye_plantation = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_dye_plantations
-	texture = "gfx/interface/icons/building_icons/dye_plantation.dds"
+	icon = "gfx/interface/icons/building_icons/dye_plantation.dds"
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {
@@ -159,7 +159,7 @@ building_infres_opium_plantation = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_opium_plantations
-	texture = "gfx/interface/icons/building_icons/opium_plantation.dds"
+	icon = "gfx/interface/icons/building_icons/opium_plantation.dds"
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {
@@ -203,7 +203,7 @@ building_infres_tea_plantation = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_tea_plantations
-	texture = "gfx/interface/icons/building_icons/tea_plantation.dds"
+	icon = "gfx/interface/icons/building_icons/tea_plantation.dds"
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {
@@ -246,7 +246,7 @@ building_infres_tobacco_plantation = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_tobacco_plantations
-	texture = "gfx/interface/icons/building_icons/tobacco_plantation.dds"
+	icon = "gfx/interface/icons/building_icons/tobacco_plantation.dds"
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {
@@ -289,7 +289,7 @@ building_infres_sugar_plantation = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_sugar_plantations
-	texture = "gfx/interface/icons/building_icons/sugar_plantation.dds"
+	icon = "gfx/interface/icons/building_icons/sugar_plantation.dds"
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {
@@ -332,7 +332,7 @@ building_infres_banana_plantation = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_banana_plantations
-	texture = "gfx/interface/icons/building_icons/banana_plantation.dds"
+	icon = "gfx/interface/icons/building_icons/banana_plantation.dds"
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {
@@ -375,7 +375,7 @@ building_infres_silk_plantation = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_silk_plantations
-	texture = "gfx/interface/icons/building_icons/silk_plantation.dds"
+	icon = "gfx/interface/icons/building_icons/silk_plantation.dds"
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {

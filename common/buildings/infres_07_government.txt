@@ -3,7 +3,7 @@
 building_infres_port = {
 	building_group = bg_infres_public_infrastructure
 	city_type = port
-	texture = "gfx/interface/icons/building_icons/building_port.dds"
+	icon = "gfx/interface/icons/building_icons/building_port.dds"
 
 	has_max_level = no
 	ignore_stateregion_max_level = yes

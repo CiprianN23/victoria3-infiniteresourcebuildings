@@ -387,7 +387,7 @@ company_ericsson = {
 	
 	prosperity_modifier = {
 		country_weekly_innovation_mult = 0.1
-		state_education_access_wealth_add = 0.05
+		state_education_access_wealth_add = 0.005
 	}	
 	
 	ai_weight = {
@@ -733,7 +733,7 @@ company_mozambique_company = {
 	
 	prosperity_modifier = {
 		state_colony_growth_speed_mult = 0.1
-		state_colony_growth_creation_mult = 0.1
+		state_colony_growth_creation_factor = 0.1
 	}	
 	
 	ai_weight = {

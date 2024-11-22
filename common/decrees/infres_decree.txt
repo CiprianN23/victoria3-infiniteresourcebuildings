@@ -3,7 +3,7 @@
 	unlocking_technologies = {
 		enclosure
 	}	
-	valid = {
+	state_trigger = {
 		NOR = { 
 			has_decree = decree_encourage_manufacturing_industry 
 			has_decree = decree_encourage_resource_industry
@@ -91,7 +91,7 @@ decree_encourage_resource_industry = {
 	unlocking_technologies = {
 		shaft_mining
 	}	
-	valid = {
+	state_trigger = {
 		NOR = { 
 			has_decree = decree_encourage_manufacturing_industry 
 			has_decree = decree_encourage_agricultural_industry

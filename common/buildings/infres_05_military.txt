@@ -1,7 +1,7 @@
 ﻿building_infres_barracks = {
 	building_group = bg_infres_army
 	recruits_combat_units = no
-	texture = "gfx/interface/icons/building_icons/building_barracks.dds"
+	icon = "gfx/interface/icons/building_icons/building_barracks.dds"
 	city_type = city
 
 	can_build_government = { scope:investor_country = { is_player = yes } }
@@ -31,7 +31,7 @@ building_infres_naval_base = {
 	building_group = bg_infres_navy
 	recruits_combat_units = no
 	naval = no
-	texture = "gfx/interface/icons/building_icons/naval_base.dds"
+	icon = "gfx/interface/icons/building_icons/naval_base.dds"
 	city_type = port
 
 	can_build_government = { scope:investor_country = { is_player = yes } }

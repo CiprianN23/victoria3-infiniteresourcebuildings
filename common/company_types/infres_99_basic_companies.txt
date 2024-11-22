@@ -83,7 +83,7 @@ company_basic_agriculture_2 = {
 	}
 	
 	prosperity_modifier = {
-		building_infres_livestock_ranch_throughput_add = 0.1
+		building_livestock_ranch_throughput_add = 0.1
 	}	
 }
 
@@ -166,7 +166,7 @@ company_basic_colonial_plantations_1 = {
 	}
 	
 	prosperity_modifier = {
-		state_radicals_from_sol_change_mult = -0.05
+		state_radicals_from_political_movements_mult =  -0.05
 	}	
 }
 
@@ -328,6 +328,9 @@ company_basic_fishing = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
+					is_building_type = building_fishing_wharf
+					is_building_type = building_whaling_station
+
 					is_building_type = building_infres_fishing_wharf
 					is_building_type = building_infres_whaling_station
 				}
@@ -459,7 +462,7 @@ company_basic_gold_mining = {
 	
 	prosperity_modifier = {
 		country_minting_mult = 0.05
-		state_loyalists_from_sol_change_mult = 0.05
+		state_loyalists_from_political_movements_mult = 0.05
 	}
 }
 
@@ -653,7 +656,7 @@ company_basic_home_goods = {
 	}
 	
 	prosperity_modifier = {
-		state_loyalists_from_sol_change_mult = 0.1
+		state_loyalists_from_political_movements_mult = 0.1
 	}
 }
 
@@ -687,7 +690,7 @@ company_basic_textiles = {
 	}
 	
 	prosperity_modifier = {
-		state_radicals_from_sol_change_mult = -0.1
+		state_radicals_from_political_movements_mult =  -0.1
 	}
 }
 

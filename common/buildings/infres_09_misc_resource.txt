@@ -22,7 +22,7 @@
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_logging
-	texture = "gfx/interface/icons/building_icons/logging_camp.dds"
+	icon = "gfx/interface/icons/building_icons/logging_camp.dds"
 	city_type = wood
 	required_construction = construction_cost_low
 	terrain_manipulator = forestry
@@ -63,7 +63,7 @@ building_infres_rubber_plantation = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_rubber
-	texture = "gfx/interface/icons/building_icons/rubber_lodge.dds"
+	icon = "gfx/interface/icons/building_icons/rubber_lodge.dds"
 	required_construction = construction_cost_low
 
 	terrain_manipulator = forestry
@@ -112,7 +112,7 @@ building_infres_fishing_wharf = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_fishing
-	texture = "gfx/interface/icons/building_icons/fishing_wharf.dds"
+	icon = "gfx/interface/icons/building_icons/fishing_wharf.dds"
 	city_type = port
 	required_construction = construction_cost_low
 
@@ -154,7 +154,7 @@ building_infres_whaling_station = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_whaling
-	texture = "gfx/interface/icons/building_icons/whaling_station.dds"
+	icon = "gfx/interface/icons/building_icons/whaling_station.dds"
 	city_type = port
 	required_construction = construction_cost_low
 
@@ -197,7 +197,7 @@ building_infres_oil_rig = {
 	ai_nationalization_desire = 0
 
 	building_group = bg_infres_oil_extraction
-	texture = "gfx/interface/icons/building_icons/oil_rig.dds"
+	icon = "gfx/interface/icons/building_icons/oil_rig.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium

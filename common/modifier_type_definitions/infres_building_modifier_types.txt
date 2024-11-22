@@ -250,3 +250,29 @@ building_infres_rice_farm_throughput_add = {
 		ai_value=0
 	}
 }
+building_group_bg_infres_agriculture_tax_mult = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+building_group_bg_infres_tea_plantations_throughput_add = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+building_group_bg_infres_tea_plantations_throughput_add = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}

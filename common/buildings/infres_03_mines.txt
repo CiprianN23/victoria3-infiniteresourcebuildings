@@ -22,7 +22,7 @@
 	ai_nationalization_desire = -0.25
 
 	building_group = bg_infres_coal_mining
-	texture = "gfx/interface/icons/building_icons/coal_mine.dds"
+	icon = "gfx/interface/icons/building_icons/coal_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -67,7 +67,7 @@ building_infres_iron_mine = {
 	ai_nationalization_desire = -0.25
 
 	building_group = bg_infres_iron_mining
-	texture = "gfx/interface/icons/building_icons/iron_mine.dds"
+	icon = "gfx/interface/icons/building_icons/iron_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -113,7 +113,7 @@ building_infres_lead_mine = {
 	ai_nationalization_desire = -0.25
 
 	building_group = bg_infres_lead_mining
-	texture = "gfx/interface/icons/building_icons/lead_mine.dds"
+	icon = "gfx/interface/icons/building_icons/lead_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -157,7 +157,7 @@ building_infres_sulfur_mine = {
 	ai_nationalization_desire = -0.25
 
 	building_group = bg_infres_sulfur_mining
-	texture = "gfx/interface/icons/building_icons/sulfur_mine.dds"
+	icon = "gfx/interface/icons/building_icons/sulfur_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -184,7 +184,7 @@ building_infres_gold_mine = {
 	ai_nationalization_desire = -0.25
 
 	building_group = bg_infres_gold_mining
-	texture = "gfx/interface/icons/building_icons/gold_mine.dds"
+	icon = "gfx/interface/icons/building_icons/gold_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -213,13 +213,13 @@ building_infres_gold_fields = {
 	ai_value = -1000
 
 	building_group = bg_infres_gold_fields
-	texture = "gfx/interface/icons/building_icons/gold_fields.dds"
+	icon = "gfx/interface/icons/building_icons/gold_fields.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	buildable = yes
 	expandable = yes
 	downsizeable = yes
-	cannot_switch_owner = yes
+	can_switch_owner = no
 	terrain_manipulator = mining
 
 	unlocking_technologies = {

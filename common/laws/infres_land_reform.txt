@@ -296,6 +296,7 @@ law_collectivized_agriculture = {
 
 		building_group_bg_infres_agriculture_allowed_collectivization_add = 1.0
 		building_group_bg_infres_ranching_allowed_collectivization_add = 1.0
+		building_group_bg_infres_plantations_allowed_collectivization_add = 1.0
 	}
 
 	on_enact = {

@@ -16,7 +16,43 @@ building_group_bg_infres_ranching_allowed_collectivization_add={
 	}
 }
 
+building_group_bg_infres_plantations_allowed_collectivization_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 
+building_group_bg_infres_mining_allowed_collectivization_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+building_group_bg_infres_extraction_allowed_collectivization_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+
+
+building_group_bg_infres_extraction_throughput_add={
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 
 building_infres_iron_mine_throughput_add = {
     decimals=1

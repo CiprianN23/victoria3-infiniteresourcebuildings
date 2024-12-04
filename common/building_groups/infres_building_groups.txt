@@ -17,6 +17,7 @@ bg_infres_agriculture = {
 	}
 
 	always_possible = yes
+	capped_by_resources = no
 	fired_pops_become_radical = no
 	
 	
@@ -186,9 +187,21 @@ bg_infres_banana_plantations = {
 	default_building = building_infres_banana_plantation
 }
 
+bg_infres_extraction = {
+	category = rural
+
+	capped_by_resources = no
+	
+	economy_of_scale = yes
+	
+	cash_reserves_max = 25000
+}
+
 # Mining
 
 bg_infres_mining = {
+	parent_group = bg_infres_extraction
+
 	category = rural
 
 	economy_of_scale = yes
@@ -279,6 +292,8 @@ bg_infres_sulfur_mining = {
 # Logging
 
 bg_infres_logging = {
+	parent_group = bg_infres_extraction
+
 	category = rural
 
 	economy_of_scale = yes
@@ -307,6 +322,8 @@ bg_infres_logging = {
 }
 
 bg_infres_rubber = {
+	parent_group = bg_infres_extraction
+
 	category = rural 
 	
 	economy_of_scale = yes
@@ -341,6 +358,8 @@ bg_infres_rubber = {
 # Fishing
 
 bg_infres_whaling = {
+	parent_group = bg_infres_extraction
+
 	category = rural
 
 	economy_of_scale = yes
@@ -367,6 +386,8 @@ bg_infres_whaling = {
 }
 
 bg_infres_fishing = {
+	parent_group = bg_infres_extraction
+
 	category = rural
 	
 	economy_of_scale = yes
@@ -395,6 +416,8 @@ bg_infres_fishing = {
 # Oil Extraction
 
 bg_infres_oil_extraction = {
+	parent_group = bg_infres_extraction
+
 	category = rural
 	
 	economy_of_scale = yes

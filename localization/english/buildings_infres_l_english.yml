@@ -44,6 +44,7 @@
   bg_infres_whaling:0 "Inf. Whaling"
   bg_infres_fishing:0 "Inf. Fisheries"
   bg_infres_oil_extraction:0 "Inf. Oil Extractors"
+  bg_infres_extraction:0 "Inf. Extraction"
 
   modifier_country_subsidies_bg_infres_agriculture:0 "Can Subsidize $bg_infres_agriculture$"
   modifier_country_subsidies_bg_infres_agriculture_desc:0 "Legal permission to enact government subsidies of $bg_infres_agriculture$"
@@ -193,3 +194,14 @@
   building_group_bg_infres_cotton_plantations_throughput_add_desc:0 "A bonus or penalty to both input and output of Cotton Plantations"
   building_group_bg_infres_silk_plantations_throughput_add:0 "Silk Plantation [concept_throughput]"
   building_group_bg_infres_silk_plantations_throughput_add_desc:0 "A bonus or penalty to both input and output of Silk Plantations"
+  building_group_bg_infres_extraction_throughput_add:0 "$bg_infres_extraction$ [concept_throughput]"
+  building_group_bg_infres_extraction_throughput_add_desc:0 "A bonus or penalty to both input and output of $bg_infres_extraction$"
+
+  building_group_bg_infres_mining_allowed_collectivization_add: "Minimum Worker-Owned $bg_infres_mining$ $concept_building$ Levels"
+  building_group_bg_infres_mining_allowed_collectivization_add_desc: "The minimum amount of $bg_infres_mining$ [Concept('concept_building','$concept_buildings$')] that will be worker-owned."
+
+  building_group_bg_infres_extraction_allowed_collectivization_add: "Minimum Worker-Owned $bg_infres_extraction$ $concept_building$ Levels"
+  building_group_bg_infres_extraction_allowed_collectivization_add_desc: "The minimum amount of $bg_infres_extraction$ [Concept('concept_building','$concept_buildings$')] that will be worker-owned."
+
+  building_group_bg_infres_plantations_allowed_collectivization_add: "Minimum Worker-Owned $bg_infres_plantations$ $concept_building$ Levels"
+  building_group_bg_infres_plantations_allowed_collectivization_add_desc: "The minimum amount of $bg_infres_plantations$ [Concept('concept_building','$concept_buildings$')] that will be worker-owned."

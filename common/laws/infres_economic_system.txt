@@ -272,10 +272,6 @@ law_industry_banned = {
 	modifier = {
 		building_group_bg_agriculture_throughput_add = 0.1
 		building_group_bg_plantations_throughput_add = 0.1
-
-        building_group_bg_infres_agriculture_throughput_add = 0.1
-		building_group_bg_infres_plantations_throughput_add = 0.1
-
 		state_expected_sol_mult = -0.1
 		interest_group_ig_rural_folk_pol_str_mult = 0.5
 		state_aristocrats_investment_pool_contribution_add = 0.25
@@ -288,6 +284,9 @@ law_industry_banned = {
 		state_peasants_education_access_add = -0.10
 		country_disable_nationalization_without_compensation_bool = yes
 		country_economic_dependence_on_overlord_add = -0.5
+
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
 	}
 
 	ai_will_do = {
@@ -354,12 +353,6 @@ law_extraction_economy = {
 				}
 				if = {
 					limit = {
-						has_building = building_power_plant
-					}
-					remove_building = building_power_plant
-				}
-				if = {
-					limit = {
 						has_building = building_motor_industry
 					}
 					remove_building = building_motor_industry
@@ -390,18 +383,19 @@ law_extraction_economy = {
 		building_group_bg_agriculture_throughput_add = 0.1
 		building_group_bg_plantations_throughput_add = 0.1
 		building_group_bg_extraction_throughput_add = 0.1
-
-        building_group_bg_infres_agriculture_throughput_add = 0.1
-		building_group_bg_infres_plantations_throughput_add = 0.1
-		building_group_bg_infres_extraction_throughput_add = 0.1
-
-		state_aristocrats_investment_pool_contribution_add = -0.75
-		state_shopkeepers_investment_pool_contribution_add = -0.50
-		state_capitalists_investment_pool_contribution_add = -0.25
+		state_shopkeepers_investment_pool_efficiency_mult = -0.5
+		state_capitalists_investment_pool_efficiency_mult = -0.25
+		state_farmers_investment_pool_efficiency_mult = -0.75	
+		state_clergymen_investment_pool_efficiency_mult = -0.75	
+		state_aristocrats_investment_pool_efficiency_mult = -0.75
 		country_private_construction_allocation_mult = 0.5
 		building_nationalization_investment_return_add = 0.5
 		country_disable_nationalization_without_compensation_bool = yes
 		country_economic_dependence_on_overlord_add = 0.5
+
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
+		building_group_bg_infres_extraction_throughput_add = 0.1
 	}
 
 	ai_will_do = {
@@ -523,14 +517,13 @@ law_cooperative_ownership = {
 		building_group_bg_power_allowed_collectivization_add = 1.0
 		building_group_bg_private_infrastructure_allowed_collectivization_add = 1.0
 		building_group_bg_arts_allowed_collectivization_add = 1.0
-
-        building_group_bg_infres_mining_allowed_collectivization_add = 1.0
-        building_group_bg_infres_extraction_allowed_collectivization_add = 1.0
 		
-		country_allow_national_collectivization_bool = yes
 		country_foreign_collectivization_bool = yes
 		country_disable_privatization_bool = yes
 		country_company_pay_to_establish_bool = yes
+
+		building_group_bg_infres_mining_allowed_collectivization_add = 1.0
+		building_group_bg_infres_extraction_allowed_collectivization_add = 1.0
 	}
 	
 	ai_enact_weight_modifier = { #Petitions

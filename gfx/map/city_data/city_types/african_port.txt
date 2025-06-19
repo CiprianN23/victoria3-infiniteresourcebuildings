@@ -1,15 +1,6 @@
 ﻿african_port = {
 	graphical_culture = "african"
 	city_type = port
-	center_building_entity = "african_port_centerpiece_02_entity"
-	center_modifiers = {
-		building_shipyards = "s"
-		building_port = "d"
-		building_fishing_wharf = "f"
-	}
-	modifier_key_prefix = "african_port_01"
-	modifier_key_suffix = "entity"
-	center_building_size = { 1 1 }
 
 	rich_building_meshes = {
 		"african_urban_city_residential_rich_01_mesh"
@@ -44,16 +35,11 @@
 	}
 	
 	building_fishing_wharf = {}
+	building_infres_fishing_wharf = {}
 	building_whaling_station = {}
+	building_infres_whaling_station = {}
 	building_port = {}
 	building_naval_base = {"african_port_navalbase_01_mesh"}
 	building_shipyards = {}
 	building_military_shipyards = {}
-
-
-	building_infres_fishing_wharf = {}
-	building_infres_whaling_station = {}
-	building_infres_port = {}
-	building_infres_naval_base = {"african_port_navalbase_01_mesh"}
-
 }

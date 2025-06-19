@@ -1,15 +1,6 @@
 ﻿french_port = {
 #	graphical_culture = "french"
 	city_type = port
-	center_building_entity = "french_port_centerpiece_01_entity"
-	center_modifiers = {
-		building_shipyards = "s"
-		building_port = "d"
-		building_fishing_wharf = "f"
-	}
-	modifier_key_prefix = "french_port_01"
-	modifier_key_suffix = "entity"
-	center_building_size = { 1 1 }
 
 	trigger = {
 		any_scope_state = {
@@ -75,15 +66,11 @@
 	}
 	
 	building_fishing_wharf = {}
+	building_infres_fishing_wharf = {}
 	building_whaling_station = {}
+	building_infres_whaling_station = {}
 	building_port = {}
 	building_naval_base = {"french_port_navalbase_01_mesh"}
 	building_shipyards = {}
 	building_military_shipyards = {}
-
-
-	building_infres_fishing_wharf = {}
-	building_infres_whaling_station = {}
-	building_infres_port = {}
-	building_infres_naval_base = {"french_port_navalbase_01_mesh"}
 }

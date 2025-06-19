@@ -1,6 +1,6 @@
 ﻿state_trait_serra_dos_carajas = {
     icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
-	
+
 	modifier = {
 		building_iron_mine_throughput_add = 0.2
 		building_infres_iron_mine_throughput_add = 0.2
@@ -9,16 +9,15 @@
 
 state_trait_chincha_islands = {
     icon = "gfx/interface/icons/state_trait_icons/bat.dds"
-	
+
 	modifier = {
-		building_sulfur_mine_throughput_add = 0.2
 		building_infres_sulfur_mine_throughput_add = 0.2
 	}
 }
 
 state_trait_lake_maracaibo = {
     icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
-	
+
 	modifier = {
 		building_group_bg_oil_extraction_throughput_add = 0.2
 		building_group_bg_infres_oil_extraction_throughput_add = 0.2
@@ -28,7 +27,7 @@ state_trait_lake_maracaibo = {
 
 state_trait_la_costa = {
 	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
-	
+
 	modifier = {
 		building_group_bg_agriculture_throughput_add = 0.1
 		building_group_bg_plantations_throughput_add = 0.1
@@ -40,7 +39,7 @@ state_trait_la_costa = {
 
 state_trait_el_mutun = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
-	
+
 	modifier = {
 		building_iron_mine_throughput_add = 0.2
 		building_infres_iron_mine_throughput_add = 0.2
@@ -49,14 +48,13 @@ state_trait_el_mutun = {
 
 state_trait_pantanal = {
 	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
-	
+
 	modifier = {
 		building_group_bg_agriculture_throughput_add = 0.15
 		building_group_bg_plantations_throughput_add = 0.15
 
 		building_group_bg_infres_agriculture_throughput_add = 0.15
 		building_group_bg_infres_plantations_throughput_add = 0.15
-
 		state_infrastructure_mult = -0.1
 	}
 }
@@ -72,7 +70,6 @@ state_trait_atacama_desert = {
 		building_infres_sulfur_mine_throughput_add = 0.15
 		building_group_bg_infres_agriculture_throughput_add = -0.1
 		building_group_bg_infres_plantations_throughput_add = -0.1
-
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
 	}
@@ -80,7 +77,7 @@ state_trait_atacama_desert = {
 
 state_trait_andes = {
 	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
-	
+
 	modifier = {
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
@@ -89,7 +86,7 @@ state_trait_andes = {
 
 state_trait_pampas = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_grazing.dds"
-	
+
 	modifier = {
 		building_group_bg_ranching_throughput_add = 0.2
 		building_group_bg_agriculture_throughput_add = 0.15
@@ -103,7 +100,7 @@ state_trait_pampas = {
 
 state_trait_amazon_rainforest = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
-	
+
 	modifier = {
 		goods_output_hardwood_mult = 0.25
 		state_construction_mult = -0.3
@@ -113,7 +110,7 @@ state_trait_amazon_rainforest = {
 
 state_trait_amazon_rainforest_level_1 = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
-	
+
 	modifier = {
 		goods_output_hardwood_mult = 0.25
 		state_construction_mult = -0.2
@@ -124,7 +121,7 @@ state_trait_amazon_rainforest_level_1 = {
 
 state_trait_amazon_rainforest_level_2 = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
-	
+
 	modifier = {
 		goods_output_hardwood_mult = 0.25
 		building_group_bg_agriculture_throughput_add = 0.1
@@ -137,7 +134,7 @@ state_trait_amazon_rainforest_level_2 = {
 
 state_trait_orinoco_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
-	
+
 	modifier = {
 		state_infrastructure_add = 20
 	}
@@ -145,7 +142,7 @@ state_trait_orinoco_river = {
 
 state_trait_uruguay_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
-	
+
 	modifier = {
 		state_infrastructure_add = 20
 	}
@@ -153,7 +150,7 @@ state_trait_uruguay_river = {
 
 state_trait_parana_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
-	
+
 	modifier = {
 		state_infrastructure_add = 20
 	}
@@ -161,7 +158,7 @@ state_trait_parana_river = {
 
 state_trait_paraguay_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
-	
+
 	modifier = {
 		state_infrastructure_add = 20
 	}
@@ -169,7 +166,7 @@ state_trait_paraguay_river = {
 
 state_trait_amazon_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
-	
+
 	modifier = {
 		state_infrastructure_add = 15
 	}
@@ -177,16 +174,20 @@ state_trait_amazon_river = {
 
 state_trait_cordillera_de_la_costa = { # Santiago, Tarapaca, and Los Rios
 	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
-	
+
 	modifier = {
-		state_building_port_max_level_add = 5
-		state_building_naval_base_max_level_add = 15		
+		building_shipyards_throughput_add = 0.15
+		building_military_shipyards_throughput_add = 0.15
+		building_port_throughput_add = 0.15
+		state_trade_capacity_mult = 0.25
+		state_building_naval_base_max_level_add = 15
+		state_market_access_price_impact = 0.05
 	}
 }
 
 state_trait_longitudinal_valley = { # Valle Central
 	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
-	
+
 	modifier = {
 		building_group_bg_agriculture_throughput_add = 0.15
 		building_group_bg_plantations_throughput_add = 0.15
@@ -198,17 +199,21 @@ state_trait_longitudinal_valley = { # Valle Central
 
 state_trait_canales_patagonicos = { # araucania
 	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
-	
+
 	modifier = {
 		goods_output_hardwood_mult = 0.15
-		state_building_port_max_level_add = 5
-		state_building_naval_base_max_level_add = 15		
+		building_shipyards_throughput_add = 0.15
+		building_military_shipyards_throughput_add = 0.15
+		building_port_throughput_add = 0.15
+		state_trade_capacity_mult = 0.25
+		state_building_naval_base_max_level_add = 15
+		state_market_access_price_impact = 0.05
 	}
 }
 
 state_trait_reconcavo = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
-	
+
 	modifier = {
 		building_group_bg_tobacco_plantations_throughput_add = 0.15
 		building_group_bg_infres_tobacco_plantations_throughput_add = 0.15
@@ -217,7 +222,7 @@ state_trait_reconcavo = {
 
 state_trait_sertao = {
 	icon = "gfx/interface/icons/state_trait_icons/dry_climate.dds"
-	
+
 	modifier = {
 		building_group_bg_ranching_throughput_add = 0.1
 		building_group_bg_infres_ranching_throughput_add = 0.1
@@ -227,7 +232,7 @@ state_trait_sertao = {
 
 state_trait_mata_atlantica = {
 	icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
-	
+
 	modifier = {
 		building_group_bg_sugar_plantations_throughput_add = 0.15
 		building_group_bg_infres_sugar_plantations_throughput_add = 0.15
@@ -236,7 +241,7 @@ state_trait_mata_atlantica = {
 
 state_trait_gran_chaco = {
 	icon = "gfx/interface/icons/state_trait_icons/poor_soils.dds"
-	
+
 	modifier = {
 		building_group_bg_logging_throughput_add = -0.1
 		building_group_bg_agriculture_throughput_add = -0.2

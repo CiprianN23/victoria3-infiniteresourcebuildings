@@ -1,10 +1,6 @@
 ﻿latin_mine = {
 	graphical_culture = "latin"
 	city_type = mine
-	center_building_mesh = "latin_mininghub_centerpiece_01_mesh"
-	center_building_size = { 3 3 }
-	
-
 	
 	min_residential_buildings = 4
 	max_residential_buildings = 50
@@ -61,29 +57,6 @@
 		"latin_mining_processing_01_mesh"
 	}
 	building_sulfur_mine = {
-		"latin_colonial_manufactory_01_mesh"
-	}
-
-
-	building_infres_coal_mine = {
-		"latin_mining_coaldepo_01_mesh"
-	}
-	building_infres_iron_mine = {
-		"generic_rural_mining_coaldepo_02_mesh"
-	}
-	building_infres_lead_mine = {
-		"latin_colonial_manufactory_02_mesh"
-	}
-	building_infres_oil_rig = {
-		"generic_oil_drill_01_mesh"
-	}
-	building_infres_gold_mine = {
-		"latin_mining_processing_01_mesh"
-	}	
-	building_infres_gold_fields = {
-		"latin_mining_processing_01_mesh"
-	}
-	building_infres_sulfur_mine = {
 		"latin_colonial_manufactory_01_mesh"
 	}
 }

@@ -3,9 +3,6 @@
 	ai_selection = most_productive
 
 	production_methods = {
-		pm_infres_no_bonus_construction
-		pm_infres_twenty_five_construction
-		pm_infres_fifty_construction
 		pm_infres_one_hundred_construction
 	}
 }

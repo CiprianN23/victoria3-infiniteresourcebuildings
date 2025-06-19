@@ -1,10 +1,6 @@
 ﻿southasian_mine = {
 	graphical_culture = "southasian"
 	city_type = mine
-	center_building_mesh = "mininghub_centerpiece_sandstone_01_mesh"
-	center_building_size = { 3 3 }
-	
-
 	
 	min_residential_buildings = 4
 	max_residential_buildings = 50
@@ -61,29 +57,6 @@
 		"generic_rural_mining_processing_sandstone_01_mesh"
 	}
 	building_sulfur_mine = {
-		"arabic_factory_colonial_01_mesh"
-	}
-
-
-	building_infres_coal_mine = {
-		"generic_rural_mining_coaldepo_02_mesh"
-	}
-	building_infres_iron_mine = {
-		"generic_rural_mining_coaldepo_sandstone_01_mesh"
-	}
-	building_infres_lead_mine = {
-		"arabic_factory_colonial_02_mesh"
-	}
-	building_infres_oil_rig = {
-		"generic_oil_drill_01_mesh"
-	}
-	building_infres_gold_mine = {
-		"generic_rural_mining_processing_sandstone_01_mesh"
-	}	
-	building_infres_gold_fields = {
-		"generic_rural_mining_processing_sandstone_01_mesh"
-	}
-	building_infres_sulfur_mine = {
 		"arabic_factory_colonial_01_mesh"
 	}
 }

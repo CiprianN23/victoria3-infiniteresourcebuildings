@@ -1,8 +1,6 @@
 ﻿african_mine = {
 	graphical_culture = "african"
 	city_type = mine
-	center_building_mesh = "african_mininghub_centerpiece_01_mesh"
-	center_building_size = { 3 3 }
 	
 
 	
@@ -61,30 +59,6 @@
 		"african_mining_processing_01_mesh"
 	}
 	building_sulfur_mine = {
-		"african_colonial_manufactory_01_mesh"
-	}
-
-
-
-	building_infres_coal_mine = {
-		"african_mining_coaldepo_01_mesh"
-	}
-	building_infres_iron_mine = {
-		"generic_rural_mining_coaldepo_02_mesh"
-	}
-	building_infres_lead_mine = {
-		"african_colonial_manufactory_02_mesh"
-	}
-	building_infres_oil_rig = {
-		"generic_oil_drill_01_mesh"
-	}
-	building_infres_gold_mine = {
-		"african_mining_processing_01_mesh"
-	}	
-	building_infres_gold_fields = {
-		"african_mining_processing_01_mesh"
-	}
-	building_infres_sulfur_mine = {
 		"african_colonial_manufactory_01_mesh"
 	}
 }

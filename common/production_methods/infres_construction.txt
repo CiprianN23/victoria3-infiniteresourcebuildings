@@ -9,26 +9,6 @@
 	}
 }
 
-pm_infres_twenty_five_construction = {
-	texture = "gfx/interface/icons/production_method_icons/iron_frame_buildings.dds"
-	
-	state_modifiers = {
-		level_scaled = {
-			state_building_construction_sector_max_level_add = 25
-		}	
-	}
-}
-
-pm_infres_fifty_construction = {
-	texture = "gfx/interface/icons/production_method_icons/steel_frame_buildings.dds"
-	
-	state_modifiers = {
-		level_scaled = {
-			state_building_construction_sector_max_level_add = 50
-		}	
-	}
-}
-
 pm_infres_one_hundred_construction = {
 	texture = "gfx/interface/icons/production_method_icons/arc_welded_buildings.dds"
 

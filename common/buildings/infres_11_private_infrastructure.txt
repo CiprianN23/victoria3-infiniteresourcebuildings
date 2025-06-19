@@ -129,7 +129,7 @@ building_manor_house = {
 
 
 		bg_infres_agriculture_score = {
-			group = "bg_agriculture"
+			group = "bg_infres_agriculture"
 			score = {
 				value = 1
 
@@ -146,7 +146,7 @@ building_manor_house = {
 			}
 		}
 		bg_infres_ranching_score = {
-			group = "bg_ranching"
+			group = "bg_infres_ranching"
 			score = {
 				value = 1
 
@@ -163,7 +163,7 @@ building_manor_house = {
 			}
 		}
 		bg_infres_plantations_score = {
-			group = "bg_plantations"
+			group = "bg_infres_plantations"
 			score = {
 				value = 1
 
@@ -180,31 +180,31 @@ building_manor_house = {
 			}
 		}
 		bg_infres_mining_score = {
-			group = "bg_mining"
+			group = "bg_infres_mining"
 			score = {
 				value = 0.0
 			}
 		}
 		bg_infres_logging_score = {
-			group = "bg_logging"
+			group = "bg_infres_logging"
 			score = {
 				value = 0.1
 			}
 		}
 		bg_infres_rubber_score = {
-			group = "bg_rubber"
+			group = "bg_infres_rubber"
 			score = {
 				value = 0.1
 			}
 		}
 		bg_infres_whaling_score = {
-			group = "bg_whaling"
+			group = "bg_infres_whaling"
 			score = {
 				value = 0.25
 			}
 		}
 		bg_infres_fishing_score = {
-			group = "bg_fishing"
+			group = "bg_infres_fishing"
 			score = {
 				value = 0.25
 			}
@@ -491,7 +491,7 @@ building_financial_district = {
 
 
 		bg_infres_agriculture_score = {
-			group = "bg_agriculture"
+			group = "bg_infres_agriculture"
 			score = {
 				value = 0.5
 
@@ -504,7 +504,7 @@ building_financial_district = {
 			}
 		}
 		bg_infres_ranching_score = {
-			group = "bg_ranching"
+			group = "bg_infres_ranching"
 			score = {
 				value = 0.5
 
@@ -524,7 +524,7 @@ building_financial_district = {
 			}
 		}
 		bg_infres_plantations_score = {
-			group = "bg_plantations"
+			group = "bg_infres_plantations"
 			score = {
 				value = 0.75
 
@@ -544,7 +544,7 @@ building_financial_district = {
 			}
 		}
 		bg_infres_mining_score = {
-			group = "bg_mining"
+			group = "bg_infres_mining"
 			score = {
 				value = 1
 
@@ -569,7 +569,7 @@ building_financial_district = {
 			}
 		}
 		bg_infres_logging_score = {
-			group = "bg_logging"
+			group = "bg_infres_logging"
 			score = {
 				value = 1
 
@@ -582,7 +582,7 @@ building_financial_district = {
 			}
 		}
 		bg_infres_rubber_score = {
-			group = "bg_rubber"
+			group = "bg_infres_rubber"
 			score = {
 				value = 1
 
@@ -595,7 +595,7 @@ building_financial_district = {
 			}
 		}
 		bg_infres_whaling_score = {
-			group = "bg_whaling"
+			group = "bg_infres_whaling"
 			score = {
 				value = 1
 
@@ -608,7 +608,7 @@ building_financial_district = {
 			}
 		}
 		bg_infres_fishing_score = {
-			group = "bg_fishing"
+			group = "bg_infres_fishing"
 			score = {
 				value = 1
 
@@ -621,7 +621,7 @@ building_financial_district = {
 			}
 		}
 		bg_infres_oil_extraction_score = {
-			group = "bg_oil_extraction"
+			group = "bg_infres_oil_extraction"
 			score = {
 				value = 1
 

@@ -22,7 +22,7 @@ building_infres_rye_farm = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_rye_farms
 
@@ -71,7 +71,7 @@ building_infres_wheat_farm = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_wheat_farms
 
@@ -120,7 +120,7 @@ building_infres_rice_farm = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_rice_farms
 
@@ -169,7 +169,7 @@ building_infres_maize_farm = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_maize_farms
 
@@ -218,7 +218,7 @@ building_infres_millet_farm = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_millet_farms
 
@@ -267,7 +267,7 @@ building_infres_livestock_ranch = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_livestock_ranches
 
@@ -318,7 +318,7 @@ building_infres_vineyard_plantation = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_vineyard_plantations
 	icon = "gfx/interface/icons/building_icons/vineyards.dds"

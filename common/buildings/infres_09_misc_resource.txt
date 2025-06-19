@@ -19,7 +19,7 @@
 		}
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_logging
 	icon = "gfx/interface/icons/building_icons/logging_camp.dds"
@@ -60,7 +60,7 @@ building_infres_rubber_plantation = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_rubber
 	icon = "gfx/interface/icons/building_icons/rubber_lodge.dds"
@@ -109,7 +109,7 @@ building_infres_fishing_wharf = {
 		is_sea_adjacent = yes
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_fishing
 	icon = "gfx/interface/icons/building_icons/fishing_wharf.dds"
@@ -151,7 +151,7 @@ building_infres_whaling_station = {
 		is_sea_adjacent = yes
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_whaling
 	icon = "gfx/interface/icons/building_icons/whaling_station.dds"
@@ -194,7 +194,7 @@ building_infres_oil_rig = {
 		}
 	}
 
-	ai_nationalization_desire = 0
+	
 
 	building_group = bg_infres_oil_extraction
 	icon = "gfx/interface/icons/building_icons/oil_rig.dds"

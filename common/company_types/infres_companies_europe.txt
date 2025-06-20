@@ -30,8 +30,11 @@ building_infres_livestock_ranch
 				any_scope_state = {
 					region = sr:region_congo
 					any_scope_building = {
-						is_building_type = building_rubber_plantation
-						is_building_type = building_infres_rubber_plantation
+						OR = {
+							is_building_type = building_rubber_plantation
+							is_building_type = building_infres_rubber_plantation
+						}
+
 						level >= 5
 					}
 				}
@@ -39,8 +42,11 @@ building_infres_livestock_ranch
 			any_scope_state = {
 				region = sr:region_congo
 				any_scope_building = {
-					is_building_type = building_rubber_plantation
-					is_building_type = building_infres_rubber_plantation
+					OR = {
+						is_building_type = building_rubber_plantation
+						is_building_type = building_infres_rubber_plantation
+					}
+
 					level >= 5
 				}
 			}
@@ -269,8 +275,11 @@ building_infres_oil_rig
 			region = sr:region_indonesia
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_oil_rig
-				is_building_type = building_infres_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+
 				level >= 5
 			}
 		}
@@ -659,8 +668,11 @@ building_infres_iron_mine
 			state_region = s:STATE_NORRLAND
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_iron_mine
-				is_building_type = building_infres_iron_mine
+				OR = {
+					is_building_type = building_iron_mine
+					is_building_type = building_infres_iron_mine
+				}
+
 				level >= 5
 			}
 			has_building = building_railway
@@ -1289,8 +1301,11 @@ building_infres_logging_camp
 			state_region = s:STATE_ASTURIAS
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_coal_mine
-				is_building_type = building_infres_coal_mine
+				OR = {
+					is_building_type = building_coal_mine
+					is_building_type = building_infres_coal_mine
+				}
+
 				level >= 5
 			}
 		}
@@ -1788,8 +1803,11 @@ building_infres_oil_rig
 			state_region = s:STATE_WALLACHIA
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_oil_rig
-				is_building_type = building_infres_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+
 				level >= 5
 			}
 		}

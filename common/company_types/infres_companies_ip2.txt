@@ -35,8 +35,11 @@ building_infres_iron_mine
 			state_region = s:STATE_WEST_BENGAL
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_coal_mine
-				is_building_type = building_infres_coal_mine
+				OR = {
+					is_building_type = building_coal_mine
+					is_building_type = building_infres_coal_mine
+				}
+
 				level >= 5
 			}
 		}
@@ -186,8 +189,11 @@ building_infres_cotton_plantation
 			state_region = s:STATE_BOMBAY
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_cotton_plantation
-				is_building_type = building_infres_cotton_plantation
+				OR = {
+					is_building_type = building_cotton_plantation
+					is_building_type = building_infres_cotton_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -200,8 +206,11 @@ building_infres_cotton_plantation
 				region = sr:region_central_india
 			}
 			any_scope_building = {
-				is_building_type = building_opium_plantation
-				is_building_type = building_infres_opium_plantation
+				OR = {
+					is_building_type = building_opium_plantation
+					is_building_type = building_infres_opium_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -304,8 +313,11 @@ building_infres_oil_rig
 		any_scope_state = {
 			has_state_trait = state_trait_burmese_teak
 			any_scope_building = {
-				is_building_type = building_logging_camp
-				is_building_type = building_infres_logging_camp
+				OR = {
+					is_building_type = building_logging_camp
+					is_building_type = building_infres_logging_camp
+				}
+
 				level >= 5
 			}
 			count >= 2
@@ -469,8 +481,11 @@ building_infres_logging_camp
 			state_region = s:STATE_ASSAM
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_tea_plantation
-				is_building_type = building_infres_tea_plantation
+				OR = {
+					is_building_type = building_tea_plantation
+					is_building_type = building_infres_tea_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -622,13 +637,19 @@ building_infres_logging_camp
 		any_scope_state = {
 			has_state_trait = state_trait_burmese_teak
 			any_scope_building = {
-				is_building_type = building_oil_rig
-				is_building_type = building_infres_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+
 				level >= 5
 			}
 			any_scope_building = {
-				is_building_type = building_rice_farm
-				is_building_type = building_infres_rice_farm
+				OR = {
+					is_building_type = building_rice_farm
+					is_building_type = building_infres_rice_farm
+				}
+
 				level >= 5
 			}
 		}
@@ -645,8 +666,11 @@ building_infres_logging_camp
 			has_state_trait = state_trait_burmese_teak
 			has_potential_resource = bg_oil_extraction
 			any_scope_building = {
-				is_building_type = building_rice_farm
-				is_building_type = building_infres_rice_farm
+				OR = {
+					is_building_type = building_rice_farm
+					is_building_type = building_infres_rice_farm
+				}
+
 				level >= 5
 			}
 		}
@@ -658,8 +682,11 @@ building_infres_logging_camp
 			state_trigger = {
 				has_state_trait = state_trait_burmese_teak
 				any_scope_building = {
-					is_building_type = building_rice_farm
-					is_building_type = building_infres_rice_farm
+					OR = {
+						is_building_type = building_rice_farm
+						is_building_type = building_infres_rice_farm
+					}
+
 					level >= 5
 				}
 			}
@@ -733,13 +760,19 @@ building_infres_cotton_plantation
 			}
 			OR = {
 				any_scope_building = {
-					is_building_type = building_rice_farm
-					is_building_type = building_infres_rice_farm
+					OR = {
+						is_building_type = building_rice_farm
+						is_building_type = building_infres_rice_farm
+					}
+
 					level >= 5
 				}
 				any_scope_building = {
-					is_building_type = building_wheat_farm
-					is_building_type = building_infres_wheat_farm
+					OR = {
+						is_building_type = building_wheat_farm
+						is_building_type = building_infres_wheat_farm
+					}
+
 					level >= 5
 				}
 			}

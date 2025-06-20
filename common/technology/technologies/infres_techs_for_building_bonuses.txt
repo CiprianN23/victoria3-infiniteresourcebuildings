@@ -1,0 +1,35 @@
+﻿sericulture = {
+	# Unlocks Mulberry Groves PM on Rice Farms
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/sericulture.dds"
+	category = production
+	can_research = no
+
+	modifier = {
+		building_silk_plantation_throughput_add = 0.25
+		building_infres_silk_plantation_throughput_add = 0.25
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+cotton_gin = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/cotton_gin.dds"
+	category = production
+
+	modifier = {
+		building_cotton_plantation_throughput_add = 0.25
+		building_infres_cotton_plantation_throughput_add = 0.25
+	}
+
+	unlocking_technologies = {
+		manufacturies
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}

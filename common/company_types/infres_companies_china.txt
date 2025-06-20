@@ -45,8 +45,11 @@ building_infres_lead_mine
 			}
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_coal_mine
-				is_building_type = building_infres_coal_mine
+				OR = {
+					is_building_type = building_coal_mine
+					is_building_type = building_infres_coal_mine
+				}
+
 				level >= 5
 			}
 		}

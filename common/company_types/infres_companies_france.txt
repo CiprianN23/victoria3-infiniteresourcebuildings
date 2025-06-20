@@ -36,8 +36,11 @@ building_infres_lead_mine
 		any_scope_state = {
 			state_region = s:STATE_CONSTANTINE
 			any_scope_building = {
-				is_building_type = building_iron_mine
-				is_building_type = building_infres_iron_mine
+				OR = {
+					is_building_type = building_iron_mine
+					is_building_type = building_infres_iron_mine
+				}
+
 				level >= 5
 			}
 		}
@@ -254,8 +257,11 @@ building_infres_vineyard_plantation
 			state_region = s:STATE_CHAMPAGNE
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_vineyard_plantation
-				is_building_type = building_infres_vineyard_plantation
+				OR = {
+					is_building_type = building_vineyard_plantation
+					is_building_type = building_infres_vineyard_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -479,8 +485,11 @@ building_infres_iron_mine
 			state_region = s:STATE_FRENCH_LOW_COUNTRIES
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_coal_mine
-				is_building_type = building_infres_coal_mine
+				OR = {
+					is_building_type = building_coal_mine
+					is_building_type = building_infres_coal_mine
+				}
+
 				level >= 5
 			}
 		}

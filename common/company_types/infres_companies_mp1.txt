@@ -110,8 +110,11 @@ building_infres_livestock_ranch
 			region = sr:region_la_plata
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_livestock_ranch
-				is_building_type = building_infres_livestock_ranch
+				OR = {
+					is_building_type = building_livestock_ranch
+					is_building_type = building_infres_livestock_ranch
+				}
+
 				level >= 5
 			}
 		}
@@ -893,8 +896,11 @@ building_infres_tea_plantation
 		any_scope_state = {
 			region = sr:region_south_china
 			any_scope_building = {
-				is_building_type = building_tea_plantation
-				is_building_type = building_infres_tea_plantation
+				OR = {
+					is_building_type = building_tea_plantation
+					is_building_type = building_infres_tea_plantation
+				}
+
 				level >= 5
 			}
 			count >= 3
@@ -971,8 +977,10 @@ building_infres_sulfur_mine
 			state_region = s:STATE_SICILY
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_sulfur_mine
-				is_building_type = building_infres_sulfur_mine
+				OR = {
+					is_building_type = building_sulfur_mine
+					is_building_type = building_infres_sulfur_mine
+				}
 				level >= 5
 			}
 		}
@@ -1266,8 +1274,11 @@ building_infres_iron_mine
 		any_scope_state = {
 			region = sr:region_southern_africa
 			any_scope_building = {
-				is_building_type = building_gold_mine
-				is_building_type = building_infres_gold_mine
+				OR = {
+					is_building_type = building_gold_mine
+					is_building_type = building_infres_gold_mine
+				}
+
 				level >= 5
 			}
 		}
@@ -1331,8 +1342,11 @@ building_infres_logging_camp
 		any_scope_state = {
 			region = sr:region_niger
 			any_scope_building = {
-				is_building_type = building_rubber_plantation
-				is_building_type = building_infres_rubber_plantation
+				OR = {
+					is_building_type = building_rubber_plantation
+					is_building_type = building_infres_rubber_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -1393,8 +1407,11 @@ company_imperial_ethiopian_railways = {
 			region = sr:region_ethiopia
 			has_building = building_railway
 			any_scope_building = {
-				is_building_type = building_coffee_plantation
-				is_building_type = building_infres_coffee_plantation
+				OR = {
+					is_building_type = building_coffee_plantation
+					is_building_type = building_infres_coffee_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -1485,8 +1502,11 @@ building_infres_iron_mine
 				state_region = s:STATE_NORTH_BORNEO
 			}
 			any_scope_building = {
-				is_building_type = building_gold_mine
-				is_building_type = building_infres_gold_mine
+				OR = {
+					is_building_type = building_gold_mine
+					is_building_type = building_infres_gold_mine
+				}
+
 				level >= 5
 			}
 		}

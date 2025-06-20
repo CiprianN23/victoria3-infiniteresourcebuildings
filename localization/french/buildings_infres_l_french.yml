@@ -155,3 +155,5 @@
   building_infres_vineyard_plantation_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_vineyard_plantation$"
   building_infres_wheat_farm_throughput_add:0 "$building_infres_wheat_farm$ building [concept_throughput]"
   building_infres_wheat_farm_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_wheat_farm$"
+  building_infres_silk_plantation_throughput_add:0 "$building_infres_silk_plantation$ building [concept_throughput]"
+  building_infres_silk_plantation_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_silk_plantation$"

@@ -223,8 +223,11 @@ building_infres_opium_plantation
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_tobacco_plantation
-				is_building_type = building_infres_tobacco_plantation
+				OR = {
+					is_building_type = building_tobacco_plantation
+					is_building_type = building_infres_tobacco_plantation
+				}
+
 				level >= 5
 			}
 			count >= 4
@@ -302,8 +305,11 @@ building_infres_rye_farm
 			state_region = s:STATE_MACEDONIA
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_wheat_farm
-				is_building_type = building_infres_wheat_farm
+				OR = {
+					is_building_type = building_wheat_farm
+					is_building_type = building_infres_wheat_farm
+				}
+
 				level >= 5
 			}
 		}
@@ -635,8 +641,11 @@ building_infres_rice_farm
 			}
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_tobacco_plantation
-				is_building_type = building_infres_tobacco_plantation
+				OR = {
+					is_building_type = building_tobacco_plantation
+					is_building_type = building_infres_tobacco_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -780,8 +789,11 @@ building_infres_opium_plantation
 			region = sr:region_persia
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_tobacco_plantation
-				is_building_type = building_infres_tobacco_plantation
+				OR = {
+					is_building_type = building_tobacco_plantation
+					is_building_type = building_infres_tobacco_plantation
+				}
+
 				level >= 5
 			}
 			count >= 4
@@ -1001,8 +1013,11 @@ company_b_grimm = {
 			state_region = s:STATE_BANGKOK
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_rice_farm
-				is_building_type = building_infres_rice_farm
+				OR = {
+					is_building_type = building_rice_farm
+					is_building_type = building_infres_rice_farm
+				}
+
 				level >= 5
 			}
 		}

@@ -250,8 +250,11 @@ building_infres_oil_rig
 			state_region = s:STATE_URALSK
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_oil_rig
-				is_building_type = building_infres_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+
 				level >= 5
 			}
 		}
@@ -319,8 +322,11 @@ building_infres_cotton_plantation
 			state_region = s:STATE_BALKH
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_cotton_plantation
-				is_building_type = building_infres_cotton_plantation
+				OR = {
+					is_building_type = building_cotton_plantation
+					is_building_type = building_infres_cotton_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -394,8 +400,11 @@ building_infres_tobacco_plantation
 			region = sr:region_persia
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_opium_plantation
-				is_building_type = building_infres_opium_plantation
+				OR = {
+					is_building_type = building_opium_plantation
+					is_building_type = building_infres_opium_plantation
+				}
+
 				level >= 5
 			}
 			count >= 2
@@ -537,8 +546,11 @@ building_infres_cotton_plantation
 			state_region = s:STATE_LEBANON
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_silk_plantation
-				is_building_type = building_infres_silk_plantation
+				OR = {
+					is_building_type = building_silk_plantation
+					is_building_type = building_infres_silk_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -680,8 +692,11 @@ building_infres_iron_mine
 			state_region = s:STATE_SEMIRECHE
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_coal_mine
-				is_building_type = building_infres_coal_mine
+				OR = {
+					is_building_type = building_coal_mine
+					is_building_type = building_infres_coal_mine
+				}
+
 				level >= 5
 			}
 		}
@@ -756,8 +771,11 @@ building_infres_silk_plantation
 			region = sr:region_persia
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_silk_plantation
-				is_building_type = building_infres_silk_plantation
+				OR = {
+					is_building_type = building_silk_plantation
+					is_building_type = building_infres_silk_plantation
+				}
+
 				level >= 5
 			}
 			count >= 2
@@ -839,8 +857,11 @@ building_infres_cotton_plantation
 			region = sr:region_persia
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_cotton_plantation
-				is_building_type = building_infres_cotton_plantation
+				OR = {
+					is_building_type = building_cotton_plantation
+					is_building_type = building_infres_cotton_plantation
+				}
+
 				level >= 5
 			}
 			count >= 2
@@ -942,8 +963,11 @@ building_infres_opium_plantation
 			state_region = s:STATE_FERGANA
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_cotton_plantation
-				is_building_type = building_infres_cotton_plantation
+				OR = {
+					is_building_type = building_cotton_plantation
+					is_building_type = building_infres_cotton_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -1215,8 +1239,11 @@ building_infres_oil_rig
 			}
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_oil_rig
-				is_building_type = building_infres_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+
 				level >= 5
 			}
 		}
@@ -1311,8 +1338,11 @@ building_infres_oil_rig
 			state_region = s:STATE_KHUZESTAN
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_oil_rig
-				is_building_type = building_infres_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+
 				level >= 5
 			}
 		}
@@ -1404,8 +1434,11 @@ building_infres_oil_rig
 			state_region = s:STATE_KHUZESTAN
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_oil_rig
-				is_building_type = building_infres_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+
 				level >= 5
 			}
 		}

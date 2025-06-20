@@ -279,8 +279,11 @@ building_infres_coal_mine
 			}
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_oil_rig
-				is_building_type = building_infres_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+
 				level >= 5
 			}
 		}

@@ -33,8 +33,11 @@ building_infres_oil_rig
 			region = sr:region_the_midwest
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_oil_rig
-				is_building_type = building_infres_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+
 				level >= 5
 			}
 		}
@@ -109,8 +112,11 @@ building_infres_banana_plantation
 				}
 			}
 			any_scope_building = {
-				is_building_type = building_banana_plantation
-				is_building_type = building_infres_banana_plantation
+				OR = {
+					is_building_type = building_banana_plantation
+					is_building_type = building_infres_banana_plantation
+				}
+
 				levels_owned_by_country = {
 					target = ROOT
 					value >= 5

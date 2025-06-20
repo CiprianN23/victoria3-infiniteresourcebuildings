@@ -107,8 +107,11 @@ building_infres_oil_rig
 			region = sr:region_mexico
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_oil_rig
-				is_building_type = building_infres_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+
 				level >= 5
 			}
 			is_coastal = yes
@@ -184,8 +187,11 @@ building_infres_iron_mine
 			state_region = s:STATE_ANTOFAGASTA
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_sulfur_mine
-				is_building_type = building_infres_sulfur_mine
+				OR = {
+					is_building_type = building_sulfur_mine
+					is_building_type = building_infres_sulfur_mine
+				}
+
 				level >= 5
 			}
 		}
@@ -260,8 +266,11 @@ building_infres_oil_rig
 			}
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_oil_rig
-				is_building_type = building_infres_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+
 				level >= 5
 			}
 		}
@@ -568,8 +577,11 @@ building_infres_logging_camp
 		any_scope_state = {
 			state_region = s:STATE_PASTAZA
 			any_scope_building = {
-				is_building_type = building_rubber_plantation
-				is_building_type = building_infres_rubber_plantation
+				OR = {
+					is_building_type = building_rubber_plantation
+					is_building_type = building_infres_rubber_plantation
+				}
+
 				level >= 5
 			}
 		}

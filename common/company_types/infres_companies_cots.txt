@@ -37,8 +37,11 @@ building_infres_logging_camp
 			is_incorporated = yes
 			has_building = building_railway
 			any_scope_building = {
-				is_building_type = building_coffee_plantation
-				is_building_type = building_infres_coffee_plantation
+				OR = {
+					is_building_type = building_coffee_plantation
+					is_building_type = building_infres_coffee_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -435,8 +438,11 @@ building_infres_sulfur_mine
 			state_region = s:STATE_POTOSI
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_lead_mine
-				is_building_type = building_infres_lead_mine
+				OR = {
+					is_building_type = building_lead_mine
+					is_building_type = building_infres_lead_mine
+				}
+
 				level >= 5
 			}
 		}
@@ -495,8 +501,11 @@ building_infres_livestock_ranch
 			region = sr:region_la_plata
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_vineyard_plantation
-				is_building_type = building_infres_vineyard_plantation
+				OR = {
+					is_building_type = building_vineyard_plantation
+					is_building_type = building_infres_vineyard_plantation
+				}
+
 				level >= 5
 			}
 			count >= 2

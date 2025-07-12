@@ -284,6 +284,17 @@ building_infres_rye_farm
 		building_food_industry
 	}
 
+	possible_prestige_goods = {
+        prestige_good_generic_grain
+    }
+
+    prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_grain_complete_tt
+            has_variable = prestige_good_generic_grain_var
+        }
+    }
+
 	potential = {
 		has_interest_marker_in_region = region_balkans
 	}
@@ -544,6 +555,13 @@ building_infres_iron_mine
 		prestige_good_generic_clothes
 	}
 
+	prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_clothes_complete_tt
+            has_variable = prestige_good_generic_clothes_var
+        }
+    }
+
 	potential = {
 		has_interest_marker_in_region = region_bombay
 	}
@@ -620,6 +638,17 @@ building_infres_rice_farm
 		building_food_industry
 		building_chemical_plants
 	}
+
+	possible_prestige_goods = {
+        prestige_good_generic_grain
+    }
+
+    prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_grain_complete_tt
+            has_variable = prestige_good_generic_grain_var
+        }
+    }
 
 	potential = {
 		has_interest_marker_in_region = region_manchuria
@@ -704,6 +733,13 @@ building_infres_silk_plantation
 	possible_prestige_goods = {
 		prestige_good_generic_clothes
 	}
+
+	prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_clothes_complete_tt
+            has_variable = prestige_good_generic_clothes_var
+        }
+    }
 
 	potential = {
 		has_interest_marker_in_region = region_indochina
@@ -854,6 +890,13 @@ building_infres_rye_farm
 		prestige_good_generic_groceries
 	}
 
+	prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_groceries_complete_tt
+            has_variable = prestige_good_generic_groceries_var
+        }
+    }
+
 	potential = {
 		has_interest_marker_in_region = region_indonesia
 	}
@@ -929,6 +972,13 @@ building_infres_coal_mine
 		prestige_good_generic_steel
 	}
 
+	prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_steel_complete_tt
+            has_variable = prestige_good_generic_steel_var
+        }
+    }
+
 	potential = {
 		has_interest_marker_in_region = region_oceania
 	}
@@ -990,11 +1040,23 @@ company_b_grimm = {
 
 	building_types = {
 		building_rice_farm # aided in irrigation projects
+		building_infres_rice_farm # aided in irrigation projects
 	}
 
 	extension_building_types = {
 		building_chemical_plants
 	}
+
+	possible_prestige_goods = {
+        prestige_good_generic_grain
+    }
+
+    prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_grain_complete_tt
+            has_variable = prestige_good_generic_grain_var
+        }
+    }
 
 	potential = {
 		has_interest_marker_in_region = region_indochina

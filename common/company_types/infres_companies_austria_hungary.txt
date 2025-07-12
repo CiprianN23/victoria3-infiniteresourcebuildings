@@ -21,6 +21,13 @@ company_skoda = {
 		prestige_good_generic_steel
 	}
 
+	prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_steel_complete_tt
+            has_variable = prestige_good_generic_steel_var
+        }
+    }
+
 	potential = {
 		has_interest_marker_in_region = region_south_germany
 	}
@@ -110,6 +117,13 @@ company_mav = {
 		prestige_good_generic_tools
 	}
 
+	prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_tools_complete_tt
+            has_variable = prestige_good_generic_tools_var
+        }
+    }
+
 	potential = {
 		has_interest_marker_in_region = region_danubia
 	}
@@ -183,6 +197,13 @@ building_infres_iron_mine
 	possible_prestige_goods = {
 		prestige_good_generic_steel
 	}
+
+	prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_steel_complete_tt
+            has_variable = prestige_good_generic_steel_var
+        }
+    }
 
 	potential = {
 		has_interest_marker_in_region = region_danubia
@@ -340,7 +361,19 @@ company_oevg = {
 	extension_building_types = {
 		building_steel_mills
 		building_munition_plants
+		building_electrics_industry
 	}
+
+	possible_prestige_goods = {
+        prestige_good_generic_small_arms
+    }
+
+    prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_small_arms_complete_tt
+            has_variable = prestige_good_generic_small_arms_var
+        }
+    }
 
 	potential = {
 		has_interest_marker_in_region = region_south_germany

@@ -163,6 +163,17 @@ company_suez_company = {
 		}
 	}
 
+	possible_prestige_goods = {
+        prestige_good_generic_merchant_marine
+    }
+	
+    prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_merchant_marine_complete_tt
+            has_variable = prestige_good_generic_merchant_marine_var
+        }
+    }
+
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_SINAI

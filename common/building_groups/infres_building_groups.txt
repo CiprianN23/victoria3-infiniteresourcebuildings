@@ -476,7 +476,7 @@ bg_infres_construction = {
 
 	infrastructure_usage_per_level = 0.0
 
-	lens = government
+	lens = development
 
 	is_government_funded = yes
 	

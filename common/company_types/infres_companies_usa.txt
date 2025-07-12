@@ -78,13 +78,13 @@ company_united_fruit = {
 
 	flavored_company = yes
 
-	preferred_headquarters = { STATE_MASSACHUSETTS }
+	preferred_headquarters = { STATE_LOUISIANA }
 
 	building_types = {
 		building_sugar_plantation
-building_infres_sugar_plantation
+		building_infres_sugar_plantation
 		building_banana_plantation
-building_infres_banana_plantation
+		building_infres_banana_plantation
 	}
 
 	extension_building_types = {
@@ -104,6 +104,18 @@ building_infres_banana_plantation
 
 	possible = {
 		any_scope_state = {
+			state_region = s:STATE_LOUISIANA
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_sugar_plantation
+					is_building_type = building_infres_sugar_plantation
+				}
+				
+				level >= 5
+			}
+		}
+		any_scope_state = {
 			custom_tooltip = {
 				text = company_united_fruit_possible_tt
 				OR = {
@@ -116,7 +128,7 @@ building_infres_banana_plantation
 					is_building_type = building_banana_plantation
 					is_building_type = building_infres_banana_plantation
 				}
-
+				
 				levels_owned_by_country = {
 					target = ROOT
 					value >= 5
@@ -153,6 +165,12 @@ building_infres_banana_plantation
 	}
 
 	ai_construction_targets = {
+		building_sugar_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_LOUISIANA
+			}
+		}	
 		building_banana_plantation = {
 			level = 5
 			state_trigger = {
@@ -193,6 +211,13 @@ building_infres_coal_mine
 	possible_prestige_goods = {
 		prestige_good_generic_steel
 	}
+
+	prestige_goods_trigger = {
+        custom_tooltip = {
+            text = je_prestige_goods_steel_complete_tt
+            has_variable = prestige_good_generic_steel_var
+        }
+    }
 
 	potential = {
 		has_interest_marker_in_region = region_new_england

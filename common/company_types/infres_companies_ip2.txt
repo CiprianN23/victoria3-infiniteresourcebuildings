@@ -94,6 +94,13 @@ building_infres_cotton_plantation
 		prestige_good_generic_clothes
 	}
 
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_clothes_complete_tt
+			has_variable = prestige_good_generic_clothes_var
+		}
+	}
+
 	potential = {
 		has_interest_marker_in_region = region_bombay
 		has_dlc_feature = ip2_content
@@ -169,6 +176,13 @@ building_infres_cotton_plantation
 
 	possible_prestige_goods = {
 		prestige_good_generic_opium
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_opium_complete_tt
+			has_variable = prestige_good_generic_opium_var
+		}
 	}
 
 	potential = {
@@ -258,18 +272,18 @@ company_bombay_burmah_trading_corporation = {
 
 	building_types = {
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 		building_rubber_plantation
-building_infres_rubber_plantation
+		building_infres_rubber_plantation
 	}
 
 	extension_building_types = {
 		building_tea_plantation
-building_infres_tea_plantation
+		building_infres_tea_plantation
 		building_cotton_plantation
-building_infres_cotton_plantation
+		building_infres_cotton_plantation
 		building_oil_rig
-building_infres_oil_rig
+		building_infres_oil_rig
 	}
 
 	possible_prestige_goods = {
@@ -302,10 +316,20 @@ building_infres_oil_rig
 				any_scope_state = {
 					state_region = s:STATE_BOMBAY
 				}
-				any_scope_treaty = {
-					binds = root
-					any_scope_article = {
-						has_type = trade_privilege
+				OR = {
+					any_scope_treaty = {
+						binds = root
+						any_scope_article = {
+							has_type = trade_privilege
+						}
+					}
+					top_overlord = {
+						any_scope_treaty = {
+							binds = root
+							any_scope_article = {
+								has_type = trade_privilege
+							}
+						}
 					}
 				}
 			}
@@ -317,7 +341,7 @@ building_infres_oil_rig
 					is_building_type = building_logging_camp
 					is_building_type = building_infres_logging_camp
 				}
-
+				
 				level >= 5
 			}
 			count >= 2
@@ -387,6 +411,13 @@ building_infres_cotton_plantation
 
 	possible_prestige_goods = {
 		prestige_good_generic_clothes
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_clothes_complete_tt
+			has_variable = prestige_good_generic_clothes_var
+		}
 	}
 
 	potential = {
@@ -619,6 +650,17 @@ building_infres_rice_farm
 building_infres_logging_camp
 	}
 
+	possible_prestige_goods = {
+		prestige_good_generic_grain
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_grain_complete_tt
+			has_variable = prestige_good_generic_grain_var
+		}
+	}
+
 	potential = {
 		has_interest_marker_in_region = region_indochina
 		has_dlc_feature = ip2_content
@@ -719,6 +761,17 @@ building_infres_wheat_farm
 		building_cotton_plantation
 building_infres_cotton_plantation
 		building_textile_mills
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_grain
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_grain_complete_tt
+			has_variable = prestige_good_generic_grain_var
+		}
 	}
 
 	potential = {

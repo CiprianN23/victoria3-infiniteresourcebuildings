@@ -1,4 +1,4 @@
-﻿# �koda Works
+﻿# Škoda Works
 company_skoda = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/skoda.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
@@ -22,11 +22,11 @@ company_skoda = {
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_steel_complete_tt
-            has_variable = prestige_good_generic_steel_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_steel_complete_tt
+			has_variable = prestige_good_generic_steel_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_south_germany
@@ -95,10 +95,12 @@ company_skoda = {
 	}
 }
 
-# Magyar Kir�lyi �llamvasutak G�pgy�ra
+# Magyar Királyi Államvasutak Gépgyára
 company_mav = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/mavag.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	category = bureaucrat_owned
 
 	flavored_company = yes
 
@@ -118,11 +120,11 @@ company_mav = {
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_tools_complete_tt
-            has_variable = prestige_good_generic_tools_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_tools_complete_tt
+			has_variable = prestige_good_generic_tools_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_danubia
@@ -174,7 +176,7 @@ company_mav = {
 	}
 }
 
-# Weiss Manfr�d Ac�l- �s F�mmuvek
+# Weiss Manfréd Acél- és Fémművek
 company_manfred_weiss = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/manfred_weiss.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
@@ -191,7 +193,6 @@ company_manfred_weiss = {
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
 	}
 
 	possible_prestige_goods = {
@@ -199,11 +200,11 @@ building_infres_iron_mine
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_steel_complete_tt
-            has_variable = prestige_good_generic_steel_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_steel_complete_tt
+			has_variable = prestige_good_generic_steel_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_danubia
@@ -267,13 +268,13 @@ company_galician_carpathian_oil = {
 
 	building_types = {
 		building_oil_rig
-building_infres_oil_rig
+		building_infres_oil_rig
 	}
 
 	extension_building_types = {
 		building_power_plant
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	potential = {
@@ -365,15 +366,15 @@ company_oevg = {
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_small_arms
-    }
+		prestige_good_generic_small_arms
+	}
 
-    prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_small_arms_complete_tt
-            has_variable = prestige_good_generic_small_arms_var
-        }
-    }
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_small_arms_complete_tt
+			has_variable = prestige_good_generic_small_arms_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_south_germany

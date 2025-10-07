@@ -3,6 +3,8 @@ company_misr = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/misr.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_LOWER_EGYPT }
@@ -10,12 +12,12 @@ company_misr = {
 	building_types = {
 		building_textile_mills
 		building_cotton_plantation
-building_infres_cotton_plantation
+		building_infres_cotton_plantation
 	}
 
 	extension_building_types = {
 		building_silk_plantation
-building_infres_silk_plantation
+		building_infres_silk_plantation
 	}
 
 	possible_prestige_goods = {
@@ -78,6 +80,8 @@ company_egyptian_rail = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/egyptian_rail.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	building_types = {
@@ -138,6 +142,8 @@ company_suez_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/suez_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_SINAI }
@@ -151,6 +157,17 @@ company_suez_company = {
 		building_shipyards
 	}
 
+	possible_prestige_goods = {
+		prestige_good_generic_merchant_marine
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_merchant_marine_complete_tt
+			has_variable = prestige_good_generic_merchant_marine_var
+		}
+	}
+
 	potential = {
 		has_interest_marker_in_region = region_nile_basin
 	}
@@ -162,17 +179,6 @@ company_suez_company = {
 			}
 		}
 	}
-
-	possible_prestige_goods = {
-        prestige_good_generic_merchant_marine
-    }
-	
-    prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_merchant_marine_complete_tt
-            has_variable = prestige_good_generic_merchant_marine_var
-        }
-    }
 
 	possible = {
 		any_scope_state = {

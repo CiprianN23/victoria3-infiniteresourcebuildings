@@ -9,12 +9,12 @@ company_bengal_coal_company = {
 
 	building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	potential = {
@@ -87,7 +87,7 @@ company_bombay_dyeing_company = {
 
 	extension_building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
+		building_infres_cotton_plantation
 	}
 
 	possible_prestige_goods = {
@@ -128,9 +128,7 @@ building_infres_cotton_plantation
 
 	prosperity_modifier = {
 		building_dye_plantation_throughput_add  = 0.2
-		building_infres_dye_plantation_throughput_add  = 0.2
 		building_cotton_plantation_throughput_add = 0.05
-		building_infres_cotton_plantation_throughput_add = 0.05
 	}
 
 	ai_will_do = {
@@ -159,15 +157,18 @@ company_david_sassoon = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ip2_david_sasson_and_co.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
+	category = shopkeeper_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_BOMBAY }
 
 	building_types = {
 		building_opium_plantation
-building_infres_opium_plantation
 		building_cotton_plantation
-building_infres_cotton_plantation
+
+		building_infres_opium_plantation
+		building_infres_cotton_plantation
 	}
 
 	extension_building_types = {
@@ -272,17 +273,19 @@ company_bombay_burmah_trading_corporation = {
 
 	building_types = {
 		building_logging_camp
-		building_infres_logging_camp
 		building_rubber_plantation
+
+		building_infres_logging_camp
 		building_infres_rubber_plantation
 	}
 
 	extension_building_types = {
 		building_tea_plantation
-		building_infres_tea_plantation
 		building_cotton_plantation
-		building_infres_cotton_plantation
 		building_oil_rig
+
+		building_infres_tea_plantation
+		building_infres_cotton_plantation
 		building_infres_oil_rig
 	}
 
@@ -341,7 +344,7 @@ company_bombay_burmah_trading_corporation = {
 					is_building_type = building_logging_camp
 					is_building_type = building_infres_logging_camp
 				}
-				
+
 				level >= 5
 			}
 			count >= 2
@@ -350,8 +353,9 @@ company_bombay_burmah_trading_corporation = {
 
 	prosperity_modifier = {
 		building_group_bg_tea_plantations_throughput_add = 0.1
-		building_group_bg_infres_tea_plantations_throughput_add = 0.1
 		building_group_bg_coffee_plantations_throughput_add = 0.1
+
+		building_group_bg_infres_tea_plantations_throughput_add = 0.1
 		building_group_bg_infres_coffee_plantations_throughput_add = 0.1
 	}
 
@@ -404,9 +408,10 @@ company_madura_mills = {
 
 	extension_building_types = {
 		building_rubber_plantation
-building_infres_rubber_plantation
 		building_cotton_plantation
-building_infres_cotton_plantation
+
+		building_infres_rubber_plantation
+		building_infres_cotton_plantation
 	}
 
 	possible_prestige_goods = {
@@ -483,12 +488,12 @@ company_assam_company = {
 
 	building_types = {
 		building_tea_plantation
-building_infres_tea_plantation
+		building_infres_tea_plantation
 	}
 
 	extension_building_types = {
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 	}
 
 	possible_prestige_goods = {
@@ -640,14 +645,15 @@ company_steel_brothers = {
 
 	building_types = {
 		building_oil_rig
-building_infres_oil_rig
 		building_rice_farm
-building_infres_rice_farm
+
+		building_infres_oil_rig
+		building_infres_rice_farm
 	}
 
 	extension_building_types = {
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 	}
 
 	possible_prestige_goods = {
@@ -708,11 +714,7 @@ building_infres_logging_camp
 			has_state_trait = state_trait_burmese_teak
 			has_potential_resource = bg_oil_extraction
 			any_scope_building = {
-				OR = {
-					is_building_type = building_rice_farm
-					is_building_type = building_infres_rice_farm
-				}
-
+				is_building_type = building_rice_farm
 				level >= 5
 			}
 		}
@@ -724,11 +726,7 @@ building_infres_logging_camp
 			state_trigger = {
 				has_state_trait = state_trait_burmese_teak
 				any_scope_building = {
-					OR = {
-						is_building_type = building_rice_farm
-						is_building_type = building_infres_rice_farm
-					}
-
+					is_building_type = building_rice_farm
 					level >= 5
 				}
 			}
@@ -751,15 +749,16 @@ company_ralli_brothers = {
 
 	building_types = {
 		building_rice_farm
-building_infres_rice_farm
 		building_wheat_farm
-building_infres_wheat_farm
+
+		building_infres_rice_farm
+		building_infres_wheat_farm
 	}
 
 	extension_building_types = {
 		building_port
 		building_cotton_plantation
-building_infres_cotton_plantation
+		building_infres_cotton_plantation
 		building_textile_mills
 	}
 
@@ -910,7 +909,7 @@ company_calcutta_electric = {
 
 	extension_building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	potential = {

@@ -1,4 +1,4 @@
-﻿latin_wood = {
+latin_wood = {
 	graphical_culture = "latin"
 	city_type = wood
 	

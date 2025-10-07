@@ -1,4 +1,4 @@
-﻿african_farm = {
+african_farm = {
 	graphical_culture = "african"
 	city_type = farm
 		

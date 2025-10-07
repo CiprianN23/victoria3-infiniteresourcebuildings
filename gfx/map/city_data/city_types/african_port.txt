@@ -1,4 +1,4 @@
-﻿african_port = {
+african_port = {
 	graphical_culture = "african"
 	city_type = port
 

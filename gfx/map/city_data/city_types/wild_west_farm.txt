@@ -1,4 +1,4 @@
-﻿wild_west_farm = {
+wild_west_farm = {
 	city_type = farm
 
 	trigger = {

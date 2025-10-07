@@ -1,4 +1,4 @@
-﻿############ PRIVATE INFRASTRUCTURE
+############ PRIVATE INFRASTRUCTURE
 
 building_manor_house = {
 	building_group = bg_manor_houses

@@ -1,4 +1,4 @@
-﻿# S�o Paulo Railway Co. Ltd.
+﻿# São Paulo Railway Co. Ltd.
 company_sao_paulo_railway = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/brazil_sao_paulo_railway.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
@@ -13,7 +13,7 @@ company_sao_paulo_railway = {
 
 	extension_building_types = {
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 		building_motor_industry
 	}
 
@@ -41,7 +41,7 @@ building_infres_logging_camp
 					is_building_type = building_coffee_plantation
 					is_building_type = building_infres_coffee_plantation
 				}
-
+				
 				level >= 5
 			}
 		}
@@ -91,7 +91,7 @@ building_infres_logging_camp
 	}
 }
 
-# Estaleiro Mau�
+# Estaleiro Mauá
 company_estaleiro_maua = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/brazil_estaleiro_maua.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
@@ -107,7 +107,7 @@ company_estaleiro_maua = {
 
 	extension_building_types = {
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 	}
 
 	potential = {
@@ -169,7 +169,7 @@ building_infres_logging_camp
 	}
 }
 
-# Companhia Fia��o e Tecidos de Pernambuco
+# Companhia Fiação e Tecidos de Pernambuco
 company_pernambuco_textiles = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/brazil_companhia_fiacai_e_tecidos_de_pernambuco.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
@@ -184,9 +184,10 @@ company_pernambuco_textiles = {
 
 	extension_building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
 		building_livestock_ranch
-building_infres_livestock_ranch
+
+		building_infres_cotton_plantation
+		building_infres_livestock_ranch
 	}
 
 	possible_prestige_goods = {
@@ -194,11 +195,11 @@ building_infres_livestock_ranch
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_clothes_complete_tt
-            has_variable = prestige_good_generic_clothes_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_clothes_complete_tt
+			has_variable = prestige_good_generic_clothes_var
+		}
+	}
 
 	potential = {
 		has_dlc_feature = rp1_content
@@ -226,8 +227,9 @@ building_infres_livestock_ranch
 
 	prosperity_modifier = {
 		building_cotton_plantation_throughput_add = 0.1
-		building_infres_cotton_plantation_throughput_add = 0.1
 		building_rubber_plantation_throughput_add = 0.05
+
+		building_infres_cotton_plantation_throughput_add = 0.1
 		building_infres_rubber_plantation_throughput_add = 0.05
 	}
 
@@ -252,7 +254,7 @@ building_infres_livestock_ranch
 	}
 }
 
-# Real F�brica de Ferro S�o Jo�o de Ipanema
+# Real Fábrica de Ferro São João de Ipanema
 company_fundicao_ipanema = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/brazil_fundicao_ipanema.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
@@ -264,12 +266,12 @@ company_fundicao_ipanema = {
 	building_types = {
 		building_steel_mills
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	extension_building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	possible_prestige_goods = {
@@ -277,11 +279,11 @@ building_infres_coal_mine
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_steel_complete_tt
-            has_variable = prestige_good_generic_steel_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_steel_complete_tt
+			has_variable = prestige_good_generic_steel_var
+		}
+	}
 
 	potential = {
 		has_dlc_feature = rp1_content
@@ -363,15 +365,15 @@ company_rossi = {
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_small_arms
-    }
+		prestige_good_generic_small_arms
+	}
 
-    prestige_goods_trigger = {
-    	custom_tooltip = {
-            text = je_prestige_goods_small_arms_complete_tt
-            has_variable = prestige_good_generic_small_arms_var
-        }
-    }
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_small_arms_complete_tt
+			has_variable = prestige_good_generic_small_arms_var
+		}
+	}
 
 	potential = {
 		has_dlc_feature = rp1_content
@@ -399,7 +401,6 @@ company_rossi = {
 
 	prosperity_modifier = {
 		building_livestock_ranch_throughput_add = 0.1
-		building_infres_livestock_ranch_throughput_add = 0.1
 		building_chemical_plants_throughput_add = 0.05
 	}
 
@@ -424,7 +425,7 @@ company_rossi = {
 	}
 }
 
-# Compa��a Esta��fera de Llallagua
+# Compañía Estañífera de Llallagua
 company_estanifera_llallagua = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/bolivia_compania_estanifera_de_llallagua.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
@@ -435,14 +436,15 @@ company_estanifera_llallagua = {
 
 	building_types = {
 		building_lead_mine
-building_infres_lead_mine
+		building_infres_lead_mine
 	}
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
 		building_sulfur_mine
-building_infres_sulfur_mine
+
+		building_infres_iron_mine
+		building_infres_sulfur_mine
 	}
 
 	potential = {
@@ -500,19 +502,21 @@ building_infres_sulfur_mine
 	}
 }
 
-# Centro Vitivin�cola Nacional
+# Centro Vitivinícola Nacional
 company_argentinian_wine = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/argentina_centro_vitivinicola_nacional.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rice.dds"
 
+	category = shopkeeper_owned
+
 	building_types = {
 		building_vineyard_plantation
-building_infres_vineyard_plantation
+		building_infres_vineyard_plantation
 	}
 
 	extension_building_types = {
 		building_livestock_ranch
-building_infres_livestock_ranch
+		building_infres_livestock_ranch
 	}
 
 	potential = {
@@ -564,7 +568,7 @@ building_infres_livestock_ranch
 	}
 }
 
-# Compa��a Sudamericana de Vapores
+# Compañía Sudamericana de Vapores
 company_sudamericana_de_vapores = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/chile_csav.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
@@ -580,7 +584,7 @@ company_sudamericana_de_vapores = {
 	extension_building_types = {
 		building_shipyards
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 	}
 
 	potential = {
@@ -651,7 +655,7 @@ company_electricidad_de_caracas = {
 	extension_building_types = {
 		building_motor_industry
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	potential = {
@@ -706,7 +710,7 @@ building_infres_coal_mine
 	}
 }
 
-# C�rdoba Central Railway
+# Córdoba Central Railway
 company_cordoba_railway = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/argentina_cordoba_cenral_railway.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
@@ -721,7 +725,7 @@ company_cordoba_railway = {
 
 	extension_building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 		building_motor_industry
 	}
 
@@ -758,8 +762,9 @@ building_infres_coal_mine
 
 	prosperity_modifier = {
 		building_wheat_farm_throughput_add = 0.1
-		building_infres_wheat_farm_throughput_add = 0.1
 		building_livestock_ranch_throughput_add = 0.05
+
+		building_infres_wheat_farm_throughput_add = 0.1
 		building_infres_livestock_ranch_throughput_add = 0.05
 	}
 
@@ -786,7 +791,7 @@ building_infres_coal_mine
 	}
 }
 
-# Empresas El�ctricas Asociadas
+# Empresas Eléctricas Asociadas
 company_eea = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/peru_empresas_electricas_asociadas.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
@@ -801,7 +806,7 @@ company_eea = {
 
 	extension_building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	potential = {

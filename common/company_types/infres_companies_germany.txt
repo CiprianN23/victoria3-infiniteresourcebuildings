@@ -15,7 +15,7 @@ company_krupp = {
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	possible_prestige_goods = {
@@ -110,15 +110,15 @@ company_rheinmetall = {
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_artillery
-    }
+		prestige_good_generic_artillery
+	}
 
-    prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_artillery_complete_tt
-            has_variable = prestige_good_generic_artillery_var
-        }
-    }
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_artillery_complete_tt
+			has_variable = prestige_good_generic_artillery_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_north_germany
@@ -209,7 +209,7 @@ company_rheinmetall = {
 	}
 }
 
-# F. Schichau, Maschinen- und Lokomotivfabrik, Schiffswerft und Eisengie�erei GmbH
+# F. Schichau, Maschinen- und Lokomotivfabrik, Schiffswerft und Eisengießerei GmbH
 company_schichau = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/german_schichau.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
@@ -352,10 +352,12 @@ company_siemens_and_halske = {
 	}
 }
 
-# Preu�ische Staatseisenbahnen
+# Preußische Staatseisenbahnen
 company_prussian_state_railways = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/german_kpev.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+
+	category = bureaucrat_owned
 
 	flavored_company = yes
 
@@ -381,7 +383,7 @@ company_prussian_state_railways = {
 				region = sr:region_north_germany
 				region = sr:region_south_germany
 				region = sr:region_rhine
-                region = sr:region_poland
+				region = sr:region_poland
 			}
 			is_incorporated = yes
 			any_scope_building = {
@@ -403,7 +405,7 @@ company_prussian_state_railways = {
 				region = sr:region_north_germany
 				region = sr:region_south_germany
 				region = sr:region_rhine
-                region = sr:region_poland
+				region = sr:region_poland
 			}
 			is_incorporated = yes
 		}
@@ -417,7 +419,7 @@ company_prussian_state_railways = {
 					region = sr:region_north_germany
 					region = sr:region_south_germany
 					region = sr:region_rhine
-                    region = sr:region_poland
+					region = sr:region_poland
 				}
 				is_incorporated = yes
 			}
@@ -446,9 +448,10 @@ company_basf = {
 
 	extension_building_types = {
 		building_dye_plantation
-building_infres_dye_plantation
 		building_sulfur_mine
-building_infres_sulfur_mine
+
+		building_infres_dye_plantation
+		building_infres_sulfur_mine
 	}
 
 	possible_prestige_goods = {

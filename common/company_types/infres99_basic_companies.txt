@@ -2,6 +2,8 @@
 	icon = "gfx/interface/icons/company_icons/company_basic_agriculture_1.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_wheat.dds"
 
+	category = aristocrat_owned
+
 	flavored_company = no
 
 	uses_dynamic_naming = yes
@@ -16,8 +18,9 @@
 
 	building_types = {
 		building_wheat_farm
-		building_infres_wheat_farm
 		building_rye_farm
+
+		building_infres_wheat_farm
 		building_infres_rye_farm
 	}
 
@@ -42,8 +45,9 @@
 			any_scope_building = {
 				OR = {
 					is_building_type = building_wheat_farm
-					is_building_type = building_infres_wheat_farm
 					is_building_type = building_rye_farm
+
+					is_building_type = building_infres_wheat_farm
 					is_building_type = building_infres_rye_farm
 				}
 				level >= 5
@@ -61,9 +65,7 @@
 			any_scope_building = {
 				OR = {
 					is_building_type = building_wheat_farm
-					is_building_type = building_infres_wheat_farm
 					is_building_type = building_rye_farm
-					is_building_type = building_infres_rye_farm
 				}
 				level >= 3
 			}
@@ -74,6 +76,8 @@
 company_basic_agriculture_2 = {
 	icon = "gfx/interface/icons/company_icons/basic_agriculture_2.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rice.dds"
+
+	category = aristocrat_owned
 
 	flavored_company = no
 
@@ -89,10 +93,11 @@ company_basic_agriculture_2 = {
 
 	building_types = {
 		building_rice_farm
-		building_infres_rice_farm
 		building_millet_farm
-		building_infres_millet_farm
 		building_maize_farm
+
+		building_infres_rice_farm
+		building_infres_millet_farm
 		building_infres_maize_farm
 	}
 
@@ -117,10 +122,11 @@ company_basic_agriculture_2 = {
 			any_scope_building = {
 				OR = {
 					is_building_type = building_millet_farm
-					is_building_type = building_infres_millet_farm
 					is_building_type = building_rice_farm
-					is_building_type = building_infres_rice_farm
 					is_building_type = building_maize_farm
+
+					is_building_type = building_infres_millet_farm
+					is_building_type = building_infres_rice_farm
 					is_building_type = building_infres_maize_farm
 				}
 				level >= 5
@@ -138,11 +144,8 @@ company_basic_agriculture_2 = {
 			any_scope_building = {
 				OR = {
 					is_building_type = building_millet_farm
-					is_building_type = building_infres_millet_farm
 					is_building_type = building_rice_farm
-					is_building_type = building_infres_rice_farm
 					is_building_type = building_maize_farm
-					is_building_type = building_infres_maize_farm
 				}
 				level >= 3
 			}
@@ -153,6 +156,9 @@ company_basic_agriculture_2 = {
 company_basic_fabrics = {
 	icon = "gfx/interface/icons/company_icons/basic_fabrics.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+
+	category = aristocrat_owned
 
 	flavored_company = no
 
@@ -168,9 +174,10 @@ company_basic_fabrics = {
 
 	building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
 		building_livestock_ranch
-building_infres_livestock_ranch
+
+		building_infres_cotton_plantation
+		building_infres_livestock_ranch
 	}
 
 	extension_building_types = {
@@ -193,8 +200,9 @@ building_infres_livestock_ranch
 			any_scope_building = {
 				OR = {
 					is_building_type = building_cotton_plantation
-					is_building_type = building_infres_cotton_plantation
 					is_building_type = building_livestock_ranch
+
+					is_building_type = building_infres_cotton_plantation
 					is_building_type = building_infres_livestock_ranch
 				}
 				level >= 5
@@ -211,9 +219,7 @@ building_infres_livestock_ranch
 			any_scope_building = {
 				OR = {
 					is_building_type = building_cotton_plantation
-					is_building_type = building_infres_cotton_plantation
 					is_building_type = building_livestock_ranch
-					is_building_type = building_infres_livestock_ranch
 				}
 				level >= 3
 			}
@@ -224,6 +230,8 @@ building_infres_livestock_ranch
 company_basic_colonial_plantations_1 = {
 	icon = "gfx/interface/icons/company_icons/basic_colonial_plantations_1.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	category = aristocrat_owned
 
 	flavored_company = no
 
@@ -238,14 +246,15 @@ company_basic_colonial_plantations_1 = {
 
 	building_types = {
 		building_opium_plantation
-building_infres_opium_plantation
 		building_tea_plantation
-building_infres_tea_plantation
+
+		building_infres_opium_plantation
+		building_infres_tea_plantation
 	}
 
 	extension_building_types = {
-		building_tobacco_plantation
-building_infres_tobacco_plantation
+		building_infres_tobacco_plantation
+		building_infres_tobacco_plantation
 	}
 
 	possible_prestige_goods = {
@@ -264,8 +273,9 @@ building_infres_tobacco_plantation
 			any_scope_building = {
 				OR = {
 					is_building_type = building_opium_plantation
-					is_building_type = building_infres_opium_plantation
 					is_building_type = building_tea_plantation
+
+					is_building_type = building_infres_opium_plantation
 					is_building_type = building_infres_tea_plantation
 				}
 				level >= 5
@@ -282,9 +292,7 @@ building_infres_tobacco_plantation
 			any_scope_building = {
 				OR = {
 					is_building_type = building_opium_plantation
-					is_building_type = building_infres_opium_plantation
 					is_building_type = building_tea_plantation
-					is_building_type = building_infres_tea_plantation
 				}
 				level >= 3
 			}
@@ -296,6 +304,8 @@ company_basic_colonial_plantations_2 = {
 
 	icon = "gfx/interface/icons/company_icons/basic_colonial_plantations_2.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	category = aristocrat_owned
 
 	flavored_company = no
 
@@ -310,16 +320,17 @@ company_basic_colonial_plantations_2 = {
 
 	building_types = {
 		building_coffee_plantation
-building_infres_coffee_plantation
 		building_sugar_plantation
-building_infres_sugar_plantation
 		building_tobacco_plantation
-building_infres_tobacco_plantation
+
+		building_infres_coffee_plantation
+		building_infres_sugar_plantation
+		building_infres_tobacco_plantation
 	}
 
 	extension_building_types = {
 		building_tea_plantation
-building_infres_tea_plantation
+		building_infres_tea_plantation
 	}
 
 	possible_prestige_goods = {
@@ -338,10 +349,11 @@ building_infres_tea_plantation
 			any_scope_building = {
 				OR = {
 					is_building_type = building_coffee_plantation
-					is_building_type = building_infres_coffee_plantation
 					is_building_type = building_sugar_plantation
-					is_building_type = building_infres_sugar_plantation
 					is_building_type = building_tobacco_plantation
+
+					is_building_type = building_infres_coffee_plantation
+					is_building_type = building_infres_sugar_plantation
 					is_building_type = building_infres_tobacco_plantation
 				}
 				level >= 5
@@ -358,11 +370,8 @@ building_infres_tea_plantation
 			any_scope_building = {
 				OR = {
 					is_building_type = building_coffee_plantation
-					is_building_type = building_infres_coffee_plantation
 					is_building_type = building_sugar_plantation
-					is_building_type = building_infres_sugar_plantation
 					is_building_type = building_tobacco_plantation
-					is_building_type = building_infres_tobacco_plantation
 				}
 				level >= 3
 			}
@@ -373,6 +382,8 @@ building_infres_tea_plantation
 company_basic_silk_and_dye = {
 	icon = "gfx/interface/icons/company_icons/basic_silk_and_dye.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	category = aristocrat_owned
 
 	flavored_company = no
 
@@ -388,9 +399,10 @@ company_basic_silk_and_dye = {
 
 	building_types = {
 		building_silk_plantation
-building_infres_silk_plantation
 		building_dye_plantation
-building_infres_dye_plantation
+
+		building_infres_silk_plantation
+		building_infres_dye_plantation
 	}
 
 	extension_building_types = {
@@ -402,8 +414,9 @@ building_infres_dye_plantation
 			any_scope_building = {
 				OR = {
 					is_building_type = building_silk_plantation
-					is_building_type = building_infres_silk_plantation
 					is_building_type = building_dye_plantation
+
+					is_building_type = building_infres_silk_plantation
 					is_building_type = building_infres_dye_plantation
 				}
 				level >= 5
@@ -420,9 +433,7 @@ building_infres_dye_plantation
 			any_scope_building = {
 				OR = {
 					is_building_type = building_silk_plantation
-					is_building_type = building_infres_silk_plantation
 					is_building_type = building_dye_plantation
-					is_building_type = building_infres_dye_plantation
 				}
 				level >= 3
 			}
@@ -433,6 +444,8 @@ building_infres_dye_plantation
 company_basic_wine_and_fruit = {
 	icon = "gfx/interface/icons/company_icons/basic_wine_and_fruit.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	category = aristocrat_owned
 
 	flavored_company = no
 
@@ -448,14 +461,15 @@ company_basic_wine_and_fruit = {
 
 	building_types = {
 		building_vineyard_plantation
-building_infres_vineyard_plantation
 		building_banana_plantation
-building_infres_banana_plantation
+
+		building_infres_vineyard_plantation
+		building_infres_banana_plantation
 	}
 
 	extension_building_types = {
 		building_sugar_plantation
-building_infres_sugar_plantation
+		building_infres_sugar_plantation
 	}
 
 	possible = {
@@ -463,8 +477,9 @@ building_infres_sugar_plantation
 			any_scope_building = {
 				OR = {
 					is_building_type = building_vineyard_plantation
-					is_building_type = building_infres_vineyard_plantation
 					is_building_type = building_banana_plantation
+
+					is_building_type = building_infres_vineyard_plantation
 					is_building_type = building_infres_banana_plantation
 				}
 				level >= 5
@@ -481,9 +496,7 @@ building_infres_sugar_plantation
 			any_scope_building = {
 				OR = {
 					is_building_type = building_vineyard_plantation
-					is_building_type = building_infres_vineyard_plantation
 					is_building_type = building_banana_plantation
-					is_building_type = building_infres_banana_plantation
 				}
 				level >= 3
 			}
@@ -511,9 +524,10 @@ company_basic_fishing = {
 
 	building_types = {
 		building_fishing_wharf
-building_infres_fishing_wharf
 		building_whaling_station
-building_infres_whaling_station
+
+		building_infres_fishing_wharf
+		building_infres_whaling_station
 	}
 
 	extension_building_types = {
@@ -536,8 +550,9 @@ building_infres_whaling_station
 			any_scope_building = {
 				OR = {
 					is_building_type = building_fishing_wharf
-					is_building_type = building_infres_fishing_wharf
 					is_building_type = building_whaling_station
+
+					is_building_type = building_infres_fishing_wharf
 					is_building_type = building_infres_whaling_station
 				}
 				level >= 5
@@ -555,9 +570,7 @@ building_infres_whaling_station
 			any_scope_building = {
 				OR = {
 					is_building_type = building_fishing_wharf
-					is_building_type = building_infres_fishing_wharf
 					is_building_type = building_whaling_station
-					is_building_type = building_infres_whaling_station
 				}
 				level >= 3
 			}
@@ -585,9 +598,10 @@ company_basic_forestry = {
 
 	building_types = {
 		building_logging_camp
-building_infres_logging_camp
 		building_rubber_plantation
-building_infres_rubber_plantation
+
+		building_infres_logging_camp
+		building_infres_rubber_plantation
 	}
 
 	extension_building_types = {
@@ -599,8 +613,9 @@ building_infres_rubber_plantation
 			any_scope_building = {
 				OR = {
 					is_building_type = building_logging_camp
-					is_building_type = building_infres_logging_camp
 					is_building_type = building_rubber_plantation
+
+					is_building_type = building_infres_logging_camp
 					is_building_type = building_infres_rubber_plantation
 				}
 				level >= 5
@@ -618,9 +633,7 @@ building_infres_rubber_plantation
 			any_scope_building = {
 				OR = {
 					is_building_type = building_logging_camp
-					is_building_type = building_infres_logging_camp
 					is_building_type = building_rubber_plantation
-					is_building_type = building_infres_rubber_plantation
 				}
 				level >= 3
 			}
@@ -647,12 +660,12 @@ company_basic_oil = {
 
 	building_types = {
 		building_oil_rig
-building_infres_oil_rig
+		building_infres_oil_rig
 	}
 
 	extension_building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	possible = {
@@ -662,6 +675,7 @@ building_infres_coal_mine
 					is_building_type = building_oil_rig
 					is_building_type = building_infres_oil_rig
 				}
+
 				level >= 5
 			}
 		}
@@ -674,11 +688,7 @@ building_infres_coal_mine
 	ai_will_do = {
 		any_scope_state = {
 			any_scope_building = {
-				OR = {
-					is_building_type = building_oil_rig
-					is_building_type = building_infres_oil_rig
-				}
-
+				is_building_type = building_oil_rig
 				level >= 3
 			}
 		}
@@ -719,6 +729,7 @@ company_basic_gold_mining = {
 					is_building_type = building_gold_mine
 					is_building_type = building_infres_gold_mine
 				}
+				
 				level >= 5
 			}
 		}
@@ -732,10 +743,7 @@ company_basic_gold_mining = {
 	ai_will_do = {
 		any_scope_state = {
 			any_scope_building = {
-				OR = {
-					is_building_type = building_gold_mine
-					is_building_type = building_infres_gold_mine
-				}
+				is_building_type = building_gold_mine
 				level >= 3
 			}
 		}
@@ -762,14 +770,15 @@ company_basic_metal_mining = {
 
 	building_types = {
 		building_iron_mine
-building_infres_iron_mine
 		building_lead_mine
-building_infres_lead_mine
+
+		building_infres_iron_mine
+		building_infres_lead_mine
 	}
 
 	extension_building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	possible = {
@@ -777,8 +786,9 @@ building_infres_coal_mine
 			any_scope_building = {
 				OR = {
 					is_building_type = building_iron_mine
-					is_building_type = building_infres_iron_mine
 					is_building_type = building_lead_mine
+
+					is_building_type = building_infres_iron_mine
 					is_building_type = building_infres_lead_mine
 				}
 				level >= 5
@@ -795,9 +805,7 @@ building_infres_coal_mine
 			any_scope_building = {
 				OR = {
 					is_building_type = building_iron_mine
-					is_building_type = building_infres_iron_mine
 					is_building_type = building_lead_mine
-					is_building_type = building_infres_lead_mine
 				}
 				level >= 5
 			}
@@ -825,14 +833,15 @@ company_basic_mineral_mining = {
 
 	building_types = {
 		building_sulfur_mine
-building_infres_sulfur_mine
 		building_coal_mine
-building_infres_coal_mine
+
+		building_infres_sulfur_mine
+		building_infres_coal_mine
 	}
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	possible = {
@@ -840,8 +849,9 @@ building_infres_iron_mine
 			any_scope_building = {
 				OR = {
 					is_building_type = building_sulfur_mine
-					is_building_type = building_infres_sulfur_mine
 					is_building_type = building_coal_mine
+
+					is_building_type = building_infres_sulfur_mine
 					is_building_type = building_infres_coal_mine
 				}
 				level >= 5
@@ -858,9 +868,7 @@ building_infres_iron_mine
 			any_scope_building = {
 				OR = {
 					is_building_type = building_sulfur_mine
-					is_building_type = building_infres_sulfur_mine
 					is_building_type = building_coal_mine
-					is_building_type = building_infres_coal_mine
 				}
 				level >= 3
 			}
@@ -891,9 +899,10 @@ company_basic_food = {
 
 	extension_building_types = {
 		building_livestock_ranch
-building_infres_livestock_ranch
 		building_wheat_farm
-building_infres_wheat_farm
+
+		building_infres_livestock_ranch
+		building_infres_wheat_farm
 	}
 
 	possible_prestige_goods = {
@@ -1018,9 +1027,10 @@ company_basic_home_goods = {
 
 	extension_building_types = {
 		building_logging_camp
-building_infres_logging_camp
 		building_lead_mine
-building_infres_lead_mine
+
+		building_infres_logging_camp
+		building_infres_lead_mine
 	}
 
 	possible_prestige_goods = {
@@ -1088,9 +1098,10 @@ company_basic_textiles = {
 
 	extension_building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
 		building_silk_plantation
-building_infres_silk_plantation
+
+		building_infres_cotton_plantation
+		building_infres_silk_plantation
 	}
 
 	possible_prestige_goods = {
@@ -1163,9 +1174,10 @@ company_basic_steel = {
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
 		building_coal_mine
-building_infres_coal_mine
+
+		building_infres_iron_mine
+		building_infres_coal_mine
 	}
 
 	possible = {
@@ -1286,7 +1298,7 @@ company_basic_shipyards = {
 
 	extension_building_types = {
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 	}
 
 	possible = {
@@ -1344,7 +1356,7 @@ company_basic_chemicals = {
 
 	extension_building_types = {
 		building_sulfur_mine
-building_infres_sulfur_mine
+		building_infres_sulfur_mine
 	}
 
 	possible_prestige_goods = {
@@ -1516,6 +1528,58 @@ company_basic_munitions = {
 	}
 }
 
+company_basic_electrics = {
+	icon = "gfx/interface/icons/company_icons/basic_electrics.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = no
+
+	uses_dynamic_naming = yes
+
+	dynamic_company_type_names = {
+		"dynamic_company_type_company"
+		"dynamic_company_type_consortium"
+		"dynamic_company_type_corporation"
+		"dynamic_company_type_conglomerate"
+		"dynamic_company_type_syndicate"
+		"dynamic_company_type_combine"
+	}
+
+	building_types = {
+		building_electrics_industry
+	}
+
+	extension_building_types = {
+		building_iron_mine
+		building_rubber_plantation
+
+		building_infres_iron_mine
+		building_infres_rubber_plantation
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_electrics_industry
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_power_plant_throughput_add = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_electrics_industry
+				level >= 5
+			}
+		}
+	}
+}
+
 company_basic_weapons = {
 	icon = "gfx/interface/icons/company_icons/basic_weapons.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
@@ -1585,60 +1649,11 @@ company_basic_weapons = {
 	}
 }
 
-company_basic_electrics = {
-	icon = "gfx/interface/icons/company_icons/basic_electrics.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
-
-	flavored_company = no
-
-	uses_dynamic_naming = yes
-
-	dynamic_company_type_names = {
-		"dynamic_company_type_company"
-		"dynamic_company_type_consortium"
-		"dynamic_company_type_corporation"
-		"dynamic_company_type_conglomerate"
-		"dynamic_company_type_syndicate"
-		"dynamic_company_type_combine"
-	}
-
-	building_types = {
-		building_electrics_industry
-	}
-
-	extension_building_types = {
-		building_iron_mine
-building_infres_iron_mine
-		building_rubber_plantation
-building_infres_rubber_plantation
-	}
-
-	possible = {
-		any_scope_state = {
-			any_scope_building = {
-				is_building_type = building_electrics_industry
-				level >= 5
-			}
-		}
-	}
-
-	prosperity_modifier = {
-		building_power_plant_throughput_add = 0.1
-	}
-
-	ai_will_do = {
-		any_scope_state = {
-			any_scope_building = {
-				is_building_type = building_electrics_industry
-				level >= 5
-			}
-		}
-	}
-}
-
 company_construction_power_bloc = {
 	icon = "gfx/interface/icons/company_icons/basic_construction.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+
+	category = bureaucrat_owned
 
 	building_types = {
 		building_steel_mills
@@ -1648,7 +1663,7 @@ company_construction_power_bloc = {
 
 	extension_building_types = {
 		building_lead_mine
-building_infres_lead_mine
+		building_infres_lead_mine
 	}
 
 	potential = {

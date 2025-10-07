@@ -1,4 +1,4 @@
-﻿french_port = {
+french_port = {
 #	graphical_culture = "french"
 	city_type = port
 

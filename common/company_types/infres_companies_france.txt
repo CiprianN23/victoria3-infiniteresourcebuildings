@@ -1,6 +1,6 @@
-﻿# Soci�t� Mokta El Hadid
+﻿# Société Mokta El Hadid
 company_societe_mokta_el_hadid = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/france_soci�t�_mokta_el_hadid.dds"
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/france_société_mokta_el_hadid.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
 	flavored_company = yes
@@ -9,14 +9,15 @@ company_societe_mokta_el_hadid = {
 
 	building_types = {
 		building_iron_mine
-building_infres_iron_mine
 		building_sulfur_mine
-building_infres_sulfur_mine
+
+		building_infres_iron_mine
+		building_infres_sulfur_mine
 	}
 
 	extension_building_types = {
 		building_lead_mine
-building_infres_lead_mine
+		building_infres_lead_mine
 	}
 
 	potential = {
@@ -159,14 +160,15 @@ company_dmc = {
 	building_types = {
 		building_textile_mills
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	extension_building_types = {
 		building_dye_plantation
-building_infres_dye_plantation
 		building_cotton_plantation
-building_infres_cotton_plantation
+
+		building_infres_dye_plantation
+		building_infres_cotton_plantation
 	}
 
 	possible_prestige_goods = {
@@ -174,11 +176,11 @@ building_infres_cotton_plantation
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_clothes_complete_tt
-            has_variable = prestige_good_generic_clothes_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_clothes_complete_tt
+			has_variable = prestige_good_generic_clothes_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_rhine
@@ -229,10 +231,12 @@ building_infres_cotton_plantation
 	}
 }
 
-# Conf�d�ration g�n�rale des vignerons
+# Confédération générale des vignerons
 company_cgv = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/france_cgv.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rice.dds"
+
+	category = shopkeeper_owned
 
 	flavored_company = yes
 
@@ -240,7 +244,7 @@ company_cgv = {
 
 	building_types = {
 		building_vineyard_plantation
-building_infres_vineyard_plantation
+		building_infres_vineyard_plantation
 	}
 
 	extension_building_types = {
@@ -259,7 +263,7 @@ building_infres_vineyard_plantation
 	}
 
 	possible = {
-		has_technology_researched = central_planning
+		has_technology_researched = joint_stock_companies
 		any_scope_state = {
 			state_region = s:STATE_CHAMPAGNE
 			is_incorporated = yes
@@ -303,7 +307,7 @@ building_infres_vineyard_plantation
 }
 
 
-# Manufacture d'armes de Saint-�tienne
+# Manufacture d'armes de Saint-Étienne
 company_saint_etienne = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/france_saint_etienne.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
@@ -377,9 +381,9 @@ company_saint_etienne = {
 	}
 }
 
-# Soci�t� Nouvelle des Forges et Chantiers de la M�diterran�e
+# Société Nouvelle des Forges et Chantiers de la Méditerranée
 company_fcm = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/france_forges_et_chantiers_de_la_m�diterran�e.dds"
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/france_forges_et_chantiers_de_la_méditerranée.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 
 	flavored_company = yes
@@ -467,12 +471,12 @@ company_mines_anzin = {
 
 	building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	potential = {

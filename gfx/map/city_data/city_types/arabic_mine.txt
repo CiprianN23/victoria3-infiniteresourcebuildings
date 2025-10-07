@@ -1,4 +1,4 @@
-﻿arabic_mine = {
+arabic_mine = {
 	graphical_culture = "arabic"
 	city_type = mine
 	

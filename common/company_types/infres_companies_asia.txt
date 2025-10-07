@@ -3,22 +3,26 @@ company_east_india_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/gb_eic.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
+	category = aristocrat_owned
+
 	flavored_company = yes
 
 	building_types = {
 		building_tea_plantation
-building_infres_tea_plantation
 		building_tobacco_plantation
-building_infres_tobacco_plantation
 		building_opium_plantation
-building_infres_opium_plantation
+
+		building_infres_tea_plantation
+		building_infres_tobacco_plantation
+		building_infres_opium_plantation
 	}
 
 	extension_building_types = {
 		building_silk_plantation
-building_infres_silk_plantation
 		building_sugar_plantation
-building_infres_sugar_plantation
+
+		building_infres_silk_plantation
+		building_infres_sugar_plantation
 	}
 
 	possible_prestige_goods = {
@@ -32,8 +36,8 @@ building_infres_sugar_plantation
 	possible = {
 		c:GBR ?= this
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
@@ -46,10 +50,11 @@ building_infres_sugar_plantation
 			any_scope_building = {
 				OR = {
 					is_building_type = building_tea_plantation
-					is_building_type = building_infres_tea_plantation
 					is_building_type = building_tobacco_plantation
-					is_building_type = building_infres_tobacco_plantation
 					is_building_type = building_opium_plantation
+
+					is_building_type = building_infres_tea_plantation
+					is_building_type = building_infres_tobacco_plantation
 					is_building_type = building_infres_opium_plantation
 				}
 				level >= 5
@@ -65,8 +70,8 @@ building_infres_sugar_plantation
 	ai_will_do = {
 		c:GBR ?= this
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
@@ -127,6 +132,8 @@ building_infres_sugar_plantation
 company_imperial_arsenal = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/imperial_arsenal.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+
+	category = bureaucrat_owned
 
 	flavored_company = yes
 
@@ -199,12 +206,12 @@ company_ottoman_tobacco_regie = {
 
 	building_types = {
 		building_tobacco_plantation
-building_infres_tobacco_plantation
+		building_infres_tobacco_plantation
 	}
 
 	extension_building_types = {
 		building_opium_plantation
-building_infres_opium_plantation
+		building_infres_opium_plantation
 	}
 
 	possible_prestige_goods = {
@@ -227,7 +234,7 @@ building_infres_opium_plantation
 					is_building_type = building_tobacco_plantation
 					is_building_type = building_infres_tobacco_plantation
 				}
-
+				
 				level >= 5
 			}
 			count >= 4
@@ -275,9 +282,10 @@ company_allatini_mills = {
 
 	building_types = {
 		building_wheat_farm
-building_infres_wheat_farm
 		building_rye_farm
-building_infres_rye_farm
+
+		building_infres_wheat_farm
+		building_infres_rye_farm
 	}
 
 	extension_building_types = {
@@ -285,15 +293,15 @@ building_infres_rye_farm
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_grain
-    }
+		prestige_good_generic_grain
+	}
 
-    prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_grain_complete_tt
-            has_variable = prestige_good_generic_grain_var
-        }
-    }
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_grain_complete_tt
+			has_variable = prestige_good_generic_grain_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_balkans
@@ -320,7 +328,7 @@ building_infres_rye_farm
 					is_building_type = building_wheat_farm
 					is_building_type = building_infres_wheat_farm
 				}
-
+				
 				level >= 5
 			}
 		}
@@ -362,6 +370,8 @@ building_infres_rye_farm
 company_orient_express = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/chemins_de_fer_orientaux.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+
+	category = bureaucrat_owned
 
 	flavored_company = yes
 
@@ -437,6 +447,8 @@ company_great_indian_railway = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/india_great_indian_peninsula_railway.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	building_types = {
@@ -445,7 +457,7 @@ company_great_indian_railway = {
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	potential = {
@@ -547,7 +559,7 @@ company_tata = {
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 		building_motor_industry
 	}
 
@@ -556,11 +568,11 @@ building_infres_iron_mine
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_clothes_complete_tt
-            has_variable = prestige_good_generic_clothes_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_clothes_complete_tt
+			has_variable = prestige_good_generic_clothes_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_bombay
@@ -629,9 +641,10 @@ company_sunhwaguk = {
 
 	building_types = {
 		building_tobacco_plantation
-building_infres_tobacco_plantation
 		building_rice_farm
-building_infres_rice_farm
+
+		building_infres_tobacco_plantation
+		building_infres_rice_farm
 	}
 
 	extension_building_types = {
@@ -640,15 +653,15 @@ building_infres_rice_farm
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_grain
-    }
+		prestige_good_generic_grain
+	}
 
-    prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_grain_complete_tt
-            has_variable = prestige_good_generic_grain_var
-        }
-    }
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_grain_complete_tt
+			has_variable = prestige_good_generic_grain_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_manchuria
@@ -674,7 +687,7 @@ building_infres_rice_farm
 					is_building_type = building_tobacco_plantation
 					is_building_type = building_infres_tobacco_plantation
 				}
-
+				
 				level >= 5
 			}
 		}
@@ -710,7 +723,7 @@ building_infres_rice_farm
 	}
 }
 
-# Nam �?nh Textile Factory
+# Nam Định Textile Factory
 company_nam_dinh = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/vietnam_nam_dinh.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
@@ -725,9 +738,10 @@ company_nam_dinh = {
 
 	extension_building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
 		building_silk_plantation
-building_infres_silk_plantation
+
+		building_infres_cotton_plantation
+		building_infres_silk_plantation
 	}
 
 	possible_prestige_goods = {
@@ -735,11 +749,11 @@ building_infres_silk_plantation
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_clothes_complete_tt
-            has_variable = prestige_good_generic_clothes_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_clothes_complete_tt
+			has_variable = prestige_good_generic_clothes_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_indochina
@@ -799,12 +813,12 @@ company_imperial_tobacco = {
 
 	building_types = {
 		building_tobacco_plantation
-building_infres_tobacco_plantation
+		building_infres_tobacco_plantation
 	}
 
 	extension_building_types = {
 		building_opium_plantation
-building_infres_opium_plantation
+		building_infres_opium_plantation
 	}
 
 	potential = {
@@ -879,11 +893,12 @@ company_san_miguel = {
 
 	extension_building_types = {
 		building_wheat_farm
-building_infres_wheat_farm
 		building_maize_farm
-building_infres_maize_farm
 		building_rye_farm
-building_infres_rye_farm
+
+		building_infres_wheat_farm
+		building_infres_maize_farm
+		building_infres_rye_farm
 	}
 
 	possible_prestige_goods = {
@@ -891,11 +906,11 @@ building_infres_rye_farm
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_groceries_complete_tt
-            has_variable = prestige_good_generic_groceries_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_groceries_complete_tt
+			has_variable = prestige_good_generic_groceries_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_indonesia
@@ -963,9 +978,10 @@ company_william_sandford = {
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
 		building_coal_mine
-building_infres_coal_mine
+
+		building_infres_iron_mine
+		building_infres_coal_mine
 	}
 
 	possible_prestige_goods = {
@@ -973,11 +989,11 @@ building_infres_coal_mine
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_steel_complete_tt
-            has_variable = prestige_good_generic_steel_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_steel_complete_tt
+			has_variable = prestige_good_generic_steel_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_oceania
@@ -1040,7 +1056,6 @@ company_b_grimm = {
 
 	building_types = {
 		building_rice_farm # aided in irrigation projects
-		building_infres_rice_farm # aided in irrigation projects
 	}
 
 	extension_building_types = {
@@ -1048,15 +1063,15 @@ company_b_grimm = {
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_grain
-    }
+		prestige_good_generic_grain
+	}
 
-    prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_grain_complete_tt
-            has_variable = prestige_good_generic_grain_var
-        }
-    }
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_grain_complete_tt
+			has_variable = prestige_good_generic_grain_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_indochina

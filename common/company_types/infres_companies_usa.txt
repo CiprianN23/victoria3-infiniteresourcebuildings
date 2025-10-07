@@ -7,7 +7,7 @@ company_standard_oil = {
 
 	building_types = {
 		building_oil_rig
-building_infres_oil_rig
+		building_infres_oil_rig
 		building_railway
 	}
 
@@ -82,8 +82,9 @@ company_united_fruit = {
 
 	building_types = {
 		building_sugar_plantation
-		building_infres_sugar_plantation
 		building_banana_plantation
+
+		building_infres_sugar_plantation
 		building_infres_banana_plantation
 	}
 
@@ -111,7 +112,7 @@ company_united_fruit = {
 					is_building_type = building_sugar_plantation
 					is_building_type = building_infres_sugar_plantation
 				}
-				
+
 				level >= 5
 			}
 		}
@@ -128,7 +129,7 @@ company_united_fruit = {
 					is_building_type = building_banana_plantation
 					is_building_type = building_infres_banana_plantation
 				}
-				
+
 				levels_owned_by_country = {
 					target = ROOT
 					value >= 5
@@ -199,9 +200,10 @@ company_us_steel = {
 	building_types = {
 		building_steel_mills
 		building_iron_mine
-building_infres_iron_mine
 		building_coal_mine
-building_infres_coal_mine
+
+		building_infres_iron_mine
+		building_infres_coal_mine
 	}
 
 	extension_building_types = {
@@ -213,11 +215,11 @@ building_infres_coal_mine
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_steel_complete_tt
-            has_variable = prestige_good_generic_steel_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_steel_complete_tt
+			has_variable = prestige_good_generic_steel_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_new_england
@@ -474,7 +476,7 @@ company_ford_motor = {
 	extension_building_types = {
 		building_steel_mills
 		building_rubber_plantation
-building_infres_rubber_plantation
+		building_infres_rubber_plantation
 	}
 
 	possible_prestige_goods = {

@@ -1,4 +1,4 @@
-﻿ig_trait_farmers_markets = {
+ig_trait_farmers_markets = {
 	icon = "gfx/interface/icons/ig_trait_icons/farmers_markets.dds"
 	min_approval = loyal
 
@@ -38,6 +38,7 @@ ig_trait_obshchina = {
 
 	modifier = {
 		building_group_bg_agriculture_tax_mult = 0.1
+		building_group_bg_infres_agriculture_tax_mult = 0.1
 	}
 }
 
@@ -76,7 +77,6 @@ ig_trait_plantation_work = {
 	}
 }
 
-
 ig_trait_of_the_sovereign_alone = {
 	icon = "gfx/interface/icons/ig_trait_icons/old_ways.dds"
 	max_approval = unhappy
@@ -84,6 +84,7 @@ ig_trait_of_the_sovereign_alone = {
 	modifier = {
 		state_radicals_from_political_movements_mult = 0.05
 		building_group_bg_agriculture_tax_mult = -0.05
+		building_group_bg_infres_agriculture_tax_mult = -0.05
 	}
 }
 
@@ -117,5 +118,16 @@ ig_trait_khalsa_panth = {
 
 	modifier = {
 		state_infrastructure_mult = 0.1
+	}
+}
+
+ig_trait_born_particularists = {
+	icon = "gfx/interface/icons/ig_trait_icons/old_ways.dds"
+	max_approval = unhappy
+
+	modifier = {
+		country_authority_mult = -0.05
+		country_bureaucracy_mult = -0.05
+		country_radicals_from_legitimacy_mult = 0.1
 	}
 }

@@ -1,4 +1,4 @@
-﻿french_city = {
+french_city = {
 #	graphical_culture = "french"
 	city_type = city
 

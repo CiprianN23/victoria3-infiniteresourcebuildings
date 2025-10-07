@@ -3,21 +3,24 @@ company_ccci = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ccci.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
+	category = aristocrat_owned
+
 	flavored_company = yes
 
 	building_types = {
 		building_rubber_plantation
-building_infres_rubber_plantation
 		building_logging_camp
-building_infres_logging_camp
 		building_iron_mine
-building_infres_iron_mine
+
+		building_infres_rubber_plantation
+		building_infres_logging_camp
+		building_infres_iron_mine
 	}
 
 	extension_building_types = {
 		building_railway
 		building_livestock_ranch
-building_infres_livestock_ranch
+		building_infres_livestock_ranch
 	}
 
 	potential = {
@@ -85,7 +88,7 @@ building_infres_livestock_ranch
 	}
 }
 
-# Soci�t� Franco-Belge
+# Société Franco-Belge
 company_franco_belge = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/franco_belge.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
@@ -164,7 +167,7 @@ company_franco_belge = {
 	}
 }
 
-# Soci�t� anonyme John Cockerill
+# Société anonyme John Cockerill
 company_john_cockerill = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/john_cockerill.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
@@ -181,7 +184,7 @@ company_john_cockerill = {
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	possible_prestige_goods = {
@@ -189,11 +192,11 @@ building_infres_iron_mine
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_tools_complete_tt
-            has_variable = prestige_good_generic_tools_var
+		custom_tooltip = {
+			text = je_prestige_goods_tools_complete_tt
+			has_variable = prestige_good_generic_tools_var
 		}
-    }
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_rhine
@@ -265,7 +268,7 @@ company_nederlandse_petroleum = {
 
 	building_types = {
 		building_oil_rig
-building_infres_oil_rig
+		building_infres_oil_rig
 	}
 
 	extension_building_types = {
@@ -507,11 +510,11 @@ company_kouppas = {
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_tools_complete_tt
-            has_variable = prestige_good_generic_tools_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_tools_complete_tt
+			has_variable = prestige_good_generic_tools_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_balkans
@@ -588,7 +591,7 @@ company_ericsson = {
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	possible_prestige_goods = {
@@ -651,13 +654,15 @@ company_lkab = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/lkab.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_NORRLAND }
 
 	building_types = {
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	extension_building_types = {
@@ -690,7 +695,7 @@ building_infres_iron_mine
 					is_building_type = building_iron_mine
 					is_building_type = building_infres_iron_mine
 				}
-
+				
 				level >= 5
 			}
 			has_building = building_railway
@@ -730,9 +735,9 @@ building_infres_iron_mine
 	}
 }
 
-# G�taverken
+# Götaverken
 company_gotaverken = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/g�taverken.dds"
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/götaverken.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 
 	flavored_company = yes
@@ -747,7 +752,7 @@ company_gotaverken = {
 
 	extension_building_types = {
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 	}
 
 	potential = {
@@ -855,7 +860,6 @@ company_aker_mek = {
 	prosperity_modifier = {
 		country_convoys_capacity_mult = 0.15
 		building_fishing_wharf_throughput_add = 0.05
-		building_infres_fishing_wharf_throughput_add = 0.05
 	}
 
 	ai_will_do = {
@@ -892,7 +896,7 @@ company_nokia = {
 	building_types = {
 		building_paper_mills
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 		building_power_plant
 	}
 
@@ -901,15 +905,15 @@ building_infres_logging_camp
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_paper
-    }
+		prestige_good_generic_paper
+	}
 
-    prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_paper_complete_tt
-            has_variable = prestige_good_generic_paper_var
-        }
-    }
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_paper_complete_tt
+			has_variable = prestige_good_generic_paper_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_finland
@@ -1006,7 +1010,6 @@ company_ursus = {
 
 	prosperity_modifier = {
 		building_wheat_farm_throughput_add = 0.2
-		building_infres_wheat_farm_throughput_add = 0.2
 	}
 
 	ai_will_do = {
@@ -1043,7 +1046,7 @@ company_lilpop = {
 	building_types = {
 		building_steel_mills
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 		building_tooling_workshops
 	}
 
@@ -1056,11 +1059,11 @@ building_infres_iron_mine
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_steel_complete_tt
-            has_variable = prestige_good_generic_steel_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_steel_complete_tt
+			has_variable = prestige_good_generic_steel_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_poland
@@ -1125,10 +1128,12 @@ building_infres_iron_mine
 	}
 }
 
-# Companhia de Mo�ambique
+# Companhia de Moçambique
 company_mozambique_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/mozambique_companhia_de_mocambique.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	category = bureaucrat_owned
 
 	flavored_company = yes
 
@@ -1136,27 +1141,29 @@ company_mozambique_company = {
 
 	building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
 		building_tea_plantation
-building_infres_tea_plantation
 		building_rice_farm
-building_infres_rice_farm
+
+		building_infres_cotton_plantation
+		building_infres_tea_plantation
+		building_infres_rice_farm
 	}
 
 	extension_building_types = {
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_grain
-    }
-        prestige_goods_trigger = {
-        	custom_tooltip = {
-            	text = je_prestige_goods_grain_complete_tt
-                has_variable = prestige_good_generic_grain_var
-        }
-    }
+		prestige_good_generic_grain
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_grain_complete_tt
+			has_variable = prestige_good_generic_grain_var
+		}
+	}
 
 	potential = {
 		country_has_primary_culture = cu:portuguese
@@ -1173,8 +1180,9 @@ building_infres_logging_camp
 			any_scope_building = {
 				OR = {
 					is_building_type = building_cotton_plantation
-					is_building_type = building_infres_cotton_plantation
 					is_building_type = building_tea_plantation
+
+					is_building_type = building_infres_cotton_plantation
 					is_building_type = building_infres_tea_plantation
 				}
 				level >= 5
@@ -1241,12 +1249,12 @@ company_altos_hornos_de_vizcaya = {
 	building_types = {
 		building_steel_mills
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	extension_building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	possible_prestige_goods = {
@@ -1254,11 +1262,11 @@ building_infres_coal_mine
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_steel_complete_tt
-            has_variable = prestige_good_generic_steel_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_steel_complete_tt
+			has_variable = prestige_good_generic_steel_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_iberia
@@ -1310,7 +1318,7 @@ building_infres_coal_mine
 	}
 }
 
-# Duro y Compa��a
+# Duro y Compañía
 company_duro_y_compania = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/spain_duro_y_compania.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
@@ -1321,15 +1329,15 @@ company_duro_y_compania = {
 
 	building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 		building_steel_mills
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	extension_building_types = {
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 	}
 
 	possible_prestige_goods = {
@@ -1337,11 +1345,11 @@ building_infres_logging_camp
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_steel_complete_tt
-            has_variable = prestige_good_generic_steel_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_steel_complete_tt
+			has_variable = prestige_good_generic_steel_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_iberia
@@ -1398,7 +1406,7 @@ building_infres_logging_camp
 	}
 }
 
-# La Espa�a Industrial
+# La España Industrial
 company_espana_industrial = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/spain_la_espana_industrial.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
@@ -1410,12 +1418,12 @@ company_espana_industrial = {
 	building_types = {
 		building_textile_mills
 		building_cotton_plantation
-building_infres_cotton_plantation
+		building_infres_cotton_plantation
 	}
 
 	extension_building_types = {
 		building_silk_plantation
-building_infres_silk_plantation
+		building_infres_silk_plantation
 	}
 
 	possible_prestige_goods = {
@@ -1423,11 +1431,11 @@ building_infres_silk_plantation
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_clothes_complete_tt
-            has_variable = prestige_good_generic_clothes_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_clothes_complete_tt
+			has_variable = prestige_good_generic_clothes_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_iberia
@@ -1479,7 +1487,7 @@ building_infres_silk_plantation
 	}
 }
 
-# F�brica de Armas de Trubia
+# Fábrica de Armas de Trubia
 company_trubia = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/spain_fabrica_de_armas_de_trubia.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
@@ -1499,14 +1507,15 @@ company_trubia = {
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_artillery
-    }
-        prestige_goods_trigger = {
-        	custom_tooltip = {
-           		text = je_prestige_goods_artillery_complete_tt
-                has_variable = prestige_good_generic_artillery_var
-        }
-    }
+		prestige_good_generic_artillery
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_artillery_complete_tt
+			has_variable = prestige_good_generic_artillery_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_iberia
@@ -1566,7 +1575,7 @@ company_zastava = {
 
 	flavored_company = yes
 
-	preferred_headquarters = { STATE_NORTHERN_SERBIA }
+	preferred_headquarters = { STATE_WESTERN_SERBIA }
 
 	building_types = {
 		building_arms_industry
@@ -1578,15 +1587,15 @@ company_zastava = {
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_small_arms
-    }
+		prestige_good_generic_small_arms
+	}
 
-    prestige_goods_trigger = {
-        	custom_tooltip = {
-            	text = je_prestige_goods_small_arms_complete_tt
-                has_variable = prestige_good_generic_small_arms_var
-        }
-    }
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_small_arms_complete_tt
+			has_variable = prestige_good_generic_small_arms_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_balkans
@@ -1595,7 +1604,7 @@ company_zastava = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_NORTHERN_SERBIA
+				state_region = s:STATE_WESTERN_SERBIA
 			}
 		}
 	}
@@ -1603,7 +1612,7 @@ company_zastava = {
 	possible = {
 		has_technology_researched = gunsmithing
 		any_scope_state = {
-			state_region = s:STATE_NORTHERN_SERBIA
+			state_region = s:STATE_WESTERN_SERBIA
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_arms_industry
@@ -1620,7 +1629,7 @@ company_zastava = {
 	ai_will_do = {
 		has_technology_researched = gunsmithing
 		any_scope_state = {
-			state_region = s:STATE_NORTHERN_SERBIA
+			state_region = s:STATE_WESTERN_SERBIA
 			is_incorporated = yes
 		}
 	}
@@ -1629,7 +1638,7 @@ company_zastava = {
 		building_arms_industry = {
 			level = 5
 			state_trigger = {
-				state_region = s:STATE_NORTHERN_SERBIA
+				state_region = s:STATE_WESTERN_SERBIA
 			}
 		}
 	}
@@ -1662,11 +1671,11 @@ company_chr_hansens = {
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_groceries_complete_tt
-            has_variable = prestige_good_generic_groceries_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_groceries_complete_tt
+			has_variable = prestige_good_generic_groceries_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_baltic
@@ -1696,9 +1705,7 @@ company_chr_hansens = {
 
 	prosperity_modifier = {
 		building_livestock_ranch_throughput_add = 0.1
-		building_infres_livestock_ranch_throughput_add = 0.1
 		building_fishing_wharf_throughput_add = 0.1
-		building_infres_fishing_wharf_throughput_add = 0.1
 	}
 
 	ai_will_do = {
@@ -1728,7 +1735,7 @@ company_chr_hansens = {
 	}
 }
 
-# A.P. M�ller (later M�rsk)
+# A.P. Møller (later Mærsk)
 company_ap_moller = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ap_moller.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
@@ -1744,19 +1751,19 @@ company_ap_moller = {
 	extension_building_types = {
 		building_shipyards
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_merchant_marine
-    }
-	
-    prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_merchant_marine_complete_tt
-            has_variable = prestige_good_generic_merchant_marine_var
+		prestige_good_generic_merchant_marine
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_merchant_marine_complete_tt
+			has_variable = prestige_good_generic_merchant_marine_var
 		}
-    }
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_baltic
@@ -1807,10 +1814,12 @@ building_infres_logging_camp
 	}
 }
 
-# Caile Ferate Rom�ne
+# Căile Ferate Române
 company_cfr = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/romania_cfr.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+
+	category = bureaucrat_owned
 
 	flavored_company = yes
 
@@ -1873,7 +1882,7 @@ company_cfr = {
 	}
 }
 
-# Steaua Rom�na
+# Steaua Română
 company_romanian_star = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/romania_steaua_romana.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
@@ -1884,7 +1893,7 @@ company_romanian_star = {
 
 	building_types = {
 		building_oil_rig
-building_infres_oil_rig
+		building_infres_oil_rig
 	}
 
 	extension_building_types = {
@@ -1913,7 +1922,6 @@ building_infres_oil_rig
 					is_building_type = building_oil_rig
 					is_building_type = building_infres_oil_rig
 				}
-
 				level >= 5
 			}
 		}

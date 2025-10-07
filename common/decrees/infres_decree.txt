@@ -1,4 +1,4 @@
-﻿decree_encourage_agricultural_industry = {
+decree_encourage_agricultural_industry = {
 	texture = "gfx/interface/icons/decree/decree_encourage_agricultural_industry.dds"
 	unlocking_technologies = {
 		enclosure

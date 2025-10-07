@@ -1,4 +1,4 @@
-﻿law_homesteading = {
+law_homesteading = {
 	group = lawgroup_land_reform
 
 	icon = "gfx/interface/icons/law_icons/freeholders.dds"
@@ -341,6 +341,99 @@ law_extraction_economy = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
+		}
+	}
+}
+
+law_cooperative_ownership = {
+	group = lawgroup_economic_system
+
+	icon = "gfx/interface/icons/law_icons/cooperative_ownership.dds"
+
+	progressiveness = 100
+
+	disallowing_laws = {
+		law_serfdom
+	}
+
+	unlocking_laws = {
+		law_council_republic
+		law_corporate_state
+	}
+
+	on_activate = {
+		custom_tooltip = {
+			text = enact_law_radical_leftist_economy_warning_desc
+		}
+	}
+
+	modifier = {
+		state_shopkeepers_investment_pool_efficiency_mult = 0.25
+		state_farmers_investment_pool_efficiency_mult = 0.25
+		country_private_construction_allocation_mult = 0.35
+		country_government_dividends_reinvestment_add = 1.0
+		country_free_charters_add = 1
+
+		building_group_bg_manufacturing_allowed_collectivization_add = 1.0
+		building_group_bg_mining_allowed_collectivization_add = 1.0
+		building_group_bg_extraction_allowed_collectivization_add = 1.0
+		building_group_bg_power_allowed_collectivization_add = 1.0
+		building_group_bg_private_infrastructure_allowed_collectivization_add = 1.0
+		building_group_bg_arts_allowed_collectivization_add = 1.0
+
+		building_group_bg_infres_mining_allowed_collectivization_add = 1.0
+		building_group_bg_infres_extraction_allowed_collectivization_add = 1.0
+
+		country_foreign_collectivization_bool = yes
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+
+		if = {
+			limit = {
+				has_law = law_type:law_council_republic
+			}
+			add = 250
+		}
+
+		if = {
+			limit = {
+				has_law = law_type:law_council_republic
+			}
+			add = 100
+		}
+	}
+
+	ai_impose_chance = {
+		value = 0
+
+		if = {
+			limit = {
+				has_law = law_type:law_cooperative_ownership
+			}
+
+			add = base_impose_law_weight
+			multiply = 10.0
+		}
+
+		if = {
+			limit = {
+				scope:target_country = {
+					c:BIC ?= this
+					OR = {
+						has_journal_entry = je_british_dictate_plantations
+						has_journal_entry = je_british_dictate_military
+						has_journal_entry = je_british_dictate_universities
+					}
+				}
+			}
+			multiply = 0
 		}
 	}
 }

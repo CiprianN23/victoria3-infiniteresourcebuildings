@@ -9,15 +9,16 @@ company_kaiping_mining = {
 
 	building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 		building_railway
 	}
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
 		building_lead_mine
-building_infres_lead_mine
+
+		building_infres_iron_mine
+		building_infres_lead_mine
 	}
 
 	potential = {
@@ -94,6 +95,8 @@ company_hanyang_arsenal = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/chinese_hanyang_arsenal.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_EASTERN_HUBEI }
@@ -109,15 +112,15 @@ company_hanyang_arsenal = {
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_small_arms
-    }
+		prestige_good_generic_small_arms
+	}
 
-    prestige_goods_trigger = {
-        custom_tooltip = {
-        	text = je_prestige_goods_small_arms_complete_tt
-            has_variable = prestige_good_generic_small_arms_var
-        }
-    }
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_small_arms_complete_tt
+			has_variable = prestige_good_generic_small_arms_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_south_china
@@ -175,6 +178,8 @@ company_foochow_arsenal = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/chinese_foochow_arsenal.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_FUJIAN }
@@ -187,7 +192,7 @@ company_foochow_arsenal = {
 	extension_building_types = {
 		building_steel_mills
 		building_logging_camp
-building_infres_logging_camp
+		building_infres_logging_camp
 	}
 
 	potential = {
@@ -258,7 +263,7 @@ company_jingdezhen = {
 
 	extension_building_types = {
 		building_lead_mine
-building_infres_lead_mine
+		building_infres_lead_mine
 	}
 
 	potential = {
@@ -292,7 +297,6 @@ building_infres_lead_mine
 	prosperity_modifier = {
 		country_prestige_mult = 0.15
 		building_lead_mine_throughput_add = 0.05
-		building_infres_lead_mine_throughput_add = 0.05
 	}
 
 	ai_will_do = {

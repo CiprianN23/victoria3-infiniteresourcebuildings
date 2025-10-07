@@ -1,4 +1,4 @@
-﻿# D? Af?an Nasaji �erkat
+﻿# Də Afḡān Nasājī Šerkat
 company_da_afghan_nassaji_sherkat = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/da_afghan_nassaji_sherkat.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
@@ -13,7 +13,7 @@ company_da_afghan_nassaji_sherkat = {
 
 	extension_building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
+		building_infres_cotton_plantation
 	}
 
 	possible_prestige_goods = {
@@ -82,6 +82,8 @@ building_infres_cotton_plantation
 company_iranian_state_railway = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/trans_iranian_railway.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+
+	category = bureaucrat_owned
 
 	flavored_company = yes
 
@@ -152,6 +154,8 @@ company_iranian_state_railway = {
 company_tashkent_railroad = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/tashkent_railroad.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+
+	category = bureaucrat_owned
 
 	flavored_company = yes
 
@@ -239,7 +243,7 @@ company_west_ural_petroleum = {
 
 	building_types = {
 		building_oil_rig
-building_infres_oil_rig
+		building_infres_oil_rig
 	}
 
 	extension_building_types = {
@@ -303,10 +307,12 @@ building_infres_oil_rig
 	}
 }
 
-# �erkat-e Ette?adiya-ye Welayat-e �emali
+# Šerkat-e Etteḥādīya-ye Welāyat-e Šemālī
 company_sherkat_shemali = {
 	icon = "gfx/interface/icons/company_icons/basic_colonial_plantations_2.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+
+	category = aristocrat_owned
 
 	flavored_company = yes
 
@@ -314,7 +320,7 @@ company_sherkat_shemali = {
 
 	building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
+		building_infres_cotton_plantation
 	}
 
 	extension_building_types = {
@@ -350,7 +356,6 @@ building_infres_cotton_plantation
 
 	prosperity_modifier = {
 		building_opium_plantation_throughput_add = 0.2
-		building_infres_opium_plantation_throughput_add = 0.2
 	}
 
 	ai_will_do = {
@@ -374,10 +379,12 @@ building_infres_cotton_plantation
 	}
 }
 
-# Bongah-e En?e?ar-e ?aderat-e Taryak
+# Bongāh-e Enḥeṣār-e Ṣāderāt-e Taryāk
 company_opium_export_monopoly = {
 	icon = "gfx/interface/icons/company_icons/basic_colonial_plantations_1.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	category = aristocrat_owned
 
 	flavored_company = yes
 
@@ -385,12 +392,12 @@ company_opium_export_monopoly = {
 
 	building_types = {
 		building_opium_plantation
-building_infres_opium_plantation
+		building_infres_opium_plantation
 	}
 
 	extension_building_types = {
 		building_tobacco_plantation
-building_infres_tobacco_plantation
+		building_infres_tobacco_plantation
 	}
 
 	possible_prestige_goods = {
@@ -398,10 +405,10 @@ building_infres_tobacco_plantation
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_opium_complete_tt
-            has_variable = prestige_good_generic_opium_var
-        }
+		custom_tooltip = {
+			text = je_prestige_goods_opium_complete_tt
+			has_variable = prestige_good_generic_opium_var
+		}
 	}
 
 	potential = {
@@ -461,7 +468,7 @@ building_infres_tobacco_plantation
 	}
 }
 
-# �erkat-e Eslamiya
+# Šerkat-e Eslāmiya
 company_sherkate_eslamiya = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_serkat_e_eslamiya.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
@@ -476,7 +483,7 @@ company_sherkate_eslamiya = {
 
 	extension_building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
+		building_infres_cotton_plantation
 	}
 
 	possible_prestige_goods = {
@@ -484,11 +491,11 @@ building_infres_cotton_plantation
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_clothes_complete_tt
-            has_variable = prestige_good_generic_clothes_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_clothes_complete_tt
+			has_variable = prestige_good_generic_clothes_var
+		}
+	}
 
 	potential = {
 		has_dlc_feature = ep1_content
@@ -550,12 +557,12 @@ company_nicolas_portalis = {
 
 	building_types = {
 		building_silk_plantation
-building_infres_silk_plantation
+		building_infres_silk_plantation
 	}
 
 	extension_building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
+		building_infres_cotton_plantation
 	}
 
 	potential = {
@@ -618,6 +625,8 @@ building_infres_cotton_plantation
 company_hanseong_jeongi_hoesa = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/hanseong_jeongi_hoesa.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	category = bureaucrat_owned
 
 	flavored_company = yes
 
@@ -694,12 +703,12 @@ company_kirgizian_mining_company= {
 
 	building_types = {
 		building_coal_mine
-building_infres_coal_mine
+		building_infres_coal_mine
 	}
 
 	extension_building_types = {
 		building_iron_mine
-building_infres_iron_mine
+		building_infres_iron_mine
 	}
 
 	potential = {
@@ -764,11 +773,13 @@ company_persshelk = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_persshelk.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	building_types = {
 		building_silk_plantation
-building_infres_silk_plantation
+		building_infres_silk_plantation
 	}
 
 	extension_building_types = {
@@ -850,11 +861,13 @@ company_perskhlopok = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_perskhlopok.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
+		building_infres_cotton_plantation
 	}
 
 	extension_building_types = {
@@ -936,34 +949,38 @@ company_moscow_irrigation_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_moscow_irrigation_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_FERGANA }
 
 	building_types = {
 		building_cotton_plantation
-building_infres_cotton_plantation
 		building_rice_farm
-building_infres_rice_farm
+
+		building_infres_cotton_plantation
+		building_infres_rice_farm
 	}
 
 	extension_building_types = {
 		building_wheat_farm
-building_infres_wheat_farm
 		building_opium_plantation
-building_infres_opium_plantation
+
+		building_infres_wheat_farm
+		building_infres_opium_plantation
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_grain
-    }
+		prestige_good_generic_grain
+	}
 
-    prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_grain_complete_tt
-            has_variable = prestige_good_generic_grain_var
-        }
-    }
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_grain_complete_tt
+			has_variable = prestige_good_generic_grain_var
+		}
+	}
 
 	potential = {
 		has_dlc_feature = ep1_content
@@ -1066,8 +1083,9 @@ company_guinness = {
 
 	extension_building_types = {
 		building_wheat_farm
-		building_infres_wheat_farm
 		building_rye_farm
+
+		building_infres_wheat_farm
 		building_infres_rye_farm
 	}
 
@@ -1076,11 +1094,11 @@ company_guinness = {
 	}
 
 	prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_groceries_complete_tt
-            has_variable = prestige_good_generic_groceries_var
-        }
-    }
+		custom_tooltip = {
+			text = je_prestige_goods_groceries_complete_tt
+			has_variable = prestige_good_generic_groceries_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_north_sea_coast
@@ -1146,28 +1164,30 @@ company_oriental_development_company = {
 
 	building_types = {
 		building_rice_farm
-building_infres_rice_farm
 		building_millet_farm
-building_infres_millet_farm
 		building_wheat_farm
-building_infres_wheat_farm
+
+		building_infres_rice_farm
+		building_infres_millet_farm
+		building_infres_wheat_farm
 	}
 
 	extension_building_types = {
 		building_maize_farm
-building_infres_maize_farm
+		building_infres_maize_farm
 		building_food_industry
 	}
 
 	possible_prestige_goods = {
-        prestige_good_generic_grain
-    }
-    prestige_goods_trigger = {
-        custom_tooltip = {
-            text = je_prestige_goods_grain_complete_tt
-            has_variable = prestige_good_generic_grain_var
-        }
-    }
+		prestige_good_generic_grain
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_grain_complete_tt
+			has_variable = prestige_good_generic_grain_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_manchuria
@@ -1193,10 +1213,11 @@ building_infres_maize_farm
 			any_scope_building = {
 				OR = {
 					is_building_type = building_rice_farm
-					is_building_type = building_infres_rice_farm
 					is_building_type = building_millet_farm
-					is_building_type = building_infres_millet_farm
 					is_building_type = building_wheat_farm
+
+					is_building_type = building_infres_rice_farm
+					is_building_type = building_infres_millet_farm
 					is_building_type = building_infres_wheat_farm
 				}
 				level >= 5
@@ -1266,7 +1287,7 @@ company_turkish_petroleum = {
 
 	building_types = {
 		building_oil_rig
-building_infres_oil_rig
+		building_infres_oil_rig
 	}
 
 	extension_building_types = {
@@ -1356,7 +1377,7 @@ company_anglo_persian_oil = {
 
 	building_types = {
 		building_oil_rig
-building_infres_oil_rig
+		building_infres_oil_rig
 	}
 
 	extension_building_types = {
@@ -1449,13 +1470,15 @@ company_national_iranian_oil = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/national_iranian_oil_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_KHUZESTAN }
 
 	building_types = {
 		building_oil_rig
-building_infres_oil_rig
+		building_infres_oil_rig
 	}
 
 	extension_building_types = {

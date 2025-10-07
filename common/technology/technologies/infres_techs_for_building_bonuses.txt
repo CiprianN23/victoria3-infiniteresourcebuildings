@@ -1,4 +1,4 @@
-﻿sericulture = {
+sericulture = {
 	# Unlocks Mulberry Groves PM on Rice Farms
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/sericulture.dds"
@@ -7,6 +7,8 @@
 
 	modifier = {
 		building_silk_plantation_throughput_add = 0.25
+		building_infres_silk_plantation_throughput_add = 0.25
+		building_infres_silk_plantation_throughput_add = 0.25
 		building_infres_silk_plantation_throughput_add = 0.25
 	}
 
@@ -22,6 +24,8 @@ cotton_gin = {
 
 	modifier = {
 		building_cotton_plantation_throughput_add = 0.25
+		building_infres_cotton_plantation_throughput_add = 0.25
+		building_infres_cotton_plantation_throughput_add = 0.25
 		building_infres_cotton_plantation_throughput_add = 0.25
 	}
 

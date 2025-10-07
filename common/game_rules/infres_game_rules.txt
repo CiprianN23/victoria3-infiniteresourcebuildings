@@ -1,4 +1,4 @@
-﻿infres_allows_ai_to_build = {
+infres_allows_ai_to_build = {
     default = infres_player_only
 
     infres_player_only = {

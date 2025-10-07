@@ -1,4 +1,4 @@
-﻿# Agriculture
+# Agriculture
 
 bg_infres_agriculture = {
 	category = rural
@@ -495,7 +495,7 @@ bg_infres_military = {
 
 	always_possible = yes
 	
-	lens = infrastructure
+	lens = development
 	
 	stateregion_max_level = no
 

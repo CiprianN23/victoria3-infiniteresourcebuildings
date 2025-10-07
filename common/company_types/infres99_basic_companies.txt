@@ -253,7 +253,7 @@ company_basic_colonial_plantations_1 = {
 	}
 
 	extension_building_types = {
-		building_infres_tobacco_plantation
+		building_tobacco_plantation
 		building_infres_tobacco_plantation
 	}
 

@@ -1,4 +1,4 @@
-############# PLANTATIONS
+﻿############# PLANTATIONS
 
 building_infres_coffee_plantation = {
 	can_build_private = {

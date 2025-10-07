@@ -1,4 +1,4 @@
-pm_infres_barracks = {
+﻿pm_infres_barracks = {
 	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
 	is_default = yes
 	

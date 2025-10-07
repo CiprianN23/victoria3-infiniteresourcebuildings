@@ -1,4 +1,4 @@
-asian_farm = {
+﻿asian_farm = {
 	graphical_culture = "asian"
 	city_type = farm
 	

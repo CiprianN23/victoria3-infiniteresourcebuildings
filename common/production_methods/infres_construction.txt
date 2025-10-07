@@ -1,4 +1,4 @@
-pm_infres_no_bonus_construction = {
+﻿pm_infres_no_bonus_construction = {
 	texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
 
 	state_modifiers = {

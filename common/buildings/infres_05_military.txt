@@ -1,4 +1,4 @@
-building_infres_barracks = {
+﻿building_infres_barracks = {
 	building_group = bg_infres_army
 	recruits_combat_units = no
 	icon = "gfx/interface/icons/building_icons/building_barracks.dds"

@@ -1,4 +1,4 @@
-arabic_port = {
+﻿arabic_port = {
 	graphical_culture = "arabic"
 	city_type = port
 

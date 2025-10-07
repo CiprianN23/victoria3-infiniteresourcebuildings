@@ -1,4 +1,4 @@
-asian_wood = {
+﻿asian_wood = {
 	graphical_culture = "asian"
 	city_type = wood
 	

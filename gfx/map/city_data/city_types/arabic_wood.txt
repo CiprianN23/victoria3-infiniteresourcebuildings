@@ -1,4 +1,4 @@
-arabic_wood = {
+﻿arabic_wood = {
 	graphical_culture = "arabic"
 	city_type = wood
 	

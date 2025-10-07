@@ -1,4 +1,4 @@
-building_infres_coal_mine = {
+﻿building_infres_coal_mine = {
 	can_build_private = {
 		OR = {
 			AND = {

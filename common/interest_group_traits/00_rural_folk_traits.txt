@@ -1,4 +1,4 @@
-ig_trait_farmers_markets = {
+﻿ig_trait_farmers_markets = {
 	icon = "gfx/interface/icons/ig_trait_icons/farmers_markets.dds"
 	min_approval = loyal
 

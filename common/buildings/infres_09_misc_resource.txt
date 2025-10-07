@@ -1,4 +1,4 @@
-building_infres_logging_camp = {
+﻿building_infres_logging_camp = {
 	can_build_private = {
 		OR = {
 			AND = {

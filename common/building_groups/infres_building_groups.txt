@@ -1,4 +1,4 @@
-# Agriculture
+﻿# Agriculture
 
 bg_infres_agriculture = {
 	category = rural

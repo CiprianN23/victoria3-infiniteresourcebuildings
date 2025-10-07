@@ -1,4 +1,4 @@
-pm_picks_and_shovels_building_gold_mine_infres = {
+﻿pm_picks_and_shovels_building_gold_mine_infres = {
 	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
 
 	building_modifiers = {

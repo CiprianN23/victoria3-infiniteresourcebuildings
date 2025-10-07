@@ -1,4 +1,4 @@
-african_mine = {
+﻿african_mine = {
 	graphical_culture = "african"
 	city_type = mine
 	

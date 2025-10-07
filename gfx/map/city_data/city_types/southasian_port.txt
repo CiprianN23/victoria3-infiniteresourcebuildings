@@ -1,4 +1,4 @@
-southasian_port = {
+﻿southasian_port = {
 	graphical_culture = "southasian"
 	city_type = port
 

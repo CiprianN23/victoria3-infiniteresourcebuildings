@@ -1,4 +1,4 @@
-default_mine = {
+﻿default_mine = {
 
 	city_type = mine
 	

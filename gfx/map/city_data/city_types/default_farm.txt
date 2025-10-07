@@ -1,4 +1,4 @@
-default_farm = {
+﻿default_farm = {
 	city_type = farm
 	
 	weight = -1 #default farm is always down prioritized

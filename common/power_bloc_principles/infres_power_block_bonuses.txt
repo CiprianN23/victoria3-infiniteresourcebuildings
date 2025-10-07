@@ -1,4 +1,4 @@
-### Food Standardization
+﻿### Food Standardization
 
 principle_food_standardization_1 = {
 	icon = "gfx/interface/icons/principles_icons/food_standardization.dds"

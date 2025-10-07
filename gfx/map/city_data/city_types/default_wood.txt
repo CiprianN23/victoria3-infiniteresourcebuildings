@@ -1,4 +1,4 @@
-default_wood = {
+﻿default_wood = {
 	city_type = wood
 	
 	min_residential_buildings = 2

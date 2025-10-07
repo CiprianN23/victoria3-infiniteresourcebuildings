@@ -1,4 +1,4 @@
-building_infres_construction_sector = {
+﻿building_infres_construction_sector = {
 	building_group = bg_infres_construction
 	icon = "gfx/interface/icons/building_icons/construction_camp.dds"
 	city_type = city

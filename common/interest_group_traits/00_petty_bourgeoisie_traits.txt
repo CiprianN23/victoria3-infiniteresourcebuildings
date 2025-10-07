@@ -1,4 +1,4 @@
-ig_trait_treasury_bonds = {
+﻿ig_trait_treasury_bonds = {
 	icon = "gfx/interface/icons/ig_trait_icons/treasury_bonds.dds"
 	min_approval = loyal
 

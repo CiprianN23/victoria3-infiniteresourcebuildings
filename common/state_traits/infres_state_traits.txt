@@ -1,4 +1,4 @@
-state_trait_good_soils = {
+﻿state_trait_good_soils = {
 	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
 
 	modifier = {

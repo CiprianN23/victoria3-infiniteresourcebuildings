@@ -1,4 +1,4 @@
-############# FARMING & RANCHING
+﻿############# FARMING & RANCHING
 
 building_infres_rye_farm = {
 

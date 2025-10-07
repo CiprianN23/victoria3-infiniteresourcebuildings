@@ -1,4 +1,4 @@
-sericulture = {
+﻿sericulture = {
 	# Unlocks Mulberry Groves PM on Rice Farms
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/sericulture.dds"

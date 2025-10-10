@@ -18,8 +18,8 @@
 		if = {
 			limit = {
 				NOR = {
-					has_law = law_type:law_commercialized_agriculture
-					has_law = law_type:law_homesteading
+					has_law_or_variant = law_type:law_commercialized_agriculture
+					has_law_or_variant = law_type:law_homesteading
 				}
 			}
 			custom_tooltip = farmers_pb_ig_shift_effect_tt
@@ -27,8 +27,8 @@
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_commercialized_agriculture
-					has_law = law_type:law_collectivized_agriculture
+					has_law_or_variant = law_type:law_commercialized_agriculture
+					has_law_or_variant = law_type:law_collectivized_agriculture
 				}
 			}
 			custom_tooltip = rural_laborers_tu_ig_shift_effect_negative_tt
@@ -54,7 +54,7 @@
 		# AI should really try to get out of Serfdom under the right circumstances
 		if = {
 			limit = {
-				has_law = law_type:law_serfdom
+				has_law_or_variant = law_type:law_serfdom
 				NOT = { has_strategy = ai_strategy_reactionary_agenda }
 				OR = {
 					NOT = { has_strategy = ai_strategy_conservative_agenda }
@@ -94,8 +94,8 @@ law_collectivized_agriculture = {
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_commercialized_agriculture
-					has_law = law_type:law_homesteading
+					has_law_or_variant = law_type:law_commercialized_agriculture
+					has_law_or_variant = law_type:law_homesteading
 				}
 			}
 			custom_tooltip = farmers_pb_ig_shift_effect_negative_tt
@@ -127,7 +127,7 @@ law_collectivized_agriculture = {
 
 		if = {
 			limit = {
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 			}
 			add = 250
 		}
@@ -224,7 +224,7 @@ law_industry_banned = {
 
 	ai_will_do = {
 		OR = {
-			has_law = law_type:law_traditionalism
+			has_law_or_variant = law_type:law_traditionalism
 			literacy_rate < 0.4
 		}
 	}
@@ -249,16 +249,13 @@ law_extraction_economy = {
 		colonization
 	}
 
+	disallowing_laws = {
+		law_anarchy
+		law_women_in_the_fields
+	}
+
 	can_enact = {
-		trigger_if = {
-			limit = {
-				game_date > 1836.1.1
-			}
-			is_subject = yes # Subject relationships load after laws' validities are checked
-		}
-		trigger_else = {
-			always = yes
-		}
+		is_subject = yes
 	}
 
 	on_activate = {
@@ -317,6 +314,7 @@ law_extraction_economy = {
 		building_group_bg_plantations_throughput_add = 0.1
 		building_group_bg_extraction_throughput_add = 0.1
 		state_shopkeepers_investment_pool_efficiency_mult = -0.5
+		state_bureaucrats_investment_pool_efficiency_mult = -0.5
 		state_capitalists_investment_pool_efficiency_mult = -0.25
 		state_farmers_investment_pool_efficiency_mult = -0.75
 		state_clergymen_investment_pool_efficiency_mult = -0.75
@@ -354,6 +352,7 @@ law_cooperative_ownership = {
 
 	disallowing_laws = {
 		law_serfdom
+		law_women_in_the_fields
 	}
 
 	unlocking_laws = {
@@ -372,6 +371,7 @@ law_cooperative_ownership = {
 		state_farmers_investment_pool_efficiency_mult = 0.25
 		country_private_construction_allocation_mult = 0.35
 		country_government_dividends_reinvestment_add = 1.0
+		building_company_worker_dividends_add = 0.75
 		country_free_charters_add = 1
 
 		building_group_bg_manufacturing_allowed_collectivization_add = 1.0
@@ -381,10 +381,10 @@ law_cooperative_ownership = {
 		building_group_bg_private_infrastructure_allowed_collectivization_add = 1.0
 		building_group_bg_arts_allowed_collectivization_add = 1.0
 
+		country_foreign_collectivization_bool = yes
+
 		building_group_bg_infres_mining_allowed_collectivization_add = 1.0
 		building_group_bg_infres_extraction_allowed_collectivization_add = 1.0
-
-		country_foreign_collectivization_bool = yes
 	}
 
 	ai_enact_weight_modifier = { #Petitions
@@ -397,16 +397,9 @@ law_cooperative_ownership = {
 
 		if = {
 			limit = {
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 			}
-			add = 250
-		}
-
-		if = {
-			limit = {
-				has_law = law_type:law_council_republic
-			}
-			add = 100
+			add = 400
 		}
 	}
 

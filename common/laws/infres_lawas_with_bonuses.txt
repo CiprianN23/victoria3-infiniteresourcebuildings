@@ -381,10 +381,11 @@ law_cooperative_ownership = {
 		building_group_bg_private_infrastructure_allowed_collectivization_add = 1.0
 		building_group_bg_arts_allowed_collectivization_add = 1.0
 
-		country_foreign_collectivization_bool = yes
-
+		building_group_bg_infres_manufacturing_allowed_collectivization_add = 1.0
 		building_group_bg_infres_mining_allowed_collectivization_add = 1.0
 		building_group_bg_infres_extraction_allowed_collectivization_add = 1.0
+
+		country_foreign_collectivization_bool = yes
 	}
 
 	ai_enact_weight_modifier = { #Petitions

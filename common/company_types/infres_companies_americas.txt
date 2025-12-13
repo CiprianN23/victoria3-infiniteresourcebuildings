@@ -1,5 +1,5 @@
 ﻿# Fundidora de Fierro y Acero de Monterrey, S.A.
-company_fundidora_monterrey = {
+TRY_REPLACE:company_fundidora_monterrey = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/fundidora_monterrey.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
@@ -8,7 +8,7 @@ company_fundidora_monterrey = {
 	preferred_headquarters = { STATE_RIO_GRANDE }
 
 	building_types = {
-		building_steel_mills
+		building_steel_mill
 		building_coal_mine
 		building_infres_coal_mine
 	}
@@ -46,7 +46,7 @@ company_fundidora_monterrey = {
 			state_region = s:STATE_RIO_GRANDE
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_steel_mills
+				is_building_type = building_steel_mill
 				level >= 5
 			}
 		}
@@ -67,7 +67,7 @@ company_fundidora_monterrey = {
 	}
 
 	ai_construction_targets = {
-		building_steel_mills = {
+		building_steel_mill = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_RIO_GRANDE
@@ -81,7 +81,7 @@ company_fundidora_monterrey = {
 }
 
 # Compañía Mexicana de Petróleo El Águila SA
-company_el_aguila = {
+TRY_REPLACE:company_el_aguila = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/el_aguila.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
 
@@ -136,7 +136,7 @@ company_el_aguila = {
 			region = sr:region_mexico
 			is_incorporated = yes
 			is_coastal = yes
-			has_potential_resource = bg_oil_extraction
+			has_potential_resource = building_oil_rig
 		}
 	}
 
@@ -157,7 +157,7 @@ company_el_aguila = {
 }
 
 # Compañía de Salitres y Ferrocarril de Antofagasta
-company_csfa = {
+TRY_REPLACE:company_csfa = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/bolivia_csfa.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
 
@@ -232,7 +232,7 @@ company_csfa = {
 }
 
 # Caribbean Petroleum Company
-company_caribbean_petroleum = {
+TRY_REPLACE:company_caribbean_petroleum = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/venezuela_caribbean_petroleum_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
 
@@ -317,7 +317,7 @@ company_caribbean_petroleum = {
 }
 
 # Bunge & Born
-company_bunge_born = {
+TRY_REPLACE:company_bunge_born = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/argentina_bunge_y_born.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_wheat.dds"
 
@@ -332,7 +332,7 @@ company_bunge_born = {
 	}
 
 	extension_building_types = {
-		building_chemical_plants
+		building_chemical_plant
 	}
 
 	possible_prestige_goods = {
@@ -378,7 +378,7 @@ company_bunge_born = {
 
 	prosperity_modifier = {
 		interest_group_ig_rural_folk_pop_attraction_mult = 0.2
-		building_tooling_workshops_throughput_add = 0.1
+		building_tooling_workshop_throughput_add = 0.1
 	}
 
 	ai_will_do = {
@@ -411,7 +411,7 @@ company_bunge_born = {
 }
 
 # La Rosada
-company_la_rosada = {
+TRY_REPLACE:company_la_rosada = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/paraguay_la_rosada.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
@@ -420,9 +420,9 @@ company_la_rosada = {
 	preferred_headquarters = { STATE_BAJO_PARAGUAY }
 
 	building_types = {
-		building_steel_mills
+		building_steel_mill
 		building_arms_industry
-		building_artillery_foundries
+		building_artillery_foundry
 	}
 
 	extension_building_types = {
@@ -493,89 +493,7 @@ company_la_rosada = {
 	}
 }
 
-# Fábrica de Armas de la Nación
-company_famae = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/chile_fabrica_de_armas_de_la_nacion.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
-
-	flavored_company = yes
-
-	preferred_headquarters = { STATE_SANTIAGO }
-
-	building_types = {
-		building_arms_industry
-		building_artillery_foundries
-		building_munition_plants
-	}
-
-	extension_building_types = {
-		building_explosives_factory
-	}
-
-	possible_prestige_goods = {
-		prestige_good_generic_small_arms
-	}
-
-	prestige_goods_trigger = {
-		custom_tooltip = {
-			text = je_prestige_goods_small_arms_complete_tt
-			has_variable = prestige_good_generic_small_arms_var
-		}
-	}
-
-	potential = {
-		has_interest_marker_in_region = region_la_plata
-	}
-
-	attainable = {
-		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-			any_scope_state = {
-				state_region = s:STATE_SANTIAGO
-			}
-		}
-	}
-
-	possible = {
-		has_technology_researched = gunsmithing
-		any_scope_state = {
-			state_region = s:STATE_SANTIAGO
-			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_arms_industry
-				level >= 5
-			}
-		}
-	}
-
-	prosperity_modifier = {
-		unit_offense_mult = 0.1
-		building_steel_mills_throughput_add = 0.05
-	}
-
-	ai_will_do = {
-		has_technology_researched = gunsmithing
-		any_scope_state = {
-			state_region = s:STATE_SANTIAGO
-			is_incorporated = yes
-		}
-	}
-
-	ai_construction_targets = {
-		building_arms_industry = {
-			level = 5
-			state_trigger = {
-				state_region = s:STATE_SANTIAGO
-			}
-		}
-	}
-
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
-}
-
-# Peruvian Amazon Company
-company_peruvian_amazon = {
+TRY_REPLACE:company_peruvian_amazon = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/peru_peruvian_amazon_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
@@ -648,14 +566,14 @@ company_peruvian_amazon = {
 }
 
 # Kablin Irmãos & Cia.
-company_kablin = {
+TRY_REPLACE:company_kablin = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/brazil_kablin_irmaos_and_cia.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
 	flavored_company = yes
 
 	building_types = {
-		building_paper_mills
+		building_paper_mill
 		building_logging_camp
 		building_infres_logging_camp
 	}
@@ -687,14 +605,14 @@ company_kablin = {
 			region = sr:region_brazil
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_paper_mills
+				is_building_type = building_paper_mill
 				level >= 5
 			}
 		}
 	}
 
 	prosperity_modifier = {
-		building_tooling_workshops_throughput_add = 0.1
+		building_tooling_workshop_throughput_add = 0.1
 		state_infrastructure_from_population_max_add = 15
 	}
 
@@ -707,7 +625,7 @@ company_kablin = {
 	}
 
 	ai_construction_targets = {
-		building_paper_mills = {
+		building_paper_mill = {
 			level = 5
 			state_trigger = {
 				region = sr:region_brazil
@@ -722,7 +640,7 @@ company_kablin = {
 }
 
 # Hudson Bay Company
-company_hbc = {
+TRY_REPLACE:company_hbc = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/hbc.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -778,7 +696,7 @@ company_hbc = {
 
 	prosperity_modifier = {
 		state_colony_growth_creation_factor = 0.1
-		building_textile_mills_throughput_add = 0.05
+		building_textile_mill_throughput_add = 0.05
 	}
 
 	ai_will_do = {
@@ -795,103 +713,6 @@ company_hbc = {
 				state_region = s:STATE_MANITOBA
 			}
 		}
-	}
-
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
-}
-
-# Panama Canal Company
-company_panama_company = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/panama_company.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
-
-	category = bureaucrat_owned
-
-	flavored_company = yes
-
-	preferred_headquarters = { STATE_PANAMA }
-
-	building_types = {
-		building_trade_center
-		building_port
-	}
-
-	extension_building_types = {
-		building_shipyards
-	}
-
-	possible_prestige_goods = {
-		prestige_good_generic_merchant_marine
-	}
-
-	prestige_goods_trigger = {
-		custom_tooltip = {
-			text = je_prestige_goods_merchant_marine_complete_tt
-			has_variable = prestige_good_generic_merchant_marine_var
-		}
-	}
-
-	potential = {
-		has_interest_marker_in_region = region_central_america
-	}
-
-	attainable = {
-		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-			any_scope_state = {
-				state_region = s:STATE_PANAMA
-			}
-		}
-	}
-
-	possible = {
-		any_scope_state = {
-			state_region = s:STATE_PANAMA
-			any_scope_building = {
-				is_building_type = building_panama_canal
-				occupancy >= 0.5
-			}
-		}
-		any_scope_state = {
-			any_scope_building = {
-				OR = {
-					is_building_type = building_trade_center
-					is_building_type = building_port
-				}
-				level >= 5
-			}
-		}
-	}
-
-	ai_will_do = {
-		any_scope_state = {
-			state_region = s:STATE_PANAMA
-			any_scope_building = {
-				is_building_type = building_panama_canal
-			}
-		}
-	}
-
-	ai_construction_targets = {
-		building_trade_center = {
-			level = 5
-			state_trigger = {
-				state_region = s:STATE_PANAMA
-			}
-		}
-		building_port = {
-			level = 5
-			state_trigger = {
-				state_region = s:STATE_PANAMA
-			}
-		}
-	}
-
-	prosperity_modifier = {
-		state_trade_advantage_mult = 0.25
-		country_tax_income_add = 50000
-		country_max_companies_add = 1
 	}
 
 	ai_weight = {

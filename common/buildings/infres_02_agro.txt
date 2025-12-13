@@ -22,9 +22,9 @@ building_infres_rye_farm = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_rye_farms
+
+	building_group = bg_infres_staple_crops
 
 	icon = "gfx/interface/icons/building_icons/rye_farm.dds"
 
@@ -71,9 +71,9 @@ building_infres_wheat_farm = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_wheat_farms
+
+	building_group = bg_infres_staple_crops
 
 	icon = "gfx/interface/icons/building_icons/wheat_farm.dds"
 
@@ -120,9 +120,9 @@ building_infres_rice_farm = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_rice_farms
+
+	building_group = bg_infres_staple_crops
 
 	icon = "gfx/interface/icons/building_icons/rice_farm.dds"
 
@@ -169,9 +169,9 @@ building_infres_maize_farm = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_maize_farms
+
+	building_group = bg_infres_staple_crops
 
 	icon = "gfx/interface/icons/building_icons/maize_farm.dds"
 
@@ -218,9 +218,9 @@ building_infres_millet_farm = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_millet_farms
+
+	building_group = bg_infres_staple_crops
 
 	icon = "gfx/interface/icons/building_icons/millet_farm.dds"
 
@@ -267,9 +267,9 @@ building_infres_livestock_ranch = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_livestock_ranches
+
+	building_group = bg_infres_ranching
 
 	icon = "gfx/interface/icons/building_icons/cattle_ranch.dds"
 
@@ -296,7 +296,7 @@ building_infres_livestock_ranch = {
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
-building_infres_vineyard_plantation = {
+building_infres_vineyard = {
 
 	can_build_private = {
 		OR = {
@@ -318,9 +318,9 @@ building_infres_vineyard_plantation = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_vineyard_plantations
+
+	building_group = bg_infres_agriculture
 	icon = "gfx/interface/icons/building_icons/vineyards.dds"
 	required_construction = construction_cost_low
 
@@ -332,8 +332,8 @@ building_infres_vineyard_plantation = {
 	levels_per_mesh = 5
 
 	production_method_groups = {
-		pmg_base_building_vineyard_plantation
-		pmg_train_automation_building_vineyard_plantation
+		pmg_base_building_vineyard
+		pmg_train_automation_building_vineyard
 	}
 	ownership_type = self
 

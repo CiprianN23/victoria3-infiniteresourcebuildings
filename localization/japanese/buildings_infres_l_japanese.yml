@@ -18,7 +18,7 @@
  building_infres_livestock_ranch:0 "∞ 家畜牧場"
 
  building_infres_coal_mine:0 "∞ 石炭鉱山"
- building_infres_gold_fields:0 "∞ 金鉱山"
+ building_infres_gold_field:0 "∞ 金鉱山"
  building_infres_gold_mine:0 "∞ 金鉱山"
  building_infres_iron_mine:0 "∞ 鉄鉱山"
  building_infres_lead_mine:0 "∞ 鉛鉱山"
@@ -31,7 +31,7 @@
 
  building_infres_naval_base:0 "∞ 海軍基地"
  building_infres_port:0 "∞ 港"
- building_infres_barracks:0 "∞ 兵舎"
+ building_infres_barrack:0 "∞ 兵舎"
 
   modifier_building_infres_construction_sector_throughput_add:0 "$building_infres_construction_sector$ building [concept_throughput]"
   modifier_building_infres_construction_sector_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_construction_sector$"
@@ -57,18 +57,18 @@
   modifier_building_infres_fishing_wharf_throughput_add:0 "$building_infres_fishing_wharf$ building [concept_throughput]"
   modifier_building_infres_fishing_wharf_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_fishing_wharf$"
 
-  modifier_building_infres_vineyard_plantation_throughput_add:0 "$building_infres_vineyard_plantation$ building [concept_throughput]"
-  modifier_building_infres_vineyard_plantation_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_vineyard_plantation$"
+  modifier_building_infres_vineyard_throughput_add:0 "$building_infres_vineyard$ building [concept_throughput]"
+  modifier_building_infres_vineyard_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_vineyard$"
 
   modifier_building_group_bg_infres_p_coffee_plantations_throughput_add:0 "Inf. Coffee Plantation [concept_throughput]"
   modifier_building_group_bg_infres_p_coffee_plantations_throughput_add_desc:0 "A bonus or penalty to both input and output of Inf. Coffee Plantations"
 
-  pmg_infres_barracks:0 "Inf. Barracks PMG"
-  pmg_infres_barracks_conscription:0 "Inf. Conscripts PMG"
+  pmg_infres_barrack:0 "Inf. Barracks PMG"
+  pmg_infres_barrack_conscription:0 "Inf. Conscripts PMG"
   pmg_infres_naval_base:0 "Inf. Naval Base PMG"
 
-  pm_infres_barracks:0 "Inf. Barracks"
-  pm_infres_barracks_conscripts:0 "Inf. Conscription Centers"
+  pm_infres_barrack:0 "Inf. Barracks"
+  pm_infres_barrack_conscripts:0 "Inf. Conscription Centers"
   pm_infres_naval_base:0 "Inf. Naval Bases"
 
   pmg_infres_base_building_construction_sector:0 "Extra construction sectors"
@@ -104,8 +104,8 @@
   building_infres_rubber_plantation_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_rubber_plantation$"
   building_infres_sulfur_mine_throughput_add:0 "$building_infres_sulfur_mine$ building [concept_throughput]"
   building_infres_sulfur_mine_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_sulfur_mine$"
-  building_infres_vineyard_plantation_throughput_add:0 "$building_infres_vineyard_plantation$ building [concept_throughput]"
-  building_infres_vineyard_plantation_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_vineyard_plantation$"
+  building_infres_vineyard_throughput_add:0 "$building_infres_vineyard$ building [concept_throughput]"
+  building_infres_vineyard_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_vineyard$"
   building_infres_wheat_farm_throughput_add:0 "$building_infres_wheat_farm$ building [concept_throughput]"
   building_infres_wheat_farm_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_wheat_farm$"
   building_infres_silk_plantation_throughput_add:0 "$building_infres_silk_plantation$ building [concept_throughput]"

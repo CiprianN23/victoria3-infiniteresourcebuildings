@@ -1,0 +1,55 @@
+﻿TRY_INJECT:state_trait_waterberg_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_nile_river = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.2
+		building_group_bg_infres_plantations_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_sahara_desert = {
+	modifier = {
+        building_group_bg_infres_ranching_throughput_add = -0.1
+		building_group_bg_infres_agriculture_throughput_add = -0.2
+		building_group_bg_infres_plantations_throughput_add = -0.2
+    }
+}
+
+TRY_INJECT:state_trait_mitidja_plain = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_mokta_el_hadid = {
+	modifier = {
+		building_infres_iron_mine_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_sahel = {
+	modifier = {
+        building_group_bg_infres_ranching_throughput_add = 0.1
+		building_group_bg_infres_agriculture_throughput_add = -0.1
+		building_group_bg_infres_plantations_throughput_add = -0.1
+	}
+}
+
+TRY_INJECT:state_trait_mascarene_plateau = {
+	modifier = {
+		building_group_bg_infres_fishing_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_khouribga_basin = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+
+	modifier = {
+		building_infres_sulfur_mine_throughput_add = 0.1
+	}
+}

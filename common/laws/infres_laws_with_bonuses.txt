@@ -1,0 +1,38 @@
+﻿TRY_INJECT:law_homesteading = {
+	modifier = {
+		building_group_bg_infres_agriculture_allowed_collectivization_add = 0.5
+		building_group_bg_infres_ranching_allowed_collectivization_add = 0.5
+	}
+}
+
+TRY_INJECT:law_collectivized_agriculture = {
+	modifier = {
+		building_group_bg_infres_agriculture_allowed_collectivization_add = 1.0
+		building_group_bg_infres_ranching_allowed_collectivization_add = 1.0
+		building_group_bg_infres_plantations_allowed_collectivization_add = 1.0
+	}
+}
+
+TRY_INJECT:law_industry_banned = {
+
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:law_extraction_economy = {
+
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
+		building_group_bg_infres_extraction_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:law_cooperative_ownership = {
+	modifier = {
+		building_group_bg_infres_mining_allowed_collectivization_add = 1.0
+		building_group_bg_infres_extraction_allowed_collectivization_add = 1.0
+	}
+}

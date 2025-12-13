@@ -5,7 +5,7 @@
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 5
-			
+
 			# output goods
 			goods_output_gold_add = 8
 		}
@@ -28,13 +28,13 @@ pm_atmospheric_engine_pump_building_gold_mine_infres = {
 	unlocking_technologies = {
 		atmospheric_engine
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 10
 			goods_input_coal_add = 10
-			
+
 			# output goods
 			goods_output_gold_add = 15
 		}
@@ -59,13 +59,13 @@ pm_condensing_engine_pump_building_gold_mine_infres = {
 	unlocking_technologies = {
 		watertube_boiler
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 15
 			goods_input_coal_add = 15
-			
+
 			# output goods
 			goods_output_gold_add = 25
 		}
@@ -90,13 +90,13 @@ pm_diesel_pump_building_gold_mine_infres = {
 	unlocking_technologies = {
 		compression_ignition
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 15
 			goods_input_oil_add = 5
-			
+
 			# output goods
 			goods_output_gold_add = 30
 		}
@@ -107,7 +107,7 @@ pm_diesel_pump_building_gold_mine_infres = {
 			building_employment_machinists_add = 1500
 			building_employment_engineers_add = 750
 		}
-	}	
+	}
 }
 
 pm_nitroglycerin_building_gold_mine_infres = {
@@ -121,12 +121,12 @@ pm_nitroglycerin_building_gold_mine_infres = {
 	unlocking_technologies = {
 	 	nitroglycerin
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_explosives_add = 5
-			
+
 			# output goods
 			goods_output_gold_add = 5
 		}
@@ -140,7 +140,7 @@ pm_nitroglycerin_building_gold_mine_infres = {
 			building_machinists_mortality_mult = 0.2
 			building_engineers_mortality_mult = 0.1
 		}
-	}	
+	}
 }
 
 pm_dynamite_building_gold_mine_infres = {
@@ -154,11 +154,11 @@ pm_dynamite_building_gold_mine_infres = {
 	unlocking_technologies = {
 		dynamite
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_explosives_add = 10
-			
+
 			# output goods
 			goods_output_gold_add = 5
 		}

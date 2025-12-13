@@ -1,0 +1,81 @@
+﻿TRY_INJECT:state_trait_turqoise_deposits = {
+	modifier = {
+		building_infres_dye_plantation_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_bam_narmashir = {
+	modifier = {
+		building_infres_dye_plantation_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_hyrcanian_forests = {
+	modifier = {
+		goods_output_hardwood_mult = 0.2
+		building_group_bg_infres_logging_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_arabian_desert = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = -0.2
+		building_group_bg_infres_plantations_throughput_add = -0.2
+    }
+}
+
+TRY_INJECT:state_trait_mesopotamian_floodplain = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.2
+		building_group_bg_infres_plantations_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_yemeni_highlands = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.05
+		building_group_bg_infres_ranching_throughput_add = 0.05
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_tihamah = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = -0.1
+		building_group_bg_infres_plantations_throughput_add = -0.1
+    }
+}
+
+TRY_INJECT:state_trait_kuznetsk_basin = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_mount_lebanon = {
+	modifier = {
+		building_infres_silk_plantation_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_anatolian_plateau = {
+	modifier = {
+		building_group_bg_infres_ranching_throughput_add = 0.1
+		building_group_bg_infres_agriculture_throughput_add = -0.1
+		building_group_bg_infres_plantations_throughput_add = -0.1
+	}
+}
+
+TRY_INJECT:state_trait_pontus = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
+		building_infres_tea_plantation_throughput_add = 0.1 # For a total of 0.2 tea throughput
+	}
+}
+
+TRY_INJECT:state_trait_zonguldak_basin = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}

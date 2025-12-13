@@ -1,14 +1,14 @@
-﻿building_infres_barracks = {
+﻿building_infres_barrack = {
 	building_group = bg_infres_army
 	recruits_combat_units = no
-	icon = "gfx/interface/icons/building_icons/building_barracks.dds"
+	icon = "gfx/interface/icons/building_icons/building_barrack.dds"
 	city_type = city
 
 	can_build_government = { scope:investor_country = { is_player = yes } }
 	can_build_private = { always = no }
-	
+
 	has_max_level = no
-	
+
 	levels_per_mesh = 25
 
 	unlocking_technologies = {
@@ -16,8 +16,8 @@
 	}
 
     production_method_groups = {
-		pmg_infres_barracks
-		pmg_infres_barracks_conscription
+		pmg_infres_barrack
+		pmg_infres_barrack_conscription
 	}
 
     ownership_type = no_ownership
@@ -36,9 +36,9 @@ building_infres_naval_base = {
 
 	can_build_government = { scope:investor_country = { is_player = yes } }
 	can_build_private = { always = no }
-	
+
 	has_max_level = no
-	
+
 	levels_per_mesh = 25
 
 	unlocking_technologies = { admiralty }

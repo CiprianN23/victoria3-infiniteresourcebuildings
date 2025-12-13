@@ -1,0 +1,30 @@
+﻿TRY_INJECT:state_trait_good_soils = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_north_sea_fishing = {
+	modifier = {
+		building_group_bg_infres_fishing_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_arctic_whaling = {
+	modifier = {
+		building_group_bg_infres_whaling_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_antarctic_whaling = {
+	modifier = {
+		building_group_bg_infres_whaling_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_terra_rossa = {
+	modifier = {
+		building_infres_vineyard_throughput_add = 0.10
+	}
+}

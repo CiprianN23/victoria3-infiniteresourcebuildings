@@ -1,0 +1,26 @@
+﻿TRY_INJECT:state_trait_irrwaddy_delta = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_mekong_delta = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_chao_phraya_delta = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_indochinese_forest = {
+	modifier = {
+		building_group_bg_infres_logging_throughput_add = 0.1
+	}
+}

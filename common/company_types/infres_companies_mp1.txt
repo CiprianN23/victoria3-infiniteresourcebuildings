@@ -1,5 +1,5 @@
 ﻿# Glasfabrik Ludwig Moser & Söhne / Sklárny Ludwig Moser a synové
-company_ludwig_moser_and_sons = {
+TRY_REPLACE:company_ludwig_moser_and_sons = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_ludwig_moser_and_sons.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -41,7 +41,7 @@ company_ludwig_moser_and_sons = {
 
 	prosperity_modifier = {
 		country_influence_mult = 0.05
-		building_arts_academy_throughput_add = 0.05
+		building_art_academy_throughput_add = 0.05
 		country_leverage_generation_mult = 0.1
 	}
 
@@ -67,7 +67,7 @@ company_ludwig_moser_and_sons = {
 }
 
 # Compañía Sansinena de Carnes Congeladas / La Negra
-company_compania_sansinena_de_carnes_congeladas = {
+TRY_REPLACE:company_compania_sansinena_de_carnes_congeladas = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_compania_sansinena_de_carnes_congeladas.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -113,9 +113,8 @@ company_compania_sansinena_de_carnes_congeladas = {
 				OR = {
 					is_building_type = building_livestock_ranch
 					is_building_type = building_infres_livestock_ranch
-
 				}
-				
+
 				level >= 5
 			}
 		}
@@ -154,7 +153,7 @@ company_compania_sansinena_de_carnes_congeladas = {
 }
 
 # Königliche Porzellan-Manufaktur Meissen
-company_konigliche_porzellan_manufaktur_meissen = {
+TRY_REPLACE:company_konigliche_porzellan_manufaktur_meissen = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_konigliche_porzellan_manufaktur_meissen.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -199,8 +198,8 @@ company_konigliche_porzellan_manufaktur_meissen = {
 
 	prosperity_modifier = {
 		country_prestige_mult = 0.1
-		building_arts_academy_throughput_add = 0.05
-		building_synthetics_plants_throughput_add = 0.05
+		building_art_academy_throughput_add = 0.05
+		building_synthetics_plant_throughput_add = 0.05
 	}
 
 	ai_will_do = {
@@ -226,7 +225,7 @@ company_konigliche_porzellan_manufaktur_meissen = {
 }
 
 # Jiangnan Weaving Bureaus
-company_jiangnan_weaving_bureaus= {
+TRY_REPLACE:company_jiangnan_weaving_bureaus= {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_jiangnan_weaving_bureaus.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -237,7 +236,7 @@ company_jiangnan_weaving_bureaus= {
 	building_types = {
 		building_silk_plantation
 		building_infres_silk_plantation
-		building_textile_mills
+		building_textile_mill
 	}
 
 	extension_building_types = {
@@ -269,7 +268,7 @@ company_jiangnan_weaving_bureaus= {
 				OR = {
 					is_building_type = building_silk_plantation
 					is_building_type = building_infres_silk_plantation
-					is_building_type = building_textile_mills
+					is_building_type = building_textile_mill
 				}
 				level >= 5
 			}
@@ -305,7 +304,7 @@ company_jiangnan_weaving_bureaus= {
 				is_incorporated = yes
 			}
 		}
-		building_textile_mills = {
+		building_textile_mill = {
 			level = 5
 			state_trigger = {
 				OR = {
@@ -324,7 +323,7 @@ company_jiangnan_weaving_bureaus= {
 }
 
 # Russian-American Company Under the High Patronage of His Imperial Majesty
-company_russian_american_company = {
+TRY_REPLACE:company_russian_american_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_russian_american_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 
@@ -334,16 +333,18 @@ company_russian_american_company = {
 
 	building_types = {
 		building_logging_camp
-		building_infres_logging_camp
 		building_whaling_station
-		building_infres_whaling_station
 		building_port
+
+		building_infres_logging_camp
+		building_infres_whaling_station
 	}
 
 	extension_building_types = {
 		building_coal_mine
-		building_infres_coal_mine
 		building_fishing_wharf
+
+		building_infres_coal_mine
 		building_infres_fishing_wharf
 	}
 
@@ -377,8 +378,9 @@ company_russian_american_company = {
 						OR = {
 							is_building_type = building_port
 							is_building_type = building_whaling_station
-							is_building_type = building_infres_whaling_station
 							is_building_type = building_logging_camp
+
+							is_building_type = building_infres_whaling_station
 							is_building_type = building_infres_logging_camp
 						}
 						level >= 5
@@ -392,8 +394,9 @@ company_russian_american_company = {
 					OR = {
 						is_building_type = building_port
 						is_building_type = building_whaling_station
-						is_building_type = building_infres_whaling_station
 						is_building_type = building_logging_camp
+
+						is_building_type = building_infres_whaling_station
 						is_building_type = building_infres_logging_camp
 					}
 					level >= 5
@@ -405,7 +408,7 @@ company_russian_american_company = {
 	prosperity_modifier = {
 		state_colony_growth_speed_mult = 0.1
 		state_conversion_mult = 0.05
-		building_textile_mills_throughput_add = 0.05
+		building_textile_mill_throughput_add = 0.05
 	}
 
 	ai_will_do = {
@@ -452,7 +455,7 @@ company_russian_american_company = {
 }
 
 # Maison Worth
-company_maison_worth = {
+TRY_REPLACE:company_maison_worth = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_maison_worth.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -463,13 +466,13 @@ company_maison_worth = {
 	preferred_headquarters = { STATE_ILE_DE_FRANCE }
 
 	building_types = {
-		building_textile_mills
+		building_textile_mill
 	}
 
 	extension_building_types = {
 		building_cotton_plantation
 		building_infres_cotton_plantation
-		building_arts_academy
+		building_art_academy
 	}
 
 	possible_prestige_goods = {
@@ -489,7 +492,7 @@ company_maison_worth = {
 			state_region = s:STATE_ILE_DE_FRANCE
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_textile_mills
+				is_building_type = building_textile_mill
 				level >= 5
 			}
 		}
@@ -509,7 +512,7 @@ company_maison_worth = {
 	}
 
 	ai_construction_targets = {
-		building_textile_mills = {
+		building_textile_mill = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_ILE_DE_FRANCE
@@ -524,7 +527,7 @@ company_maison_worth = {
 
 
 # Lee Wilson & Company
-company_lee_wilson = {
+TRY_REPLACE:company_lee_wilson = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_lee_wilson.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
@@ -566,6 +569,7 @@ company_lee_wilson = {
 				OR = {
 					is_building_type = building_cotton_plantation
 					is_building_type = building_logging_camp
+
 					is_building_type = building_infres_cotton_plantation
 					is_building_type = building_infres_logging_camp
 				}
@@ -576,7 +580,7 @@ company_lee_wilson = {
 
 	prosperity_modifier = {
 		building_power_plant_throughput_add = 0.05
-		building_textile_mills_throughput_add = 0.1
+		building_textile_mill_throughput_add = 0.1
 	}
 
 	ai_will_do = {
@@ -606,74 +610,8 @@ company_lee_wilson = {
 	}
 }
 
-# Colt's Patent Firearms Manufacturing Company
-company_colt_firearms = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_colt_firearms.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
-
-	flavored_company = yes
-
-	preferred_headquarters = { STATE_CONNECTICUT }
-
-	building_types = {
-		building_arms_industry
-	}
-
-	extension_building_types = {
-		building_munition_plants
-	}
-
-	possible_prestige_goods = {
-		prestige_good_colt_revolvers
-	}
-
-	potential = {
-		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_new_england
-	}
-
-	attainable = {
-	}
-
-	possible = {
-		any_scope_state = {
-			state_region = s:STATE_CONNECTICUT
-			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_arms_industry
-				level >= 5
-			}
-		}
-	}
-
-	prosperity_modifier = {
-		building_arms_industry_throughput_add = 0.1
-		unit_army_offense_mult = 0.1
-	}
-
-	ai_will_do = {
-		any_scope_state = {
-			state_region = s:STATE_CONNECTICUT
-			is_incorporated = yes
-		}
-	}
-
-	ai_construction_targets = {
-		building_arms_industry = {
-			level = 5
-			state_trigger = {
-				state_region = s:STATE_CONNECTICUT
-			}
-		}
-	}
-
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
-}
-
 # Gebrüder Thonet
-company_gebruder_thonet = {
+TRY_REPLACE:company_gebruder_thonet = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_gebruder_thonet.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -682,7 +620,7 @@ company_gebruder_thonet = {
 	preferred_headquarters = { STATE_AUSTRIA }
 
 	building_types = {
-		building_furniture_manufacturies
+		building_furniture_manufactory
 	}
 
 	extension_building_types = {
@@ -707,7 +645,7 @@ company_gebruder_thonet = {
 			state_region = s:STATE_AUSTRIA
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_furniture_manufacturies
+				is_building_type = building_furniture_manufactory
 				level >= 5
 			}
 		}
@@ -716,7 +654,7 @@ company_gebruder_thonet = {
 	prosperity_modifier = {
 		interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 0.05
 		state_radicals_from_political_movements_mult = -0.05
-		building_furniture_manufacturies_throughput_add = 0.1
+		building_furniture_manufactory_throughput_add = 0.1
 	}
 
 	ai_will_do = {
@@ -727,7 +665,7 @@ company_gebruder_thonet = {
 	}
 
 	ai_construction_targets = {
-		building_furniture_manufacturies = {
+		building_furniture_manufactory = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_AUSTRIA
@@ -741,7 +679,7 @@ company_gebruder_thonet = {
 }
 
 # Kinkozan Sobei
-company_kinkozan_sobei = {
+TRY_REPLACE:company_kinkozan_sobei = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_kinkozan_sobei.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
@@ -809,7 +747,7 @@ company_kinkozan_sobei = {
 }
 
 # Maple & Co.
-company_maple_and_co = {
+TRY_REPLACE:company_maple_and_co = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_maple_and_co.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -818,7 +756,7 @@ company_maple_and_co = {
 	preferred_headquarters = { STATE_HOME_COUNTIES }
 
 	building_types = {
-		building_furniture_manufacturies
+		building_furniture_manufactory
 	}
 
 	extension_building_types = {
@@ -843,7 +781,7 @@ company_maple_and_co = {
 			state_region = s:STATE_HOME_COUNTIES
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_furniture_manufacturies
+				is_building_type = building_furniture_manufactory
 				level >= 5
 			}
 		}
@@ -862,7 +800,7 @@ company_maple_and_co = {
 	}
 
 	ai_construction_targets = {
-		building_furniture_manufacturies = {
+		building_furniture_manufactory = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_HOME_COUNTIES
@@ -876,7 +814,7 @@ company_maple_and_co = {
 }
 
 # Ong Lung Sheng Tea Company
-company_ong_lung_sheng_tea_company = {
+TRY_REPLACE:company_ong_lung_sheng_tea_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_ong_lung_sheng_tea_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
@@ -956,7 +894,7 @@ company_ong_lung_sheng_tea_company = {
 }
 
 # Anglo-Sicilian Sulphur Company
-company_anglo_sicilian_sulphur_company = {
+TRY_REPLACE:company_anglo_sicilian_sulphur_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_anglo_sicilian_sulphur_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
@@ -1006,7 +944,7 @@ company_anglo_sicilian_sulphur_company = {
 	}
 
 	prosperity_modifier = {
-		building_munition_plants_throughput_add = 0.1
+		building_munition_plant_throughput_add = 0.1
 		building_group_bg_plantations_throughput_add = 0.05
 		building_group_bg_agriculture_throughput_add = 0.05
 
@@ -1036,7 +974,7 @@ company_anglo_sicilian_sulphur_company = {
 }
 
 # Mantero Seta
-company_mantero_seta = {
+TRY_REPLACE:company_mantero_seta = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_mantero_seta.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
@@ -1047,7 +985,7 @@ company_mantero_seta = {
 	building_types = {
 		building_silk_plantation
 		building_infres_silk_plantation
-		building_textile_mills
+		building_textile_mill
 	}
 
 	extension_building_types = {
@@ -1075,7 +1013,7 @@ company_mantero_seta = {
 				OR = {
 					is_building_type = building_silk_plantation
 					is_building_type = building_infres_silk_plantation
-					is_building_type = building_textile_mills
+					is_building_type = building_textile_mill
 				}
 				level >= 5
 			}
@@ -1084,7 +1022,7 @@ company_mantero_seta = {
 
 	prosperity_modifier = {
 		country_prestige_mult = 0.05
-		building_synthetics_plants_throughput_add = 0.1
+		building_synthetics_plant_throughput_add = 0.1
 	}
 
 	ai_will_do = {
@@ -1095,7 +1033,7 @@ company_mantero_seta = {
 	}
 
 	ai_construction_targets = {
-		building_textile_mills = {
+		building_textile_mill = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_LOMBARDY
@@ -1115,7 +1053,7 @@ company_mantero_seta = {
 }
 
 # Norsk Hydroelektrisk Kvælstofaktieselskap
-company_norsk_hydro = {
+TRY_REPLACE:company_norsk_hydro = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_norsk_hydro.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -1124,7 +1062,7 @@ company_norsk_hydro = {
 	preferred_headquarters = { STATE_WESTERN_NORWAY }
 
 	building_types = {
-		building_chemical_plants
+		building_chemical_plant
 		building_power_plant
 	}
 
@@ -1146,7 +1084,7 @@ company_norsk_hydro = {
 			state_region = s:STATE_WESTERN_NORWAY
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_chemical_plants
+				is_building_type = building_chemical_plant
 				level >= 5
 			}
 			any_scope_building = {
@@ -1170,7 +1108,7 @@ company_norsk_hydro = {
 	}
 
 	ai_construction_targets = {
-		building_chemical_plants = {
+		building_chemical_plant = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_WESTERN_NORWAY
@@ -1190,7 +1128,7 @@ company_norsk_hydro = {
 }
 
 # Massey-Harris Limited
-company_massey_harris = {
+TRY_REPLACE:company_massey_harris = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_massey_harris.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -1200,7 +1138,7 @@ company_massey_harris = {
 
 	building_types = {
 		building_motor_industry
-		building_tooling_workshops
+		building_tooling_workshop
 	}
 
 	extension_building_types = {
@@ -1266,7 +1204,7 @@ company_massey_harris = {
 }
 
 # De Beers Consolidated Mines Ltd.
-company_de_beers = {
+TRY_REPLACE:company_de_beers = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_de_beers.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
@@ -1315,7 +1253,7 @@ company_de_beers = {
 	ai_will_do = {
 		any_scope_state = {
 			region = sr:region_southern_africa
-			has_potential_resource = bg_gold_mining
+			has_potential_resource = building_gold_mine
 		}
 	}
 
@@ -1334,7 +1272,7 @@ company_de_beers = {
 }
 
 # John Holt and Company
-company_john_holt = {
+TRY_REPLACE:company_john_holt = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_john_holt.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
@@ -1342,14 +1280,15 @@ company_john_holt = {
 
 	building_types = {
 		building_rubber_plantation
-		building_infres_rubber_plantation
 		building_logging_camp
-		building_infres_logging_camp
 		building_port
+
+		building_infres_rubber_plantation
+		building_infres_logging_camp
 	}
 
 	extension_building_types = {
-		building_shipyards
+		building_shipyard
 	}
 
 	potential = {
@@ -1402,7 +1341,7 @@ company_john_holt = {
 }
 
 # Imperial Ethiopian Railway Company
-company_imperial_ethiopian_railways = {
+TRY_REPLACE:company_imperial_ethiopian_railways = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_imperial_ethiopian_railways.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
 
@@ -1448,9 +1387,10 @@ company_imperial_ethiopian_railways = {
 	}
 
 	prosperity_modifier = {
-		building_group_bg_coffee_plantations_throughput_add = 0.1
-		building_group_bg_infres_coffee_plantations_throughput_add = 0.1
+		building_coffee_plantation_throughput_add = 0.1
 		building_livestock_ranch_throughput_add = 0.05
+
+		building_infres_coffee_plantation_throughput_add = 0.1
 		building_infres_livestock_ranch_throughput_add = 0.05
 	}
 
@@ -1483,7 +1423,7 @@ company_imperial_ethiopian_railways = {
 
 
 # Lanfang Kongsi
-company_lanfang_kongsi = {
+TRY_REPLACE:company_lanfang_kongsi = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_lanfang_kongsi.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
@@ -1501,8 +1441,9 @@ company_lanfang_kongsi = {
 
 	extension_building_types = {
 		building_rice_farm
-		building_infres_rice_farm
 		building_iron_mine
+
+		building_infres_rice_farm
 		building_infres_iron_mine
 	}
 
@@ -1538,6 +1479,7 @@ company_lanfang_kongsi = {
 
 	prosperity_modifier = {
 		building_group_bg_agriculture_throughput_add = 0.05
+		building_group_bg_infres_agriculture_throughput_add = 0.05
 		battle_defense_owned_province_mult = 0.1
 
 	}
@@ -1574,7 +1516,7 @@ company_lanfang_kongsi = {
 	}
 }
 
-company_paradox = {
+TRY_REPLACE:company_paradox = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_paradox.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -1585,14 +1527,18 @@ company_paradox = {
 	preferred_headquarters = { STATE_SVEALAND }
 
 	building_types = {
-		building_arts_academy
+		building_art_academy
 		building_electrics_industry
 	}
 
 	extension_building_types = {
 		building_coal_mine
 		building_infres_coal_mine
-		building_paper_mills
+		building_paper_mill
+	}
+
+	possible_prestige_goods = {
+		prestige_good_grand_strategy_games
 	}
 
 	potential = {
@@ -1602,7 +1548,7 @@ company_paradox = {
 		any_scope_state = {
 			state_region = s:STATE_SVEALAND
 			any_scope_building = {
-				is_building_type = building_arts_academy
+				is_building_type = building_art_academy
 				level >= 20
 			}
 			any_scope_building = {

@@ -1,0 +1,93 @@
+﻿TRY_INJECT:state_trait_yukon_river_salmon_run = {
+	modifier = {
+		building_group_bg_infres_fishing_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_northern_canadian_terrain = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = -0.2
+	}
+}
+
+TRY_INJECT:state_trait_new_england_whaling = {
+	modifier = {
+		building_group_bg_infres_whaling_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_grand_banks_fisheries = {
+	modifier = {
+		building_group_bg_infres_fishing_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_canadian_prairies = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_northern_california_coastal_forests = {
+	modifier = {
+		building_group_bg_infres_logging_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_central_valley = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.2
+		building_group_bg_infres_plantations_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_the_great_plains = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.2
+		building_group_bg_infres_plantations_throughput_add = 0.2
+		building_group_bg_infres_ranching_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_the_great_basin_desert = {
+	modifier = {
+        building_group_bg_infres_ranching_throughput_add = -0.1
+		building_group_bg_infres_agriculture_throughput_add = -0.2
+		building_group_bg_infres_plantations_throughput_add = -0.2
+	}
+}
+
+TRY_INJECT:state_trait_bone_valley = {
+	modifier = {
+		building_infres_sulfur_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_appalachian_coal = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_sierra_maestra = {
+	modifier = {
+		building_infres_coffee_plantation_throughput_add = 0.1
+		building_group_bg_infres_ranching_throughput_add = 0.1
+		building_infres_iron_mine_throughput_add = 0.05
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_camaguey_plains = {
+	modifier = {
+		building_group_bg_infres_ranching_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_tierra_roja = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.2
+		building_group_bg_infres_plantations_throughput_add = 0.2
+	}
+}

@@ -3,9 +3,9 @@
 
 	state_modifiers = {
         level_scaled = {
-            state_building_construction_sector_max_level_add = 0	
+            state_building_construction_sector_max_level_add = 0
         }
-		
+
 	}
 }
 
@@ -13,10 +13,10 @@ pm_infres_one_hundred_construction = {
 	texture = "gfx/interface/icons/production_method_icons/arc_welded_buildings.dds"
 
 	is_default = yes
-	
+
 	state_modifiers = {
 		level_scaled = {
 			state_building_construction_sector_max_level_add = 100
-		}	
+		}
 	}
 }

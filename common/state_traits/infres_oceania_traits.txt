@@ -1,0 +1,35 @@
+﻿TRY_INJECT:state_trait_new_caledonian_nickel = {
+	modifier = {
+		building_infres_lead_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_volcanic_soil = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.2
+		building_group_bg_infres_plantations_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_australian_desert = {
+	modifier = {
+        building_group_bg_infres_ranching_throughput_add = -0.1
+		building_group_bg_infres_agriculture_throughput_add = -0.2
+		building_group_bg_infres_plantations_throughput_add = -0.2
+    }
+}
+
+TRY_INJECT:state_trait_murray_darling_basin = {
+	modifier = {
+        building_group_bg_infres_ranching_throughput_add = 0.1
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
+    }
+}
+
+TRY_INJECT:state_trait_copper_coast = {
+	modifier = {
+		building_infres_lead_mine_throughput_add = 0.1
+		building_infres_iron_mine_throughput_add = 0.1
+	}
+}

@@ -1,0 +1,42 @@
+﻿TRY_INJECT:ig_trait_honest_work = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
+		building_group_bg_infres_ranching_throughput_add = 0.1
+
+	}
+}
+
+TRY_INJECT:ig_trait_obshchina = {
+	modifier = {
+		building_group_bg_infres_agriculture_tax_mult = 0.1
+	}
+}
+
+TRY_INJECT:ig_trait_fellahin = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:ig_trait_plantation_work = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:ig_trait_of_the_sovereign_alone = {
+	modifier = {
+		building_group_bg_infres_agriculture_tax_mult = -0.05
+	}
+}
+
+TRY_INJECT:ig_trait_imandari = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
+		building_group_bg_infres_ranching_throughput_add = 0.1
+	}
+}

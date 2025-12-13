@@ -1,5 +1,5 @@
 ﻿# Bengal Coal Company
-company_bengal_coal_company = {
+TRY_REPLACE:company_bengal_coal_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ip2_bengal_coal_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
@@ -39,7 +39,7 @@ company_bengal_coal_company = {
 					is_building_type = building_coal_mine
 					is_building_type = building_infres_coal_mine
 				}
-
+				
 				level >= 5
 			}
 		}
@@ -73,7 +73,7 @@ company_bengal_coal_company = {
 }
 
 # Bombay Dyeing and Manufacturing Company Limited
-company_bombay_dyeing_company = {
+TRY_REPLACE:company_bombay_dyeing_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ip2_bombay_dyeing.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -82,7 +82,7 @@ company_bombay_dyeing_company = {
 	preferred_headquarters = { STATE_BOMBAY }
 
 	building_types = {
-		building_textile_mills
+		building_textile_mill
 	}
 
 	extension_building_types = {
@@ -120,7 +120,7 @@ company_bombay_dyeing_company = {
 			state_region = s:STATE_BOMBAY
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_textile_mills
+				is_building_type = building_textile_mill
 				level >= 5
 			}
 		}
@@ -129,6 +129,9 @@ company_bombay_dyeing_company = {
 	prosperity_modifier = {
 		building_dye_plantation_throughput_add  = 0.2
 		building_cotton_plantation_throughput_add = 0.05
+
+		building_infres_dye_plantation_throughput_add  = 0.2
+		building_infres_cotton_plantation_throughput_add = 0.05
 	}
 
 	ai_will_do = {
@@ -139,7 +142,7 @@ company_bombay_dyeing_company = {
 	}
 
 	ai_construction_targets = {
-		building_textile_mills = {
+		building_textile_mill = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_BOMBAY
@@ -153,7 +156,7 @@ company_bombay_dyeing_company = {
 }
 
 # David Sassoon & Co., Ltd
-company_david_sassoon = {
+TRY_REPLACE:company_david_sassoon = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ip2_david_sasson_and_co.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
@@ -221,11 +224,7 @@ company_david_sassoon = {
 				region = sr:region_central_india
 			}
 			any_scope_building = {
-				OR = {
-					is_building_type = building_opium_plantation
-					is_building_type = building_infres_opium_plantation
-				}
-
+				is_building_type = building_opium_plantation
 				level >= 5
 			}
 		}
@@ -263,7 +262,7 @@ company_david_sassoon = {
 }
 
 # Bombay Burmah Trading Corporation
-company_bombay_burmah_trading_corporation = {
+TRY_REPLACE:company_bombay_burmah_trading_corporation = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ip2_bombay_burmah_trading.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
@@ -352,11 +351,11 @@ company_bombay_burmah_trading_corporation = {
 	}
 
 	prosperity_modifier = {
-		building_group_bg_tea_plantations_throughput_add = 0.1
-		building_group_bg_coffee_plantations_throughput_add = 0.1
+		building_tea_plantation_throughput_add = 0.1
+		building_coffee_plantation_throughput_add = 0.1
 
-		building_group_bg_infres_tea_plantations_throughput_add = 0.1
-		building_group_bg_infres_coffee_plantations_throughput_add = 0.1
+		building_infres_tea_plantation_throughput_add = 0.1
+		building_infres_coffee_plantation_throughput_add = 0.1
 	}
 
 	ai_will_do = {
@@ -394,7 +393,7 @@ company_bombay_burmah_trading_corporation = {
 }
 
 # Madura Mills Co. Ltd
-company_madura_mills = {
+TRY_REPLACE:company_madura_mills = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ip2_madura_mills.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -403,7 +402,7 @@ company_madura_mills = {
 	preferred_headquarters = { STATE_MADRAS }
 
 	building_types = {
-		building_textile_mills
+		building_textile_mill
 	}
 
 	extension_building_types = {
@@ -443,7 +442,7 @@ company_madura_mills = {
 			state_region = s:STATE_MADRAS
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_textile_mills
+				is_building_type = building_textile_mill
 				level >= 5
 			}
 		}
@@ -452,7 +451,7 @@ company_madura_mills = {
 
 	prosperity_modifier = {
 		interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 0.1
-		building_textile_mills_throughput_add = 0.1
+		building_textile_mill_throughput_add = 0.1
 		country_state_religion_wages_mult = 0.05
 	}
 
@@ -464,7 +463,7 @@ company_madura_mills = {
 	}
 
 	ai_construction_targets = {
-		building_textile_mills = {
+		building_textile_mill = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_MADRAS
@@ -478,7 +477,7 @@ company_madura_mills = {
 }
 
 # Assam Company
-company_assam_company = {
+TRY_REPLACE:company_assam_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ip2_assam_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
@@ -528,8 +527,8 @@ company_assam_company = {
 	}
 
 	prosperity_modifier = {
-		building_group_bg_tea_plantations_throughput_add = 0.2
-		building_group_bg_infres_tea_plantations_throughput_add = 0.2
+		building_tea_plantation_throughput_add = 0.2
+		building_infres_tea_plantation_throughput_add = 0.2
 		state_radicals_from_political_movements_mult = -0.05
 	}
 
@@ -554,90 +553,8 @@ company_assam_company = {
 	}
 }
 
-# Wadia Shipbuilders / Bombay Dockyard
-company_wadia_shipbuilders = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/ip2_wadia_shipbuilders.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
-
-	flavored_company = yes
-
-	preferred_headquarters = { STATE_BOMBAY }
-
-	building_types = {
-		building_shipyards
-		building_military_shipyards
-	}
-
-	extension_building_types = {
-		building_motor_industry
-	}
-
-	potential = {
-		has_interest_marker_in_region = region_bombay
-		has_dlc_feature = ip2_content
-	}
-
-	attainable = {
-		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-			any_scope_state = {
-				state_region = s:STATE_BOMBAY
-			}
-		}
-	}
-
-	possible = {
-		any_scope_state = {
-			state_region = s:STATE_BOMBAY
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_shipyards
-					is_building_type = building_military_shipyards
-				}
-				level >= 5
-			}
-		}
-		has_technology_researched = gantry_cranes
-	}
-
-	prosperity_modifier = {
-		interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 0.1
-		country_convoys_capacity_mult = 0.1
-		state_radicalism_increases_violent_hostility_mult = -0.05
-		state_radicalism_increases_cultural_erasure_mult = -0.05
-		state_radicalism_increases_open_prejudice_mult = -0.05
-
-	}
-
-	ai_will_do = {
-		any_scope_state = {
-			state_region = s:STATE_BOMBAY
-			is_incorporated = yes
-		}
-	}
-
-	ai_construction_targets = {
-		building_shipyards = {
-			level = 5
-			state_trigger = {
-				state_region = s:STATE_BOMBAY
-			}
-		}
-		building_military_shipyards = {
-			level = 5
-			state_trigger = {
-				state_region = s:STATE_BOMBAY
-			}
-		}
-	}
-
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
-}
-
 # Steel Brothers & Co. Ltd
-company_steel_brothers = {
+TRY_REPLACE:company_steel_brothers = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ip2_steel_brothers_and_co.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
 
@@ -712,7 +629,7 @@ company_steel_brothers = {
 		has_technology_researched = pumpjacks
 		any_scope_state = {
 			has_state_trait = state_trait_burmese_teak
-			has_potential_resource = bg_oil_extraction
+			has_potential_resource = building_oil_rig
 			any_scope_building = {
 				is_building_type = building_rice_farm
 				level >= 5
@@ -739,7 +656,7 @@ company_steel_brothers = {
 }
 
 # Ralli Brothers
-company_ralli_brothers = {
+TRY_REPLACE:company_ralli_brothers = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ip2_ralli_brothers.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
@@ -759,7 +676,7 @@ company_ralli_brothers = {
 		building_port
 		building_cotton_plantation
 		building_infres_cotton_plantation
-		building_textile_mills
+		building_textile_mill
 	}
 
 	possible_prestige_goods = {
@@ -835,7 +752,7 @@ company_ralli_brothers = {
 	prosperity_modifier = {
 		building_sulfur_mine_throughput_add = 0.1
 		building_infres_sulfur_mine_throughput_add = 0.1
-		building_textile_mills_throughput_add = 0.1
+		building_textile_mill_throughput_add = 0.1
 		state_trade_advantage_mult = 0.05
 	}
 
@@ -895,7 +812,7 @@ company_ralli_brothers = {
 }
 
 # Calcutta Electric Supply Corporation Limited
-company_calcutta_electric = {
+TRY_REPLACE:company_calcutta_electric = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ip2_calcutta_electric.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 

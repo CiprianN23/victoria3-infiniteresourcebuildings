@@ -1,4 +1,4 @@
-﻿l_russian: 
+﻿l_russian:
   building_infres_banana_plantation:0 "Инф. Банановые плантации"
   building_infres_coffee_plantation:0 "Инф. Кофейные плантации"
   building_infres_cotton_plantation:0 "Инф. Хлопковые плантации"
@@ -9,7 +9,7 @@
   building_infres_sugar_plantation:0 "Инф. Сахарные плантации"
   building_infres_tea_plantation:0 "Инф. Чайные плантации"
   building_infres_tobacco_plantation:0 "Инф. Табачные плантации"
-  building_infres_vineyard_plantation:0 "Инф. Плантации виноградников"
+  building_infres_vineyard:0 "Инф. Плантации виноградников"
 
   building_infres_maize_farm:0 "Инф. Кукурузные фермы"
   building_infres_millet_farm:0 "Инф. Фермы проса"
@@ -19,7 +19,7 @@
   building_infres_livestock_ranch:0 "Инф. Ранчо для скота"
 
   building_infres_coal_mine:0 "Инф. Угольные шахты"
-  building_infres_gold_fields:0 "Инф. Золотые поля"
+  building_infres_gold_field:0 "Инф. Золотые поля"
   building_infres_gold_mine:0 "Инф. Золотые шахты"
   building_infres_iron_mine:0 "Инф. Железные рудники"
   building_infres_lead_mine:0 "Инф. Свинцовые шахты"
@@ -32,7 +32,7 @@
 
   building_infres_naval_base:0 "Инф. Военно-морская база"
   building_infres_port:0 "Инф. Порт"
-  building_infres_barracks:0 "Инф. Казармы"
+  building_infres_barrack:0 "Инф. Казармы"
   building_infres_construction_sector:0 "Инф. Строительный сектор"
 
   bg_infres_agriculture:0 "Инф. Сельское хозяйство"
@@ -104,18 +104,18 @@
   modifier_building_infres_fishing_wharf_throughput_add:0 "$building_infres_fishing_wharf$ строит [concept_throughput]"
   modifier_building_infres_fishing_wharf_throughput_add_desc:0 "Бонус или штраф как к вводу, так и к выводу $building_infres_fishing_wharf$"
 
-  modifier_building_infres_vineyard_plantation_throughput_add:0 "$building_infres_vineyard_plantation$ строит [concept_throughput]"
-  modifier_building_infres_vineyard_plantation_throughput_add_desc:0 "Бонус или штраф к входу и выходу $building_infres_vineyard_plantation$"
+  modifier_building_infres_vineyard_throughput_add:0 "$building_infres_vineyard$ строит [concept_throughput]"
+  modifier_building_infres_vineyard_throughput_add_desc:0 "Бонус или штраф к входу и выходу $building_infres_vineyard$"
 
   modifier_building_group_bg_infres_p_coffee_plantations_throughput_add:0 "Инф. Кофейная плантация [concept_throughput]"
   modifier_building_group_bg_infres_p_coffee_plantations_throughput_add_desc:0 "Бонус или штраф к вводу и выводу инф. Кофейные плантации"
 
-  pmg_infres_barracks:0 "Inf. Barracks PMG"
-  pmg_infres_barracks_conscription:0 "Inf. Conscripts PMG"
+  pmg_infres_barrack:0 "Inf. Barracks PMG"
+  pmg_infres_barrack_conscription:0 "Inf. Conscripts PMG"
   pmg_infres_naval_base:0 "Inf. Naval Base PMG"
 
-  pm_infres_barracks:0 "Inf. Barracks"
-  pm_infres_barracks_conscripts:0 "Inf. Conscription Centers"
+  pm_infres_barrack:0 "Inf. Barracks"
+  pm_infres_barrack_conscripts:0 "Inf. Conscription Centers"
   pm_infres_naval_base:0 "Inf. Naval Bases"
 
   pmg_infres_base_building_construction_sector:0 "Extra construction sectors"
@@ -151,8 +151,8 @@
   building_infres_rubber_plantation_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_rubber_plantation$"
   building_infres_sulfur_mine_throughput_add:0 "$building_infres_sulfur_mine$ building [concept_throughput]"
   building_infres_sulfur_mine_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_sulfur_mine$"
-  building_infres_vineyard_plantation_throughput_add:0 "$building_infres_vineyard_plantation$ building [concept_throughput]"
-  building_infres_vineyard_plantation_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_vineyard_plantation$"
+  building_infres_vineyard_throughput_add:0 "$building_infres_vineyard$ building [concept_throughput]"
+  building_infres_vineyard_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_vineyard$"
   building_infres_wheat_farm_throughput_add:0 "$building_infres_wheat_farm$ building [concept_throughput]"
   building_infres_wheat_farm_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_infres_wheat_farm$"
   building_infres_silk_plantation_throughput_add:0 "$building_infres_silk_plantation$ building [concept_throughput]"

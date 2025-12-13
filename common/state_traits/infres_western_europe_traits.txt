@@ -1,0 +1,129 @@
+﻿TRY_INJECT:state_trait_saar_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_nord_pas_de_calais_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_ruhr_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_borinage_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_loire_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_upper_silesia_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_sicilian_sulfur_mines = {
+	modifier = {
+		building_infres_sulfur_mine_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_black_forest = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	modifier = {
+		building_group_bg_infres_logging_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_somorrostro_valley = {
+	modifier = {
+		building_infres_iron_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_black_country = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.15
+		building_infres_iron_mine_throughput_add = 0.05
+	}
+}
+
+TRY_INJECT:state_trait_cuencas_mineras = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_guadalquivir = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_douro_valley = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyard.dds"
+	modifier = {
+		building_infres_vineyard_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_riotinto_basin = {
+	modifier = {
+		building_infres_sulfur_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_sierra_minera_de_cartagena = {
+	modifier = {
+		building_infres_lead_mine_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_great_terroir = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyard.dds"
+
+	modifier = {
+		building_infres_vineyard_throughput_add = 0.1
+	}
+}
+
+
+### Content-specific State Traits
+
+TRY_INJECT:state_trait_somorrostro_valley_upgraded = {
+	modifier = {
+		building_infres_iron_mine_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_riotinto_basin_upgraded = {
+	modifier = {
+		building_infres_sulfur_mine_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_sierra_minera_de_cartagena_upgraded = {
+	modifier = {
+		building_infres_lead_mine_throughput_add = 0.3
+	}
+}
+
+TRY_INJECT:state_trait_cuencas_mineras_upgraded = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.2
+	}
+}

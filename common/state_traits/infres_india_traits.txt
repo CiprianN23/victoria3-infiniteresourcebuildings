@@ -1,0 +1,63 @@
+﻿TRY_INJECT:state_trait_indus_valley = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.2
+		building_group_bg_infres_plantations_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_ganges_river = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_bengal_delta = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.25
+		building_group_bg_infres_plantations_throughput_add = 0.25
+	}
+}
+
+TRY_INJECT:state_trait_cauvery_delta = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.2
+		building_group_bg_infres_plantations_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_raniganj_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_himalayan_foothills = {
+	modifier = {
+		building_infres_tea_plantation_throughput_add = 0.25
+	}
+}
+
+TRY_INJECT:state_trait_jharia_dhanbad_coalfield  = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_western_ghats  = {
+	modifier = {
+		building_infres_coffee_plantation_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_yenangyaung  = {
+	modifier = {
+		building_group_bg_infres_oil_extraction_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_digboi  = {
+	modifier = {
+		building_group_bg_infres_oil_extraction_throughput_add = 0.1
+	}
+}

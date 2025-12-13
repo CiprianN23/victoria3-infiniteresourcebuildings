@@ -1,0 +1,31 @@
+﻿TRY_INJECT:state_trait_black_soil = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_russian_forest = {
+	modifier = {
+		building_group_bg_infres_logging_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_ural_iron = {
+	modifier = {
+		building_infres_iron_mine_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_western_steppe = {
+	modifier = {
+        building_group_bg_infres_ranching_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_pannonian_plain = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+        building_group_bg_infres_ranching_throughput_add = 0.1
+	}
+}

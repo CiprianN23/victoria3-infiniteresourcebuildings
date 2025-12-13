@@ -1,0 +1,100 @@
+﻿TRY_INJECT:state_trait_serra_dos_carajas = {
+	modifier = {
+		building_infres_iron_mine_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_chincha_islands = {
+	modifier = {
+		building_infres_sulfur_mine_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_lake_maracaibo = {
+	modifier = {
+		building_group_bg_infres_oil_extraction_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_la_costa = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_el_mutun = {
+	modifier = {
+		building_infres_iron_mine_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_pantanal = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_atacama_desert = {
+	modifier = {
+		building_infres_sulfur_mine_throughput_add = 0.15
+		building_group_bg_infres_agriculture_throughput_add = -0.1
+		building_group_bg_infres_plantations_throughput_add = -0.1
+	}
+}
+
+TRY_INJECT:state_trait_pampas = {
+	modifier = {
+		building_group_bg_infres_ranching_throughput_add = 0.2
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_uruguay_river = {
+	modifier = {
+		state_infrastructure_add = 20
+		building_group_bg_infres_ranching_throughput_add = 0.1
+		building_group_bg_infres_plantations_throughput_add = -0.2
+	}
+}
+
+TRY_INJECT:state_trait_longitudinal_valley = { # Valle Central
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_reconcavo = {
+	modifier = {
+		building_infres_tobacco_plantation_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_sertao = {
+	modifier = {
+		building_group_bg_infres_ranching_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_mata_atlantica = {
+	modifier = {
+		building_infres_sugar_plantation_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_gran_chaco = {
+	modifier = {
+		building_group_bg_infres_logging_throughput_add = -0.1
+		building_group_bg_infres_agriculture_throughput_add = -0.2
+		building_group_bg_infres_ranching_throughput_add = 0.3
+	}
+}
+
+TRY_INJECT:state_trait_terra_roxa = {
+	modifier = {
+		building_infres_coffee_plantation_throughput_add = 0.1
+	}
+}

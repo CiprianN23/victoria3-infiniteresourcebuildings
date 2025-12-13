@@ -1,0 +1,80 @@
+﻿TRY_INJECT:state_trait_the_loess_plateau = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_the_red_basin = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+		building_group_bg_infres_plantations_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_gobi_desert = {
+	modifier = {
+        building_group_bg_infres_ranching_throughput_add = -0.1
+		building_group_bg_infres_agriculture_throughput_add = -0.2
+		building_group_bg_plantations_throughput_add = -0.2
+    }
+}
+
+
+TRY_INJECT:state_trait_taklamakan_desert = {
+	modifier = {
+        building_group_bg_infres_ranching_throughput_add = -0.1
+		building_group_bg_infres_agriculture_throughput_add = -0.2
+		building_group_bg_infres_plantations_throughput_add = -0.2
+    }
+}
+
+TRY_INJECT:state_trait_siberian_terrain = {
+	modifier = {
+		building_group_bg_infres_ranching_throughput_add = -0.1
+	}
+}
+
+TRY_INJECT:state_trait_eastern_steppe = {
+	modifier = {
+		building_group_bg_infres_ranching_throughput_add = 0.1
+		building_group_bg_infres_agriculture_throughput_add = -0.1
+		building_group_bg_infres_plantations_throughput_add = -0.1
+	}
+}
+
+TRY_INJECT:state_trait_kaiping_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_chikuho_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_ishikari_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_nara_basin = {
+	modifier = {
+		building_infres_rice_farm_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_kanto_plain = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_honam_plain = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+	}
+}

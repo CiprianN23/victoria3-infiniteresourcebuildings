@@ -1,0 +1,36 @@
+﻿TRY_INJECT:state_trait_lancashire_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_south_yorkshire_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_south_wales_valleys = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_scottish_highlands = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = -0.1
+		building_group_bg_infres_ranching_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_central_belt_coalfield = {
+	modifier = {
+		building_infres_coal_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_the_golden_vale = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.1
+	}
+}

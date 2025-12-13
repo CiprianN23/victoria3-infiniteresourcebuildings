@@ -21,9 +21,9 @@ building_infres_coffee_plantation = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_coffee_plantations
+
+	building_group = bg_infres_plantations
 	icon = "gfx/interface/icons/building_icons/coffee_plantation.dds"
 	required_construction = construction_cost_low
 
@@ -64,9 +64,9 @@ building_infres_cotton_plantation = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_cotton_plantations
+
+	building_group = bg_infres_plantations
 	icon = "gfx/interface/icons/building_icons/cotton_plantation.dds"
 	required_construction = construction_cost_low
 
@@ -107,9 +107,9 @@ building_infres_dye_plantation = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_dye_plantations
+
+	building_group = bg_infres_plantations
 	icon = "gfx/interface/icons/building_icons/dye_plantation.dds"
 	required_construction = construction_cost_low
 
@@ -151,14 +151,14 @@ building_infres_opium_plantation = {
 				scope:investor_country = { is_player = yes }
 				owner = { NOT = { is_banning_goods = g:opium } }
 			}
-			
+
 			has_game_rule = infres_player_and_ai_allowed
 		}
 	}
 
-	
 
-	building_group = bg_infres_opium_plantations
+
+	building_group = bg_infres_plantations
 	icon = "gfx/interface/icons/building_icons/opium_plantation.dds"
 	required_construction = construction_cost_low
 
@@ -200,9 +200,9 @@ building_infres_tea_plantation = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_tea_plantations
+
+	building_group = bg_infres_plantations
 	icon = "gfx/interface/icons/building_icons/tea_plantation.dds"
 	required_construction = construction_cost_low
 
@@ -243,9 +243,9 @@ building_infres_tobacco_plantation = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_tobacco_plantations
+
+	building_group = bg_infres_plantations
 	icon = "gfx/interface/icons/building_icons/tobacco_plantation.dds"
 	required_construction = construction_cost_low
 
@@ -286,9 +286,9 @@ building_infres_sugar_plantation = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_sugar_plantations
+
+	building_group = bg_infres_plantations
 	icon = "gfx/interface/icons/building_icons/sugar_plantation.dds"
 	required_construction = construction_cost_low
 
@@ -329,9 +329,9 @@ building_infres_banana_plantation = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_banana_plantations
+
+	building_group = bg_infres_plantations
 	icon = "gfx/interface/icons/building_icons/banana_plantation.dds"
 	required_construction = construction_cost_low
 
@@ -372,9 +372,9 @@ building_infres_silk_plantation = {
 		}
 	}
 
-	
 
-	building_group = bg_infres_silk_plantations
+
+	building_group = bg_infres_plantations
 	icon = "gfx/interface/icons/building_icons/silk_plantation.dds"
 	required_construction = construction_cost_low
 

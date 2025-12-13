@@ -1,0 +1,30 @@
+﻿TRY_INJECT:state_trait_scandinavian_forests = {
+	modifier = {
+		building_group_bg_infres_logging_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_bergslagen = {
+	modifier = {
+		building_infres_iron_mine_throughput_add = 0.15
+		building_infres_lead_mine_throughput_add = 0.1
+	}
+}
+
+TRY_INJECT:state_trait_malmberget = {
+	modifier = {
+		building_infres_iron_mine_throughput_add = 0.2
+	}
+}
+
+TRY_INJECT:state_trait_scanian_soils = {
+	modifier = {
+		building_group_bg_infres_agriculture_throughput_add = 0.15
+	}
+}
+
+TRY_INJECT:state_trait_kongsberg_silver_mine = {
+	modifier = {
+		building_infres_iron_mine_throughput_add = 0.2
+	}
+}

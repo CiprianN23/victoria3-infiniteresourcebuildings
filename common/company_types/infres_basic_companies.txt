@@ -66,9 +66,6 @@
 				OR = {
 					is_building_type = building_wheat_farm
 					is_building_type = building_rye_farm
-
-					is_building_type = building_infres_wheat_farm
-					is_building_type = building_infres_rye_farm
 				}
 				level >= 3
 			}
@@ -98,10 +95,15 @@ TRY_REPLACE:company_basic_agriculture_2 = {
 		building_rice_farm
 		building_millet_farm
 		building_maize_farm
+
+		building_infres_rice_farm
+		building_infres_millet_farm
+		building_infres_maize_farm
 	}
 
 	extension_building_types = {
 		building_rye_farm
+		building_infres_rye_farm
 	}
 
 	possible_prestige_goods = {
@@ -122,6 +124,10 @@ TRY_REPLACE:company_basic_agriculture_2 = {
 					is_building_type = building_millet_farm
 					is_building_type = building_rice_farm
 					is_building_type = building_maize_farm
+
+					is_building_type = building_infres_millet_farm
+					is_building_type = building_infres_rice_farm
+					is_building_type = building_infres_maize_farm_infres
 				}
 				level >= 5
 			}
@@ -130,6 +136,7 @@ TRY_REPLACE:company_basic_agriculture_2 = {
 
 	prosperity_modifier = {
 		building_livestock_ranch_throughput_add = 0.1
+		building_infres_livestock_ranch_throughput_add = 0.1
 		building_food_industry_throughput_add = 0.1
 	}
 
@@ -169,6 +176,9 @@ TRY_REPLACE:company_basic_fabrics = {
 	building_types = {
 		building_cotton_plantation
 		building_livestock_ranch
+
+		building_infres_cotton_plantation
+		building_infres_livestock_ranch
 	}
 
 	extension_building_types = {
@@ -192,6 +202,9 @@ TRY_REPLACE:company_basic_fabrics = {
 				OR = {
 					is_building_type = building_cotton_plantation
 					is_building_type = building_livestock_ranch
+
+					is_building_type = building_infres_cotton_plantation
+					is_building_type = building_infres_livestock_ranch
 				}
 				level >= 5
 			}
@@ -235,10 +248,14 @@ TRY_REPLACE:company_basic_colonial_plantations_1 = {
 	building_types = {
 		building_opium_plantation
 		building_tea_plantation
+
+		building_infres_opium_plantation
+		building_infres_tea_plantation
 	}
 
 	extension_building_types = {
 		building_tobacco_plantation
+		building_infres_tobacco_plantation
 	}
 
 	possible_prestige_goods = {
@@ -258,6 +275,9 @@ TRY_REPLACE:company_basic_colonial_plantations_1 = {
 				OR = {
 					is_building_type = building_opium_plantation
 					is_building_type = building_tea_plantation
+
+					is_building_type = building_infres_opium_plantation
+					is_building_type = building_infres_tea_plantation
 				}
 				level >= 5
 			}
@@ -303,10 +323,15 @@ TRY_REPLACE:company_basic_colonial_plantations_2 = {
 		building_coffee_plantation
 		building_sugar_plantation
 		building_tobacco_plantation
+
+		building_infres_coffee_plantation
+		building_infres_sugar_plantation
+		building_infres_tobacco_plantation
 	}
 
 	extension_building_types = {
 		building_tea_plantation
+		building_infres_tea_plantation
 	}
 
 	possible_prestige_goods = {
@@ -327,6 +352,10 @@ TRY_REPLACE:company_basic_colonial_plantations_2 = {
 					is_building_type = building_coffee_plantation
 					is_building_type = building_sugar_plantation
 					is_building_type = building_tobacco_plantation
+
+					is_building_type = building_infres_coffee_plantation
+					is_building_type = building_infres_sugar_plantation
+					is_building_type = building_infres_tobacco_plantation
 				}
 				level >= 5
 			}
@@ -372,6 +401,9 @@ TRY_REPLACE:company_basic_silk_and_dye = {
 	building_types = {
 		building_silk_plantation
 		building_dye_plantation
+
+		building_infres_silk_plantation
+		building_infres_dye_plantation
 	}
 
 	extension_building_types = {
@@ -384,6 +416,9 @@ TRY_REPLACE:company_basic_silk_and_dye = {
 				OR = {
 					is_building_type = building_silk_plantation
 					is_building_type = building_dye_plantation
+
+					is_building_type = building_infres_silk_plantation
+					is_building_type = building_infres_dye_plantation
 				}
 				level >= 5
 			}
@@ -429,10 +464,14 @@ TRY_REPLACE:company_basic_wine_and_fruit = {
 	building_types = {
 		building_vineyard
 		building_banana_plantation
+
+		building_infres_vineyard
+		building_infres_banana_plantation
 	}
 
 	extension_building_types = {
 		building_sugar_plantation
+		building_infres_sugar_plantation
 	}
 
 	possible = {
@@ -441,6 +480,9 @@ TRY_REPLACE:company_basic_wine_and_fruit = {
 				OR = {
 					is_building_type = building_vineyard
 					is_building_type = building_banana_plantation
+
+					is_building_type = building_infres_vineyard
+					is_building_type = building_infres_banana_plantation
 				}
 				level >= 5
 			}
@@ -485,6 +527,9 @@ TRY_REPLACE:company_basic_fishing = {
 	building_types = {
 		building_fishing_wharf
 		building_whaling_station
+
+		building_infres_fishing_wharf
+		building_infres_whaling_station
 	}
 
 	extension_building_types = {
@@ -508,6 +553,9 @@ TRY_REPLACE:company_basic_fishing = {
 				OR = {
 					is_building_type = building_fishing_wharf
 					is_building_type = building_whaling_station
+
+					is_building_type = building_infres_fishing_wharf
+					is_building_type = building_infres_whaling_station
 				}
 				level >= 5
 			}
@@ -555,6 +603,9 @@ TRY_REPLACE:company_basic_forestry = {
 	building_types = {
 		building_logging_camp
 		building_rubber_plantation
+
+		building_infres_logging_camp
+		building_infres_rubber_plantation
 	}
 
 	extension_building_types = {
@@ -567,6 +618,9 @@ TRY_REPLACE:company_basic_forestry = {
 				OR = {
 					is_building_type = building_logging_camp
 					is_building_type = building_rubber_plantation
+
+					is_building_type = building_infres_logging_camp
+					is_building_type = building_infres_rubber_plantation
 				}
 				level >= 5
 			}
@@ -610,16 +664,22 @@ TRY_REPLACE:company_basic_oil = {
 
 	building_types = {
 		building_oil_rig
+		building_infres_oil_rig
 	}
 
 	extension_building_types = {
 		building_coal_mine
+		building_infres_coal_mine
 	}
 
 	possible = {
 		any_scope_state = {
 			any_scope_building = {
-				is_building_type = building_oil_rig
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_infres_oil_rig
+				}
+				
 				level >= 5
 			}
 		}
@@ -658,16 +718,22 @@ TRY_REPLACE:company_basic_gold_mining = {
 
 	building_types = {
 		building_gold_mine
+		building_infres_gold_mine
 	}
 
 	extension_building_types = {
 		building_lead_mine
+		building_infres_lead_mine
 	}
 
 	possible = {
 		any_scope_state = {
 			any_scope_building = {
-				is_building_type = building_gold_mine
+				OR = {
+					is_building_type = building_gold_mine
+					is_building_type = building_infres_gold_mine
+				}
+
 				level >= 5
 			}
 		}
@@ -709,10 +775,14 @@ TRY_REPLACE:company_basic_metal_mining = {
 	building_types = {
 		building_iron_mine
 		building_lead_mine
+
+		building_infres_iron_mine
+		building_infres_lead_mine
 	}
 
 	extension_building_types = {
 		building_coal_mine
+		building_infres_coal_mine
 	}
 
 	possible = {
@@ -721,6 +791,9 @@ TRY_REPLACE:company_basic_metal_mining = {
 				OR = {
 					is_building_type = building_iron_mine
 					is_building_type = building_lead_mine
+
+					is_building_type = building_infres_iron_mine
+					is_building_type = building_infres_lead_mine
 				}
 				level >= 5
 			}
@@ -766,10 +839,14 @@ TRY_REPLACE:company_basic_mineral_mining = {
 	building_types = {
 		building_sulfur_mine
 		building_coal_mine
+
+		building_infres_sulfur_mine
+		building_infres_coal_mine
 	}
 
 	extension_building_types = {
 		building_iron_mine
+		building_infres_iron_mine
 	}
 
 	possible = {
@@ -778,6 +855,9 @@ TRY_REPLACE:company_basic_mineral_mining = {
 				OR = {
 					is_building_type = building_sulfur_mine
 					is_building_type = building_coal_mine
+
+					is_building_type = building_infres_sulfur_mine
+					is_building_type = building_infres_coal_mine
 				}
 				level >= 5
 			}
@@ -827,6 +907,9 @@ TRY_REPLACE:company_basic_food = {
 	extension_building_types = {
 		building_livestock_ranch
 		building_wheat_farm
+
+		building_infres_livestock_ranch
+		building_infres_wheat_farm
 	}
 
 	possible_prestige_goods = {
@@ -888,6 +971,7 @@ TRY_REPLACE:company_basic_paper = {
 
 	extension_building_types = {
 		building_logging_camp
+		building_infres_logging_camp
 	}
 
 	possible_prestige_goods = {
@@ -951,6 +1035,9 @@ TRY_REPLACE:company_basic_home_goods = {
 	extension_building_types = {
 		building_logging_camp
 		building_lead_mine
+
+		building_infres_logging_camp
+		building_infres_lead_mine_infres
 	}
 
 	possible_prestige_goods = {
@@ -1019,6 +1106,9 @@ TRY_REPLACE:company_basic_textiles = {
 	extension_building_types = {
 		building_cotton_plantation
 		building_silk_plantation
+
+		building_infres_cotton_plantation
+		building_infres_silk_plantation
 	}
 
 	possible_prestige_goods = {
@@ -1092,6 +1182,9 @@ TRY_REPLACE:company_basic_steel = {
 	extension_building_types = {
 		building_iron_mine
 		building_coal_mine
+
+		building_infres_iron_mine
+		building_infres_coal_mine
 	}
 
 	possible = {
@@ -1210,6 +1303,7 @@ TRY_REPLACE:company_basic_shipyards = {
 
 	extension_building_types = {
 		building_logging_camp
+		building_infres_logging_camp
 	}
 
 	possible = {
@@ -1267,6 +1361,7 @@ TRY_REPLACE:company_basic_chemicals = {
 
 	extension_building_types = {
 		building_sulfur_mine
+		building_infres_sulfur_mine
 	}
 
 	possible_prestige_goods = {
@@ -1393,6 +1488,7 @@ TRY_REPLACE:company_basic_munitions = {
 
 	extension_building_types = {
 		building_sulfur_mine
+		building_infres_sulfur_mine
 		building_steel_mill
 	}
 
@@ -1462,6 +1558,9 @@ TRY_REPLACE:company_basic_electrics = {
 	extension_building_types = {
 		building_iron_mine
 		building_rubber_plantation
+
+		building_infres_iron_mine
+		building_infres_rubber_plantation
 	}
 
 	possible = {
@@ -1571,6 +1670,7 @@ TRY_REPLACE:company_construction_power_bloc = {
 
 	extension_building_types = {
 		building_lead_mine
+		building_infres_lead_mine
 	}
 
 	potential = {

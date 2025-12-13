@@ -1,7 +1,7 @@
 ﻿building_infres_barrack = {
 	building_group = bg_infres_army
 	recruits_combat_units = no
-	icon = "gfx/interface/icons/building_icons/building_barrack.dds"
+	icon = "gfx/interface/icons/building_icons/building_barracks.dds"
 	city_type = city
 
 	can_build_government = { scope:investor_country = { is_player = yes } }

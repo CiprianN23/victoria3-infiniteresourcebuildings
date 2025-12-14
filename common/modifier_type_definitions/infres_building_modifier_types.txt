@@ -300,3 +300,27 @@ building_infres_sugar_plantation_throughput_add = {
 		ai_value=0
 	}
 }
+building_group_bg_infres_rubber_mortality_mult = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_whaling_station_throughput_add = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_infres_oil_rig_throughput_add = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}

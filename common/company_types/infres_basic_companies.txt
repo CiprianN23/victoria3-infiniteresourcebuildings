@@ -127,7 +127,7 @@ TRY_REPLACE:company_basic_agriculture_2 = {
 
 					is_building_type = building_infres_millet_farm
 					is_building_type = building_infres_rice_farm
-					is_building_type = building_infres_maize_farm_infres
+					is_building_type = building_infres_maize_farm
 				}
 				level >= 5
 			}
@@ -1037,7 +1037,7 @@ TRY_REPLACE:company_basic_home_goods = {
 		building_lead_mine
 
 		building_infres_logging_camp
-		building_infres_lead_mine_infres
+		building_infres_lead_mine
 	}
 
 	possible_prestige_goods = {

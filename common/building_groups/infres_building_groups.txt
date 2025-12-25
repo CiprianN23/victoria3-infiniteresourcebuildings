@@ -127,7 +127,7 @@ bg_infres_mining = {
 	foreign_investment_ai_factor = 1.0
 }
 
-bg_infres_gold_fields = {
+bg_infres_gold_field = {
 	parent_group = bg_infres_mining
 
 	auto_place_buildings = no

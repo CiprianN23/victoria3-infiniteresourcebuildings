@@ -66,13 +66,8 @@
   setting_infres_private_construction_allowed_desc:0 "Позволяет автономным инвестициям строить здания с бесконечными ресурсами"
   setting_infres_private_construction_not_allowed_desc:0 "Запрещает автономные инвестиции в строительство зданий с бесконечными ресурсами"
 
-  pmg_mining_equipment_building_gold_mine_infres:0 "Горное оборудование"
-
   pm_picks_and_shovels_building_gold_mine_infres:0 "Кирки и лопаты | без чеканки"
   pm_atmospheric_engine_pump_building_gold_mine_infres:0 "Насос атмосферного двигателя | Без чеканки"
-
-
-  pmg_explosives_building_gold_mine_infres:0 "Взрывчатка"
 
   pm_nitroglycerin_building_gold_mine_infres:0 "Nitroglycerin | No Minting"
   pm_dynamite_building_gold_mine_infres:0 "Динамит | Без чеканки"

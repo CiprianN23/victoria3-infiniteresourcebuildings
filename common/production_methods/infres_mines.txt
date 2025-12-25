@@ -1,4 +1,4 @@
-﻿pm_picks_and_shovels_building_gold_mine_infres = {
+﻿REPLACE_OR_CREATE:pm_picks_and_shovels_building_gold_mine_infres = {
 	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
 
 	building_modifiers = {
@@ -17,7 +17,7 @@
 	}
 }
 
-pm_atmospheric_engine_pump_building_gold_mine_infres = {
+REPLACE_OR_CREATE:pm_atmospheric_engine_pump_building_gold_mine_infres = {
 	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
 	state_modifiers = {
 		workforce_scaled = {
@@ -48,7 +48,7 @@ pm_atmospheric_engine_pump_building_gold_mine_infres = {
 	}
 }
 
-pm_condensing_engine_pump_building_gold_mine_infres = {
+REPLACE_OR_CREATE:pm_condensing_engine_pump_building_gold_mine_infres = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
 	state_modifiers = {
 		workforce_scaled = {
@@ -79,7 +79,7 @@ pm_condensing_engine_pump_building_gold_mine_infres = {
 	}
 }
 
-pm_diesel_pump_building_gold_mine_infres = {
+REPLACE_OR_CREATE:pm_diesel_pump_building_gold_mine_infres = {
 	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
 	state_modifiers = {
 		workforce_scaled = {
@@ -110,7 +110,7 @@ pm_diesel_pump_building_gold_mine_infres = {
 	}
 }
 
-pm_nitroglycerin_building_gold_mine_infres = {
+REPLACE_OR_CREATE:pm_nitroglycerin_building_gold_mine_infres = {
 	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
 	state_modifiers = {
 		workforce_scaled = {
@@ -143,7 +143,7 @@ pm_nitroglycerin_building_gold_mine_infres = {
 	}
 }
 
-pm_dynamite_building_gold_mine_infres = {
+REPLACE_OR_CREATE:pm_dynamite_building_gold_mine_infres = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
 	state_modifiers = {
 		workforce_scaled = {

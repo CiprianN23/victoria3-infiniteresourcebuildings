@@ -1,4 +1,4 @@
-﻿pm_infres_barrack = {
+﻿REPLACE_OR_CREATE:pm_infres_barrack = {
 	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
 	is_default = yes
 
@@ -9,7 +9,7 @@
     }
 }
 
-pm_infres_barrack_conscripts = {
+REPLACE_OR_CREATE:pm_infres_barrack_conscripts = {
     texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
 	is_default = yes
 
@@ -20,7 +20,7 @@ pm_infres_barrack_conscripts = {
     }
 }
 
-pm_infres_naval_base = {
+REPLACE_OR_CREATE:pm_infres_naval_base = {
 	texture = "gfx/interface/icons/production_method_icons/battlefleet_tactics.dds"
 	is_default = yes
 

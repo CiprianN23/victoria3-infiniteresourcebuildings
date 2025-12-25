@@ -195,8 +195,8 @@ building_infres_gold_mine = {
 	}
 
 	production_method_groups = {
-		pmg_mining_equipment_building_gold_mine_infres
-		pmg_explosives_building_gold_mine_infres
+		pmg_mining_equipment_building_gold_mine
+		pmg_explosives_building_gold_mine
 		pmg_steam_automation_building_gold_mine
 		pmg_train_automation_building_gold_mine
 	}
@@ -212,7 +212,7 @@ building_infres_gold_field = {
 
 	ai_value = -1000
 
-	building_group = bg_infres_gold_fields
+	building_group = bg_infres_gold_field
 	icon = "gfx/interface/icons/building_icons/gold_fields.dds"
 	city_type = mine
 	levels_per_mesh = 5

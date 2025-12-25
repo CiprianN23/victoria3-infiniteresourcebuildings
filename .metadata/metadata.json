@@ -1,11 +1,13 @@
-﻿{
+{
   "name": "Infinite Resources Buildings",
   "id": "2933097584",
-  "version": "0.9.1",
+  "version": "0.9.4",
   "supported_game_version": "1.12*",
   "game_id": "victoria3",
   "short_description": "Provides infinite resources buildings to grow your economy",
-  "tags": [],
+  "tags" : [
+    "1.12"
+  ],
   "relationships": [],
   "game_custom_data": {
     "multiplayer_synchronized": true

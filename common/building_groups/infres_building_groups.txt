@@ -5,12 +5,14 @@ bg_infres_agriculture = {
 
 	lens = agriculture
 
+	cash_reserves_max = 25000
+
 	economy_of_scale = yes
 
 	can_use_slaves = yes
 
 	urbanization = 5
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -37,12 +39,14 @@ bg_infres_ranching = {
 
 	lens = agriculture
 
+	cash_reserves_max = 25000
+
 	economy_of_scale = yes
 
 	can_use_slaves = yes
 
 	urbanization = 5
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -70,7 +74,7 @@ bg_infres_plantations = {
 	cash_reserves_max = 25000
 
 	urbanization = 5
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -111,7 +115,7 @@ bg_infres_mining = {
 	cash_reserves_max = 25000
 
 	urbanization = 10
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -142,7 +146,7 @@ bg_infres_gold_field = {
 
 	always_possible = yes
 
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	default_building = building_infres_gold_field
 
@@ -167,7 +171,7 @@ bg_infres_logging = {
 	cash_reserves_max = 25000
 
 	urbanization = 5
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -201,7 +205,7 @@ bg_infres_rubber = {
 	cash_reserves_max = 25000
 
 	urbanization = 5
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -231,7 +235,7 @@ bg_infres_whaling = {
 	cash_reserves_max = 25000
 
 	urbanization = 5
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -259,7 +263,7 @@ bg_infres_fishing = {
 	cash_reserves_max = 25000
 
 	urbanization = 5
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -291,7 +295,7 @@ bg_infres_oil_extraction = {
 	cash_reserves_max = 25000
 
 	urbanization = 10
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -314,7 +318,7 @@ bg_infres_infrastructure = {
 
 	lens = infrastructure
 
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	stateregion_max_level = no
 
@@ -336,7 +340,7 @@ bg_infres_public_infrastructure = {
 bg_infres_construction = {
 	parent_group = bg_infres_public_infrastructure
 
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	lens = development
 
@@ -365,7 +369,7 @@ bg_infres_military = {
 
 	fired_pops_become_radical = no
 
-	infrastructure_usage_per_level = 0.0
+	infrastructure_usage_per_level = 1.0
 
 	construction_efficiency_modifier = yes
 }

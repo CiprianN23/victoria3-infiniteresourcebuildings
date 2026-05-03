@@ -19,7 +19,7 @@ TRY_REPLACE:company_galician_carpathian_oil = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_poland
+		has_interest_marker_in_region = sr:region_eastern_europe
 	}
 
 	attainable = {

@@ -96,7 +96,7 @@ TRY_REPLACE:company_branobel = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_caucasus
+		has_interest_marker_in_region = sr:region_greater_persia
 	}
 
 	attainable = {
@@ -255,7 +255,7 @@ TRY_REPLACE:company_john_hughes = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_dnieper
+		has_interest_marker_in_region = sr:region_eastern_europe
 	}
 
 	attainable = {

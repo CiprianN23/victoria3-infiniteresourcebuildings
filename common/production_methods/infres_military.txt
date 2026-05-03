@@ -19,14 +19,3 @@ REPLACE_OR_CREATE:pm_infres_barrack_conscripts = {
         }
     }
 }
-
-REPLACE_OR_CREATE:pm_infres_naval_base = {
-	texture = "gfx/interface/icons/production_method_icons/battlefleet_tactics.dds"
-	is_default = yes
-
-    country_modifiers = {
-        level_scaled = {
-            state_building_naval_base_max_level_add = 5000
-        }
-    }
-}

@@ -563,7 +563,7 @@ TRY_REPLACE:company_basic_fishing = {
 	}
 
 	prosperity_modifier = {
-		country_convoys_capacity_mult = 0.1
+		country_ship_group_supply_ships_construction_efficiency_add = 0.1
 		building_shipyard_throughput_add = 0.05
 	}
 
@@ -1298,7 +1298,6 @@ TRY_REPLACE:company_basic_shipyards = {
 
 	building_types = {
 		building_shipyard
-		building_military_shipyard
 	}
 
 	extension_building_types = {
@@ -1310,27 +1309,21 @@ TRY_REPLACE:company_basic_shipyards = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
-				OR = {
-					is_building_type = building_shipyard
-					is_building_type = building_military_shipyard
-				}
+				is_building_type = building_shipyard
 				level >= 5
 			}
 		}
 	}
 
 	prosperity_modifier = {
-		unit_navy_offense_mult = 0.1
+		ship_hull_damage_mult = 0.05
 	}
 
 	ai_will_do = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
-				OR = {
-					is_building_type = building_shipyard
-					is_building_type = building_military_shipyard
-				}
+				is_building_type = building_shipyard
 				level >= 5
 			}
 		}
@@ -1400,63 +1393,6 @@ TRY_REPLACE:company_basic_chemicals = {
 				OR = {
 					is_building_type = building_chemical_plant
 					is_building_type = building_synthetics_plant
-				}
-				level >= 5
-			}
-		}
-	}
-}
-
-TRY_REPLACE:company_basic_motors = {
-	icon = "gfx/interface/icons/company_icons/basic_motors.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
-
-	flavored_company = no
-
-	uses_dynamic_naming = yes
-
-	dynamic_company_type_names = {
-		"dynamic_company_type_company"
-		"dynamic_company_type_consortium"
-		"dynamic_company_type_corporation"
-		"dynamic_company_type_conglomerate"
-		"dynamic_company_type_syndicate"
-		"dynamic_company_type_combine"
-	}
-
-	building_types = {
-		building_motor_industry
-		building_automotive_industry
-	}
-
-	extension_building_types = {
-		building_steel_mill
-	}
-
-	possible = {
-		any_scope_state = {
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_motor_industry
-					is_building_type = building_automotive_industry
-				}
-				level >= 5
-			}
-		}
-	}
-
-	prosperity_modifier = {
-		military_formation_movement_speed_mult = 0.1
-	}
-
-	ai_will_do = {
-		any_scope_state = {
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_motor_industry
-					is_building_type = building_automotive_industry
 				}
 				level >= 5
 			}

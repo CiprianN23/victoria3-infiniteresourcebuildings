@@ -18,7 +18,7 @@ TRY_REPLACE:company_bengal_coal_company = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_bengal
+		has_interest_marker_in_region = sr:region_north_india
 		has_dlc_feature = ip2_content
 	}
 
@@ -102,7 +102,7 @@ TRY_REPLACE:company_bombay_dyeing_company = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_bombay
+		has_interest_marker_in_region = sr:region_south_india
 		has_dlc_feature = ip2_content
 	}
 
@@ -190,7 +190,7 @@ TRY_REPLACE:company_david_sassoon = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_bombay
+		has_interest_marker_in_region = sr:region_south_india
 		has_dlc_feature = ip2_content
 	}
 
@@ -216,13 +216,7 @@ TRY_REPLACE:company_david_sassoon = {
 			}
 		}
 		any_scope_state = {
-			OR = {
-				region = sr:region_bombay
-				region = sr:region_madras
-				region = sr:region_bengal
-				region = sr:region_punjab
-				region = sr:region_central_india
-			}
+			is_in_geographic_region = geographic_region_india
 			any_scope_building = {
 				is_building_type = building_opium_plantation
 				level >= 5
@@ -293,7 +287,7 @@ TRY_REPLACE:company_bombay_burmah_trading_corporation = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_bombay
+		has_interest_marker_in_region = sr:region_south_india
 		has_interest_marker_in_region = region_indochina
 	}
 
@@ -425,7 +419,7 @@ TRY_REPLACE:company_madura_mills = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_madras
+		has_interest_marker_in_region = sr:region_south_india
 		has_dlc_feature = ip2_content
 	}
 
@@ -500,7 +494,7 @@ TRY_REPLACE:company_assam_company = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_bengal
+		has_interest_marker_in_region = sr:region_north_india
 	}
 
 	attainable = {
@@ -691,7 +685,7 @@ TRY_REPLACE:company_ralli_brothers = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_bombay
+		has_interest_marker_in_region = sr:region_south_india
 		has_dlc_feature = ip2_content
 	}
 
@@ -720,13 +714,7 @@ TRY_REPLACE:company_ralli_brothers = {
 			}
 		}
 		any_scope_state = {
-			OR = {
-				region = sr:region_bombay
-				region = sr:region_madras
-				region = sr:region_bengal
-				region = sr:region_punjab
-				region = sr:region_central_india
-			}
+			is_in_geographic_region = geographic_region_india
 			OR = {
 				any_scope_building = {
 					OR = {
@@ -768,13 +756,7 @@ TRY_REPLACE:company_ralli_brothers = {
 			}
 		}
 		any_scope_state = {
-			OR = {
-				region = sr:region_bombay
-				region = sr:region_madras
-				region = sr:region_bengal
-				region = sr:region_punjab
-				region = sr:region_central_india
-			}
+			is_in_geographic_region = geographic_region_india
 			count >= 4
 		}
 	}
@@ -783,25 +765,13 @@ TRY_REPLACE:company_ralli_brothers = {
 		building_rice_farm = {
 			level = 5
 			state_trigger = {
-				OR = {
-					region = sr:region_bombay
-					region = sr:region_madras
-					region = sr:region_bengal
-					region = sr:region_punjab
-					region = sr:region_central_india
-				}
+				is_in_geographic_region = geographic_region_india
 			}
 		}
 		building_wheat_farm = {
 			level = 5
 			state_trigger = {
-				OR = {
-					region = sr:region_bombay
-					region = sr:region_madras
-					region = sr:region_bengal
-					region = sr:region_punjab
-					region = sr:region_central_india
-				}
+				is_in_geographic_region = geographic_region_india
 			}
 		}
 	}
@@ -830,7 +800,7 @@ TRY_REPLACE:company_calcutta_electric = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_bengal
+		has_interest_marker_in_region = sr:region_north_india
 	}
 
 	attainable = {

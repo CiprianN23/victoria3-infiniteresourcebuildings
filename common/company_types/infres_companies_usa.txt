@@ -16,13 +16,13 @@ TRY_REPLACE:company_standard_oil = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_the_midwest
+		has_interest_marker_in_region = sr:region_atlantic_coast
 	}
 
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				region = sr:region_the_midwest
+				region = sr:region_atlantic_coast
 			}
 		}
 	}
@@ -30,7 +30,7 @@ TRY_REPLACE:company_standard_oil = {
 	possible = {
 		has_technology_researched = pumpjacks
 		any_scope_state = {
-			region = sr:region_the_midwest
+			region = sr:region_atlantic_coast
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {
@@ -50,7 +50,7 @@ TRY_REPLACE:company_standard_oil = {
 	ai_will_do = {
 		has_technology_researched = pumpjacks
 		any_scope_state = {
-			region = sr:region_the_midwest
+			region = sr:region_atlantic_coast
 			is_incorporated = yes
 			has_potential_resource = building_oil_rig
 		}
@@ -60,7 +60,7 @@ TRY_REPLACE:company_standard_oil = {
 		building_oil_rig = {
 			level = 5
 			state_trigger = {
-				region = sr:region_the_midwest
+				region = sr:region_atlantic_coast
 				is_incorporated = yes
 			}
 		}
@@ -218,7 +218,7 @@ TRY_REPLACE:company_us_steel = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_new_england
+		has_interest_marker_in_region = sr:region_atlantic_coast
 	}
 
 	attainable = {
@@ -293,7 +293,7 @@ TRY_REPLACE:company_ford_motor = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_the_midwest
+		has_interest_marker_in_region = sr:region_atlantic_coast
 	}
 
 	attainable = {

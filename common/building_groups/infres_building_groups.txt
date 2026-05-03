@@ -381,3 +381,10 @@ bg_infres_army = {
 bg_infres_navy = {
 	parent_group = bg_infres_military
 }
+bg_infres_naval_fortification = {
+	parent_group = bg_infres_navy
+
+	economy_of_scale = no
+
+	infrastructure_usage_per_level = 0.2
+}

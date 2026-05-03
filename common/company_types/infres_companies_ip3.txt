@@ -311,7 +311,7 @@ TRY_REPLACE:company_witkowitzer_bergbau_und_huttengewerkschaft = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_south_germany
+		has_interest_marker_in_region = sr:region_central_europe
 		has_dlc_feature = ip3_content
 	}
 
@@ -366,7 +366,7 @@ TRY_REPLACE:company_oesterreichisch_alpine_montangesellschaft = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_south_germany
+		has_interest_marker_in_region = sr:region_central_europe
 	}
 
 	attainable = {

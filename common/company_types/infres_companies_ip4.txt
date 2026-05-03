@@ -22,7 +22,7 @@ TRY_REPLACE:company_douro_wine_company = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_iberia
+		has_interest_marker_in_region = sr:region_southern_europe
 		has_dlc_feature = ip4_content
 	}
 
@@ -88,7 +88,7 @@ TRY_REPLACE:company_gran_azucarera = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_caribbean
+		has_interest_marker_in_region = sr:region_central_america
 		has_dlc_feature = ip4_content
 	}
 
@@ -160,7 +160,7 @@ TRY_REPLACE:company_rodriguez_arguelles_y_cia = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_caribbean
+		has_interest_marker_in_region = sr:region_central_america
 		has_dlc_feature = ip4_content
 	}
 
@@ -387,7 +387,7 @@ TRY_REPLACE:company_uniao_fabril = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_iberia
+		has_interest_marker_in_region = sr:region_southern_europe
 		has_dlc_feature = ip4_content
 	}
 
@@ -460,7 +460,7 @@ TRY_REPLACE:company_pedro_domecq = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_iberia
+		has_interest_marker_in_region = sr:region_southern_europe
 		has_dlc_feature = ip4_content
 	}
 
@@ -518,7 +518,7 @@ TRY_REPLACE:company_bacardi = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_caribbean
+		has_interest_marker_in_region = sr:region_central_america
 		has_dlc_feature = ip4_content
 	}
 

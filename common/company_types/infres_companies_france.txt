@@ -108,7 +108,7 @@ TRY_REPLACE:company_dmc = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_rhine
+		has_interest_marker_in_region = sr:region_western_europe
 	}
 
 	attainable = {
@@ -251,7 +251,7 @@ TRY_REPLACE:company_mines_anzin = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_france
+		has_interest_marker_in_region = sr:region_western_europe
 	}
 
 	attainable = {

@@ -18,7 +18,7 @@ TRY_REPLACE:company_ludwig_moser_and_sons = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_north_germany
+		has_interest_marker_in_region = sr:region_central_europe
 	}
 
 	possible_prestige_goods = {
@@ -178,7 +178,7 @@ TRY_REPLACE:company_konigliche_porzellan_manufaktur_meissen = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_north_germany
+		has_interest_marker_in_region = sr:region_central_europe
 	}
 
 	attainable = {
@@ -481,7 +481,7 @@ TRY_REPLACE:company_maison_worth = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_france
+		has_interest_marker_in_region = sr:region_western_europe
 	}
 
 	attainable = {
@@ -555,7 +555,7 @@ TRY_REPLACE:company_lee_wilson = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_dixie
+		has_interest_marker_in_region = sr:region_atlantic_coast
 	}
 
 	attainable = {
@@ -634,7 +634,7 @@ TRY_REPLACE:company_gebruder_thonet = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_south_germany
+		has_interest_marker_in_region = sr:region_central_europe
 	}
 
 	attainable = {
@@ -702,7 +702,7 @@ TRY_REPLACE:company_kinkozan_sobei = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_japan
+		has_interest_marker_in_region = sr:region_northeast_asia
 	}
 
 	attainable = {
@@ -770,7 +770,7 @@ TRY_REPLACE:company_maple_and_co = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_england
+		has_interest_marker_in_region = sr:region_western_europe
 	}
 
 	attainable = {
@@ -917,7 +917,7 @@ TRY_REPLACE:company_anglo_sicilian_sulphur_company = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_italy
+		has_interest_marker_in_region = sr:region_southern_europe
 	}
 
 	attainable = {
@@ -999,7 +999,7 @@ TRY_REPLACE:company_mantero_seta = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_italy
+		has_interest_marker_in_region = sr:region_southern_europe
 	}
 
 	attainable = {
@@ -1072,7 +1072,7 @@ TRY_REPLACE:company_norsk_hydro = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_baltic
+		has_interest_marker_in_region = sr:region_northern_europe
 	}
 
 	attainable = {
@@ -1292,7 +1292,7 @@ TRY_REPLACE:company_john_holt = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_niger
+		has_interest_marker_in_region = sr:region_west_africa
 	}
 
 	attainable = {
@@ -1301,7 +1301,7 @@ TRY_REPLACE:company_john_holt = {
 	possible = {
 		has_technology_researched = rubber_mastication
 		any_scope_state = {
-			region = sr:region_niger
+			region = sr:region_west_africa
 			any_scope_building = {
 				OR = {
 					is_building_type = building_rubber_plantation
@@ -1322,7 +1322,7 @@ TRY_REPLACE:company_john_holt = {
 	ai_will_do = {
 		has_technology_researched = rubber_mastication
 		any_scope_state = {
-			region = sr:region_niger
+			region = sr:region_west_africa
 		}
 	}
 
@@ -1330,7 +1330,7 @@ TRY_REPLACE:company_john_holt = {
 		building_rubber_plantation = {
 			level = 5
 			state_trigger = {
-				region = sr:region_niger
+				region = sr:region_west_africa
 			}
 		}
 	}
@@ -1356,7 +1356,7 @@ TRY_REPLACE:company_imperial_ethiopian_railways = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_ethiopia
+		has_interest_marker_in_region = sr:region_east_africa
 	}
 
 	attainable = {
@@ -1365,7 +1365,7 @@ TRY_REPLACE:company_imperial_ethiopian_railways = {
 	possible = {
 		has_technology_researched = railways
 		any_scope_state = {
-			region = sr:region_ethiopia
+			region = sr:region_east_africa
 			has_building = building_railway
 			any_scope_building = {
 				OR = {
@@ -1377,7 +1377,7 @@ TRY_REPLACE:company_imperial_ethiopian_railways = {
 			}
 		}
 		any_scope_state = {
-			region = sr:region_ethiopia
+			region = sr:region_east_africa
 			is_coastal = yes
 			any_scope_building = {
 				is_building_type = building_railway
@@ -1397,7 +1397,7 @@ TRY_REPLACE:company_imperial_ethiopian_railways = {
 	ai_will_do = {
 		has_technology_researched = railways
 		any_scope_state = {
-			region = sr:region_ethiopia
+			region = sr:region_east_africa
 		}
 	}
 
@@ -1405,13 +1405,13 @@ TRY_REPLACE:company_imperial_ethiopian_railways = {
 		building_coffee_plantation = {
 			level = 5
 			state_trigger = {
-				region = sr:region_ethiopia
+				region = sr:region_east_africa
 			}
 		}
 		building_railway = {
 			level = 5
 			state_trigger = {
-				region = sr:region_ethiopia
+				region = sr:region_east_africa
 			}
 		}
 	}

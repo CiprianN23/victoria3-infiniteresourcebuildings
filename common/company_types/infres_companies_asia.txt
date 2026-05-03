@@ -40,13 +40,7 @@ TRY_REPLACE:company_east_india_company = {
 			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
-			OR = {
-				region = sr:region_madras
-				region = sr:region_bombay
-				region = sr:region_bengal
-				region = sr:region_central_india
-				region = sr:region_punjab
-			}
+			is_in_geographic_region = geographic_region_india
 			any_scope_building = {
 				OR = {
 					is_building_type = building_tea_plantation
@@ -64,7 +58,7 @@ TRY_REPLACE:company_east_india_company = {
 	}
 
 	prosperity_modifier = {
-		country_convoys_capacity_mult = 0.2
+		country_ship_group_supply_ships_construction_efficiency_add = 0.2
 	}
 
 	ai_will_do = {
@@ -74,13 +68,7 @@ TRY_REPLACE:company_east_india_company = {
 			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
-			OR = {
-				region = sr:region_madras
-				region = sr:region_bombay
-				region = sr:region_bengal
-				region = sr:region_central_india
-				region = sr:region_punjab
-			}
+			is_in_geographic_region = geographic_region_india
 		}
 	}
 
@@ -88,37 +76,19 @@ TRY_REPLACE:company_east_india_company = {
 		building_tea_plantation = {
 			level = 5
 			state_trigger = {
-				OR = {
-					region = sr:region_madras
-					region = sr:region_bombay
-					region = sr:region_bengal
-					region = sr:region_central_india
-					region = sr:region_punjab
-				}
+				is_in_geographic_region = geographic_region_india
 			}
 		}
 		building_tobacco_plantation = {
 			level = 5
 			state_trigger = {
-				OR = {
-					region = sr:region_madras
-					region = sr:region_bombay
-					region = sr:region_bengal
-					region = sr:region_central_india
-					region = sr:region_punjab
-				}
+				is_in_geographic_region = geographic_region_india
 			}
 		}
 		building_opium_plantation = {
 			level = 5
 			state_trigger = {
-				OR = {
-					region = sr:region_madras
-					region = sr:region_bombay
-					region = sr:region_bengal
-					region = sr:region_central_india
-					region = sr:region_punjab
-				}
+				is_in_geographic_region = geographic_region_india
 			}
 		}
 	}
@@ -330,7 +300,7 @@ TRY_REPLACE:company_tata = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_bombay
+		has_interest_marker_in_region = sr:region_south_india
 	}
 
 	attainable = {
@@ -419,7 +389,7 @@ TRY_REPLACE:company_sunhwaguk = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_manchuria
+		has_interest_marker_in_region = sr:region_northeast_asia
 	}
 
 	attainable = {
@@ -577,13 +547,13 @@ TRY_REPLACE:company_imperial_tobacco = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_persia
+		has_interest_marker_in_region = sr:region_greater_persia
 	}
 
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				region = sr:region_persia
+				region = sr:region_greater_persia
 			}
 		}
 	}
@@ -591,7 +561,7 @@ TRY_REPLACE:company_imperial_tobacco = {
 	possible = {
 		has_technology_researched = corporate_charters
 		any_scope_state = {
-			region = sr:region_persia
+			region = sr:region_greater_persia
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {
@@ -613,7 +583,7 @@ TRY_REPLACE:company_imperial_tobacco = {
 	ai_will_do = {
 		has_technology_researched = corporate_charters
 		any_scope_state = {
-			region = sr:region_persia
+			region = sr:region_greater_persia
 			is_incorporated = yes
 			has_potential_resource = building_tobacco_plantation
 			count >= 4
@@ -624,7 +594,7 @@ TRY_REPLACE:company_imperial_tobacco = {
 		building_tobacco_plantation = {
 			level = 5
 			state_trigger = {
-				region = sr:region_persia
+				region = sr:region_greater_persia
 				is_incorporated = yes
 			}
 		}

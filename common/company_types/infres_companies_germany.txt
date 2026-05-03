@@ -23,7 +23,7 @@ TRY_REPLACE:company_krupp = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_north_germany
+		has_interest_marker_in_region = sr:region_central_europe
 	}
 
 	attainable = {
@@ -116,7 +116,7 @@ TRY_REPLACE:company_basf = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_south_germany
+		has_interest_marker_in_region = sr:region_central_europe
 	}
 
 	attainable = {

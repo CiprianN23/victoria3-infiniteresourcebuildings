@@ -30,7 +30,7 @@ TRY_REPLACE:company_ilva = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_italy
+		has_interest_marker_in_region = sr:region_southern_europe
 	}
 
 	attainable = {
@@ -100,7 +100,7 @@ TRY_REPLACE:company_ricordi = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_italy
+		has_interest_marker_in_region = sr:region_southern_europe
 	}
 
 	attainable = {

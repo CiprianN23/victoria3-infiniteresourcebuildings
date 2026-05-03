@@ -15,12 +15,3 @@ REPLACE_OR_CREATE:pmg_infres_barrack_conscription = {
 		pm_infres_barrack_conscripts
 	}
 }
-
-REPLACE_OR_CREATE:pmg_infres_naval_base = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
-	ai_selection = most_productive
-
-	production_methods = {
-		pm_infres_naval_base
-	}
-}

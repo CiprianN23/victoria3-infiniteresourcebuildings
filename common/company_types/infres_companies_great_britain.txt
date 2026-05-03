@@ -28,7 +28,7 @@ TRY_REPLACE:company_j_p_coats = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_north_sea_coast
+		has_interest_marker_in_region = sr:region_western_europe
 	}
 
 	attainable = {
@@ -89,7 +89,6 @@ TRY_REPLACE:company_john_brown = {
 	preferred_headquarters = { STATE_LOWLANDS }
 
 	building_types = {
-		building_military_shipyard
 		building_shipyard
 		building_steel_mill
 	}
@@ -104,7 +103,7 @@ TRY_REPLACE:company_john_brown = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_north_sea_coast
+		has_interest_marker_in_region = sr:region_western_europe
 	}
 
 	attainable = {
@@ -130,7 +129,7 @@ TRY_REPLACE:company_john_brown = {
 
 	prosperity_modifier = {
 		country_prestige_mult = 0.05
-		country_convoys_capacity_mult = 0.1
+		country_ship_group_supply_ships_construction_efficiency_add = 0.1
 	}
 
 	ai_will_do = {
@@ -173,13 +172,13 @@ TRY_REPLACE:company_gwr = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_england
+		has_interest_marker_in_region = sr:region_western_europe
 	}
 
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				region = sr:region_england
+				is_in_geographic_region = geographic_region_england_old
 			}
 		}
 	}
@@ -187,7 +186,7 @@ TRY_REPLACE:company_gwr = {
 	possible = {
 		has_technology_researched = railways
 		any_scope_state = {
-			region = sr:region_england
+			is_in_geographic_region = geographic_region_england_old
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_railway
@@ -205,7 +204,7 @@ TRY_REPLACE:company_gwr = {
 	ai_will_do = {
 		has_technology_researched = railways
 		any_scope_state = {
-			region = sr:region_england
+			is_in_geographic_region = geographic_region_england_old
 			is_incorporated = yes
 			count >= 3
 		}
@@ -215,7 +214,7 @@ TRY_REPLACE:company_gwr = {
 		building_railway = {
 			level = 5
 			state_trigger = {
-				region = sr:region_england
+				is_in_geographic_region = geographic_region_england_old
 				is_incorporated = yes
 			}
 		}
@@ -236,12 +235,11 @@ TRY_REPLACE:company_bolckow_vaughan = {
 	preferred_headquarters = { STATE_YORKSHIRE }
 
 	building_types = {
+		building_infres_coal_mine
 		building_coal_mine
 		building_iron_mine
-		building_steel_mill
-
-		building_infres_coal_mine
 		building_infres_iron_mine
+		building_steel_mill
 	}
 
 	extension_building_types = {
@@ -254,7 +252,7 @@ TRY_REPLACE:company_bolckow_vaughan = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_england
+		has_interest_marker_in_region = sr:region_western_europe
 	}
 
 	attainable = {
@@ -273,11 +271,10 @@ TRY_REPLACE:company_bolckow_vaughan = {
 			any_scope_building = {
 				OR = {
 					is_building_type = building_coal_mine
-					is_building_type = building_iron_mine
-					is_building_type = building_steel_mill
-
 					is_building_type = building_infres_coal_mine
+					is_building_type = building_iron_mine
 					is_building_type = building_infres_iron_mine
+					is_building_type = building_steel_mill
 				}
 				level >= 5
 			}
@@ -286,7 +283,6 @@ TRY_REPLACE:company_bolckow_vaughan = {
 
 	prosperity_modifier = {
 		building_shipyard_throughput_add = 0.1
-		building_military_shipyard_throughput_add = 0.1
 	}
 
 	ai_will_do = {

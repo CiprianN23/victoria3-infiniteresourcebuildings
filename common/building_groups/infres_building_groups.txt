@@ -12,7 +12,7 @@ bg_infres_agriculture = {
 	can_use_slaves = yes
 
 	urbanization = 5
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 1
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -22,10 +22,11 @@ bg_infres_agriculture = {
 	capped_by_resources = no
 	fired_pops_become_radical = no
 
-	construction_efficiency_modifier = yes
-
-	economy_of_scale_ai_factor = 1.5
+	economy_of_scale_ai_factor = 2.0
 	foreign_investment_ai_factor = 0.75
+
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
 }
 
 bg_infres_staple_crops = {
@@ -46,7 +47,7 @@ bg_infres_ranching = {
 	can_use_slaves = yes
 
 	urbanization = 5
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 1
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -57,8 +58,11 @@ bg_infres_ranching = {
 
 	construction_efficiency_modifier = yes
 
-	economy_of_scale_ai_factor = 1.5
+	economy_of_scale_ai_factor = 2.0
 	foreign_investment_ai_factor = 0.75
+
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
 }
 
 # Plantations
@@ -74,7 +78,7 @@ bg_infres_plantations = {
 	cash_reserves_max = 25000
 
 	urbanization = 5
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 1
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -85,8 +89,11 @@ bg_infres_plantations = {
 
 	construction_efficiency_modifier = yes
 
-	economy_of_scale_ai_factor = 1.5
+	economy_of_scale_ai_factor = 3.0
 	foreign_investment_ai_factor = 1.25
+
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
 }
 
 bg_infres_extraction = {
@@ -99,6 +106,7 @@ bg_infres_extraction = {
 	cash_reserves_max = 25000
 
 	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
 }
 
 # Mining
@@ -115,7 +123,7 @@ bg_infres_mining = {
 	cash_reserves_max = 25000
 
 	urbanization = 10
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 1
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -127,7 +135,7 @@ bg_infres_mining = {
 	depletable_resource = no
 	can_use_slaves = yes
 
-	economy_of_scale_ai_factor = 2.0
+	economy_of_scale_ai_factor = 3.0
 	foreign_investment_ai_factor = 1.0
 }
 
@@ -146,7 +154,7 @@ bg_infres_gold_field = {
 
 	always_possible = yes
 
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 0
 
 	default_building = building_infres_gold_field
 
@@ -171,7 +179,7 @@ bg_infres_logging = {
 	cash_reserves_max = 25000
 
 	urbanization = 5
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 1
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -181,7 +189,7 @@ bg_infres_logging = {
 	capped_by_resources = no
 	fired_pops_become_radical = no
 
-	economy_of_scale_ai_factor = 1.5
+	economy_of_scale_ai_factor = 2.0
 	foreign_investment_ai_factor = 1.0
 }
 
@@ -205,7 +213,7 @@ bg_infres_rubber = {
 	cash_reserves_max = 25000
 
 	urbanization = 5
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 1
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -215,7 +223,7 @@ bg_infres_rubber = {
 	capped_by_resources = no
 	fired_pops_become_radical = no
 
-	economy_of_scale_ai_factor = 1.5
+	economy_of_scale_ai_factor = 2.0
 	foreign_investment_ai_factor = 1.0
 }
 
@@ -235,7 +243,7 @@ bg_infres_whaling = {
 	cash_reserves_max = 25000
 
 	urbanization = 5
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 1
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -245,7 +253,7 @@ bg_infres_whaling = {
 	fired_pops_become_radical = no
 	capped_by_resources = no
 
-	economy_of_scale_ai_factor = 2.0
+	economy_of_scale_ai_factor = 4.0
 	foreign_investment_ai_factor = 0.75
 }
 
@@ -263,7 +271,7 @@ bg_infres_fishing = {
 	cash_reserves_max = 25000
 
 	urbanization = 5
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 1
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -273,7 +281,7 @@ bg_infres_fishing = {
 	fired_pops_become_radical = no
 	capped_by_resources = no
 
-	economy_of_scale_ai_factor = 1.5
+	economy_of_scale_ai_factor = 2.5
 	foreign_investment_ai_factor = 0.75
 }
 
@@ -295,7 +303,7 @@ bg_infres_oil_extraction = {
 	cash_reserves_max = 25000
 
 	urbanization = 10
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 2
 
 	should_auto_expand = {
 		default_auto_expand_rule = yes
@@ -305,7 +313,7 @@ bg_infres_oil_extraction = {
 	fired_pops_become_radical = no
 	capped_by_resources = no
 
-	economy_of_scale_ai_factor = 2.0
+	economy_of_scale_ai_factor = 4.0
 	foreign_investment_ai_factor = 1.0
 }
 
@@ -318,7 +326,7 @@ bg_infres_infrastructure = {
 
 	lens = infrastructure
 
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 1
 
 	stateregion_max_level = no
 
@@ -326,6 +334,7 @@ bg_infres_infrastructure = {
 	foreign_investment_ai_factor = -1000
 
 	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
 }
 
 bg_infres_public_infrastructure = {
@@ -340,7 +349,7 @@ bg_infres_public_infrastructure = {
 bg_infres_construction = {
 	parent_group = bg_infres_public_infrastructure
 
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 1
 
 	lens = development
 
@@ -369,7 +378,7 @@ bg_infres_military = {
 
 	fired_pops_become_radical = no
 
-	infrastructure_usage_per_level = 1.0
+	infrastructure_usage_per_level = 1
 
 	construction_efficiency_modifier = yes
 }

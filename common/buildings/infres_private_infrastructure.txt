@@ -1,0 +1,241 @@
+﻿############ PRIVATE INFRASTRUCTURE
+
+TRY_INJECT:building_manor_house = {
+	investment_scores = {
+		bg_infres_agriculture_score = {
+			group = "bg_infres_agriculture"
+			score = {
+				value = 1
+
+				if = {
+					limit = {
+						OR = {
+							has_law_or_variant = law_type:law_agrarianism
+							has_law_or_variant = law_type:law_industry_banned
+							has_law_or_variant = law_type:law_extraction_economy
+						}
+					}
+					multiply = 2.0
+				}
+			}
+		}
+		bg_infres_ranching_score = {
+			group = "bg_infres_ranching"
+			score = {
+				value = 1
+
+				if = {
+					limit = {
+						OR = {
+							has_law_or_variant = law_type:law_agrarianism
+							has_law_or_variant = law_type:law_industry_banned
+							has_law_or_variant = law_type:law_extraction_economy
+						}
+					}
+					multiply = 2.0
+				}
+			}
+		}
+		bg_infres_plantations_score = {
+			group = "bg_infres_plantations"
+			score = {
+				value = 1
+
+				if = {
+					limit = {
+						OR = {
+							has_law_or_variant = law_type:law_agrarianism
+							has_law_or_variant = law_type:law_industry_banned
+							has_law_or_variant = law_type:law_extraction_economy
+						}
+					}
+					multiply = 2.0
+				}
+			}
+		}
+		bg_infres_mining_score = {
+			group = "bg_infres_mining"
+			score = {
+				value = 0.0
+			}
+		}
+		bg_infres_logging_score = {
+			group = "bg_infres_logging"
+			score = {
+				value = 0.1
+			}
+		}
+		bg_infres_rubber_score = {
+			group = "bg_infres_rubber"
+			score = {
+				value = 0.1
+			}
+		}
+		bg_infres_whaling_score = {
+			group = "bg_infres_whaling"
+			score = {
+				value = 0.25
+			}
+		}
+		bg_infres_fishing_score = {
+			group = "bg_infres_fishing"
+			score = {
+				value = 0.25
+			}
+		}
+	}
+}
+
+TRY_INJECT:building_financial_district = {
+	investment_scores = {
+		bg_infres_agriculture_score = {
+			group = "bg_infres_agriculture"
+			score = {
+				value = 0.5
+
+				multiply = {
+					value = 1
+					add = modifier:country_financial_districts_buy_farms_likelihood
+				}
+			}
+		}
+		bg_infres_ranching_score = {
+			group = "bg_infres_ranching"
+			score = {
+				value = 0.5
+
+				if = {
+					limit = {
+						has_law_or_variant = law_type:law_traditionalism
+					}
+					multiply = 0.5
+				}
+
+				multiply = {
+					value = 1
+					add = modifier:country_financial_districts_buy_farms_likelihood
+				}
+			}
+		}
+		bg_infres_plantations_score = {
+			group = "bg_infres_plantations"
+			score = {
+				value = 0.75
+
+				if = {
+					limit = {
+						has_law_or_variant = law_type:law_traditionalism
+					}
+					multiply = 0.5
+				}
+
+				multiply = {
+					value = 1
+					add = modifier:country_financial_districts_buy_farms_likelihood
+				}
+			}
+		}
+		bg_infres_mining_score = {
+			group = "bg_infres_mining"
+			score = {
+				value = 1
+
+				if = {
+					limit = {
+						has_law_or_variant = law_type:law_traditionalism
+					}
+					multiply = 0.25
+				}
+				else_if = {
+					limit = {
+						has_law_or_variant = law_type:law_industry_banned
+					}
+					multiply = 0.5
+				}
+				else_if = {
+					limit = {
+						has_law_or_variant = law_type:law_agrarianism
+					}
+					multiply = 0.75
+				}
+			}
+		}
+		bg_infres_logging_score = {
+			group = "bg_infres_logging"
+			score = {
+				value = 1
+
+				if = {
+					limit = {
+						has_law_or_variant = law_type:law_traditionalism
+					}
+					multiply = 0.5
+				}
+			}
+		}
+		bg_infres_rubber_score = {
+			group = "bg_infres_rubber"
+			score = {
+				value = 1
+
+				if = {
+					limit = {
+						has_law_or_variant = law_type:law_traditionalism
+					}
+					multiply = 0.5
+				}
+			}
+		}
+		bg_infres_whaling_score = {
+			group = "bg_infres_whaling"
+			score = {
+				value = 1
+
+				if = {
+					limit = {
+						has_law_or_variant = law_type:law_traditionalism
+					}
+					multiply = 0.5
+				}
+			}
+		}
+		bg_infres_fishing_score = {
+			group = "bg_infres_fishing"
+			score = {
+				value = 1
+
+				if = {
+					limit = {
+						has_law_or_variant = law_type:law_traditionalism
+					}
+					multiply = 0.5
+				}
+			}
+		}
+		bg_infres_oil_extraction_score = {
+			group = "bg_infres_oil_extraction"
+			score = {
+				value = 1
+
+				if = {
+					limit = {
+						has_law_or_variant = law_type:law_traditionalism
+					}
+					multiply = 0.1
+				}
+				else_if = {
+					limit = {
+						has_law_or_variant = law_type:law_industry_banned
+					}
+					multiply = 0.5
+				}
+				else_if = {
+					limit = {
+						has_law_or_variant = law_type:law_agrarianism
+					}
+					multiply = 0.75
+				}
+			}
+		}
+	}
+}

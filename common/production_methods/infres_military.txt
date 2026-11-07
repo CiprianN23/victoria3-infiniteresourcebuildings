@@ -1,4 +1,4 @@
-﻿REPLACE_OR_CREATE:pm_infres_barrack = {
+﻿﻿RY_REPLACE:pm_infres_barrack = {
 	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
 	is_default = yes
 
@@ -9,7 +9,7 @@
     }
 }
 
-REPLACE_OR_CREATE:pm_infres_barrack_conscripts = {
+TRY_REPLACE:pm_infres_barrack_conscripts = {
     texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
 	is_default = yes
 

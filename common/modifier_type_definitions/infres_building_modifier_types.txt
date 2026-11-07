@@ -324,3 +324,11 @@ building_infres_oil_rig_throughput_add = {
 		ai_value=0
 	}
 }
+building_infres_copper_mine_throughput_add = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}

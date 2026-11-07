@@ -26,16 +26,21 @@ TRY_REPLACE:company_ludwig_moser_and_sons = {
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_BOHEMIA = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_BOHEMIA
+		has_building_levels_in_state_region = {
+			region = STATE_BOHEMIA
+			building = building_glassworks
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_glassworks
-				level >= 5
-			}
 		}
 	}
 
@@ -91,20 +96,25 @@ TRY_REPLACE:company_compania_sansinena_de_carnes_congeladas = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_la_plata
+		has_interest_marker_in_region = sr:region_la_plata
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_BUENOS_AIRES = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_BUENOS_AIRES
+		has_building_levels_in_state_region = {
+			region = STATE_BUENOS_AIRES
+			building = building_food_industry
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_food_industry
-				level >= 5
-			}
 		}
 		any_scope_state = {
 			region = sr:region_la_plata
@@ -140,6 +150,12 @@ TRY_REPLACE:company_compania_sansinena_de_carnes_congeladas = {
 			}
 		}
 		building_livestock_ranch = {
+			level = 5
+			state_trigger = {
+				region = sr:region_la_plata
+			}
+		}
+		building_infres_livestock_ranch = {
 			level = 5
 			state_trigger = {
 				region = sr:region_la_plata
@@ -182,17 +198,22 @@ TRY_REPLACE:company_konigliche_porzellan_manufaktur_meissen = {
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_SAXONY = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
 		has_technology_researched = chemical_bleaching
-		any_scope_state = {
-			state_region = s:STATE_SAXONY
+		has_building_levels_in_state_region = {
+			region = STATE_SAXONY
+			building = building_glassworks
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_glassworks
-				level >= 5
-			}
 		}
 	}
 
@@ -250,10 +271,19 @@ TRY_REPLACE:company_jiangnan_weaving_bureaus= {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_south_china
+		has_interest_marker_in_region = sr:region_south_china
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_SUZHOU
+					state_region = s:STATE_ZHEJIANG
+					state_region = s:STATE_NANJING
+				}
+			}
+		}
 	}
 
 	possible = {
@@ -360,7 +390,7 @@ TRY_REPLACE:company_russian_american_company = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_pacific_coast
+		has_interest_marker_in_region = sr:region_pacific_coast
 		any_primary_culture = {
 			has_discrimination_trait = heritage_east_slavic
 		}
@@ -447,6 +477,21 @@ TRY_REPLACE:company_russian_american_company = {
 				is_incorporated = yes
 			}
 		}
+
+		building_infres_logging_camp = {
+			level = 5
+			state_trigger = {
+				region = sr:region_pacific_coast
+				is_incorporated = yes
+			}
+		}
+		building_infres_whaling_station = {
+			level = 5
+			state_trigger = {
+				region = sr:region_pacific_coast
+				is_incorporated = yes
+			}
+		}
 	}
 
 	ai_weight = {
@@ -485,16 +530,21 @@ TRY_REPLACE:company_maison_worth = {
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_ILE_DE_FRANCE = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_ILE_DE_FRANCE
+		has_building_levels_in_state_region = {
+			region = STATE_ILE_DE_FRANCE
+			building = building_textile_mill
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_textile_mill
-				level >= 5
-			}
 		}
 	}
 
@@ -522,6 +572,12 @@ TRY_REPLACE:company_maison_worth = {
 
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
+		if = {
+			limit = {
+				divided_monarchists_ai_backs_orleanist = yes
+			}
+			add = 6
+		}
 	}
 }
 
@@ -559,6 +615,13 @@ TRY_REPLACE:company_lee_wilson = {
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_ARKANSAS = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
@@ -603,6 +666,19 @@ TRY_REPLACE:company_lee_wilson = {
 				state_region = s:STATE_ARKANSAS
 			}
 		}
+
+		building_infres_cotton_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_ARKANSAS
+			}
+		}
+		building_infres_logging_camp = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_ARKANSAS
+			}
+		}
 	}
 
 	ai_weight = {
@@ -638,16 +714,21 @@ TRY_REPLACE:company_gebruder_thonet = {
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_AUSTRIA = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_AUSTRIA
+		has_building_levels_in_state_region = {
+			region = STATE_AUSTRIA
+			building = building_furniture_manufactory
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_furniture_manufactory
-				level >= 5
-			}
 		}
 	}
 
@@ -706,16 +787,21 @@ TRY_REPLACE:company_kinkozan_sobei = {
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_KANSAI = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_KANSAI
+		has_building_levels_in_state_region = {
+			region = STATE_KANSAI
+			building = building_glassworks
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_glassworks
-				level >= 5
-			}
 		}
 	}
 
@@ -774,16 +860,21 @@ TRY_REPLACE:company_maple_and_co = {
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_HOME_COUNTIES = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_HOME_COUNTIES
+		has_building_levels_in_state_region = {
+			region = STATE_HOME_COUNTIES
+			building = building_furniture_manufactory
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_furniture_manufactory
-				level >= 5
-			}
 		}
 	}
 
@@ -837,7 +928,7 @@ TRY_REPLACE:company_ong_lung_sheng_tea_company = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_south_china
+		has_interest_marker_in_region = sr:region_south_china
 	}
 
 	attainable = {
@@ -886,6 +977,12 @@ TRY_REPLACE:company_ong_lung_sheng_tea_company = {
 				region = sr:region_south_china
 			}
 		}
+		building_infres_tea_plantation = {
+			level = 5
+			state_trigger = {
+				region = sr:region_south_china
+			}
+		}
 	}
 
 	ai_weight = {
@@ -921,19 +1018,28 @@ TRY_REPLACE:company_anglo_sicilian_sulphur_company = {
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_SICILY = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_SICILY
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_sulfur_mine
-					is_building_type = building_infres_sulfur_mine
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_SICILY
+				building = building_sulfur_mine
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_SICILY
+				building = building_infres_sulfur_mine
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 		NOT = {
@@ -961,6 +1067,12 @@ TRY_REPLACE:company_anglo_sicilian_sulphur_company = {
 
 	ai_construction_targets = {
 		building_sulfur_mine = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_SICILY
+			}
+		}
+		building_infres_sulfur_mine = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_SICILY
@@ -1003,6 +1115,13 @@ TRY_REPLACE:company_mantero_seta = {
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_LOMBARDY = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
@@ -1045,6 +1164,12 @@ TRY_REPLACE:company_mantero_seta = {
 				state_region = s:STATE_LOMBARDY
 			}
 		}
+		building_infres_silk_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_LOMBARDY
+			}
+		}
 	}
 
 	ai_weight = {
@@ -1068,7 +1193,10 @@ TRY_REPLACE:company_norsk_hydro = {
 
 	extension_building_types = {
 		building_sulfur_mine
+		building_copper_mine
+
 		building_infres_sulfur_mine
+		building_infres_copper_mine
 	}
 
 	potential = {
@@ -1076,6 +1204,13 @@ TRY_REPLACE:company_norsk_hydro = {
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_WESTERN_NORWAY = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
@@ -1158,21 +1293,26 @@ TRY_REPLACE:company_massey_harris = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_canada
+		has_interest_marker_in_region = sr:region_canada
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			s:STATE_ONTARIO = {
+				any_scope_state = {
+					owner = root
+				}
+			}
+		}
 	}
 
 	possible = {
 		has_technology_researched = railways
-		any_scope_state = {
-			state_region = s:STATE_ONTARIO
+		has_building_levels_in_state_region = {
+			region = STATE_ONTARIO
+			building = building_motor_industry
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_motor_industry
-				level >= 5
-			}
 		}
 	}
 
@@ -1224,7 +1364,7 @@ TRY_REPLACE:company_de_beers = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_southern_africa
+		has_interest_marker_in_region = sr:region_southern_africa
 	}
 
 	attainable = {
@@ -1259,6 +1399,12 @@ TRY_REPLACE:company_de_beers = {
 
 	ai_construction_targets = {
 		building_gold_mine = {
+			level = 5
+			state_trigger = {
+				region = sr:region_southern_africa
+			}
+		}
+		building_infres_gold_mine = {
 			level = 5
 			state_trigger = {
 				region = sr:region_southern_africa
@@ -1328,6 +1474,12 @@ TRY_REPLACE:company_john_holt = {
 
 	ai_construction_targets = {
 		building_rubber_plantation = {
+			level = 5
+			state_trigger = {
+				region = sr:region_west_africa
+			}
+		}
+		building_infres_rubber_plantation = {
 			level = 5
 			state_trigger = {
 				region = sr:region_west_africa
@@ -1408,6 +1560,12 @@ TRY_REPLACE:company_imperial_ethiopian_railways = {
 				region = sr:region_east_africa
 			}
 		}
+		building_infres_coffee_plantation = {
+			level = 5
+			state_trigger = {
+				region = sr:region_east_africa
+			}
+		}
 		building_railway = {
 			level = 5
 			state_trigger = {
@@ -1449,10 +1607,19 @@ TRY_REPLACE:company_lanfang_kongsi = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_indonesia
+		has_interest_marker_in_region = sr:region_indonesia
 	}
 
 	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_WEST_BORNEO
+					state_region = s:STATE_EAST_BORNEO
+					state_region = s:STATE_NORTH_BORNEO
+				}
+			}
+		}
 	}
 
 	possible = {
@@ -1500,6 +1667,17 @@ TRY_REPLACE:company_lanfang_kongsi = {
 
 	ai_construction_targets = {
 		building_gold_mine = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_WEST_BORNEO
+					state_region = s:STATE_EAST_BORNEO
+					state_region = s:STATE_NORTH_BORNEO
+				}
+			}
+		}
+
+		building_infres_gold_mine = {
 			level = 5
 			state_trigger = {
 				OR = {

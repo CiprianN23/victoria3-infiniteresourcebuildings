@@ -31,16 +31,18 @@ TRY_REPLACE:company_bengal_coal_company = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_WEST_BENGAL
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_coal_mine
-					is_building_type = building_infres_coal_mine
-				}
-				
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_WEST_BENGAL
+				building = building_coal_mine
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_WEST_BENGAL
+				building = building_infres_coal_mine
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}
@@ -60,6 +62,12 @@ TRY_REPLACE:company_bengal_coal_company = {
 
 	ai_construction_targets = {
 		building_coal_mine = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_WEST_BENGAL
+			}
+		}
+		building_infres_coal_mine = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_WEST_BENGAL
@@ -116,13 +124,11 @@ TRY_REPLACE:company_bombay_dyeing_company = {
 
 	possible = {
 		has_technology_researched = cotton_gin
-		any_scope_state = {
-			state_region = s:STATE_BOMBAY
+		has_building_levels_in_state_region = {
+			region = STATE_BOMBAY
+			building = building_textile_mill
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_textile_mill
-				level >= 5
-			}
 		}
 	}
 
@@ -203,22 +209,28 @@ TRY_REPLACE:company_david_sassoon = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_BOMBAY
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_cotton_plantation
-					is_building_type = building_infres_cotton_plantation
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_BOMBAY
+				building = building_cotton_plantation
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_BOMBAY
+				building = building_infres_cotton_plantation
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 		any_scope_state = {
 			is_in_geographic_region = geographic_region_india
 			any_scope_building = {
-				is_building_type = building_opium_plantation
+				OR = {
+					is_building_type = building_opium_plantation
+					is_building_type = building_infres_opium_plantation
+				}
+
 				level >= 5
 			}
 		}
@@ -243,6 +255,19 @@ TRY_REPLACE:company_david_sassoon = {
 			}
 		}
 		building_opium_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_BOMBAY
+			}
+		}
+
+		building_infres_cotton_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_BOMBAY
+			}
+		}
+		building_infres_opium_plantation = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_BOMBAY
@@ -288,7 +313,7 @@ TRY_REPLACE:company_bombay_burmah_trading_corporation = {
 
 	potential = {
 		has_interest_marker_in_region = sr:region_south_india
-		has_interest_marker_in_region = region_indochina
+		has_interest_marker_in_region = sr:region_indochina
 	}
 
 	attainable = {
@@ -308,22 +333,23 @@ TRY_REPLACE:company_bombay_burmah_trading_corporation = {
 				state_region = s:STATE_BOMBAY
 				is_incorporated = yes
 			}
-			any_country = {
+			s:STATE_BOMBAY ?= {
 				any_scope_state = {
-					state_region = s:STATE_BOMBAY
-				}
-				OR = {
-					any_scope_treaty = {
-						binds = root
-						any_scope_article = {
-							has_type = trade_privilege
-						}
-					}
-					top_overlord = {
-						any_scope_treaty = {
-							binds = root
-							any_scope_article = {
-								has_type = trade_privilege
+					owner = {
+						OR = {
+							any_scope_treaty = {
+								binds = ROOT
+								any_scope_article = {
+									has_type = trade_privilege
+								}
+							}
+							top_overlord ?= {
+								any_scope_treaty = {
+									binds = ROOT
+									any_scope_article = {
+										has_type = trade_privilege
+									}
+								}
 							}
 						}
 					}
@@ -358,14 +384,15 @@ TRY_REPLACE:company_bombay_burmah_trading_corporation = {
 				state_region = s:STATE_BOMBAY
 				is_incorporated = yes
 			}
-			any_country = {
+			s:STATE_BOMBAY ?= {
 				any_scope_state = {
-					state_region = s:STATE_BOMBAY
-				}
-				any_scope_treaty = {
-					binds = root
-					any_scope_article = {
-						has_type = trade_privilege
+					owner = {
+						any_scope_treaty = {
+							binds = root
+							any_scope_article = {
+								has_type = trade_privilege
+							}
+						}
 					}
 				}
 			}
@@ -374,6 +401,13 @@ TRY_REPLACE:company_bombay_burmah_trading_corporation = {
 
 	ai_construction_targets = {
 		building_logging_camp = {
+			level = 5
+			state_trigger = {
+				has_state_trait = state_trait_burmese_teak
+			}
+		}
+
+		building_infres_logging_camp = {
 			level = 5
 			state_trigger = {
 				has_state_trait = state_trait_burmese_teak
@@ -432,13 +466,11 @@ TRY_REPLACE:company_madura_mills = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_MADRAS
+		has_building_levels_in_state_region = {
+			region = STATE_MADRAS
+			building = building_textile_mill
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_textile_mill
-				level >= 5
-			}
 		}
 		has_technology_researched = cotton_gin
 	}
@@ -506,16 +538,18 @@ TRY_REPLACE:company_assam_company = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_ASSAM
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_tea_plantation
-					is_building_type = building_infres_tea_plantation
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_ASSAM
+				building = building_tea_plantation
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_ASSAM
+				building = building_infres_tea_plantation
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}
@@ -535,6 +569,12 @@ TRY_REPLACE:company_assam_company = {
 
 	ai_construction_targets = {
 		building_tea_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_ASSAM
+			}
+		}
+		building_infres_tea_plantation = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_ASSAM
@@ -579,7 +619,7 @@ TRY_REPLACE:company_steel_brothers = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_indochina
+		has_interest_marker_in_region = sr:region_indochina
 		has_dlc_feature = ip2_content
 	}
 
@@ -625,7 +665,11 @@ TRY_REPLACE:company_steel_brothers = {
 			has_state_trait = state_trait_burmese_teak
 			has_potential_resource = building_oil_rig
 			any_scope_building = {
-				is_building_type = building_rice_farm
+				OR = {
+					is_building_type = building_rice_farm
+					is_building_type = building_infres_rice_farm
+				}
+
 				level >= 5
 			}
 		}
@@ -637,7 +681,11 @@ TRY_REPLACE:company_steel_brothers = {
 			state_trigger = {
 				has_state_trait = state_trait_burmese_teak
 				any_scope_building = {
-					is_building_type = building_rice_farm
+					OR = {
+						is_building_type = building_rice_farm
+						is_building_type = building_infres_rice_farm
+					}
+
 					level >= 5
 				}
 			}
@@ -669,8 +717,10 @@ TRY_REPLACE:company_ralli_brothers = {
 	extension_building_types = {
 		building_port
 		building_cotton_plantation
-		building_infres_cotton_plantation
 		building_textile_mill
+
+		building_infres_cotton_plantation
+
 	}
 
 	possible_prestige_goods = {
@@ -774,6 +824,18 @@ TRY_REPLACE:company_ralli_brothers = {
 				is_in_geographic_region = geographic_region_india
 			}
 		}
+		building_infres_rice_farm = {
+			level = 5
+			state_trigger = {
+				is_in_geographic_region = geographic_region_india
+			}
+		}
+		building_infres_wheat_farm = {
+			level = 5
+			state_trigger = {
+				is_in_geographic_region = geographic_region_india
+			}
+		}
 	}
 
 	ai_weight = {
@@ -813,13 +875,11 @@ TRY_REPLACE:company_calcutta_electric = {
 
 	possible = {
 		has_technology_researched = electrical_generation
-		any_scope_state = {
-			state_region = s:STATE_WEST_BENGAL
+		has_building_levels_in_state_region = {
+			region = STATE_WEST_BENGAL
+			building = building_power_plant
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_power_plant
-				level >= 5
-			}
 		}
 	}
 

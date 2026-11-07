@@ -1,4 +1,5 @@
-﻿TRY_REPLACE:company_ingolstadt_electrical_company = {
+﻿# Ingolstadt Electrical Company
+TRY_REPLACE:company_ingolstadt_electrical_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ingolstadt_electrical_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -13,7 +14,10 @@
 	extension_building_types = {
 		building_textile_mill
 		building_livestock_ranch
+		building_copper_mine
+
 		building_infres_livestock_ranch
+		building_infres_copper_mine
 	}
 
 	possible_prestige_goods = {

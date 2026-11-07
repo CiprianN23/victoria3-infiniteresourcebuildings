@@ -1,7 +1,7 @@
 ﻿# Companhia Geral da Agricultura das Vinhas do Alto Douro / douro Wine Company
 TRY_REPLACE:company_douro_wine_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_companhia_geral_da_agricultura_das_vinhas_do_alto_douro.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds" # TODO Art
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
 	category = aristocrat_owned
 
@@ -35,16 +35,18 @@ TRY_REPLACE:company_douro_wine_company = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_ENTRE_DOURO_E_MINHO
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_vineyard
-					is_building_type = building_infres_vineyard
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_ENTRE_DOURO_E_MINHO
+				building = building_vineyard
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_ENTRE_DOURO_E_MINHO
+				building = building_infres_vineyard
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}
@@ -55,6 +57,28 @@ TRY_REPLACE:company_douro_wine_company = {
 		state_aristocrats_investment_pool_efficiency_mult = 0.05
 	}
 
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_ENTRE_DOURO_E_MINHO
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_vineyard = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_ENTRE_DOURO_E_MINHO
+			}
+		}
+		building_infres_vineyard = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_ENTRE_DOURO_E_MINHO
+			}
+		}
+	}
+
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
 	}
@@ -63,7 +87,7 @@ TRY_REPLACE:company_douro_wine_company = {
 # La Gran Azucarera
 TRY_REPLACE:company_gran_azucarera = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_la_gran_azucarera.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds" # TODO Art
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
 	category = aristocrat_owned
 
@@ -128,6 +152,41 @@ TRY_REPLACE:company_gran_azucarera = {
 		state_aristocrats_investment_pool_efficiency_mult = 0.15
 	}
 
+	ai_will_do = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_WESTERN_CUBA
+				state_region = s:STATE_CENTRAL_CUBA
+				state_region = s:STATE_EASTERN_CUBA
+			}
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_sugar_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_WESTERN_CUBA
+					state_region = s:STATE_CENTRAL_CUBA
+					state_region = s:STATE_EASTERN_CUBA
+				}
+			}
+		}
+
+		building_infres_sugar_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_WESTERN_CUBA
+					state_region = s:STATE_CENTRAL_CUBA
+					state_region = s:STATE_EASTERN_CUBA
+				}
+			}
+		}
+	}
+
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
 	}
@@ -136,7 +195,7 @@ TRY_REPLACE:company_gran_azucarera = {
 # Rodriguez, Argüelles y Cia.
 TRY_REPLACE:company_rodriguez_arguelles_y_cia = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_romeo_y_julieta.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds" # TODO Art
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
 	category = aristocrat_owned
 
@@ -187,8 +246,8 @@ TRY_REPLACE:company_rodriguez_arguelles_y_cia = {
 				OR = {
 					is_building_type = building_tobacco_plantation
 					is_building_type = building_infres_tobacco_plantation
-				}
 
+				}
 				level >= 5
 			}
 			count >= 2
@@ -201,6 +260,41 @@ TRY_REPLACE:company_rodriguez_arguelles_y_cia = {
 		state_loyalists_from_political_movements_mult = 0.1
 	}
 
+	ai_will_do = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_WESTERN_CUBA
+				state_region = s:STATE_CENTRAL_CUBA
+				state_region = s:STATE_EASTERN_CUBA
+			}
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_tobacco_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_WESTERN_CUBA
+					state_region = s:STATE_CENTRAL_CUBA
+					state_region = s:STATE_EASTERN_CUBA
+				}
+			}
+		}
+
+		building_infres_tobacco_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_WESTERN_CUBA
+					state_region = s:STATE_CENTRAL_CUBA
+					state_region = s:STATE_EASTERN_CUBA
+				}
+			}
+		}
+	}
+
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
 	}
@@ -209,7 +303,7 @@ TRY_REPLACE:company_rodriguez_arguelles_y_cia = {
 # Ynchausti y Compañía
 TRY_REPLACE:company_ynchausti_y_compania = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_ynchausti_y_compania.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds" # TODO Art
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 
 	flavored_company = yes
 
@@ -238,7 +332,7 @@ TRY_REPLACE:company_ynchausti_y_compania = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_indonesia
+		has_interest_marker_in_region = sr:region_indonesia
 		has_dlc_feature = ip4_content
 	}
 
@@ -277,6 +371,56 @@ TRY_REPLACE:company_ynchausti_y_compania = {
 		state_migration_pull_mult = 0.1
 	}
 
+	ai_will_do = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_LUZON
+				state_region = s:STATE_VISAYAS
+			}
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_port = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_LUZON
+					state_region = s:STATE_VISAYAS
+				}
+			}
+		}
+
+		building_food_industry = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_LUZON
+					state_region = s:STATE_VISAYAS
+				}
+			}
+		}
+		building_sugar_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_LUZON
+					state_region = s:STATE_VISAYAS
+				}
+			}
+		}
+		building_infres_sugar_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_LUZON
+					state_region = s:STATE_VISAYAS
+				}
+			}
+		}
+	}
+
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
 	}
@@ -285,7 +429,7 @@ TRY_REPLACE:company_ynchausti_y_compania = {
 # Office Chérifien des Phosphates
 TRY_REPLACE:company_office_cherifien_des_phosphates = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_office_cherifien_des_phosphates.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds" # TODO Art
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
 	category = bureaucrat_owned
 
@@ -314,7 +458,7 @@ TRY_REPLACE:company_office_cherifien_des_phosphates = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_north_africa
+		has_interest_marker_in_region = sr:region_north_africa
 	}
 
 	attainable = {
@@ -326,24 +470,46 @@ TRY_REPLACE:company_office_cherifien_des_phosphates = {
 	}
 
 	possible = {
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_MARRAKECH
+				building = building_sulfur_mine
+				levels >= 5
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_MARRAKECH
+				building = building_infres_sulfur_mine
+				levels >= 5
+			}
+		}
+	}
+
+	ai_will_do = {
 		any_scope_state = {
 			state_region = s:STATE_MARRAKECH
-			any_scope_building = {
-				OR = {
-					is_building_type = building_sulfur_mine
-					is_building_type = building_infres_sulfur_mine
-				}
+			is_incorporated = yes
+		}
+	}
 
-				level >= 5
+	ai_construction_targets = {
+		building_sulfur_mine = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_MARRAKECH
+			}
+		}
+		building_infres_sulfur_mine = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_MARRAKECH
 			}
 		}
 	}
 
 	prosperity_modifier = {
 		building_group_bg_agriculture_throughput_add = 0.1
-		building_sulfur_mine_throughput_add = 0.
-		
 		building_group_bg_infres_agriculture_throughput_add = 0.1
+		building_sulfur_mine_throughput_add = 0.05
 		building_infres_sulfur_mine_throughput_add = 0.05
 	}
 
@@ -355,7 +521,7 @@ TRY_REPLACE:company_office_cherifien_des_phosphates = {
 # Companhia União Fabril
 TRY_REPLACE:company_uniao_fabril = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_companhia_uniao_fabril.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds" # TODO Art
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
 	flavored_company = yes
 
@@ -427,6 +593,64 @@ TRY_REPLACE:company_uniao_fabril = {
 		state_radicals_from_political_movements_mult = -0.05
 	}
 
+	ai_will_do = {
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:portuguese
+			}
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_chemical_plant = {
+			level = 5
+			state_trigger = {
+				state_region = {
+					is_homeland = cu:portuguese
+				}
+				is_incorporated = yes
+			}
+		}
+		building_wheat_farm = {
+			level = 5
+			state_trigger = {
+				state_region = {
+					is_homeland = cu:portuguese
+				}
+				is_incorporated = yes
+			}
+		}
+		building_tobacco_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = {
+					is_homeland = cu:portuguese
+				}
+				is_incorporated = yes
+			}
+		}
+
+		building_infres_wheat_farm = {
+			level = 5
+			state_trigger = {
+				state_region = {
+					is_homeland = cu:portuguese
+				}
+				is_incorporated = yes
+			}
+		}
+		building_infres_tobacco_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = {
+					is_homeland = cu:portuguese
+				}
+				is_incorporated = yes
+			}
+		}
+	}
+
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
 	}
@@ -435,7 +659,7 @@ TRY_REPLACE:company_uniao_fabril = {
 # Pedro Domecq
 TRY_REPLACE:company_pedro_domecq = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_pedro_domecq.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds" # TODO Art
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
 	category = aristocrat_owned
 
@@ -473,15 +697,16 @@ TRY_REPLACE:company_pedro_domecq = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_LOWER_ANDALUSIA
-			any_scope_building = {
-				OR = {
-					is_building_type = building_vineyard
-					is_building_type = building_infres_vineyard
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_LOWER_ANDALUSIA
+				building = building_vineyard
+				levels >= 5
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_LOWER_ANDALUSIA
+				building = building_infres_vineyard
+				levels >= 5
 			}
 		}
 	}
@@ -489,6 +714,27 @@ TRY_REPLACE:company_pedro_domecq = {
 	prosperity_modifier = {
 		country_prestige_mult = 0.05
 		country_leverage_generation_mult = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_LOWER_ANDALUSIA
+		}
+	}
+
+	ai_construction_targets = {
+		building_vineyard = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+		}
+		building_infres_vineyard = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+		}
 	}
 
 	ai_weight = {
@@ -499,7 +745,7 @@ TRY_REPLACE:company_pedro_domecq = {
 # Bacardí y Compañía
 TRY_REPLACE:company_bacardi = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_bacardi.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds" # TODO Art
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
 
@@ -531,18 +777,31 @@ TRY_REPLACE:company_bacardi = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_EASTERN_CUBA
-			any_scope_building = {
-				is_building_type = building_food_industry
-				level >= 5
-			}
+		has_building_levels_in_state_region = {
+			region = STATE_EASTERN_CUBA
+			building = building_food_industry
+			levels >= 5
 		}
 	}
 
 	prosperity_modifier = {
 		country_liberty_desire_add = 0.10
 		building_art_academy_throughput_add = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_EASTERN_CUBA
+		}
+	}
+
+	ai_construction_targets = {
+		building_food_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_EASTERN_CUBA
+			}
+		}
 	}
 
 	ai_weight = {

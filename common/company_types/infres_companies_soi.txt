@@ -1,5 +1,5 @@
 ﻿# Də Afḡān Nasājī Šerkat
-TRY_REPLACE:ompany_da_afghan_nassaji_sherkat = {
+TRY_REPLACE:company_da_afghan_nassaji_sherkat = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/da_afghan_nassaji_sherkat.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -41,13 +41,11 @@ TRY_REPLACE:ompany_da_afghan_nassaji_sherkat = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_BALKH
+		has_building_levels_in_state_region = {
+			region = STATE_BALKH
+			building = building_textile_mill
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_textile_mill
-				level >= 5
-			}
 		}
 	}
 
@@ -99,7 +97,7 @@ TRY_REPLACE:company_tashkent_railroad = {
 
 	potential = {
 		has_dlc_feature = ep1_content
-		has_interest_marker_in_region = region_central_asia
+		has_interest_marker_in_region = sr:region_central_asia
 	}
 
 	attainable = {
@@ -116,17 +114,23 @@ TRY_REPLACE:company_tashkent_railroad = {
 			state_region = s:STATE_FERGANA
 			is_incorporated = yes
 			has_building = building_railway
-			any_scope_building = {
-				is_building_type = building_railway
-				level >= 5
+			custom_tooltip = {
+				text = has_at_least_5_levels_of_railway_tt
+				any_scope_building = {
+					is_building_type = building_railway
+					level >= 5
+				}
 			}
 		}
 		any_scope_state = {
 			region = sr:region_central_asia
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_railway
-				level >= 5
+			custom_tooltip = {
+				text = has_at_least_5_levels_of_railway_tt
+				any_scope_building = {
+					is_building_type = building_railway
+					level >= 5
+				}
 			}
 			count >= 2
 		}
@@ -181,7 +185,7 @@ TRY_REPLACE:company_west_ural_petroleum = {
 
 	potential = {
 		has_dlc_feature = ep1_content
-		has_interest_marker_in_region = region_central_asia
+		has_interest_marker_in_region = sr:region_central_asia
 	}
 
 	attainable = {
@@ -194,16 +198,18 @@ TRY_REPLACE:company_west_ural_petroleum = {
 
 	possible = {
 		has_technology_researched = pumpjacks
-		any_scope_state = {
-			state_region = s:STATE_URALSK
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_oil_rig
-					is_building_type = building_infres_oil_rig
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_URALSK
+				building = building_oil_rig
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_URALSK
+				building = building_infres_oil_rig
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}
@@ -223,6 +229,12 @@ TRY_REPLACE:company_west_ural_petroleum = {
 
 	ai_construction_targets = {
 		building_oil_rig = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_URALSK
+			}
+		}
+		building_infres_oil_rig = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_URALSK
@@ -268,16 +280,18 @@ TRY_REPLACE:company_sherkat_shemali = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_BALKH
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_cotton_plantation
-					is_building_type = building_infres_cotton_plantation
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_BALKH
+				building = building_cotton_plantation
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_BALKH
+				building = building_infres_cotton_plantation
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}
@@ -296,6 +310,12 @@ TRY_REPLACE:company_sherkat_shemali = {
 
 	ai_construction_targets = {
 		building_cotton_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_BALKH
+			}
+		}
+		building_infres_cotton_plantation = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_BALKH
@@ -390,6 +410,13 @@ TRY_REPLACE:company_opium_export_monopoly = {
 				is_incorporated = yes
 			}
 		}
+		building_infres_opium_plantation = {
+			level = 5
+			state_trigger = {
+				region = sr:region_greater_persia
+				is_incorporated = yes
+			}
+		}
 	}
 
 	ai_weight = {
@@ -440,13 +467,11 @@ TRY_REPLACE:company_sherkate_eslamiya = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_ISFAHAN
+		has_building_levels_in_state_region = {
+			region = STATE_ISFAHAN
+			building = building_textile_mill
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_textile_mill
-				level >= 5
-			}
 		}
 	}
 
@@ -508,16 +533,18 @@ TRY_REPLACE:company_nicolas_portalis = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_LEBANON
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_silk_plantation
-					is_building_type = building_infres_silk_plantation
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_LEBANON
+				building = building_silk_plantation
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_LEBANON
+				building = building_infres_silk_plantation
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}
@@ -538,6 +565,12 @@ TRY_REPLACE:company_nicolas_portalis = {
 
 	ai_construction_targets = {
 		building_silk_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_LEBANON
+			}
+		}
+		building_infres_silk_plantation = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_LEBANON
@@ -571,7 +604,7 @@ TRY_REPLACE:company_kirgizian_mining_company= {
 
 	potential = {
 		has_dlc_feature = ep1_content
-		has_interest_marker_in_region = region_central_asia
+		has_interest_marker_in_region = sr:region_central_asia
 	}
 
 	attainable = {
@@ -585,16 +618,18 @@ TRY_REPLACE:company_kirgizian_mining_company= {
 	possible = {
 		has_technology_researched = steam_donkey
 		has_technology_researched = railways
-		any_scope_state = {
-			state_region = s:STATE_SEMIRECHE
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_coal_mine
-					is_building_type = building_infres_coal_mine
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_SEMIRECHE
+				building = building_coal_mine
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_SEMIRECHE
+				building = building_infres_coal_mine
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}
@@ -614,6 +649,12 @@ TRY_REPLACE:company_kirgizian_mining_company= {
 
 	ai_construction_targets = {
 		building_coal_mine = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_SEMIRECHE
+			}
+		}
+		building_infres_coal_mine = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_SEMIRECHE
@@ -701,6 +742,13 @@ TRY_REPLACE:company_persshelk = {
 
 	ai_construction_targets = {
 		building_silk_plantation = {
+			level = 5
+			state_trigger = {
+				region = sr:region_greater_persia
+				is_incorporated = yes
+			}
+		}
+		building_infres_silk_plantation = {
 			level = 5
 			state_trigger = {
 				region = sr:region_greater_persia
@@ -795,6 +843,13 @@ TRY_REPLACE:company_perskhlopok = {
 				is_incorporated = yes
 			}
 		}
+		building_infres_cotton_plantation = {
+			level = 5
+			state_trigger = {
+				region = sr:region_greater_persia
+				is_incorporated = yes
+			}
+		}
 	}
 
 	ai_weight = {
@@ -875,16 +930,18 @@ TRY_REPLACE:company_moscow_irrigation_company = {
 				}
 			}
 		}
-		any_scope_state = {
-			state_region = s:STATE_FERGANA
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_cotton_plantation
-					is_building_type = building_infres_cotton_plantation
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_FERGANA
+				building = building_cotton_plantation
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_FERGANA
+				building = building_infres_cotton_plantation
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}
@@ -914,6 +971,12 @@ TRY_REPLACE:company_moscow_irrigation_company = {
 
 	ai_construction_targets = {
 		building_cotton_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_FERGANA
+			}
+		}
+		building_infres_cotton_plantation = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_FERGANA
@@ -972,13 +1035,11 @@ TRY_REPLACE:company_guinness = {
 
 	possible = {
 		has_technology_researched = corporate_charters
-		any_scope_state = {
-			state_region = s:STATE_LEINSTER
+		has_building_levels_in_state_region = {
+			region = STATE_LEINSTER
+			building = building_food_industry
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_food_industry
-				level >= 5
-			}
 		}
 	}
 
@@ -1127,10 +1188,49 @@ TRY_REPLACE:company_oriental_development_company = {
 				is_incorporated = yes
 			}
 		}
+
+		building_infres_rice_farm = {
+			level = 5
+			state_trigger = {
+				state_region = {
+					is_homeland = cu:korean
+				}
+				is_incorporated = yes
+			}
+		}
+		building_infres_millet_farm = {
+			level = 5
+			state_trigger = {
+				state_region = {
+					is_homeland = cu:korean
+				}
+				is_incorporated = yes
+			}
+		}
+		building_infres_wheat_farm = {
+			level = 5
+			state_trigger = {
+				state_region = {
+					is_homeland = cu:korean
+				}
+				is_incorporated = yes
+			}
+		}
 	}
 
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
+		if = {
+			limit = {
+				has_journal_entry = je_colonize_korea
+				NOT = {
+					any_company = {
+						is_company_type = company_type:company_mantetsu # Only one needed
+					}
+				}
+			}
+			add = 6
+		}
 	}
 }
 
@@ -1182,6 +1282,7 @@ TRY_REPLACE:company_turkish_petroleum = {
 					is_building_type = building_oil_rig
 					is_building_type = building_infres_oil_rig
 				}
+
 				level >= 5
 			}
 		}
@@ -1206,6 +1307,17 @@ TRY_REPLACE:company_turkish_petroleum = {
 
 	ai_construction_targets = {
 		building_oil_rig = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_BAGHDAD
+					state_region = s:STATE_BASRA
+					state_region = s:STATE_MOSUL
+				}
+				is_incorporated = yes
+			}
+		}
+		building_infres_oil_rig = {
 			level = 5
 			state_trigger = {
 				OR = {
@@ -1272,16 +1384,18 @@ TRY_REPLACE:company_anglo_persian_oil = {
 				has_company = company_type:company_national_iranian_oil
 			}
 		}
-		any_scope_state = {
-			state_region = s:STATE_KHUZESTAN
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_oil_rig
-					is_building_type = building_infres_oil_rig
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_KHUZESTAN
+				building = building_oil_rig
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_KHUZESTAN
+				building = building_infres_oil_rig
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}
@@ -1310,6 +1424,12 @@ TRY_REPLACE:company_anglo_persian_oil = {
 
 	ai_construction_targets = {
 		building_oil_rig = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_KHUZESTAN
+			}
+		}
+		building_infres_oil_rig = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_KHUZESTAN
@@ -1370,16 +1490,18 @@ TRY_REPLACE:company_national_iranian_oil = {
 				has_company = company_type:company_anglo_persian_oil
 			}
 		}
-		any_scope_state = {
-			state_region = s:STATE_KHUZESTAN
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_oil_rig
-					is_building_type = building_infres_oil_rig
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_KHUZESTAN
+				building = building_oil_rig
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_KHUZESTAN
+				building = building_infres_oil_rig
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}
@@ -1408,6 +1530,12 @@ TRY_REPLACE:company_national_iranian_oil = {
 
 	ai_construction_targets = {
 		building_oil_rig = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_KHUZESTAN
+			}
+		}
+		building_infres_oil_rig = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_KHUZESTAN

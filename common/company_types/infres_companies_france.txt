@@ -11,7 +11,7 @@ TRY_REPLACE:company_societe_mokta_el_hadid = {
 		building_iron_mine
 		building_sulfur_mine
 
-		building_infres_iron_mine
+		uilding_infres_iron_mine
 		building_infres_sulfur_mine
 	}
 
@@ -21,7 +21,7 @@ TRY_REPLACE:company_societe_mokta_el_hadid = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_north_africa
+		has_interest_marker_in_region = sr:region_north_africa
 	}
 
 	attainable = {
@@ -34,15 +34,16 @@ TRY_REPLACE:company_societe_mokta_el_hadid = {
 
 	possible = {
 		has_technology_researched = bessemer_process
-		any_scope_state = {
-			state_region = s:STATE_CONSTANTINE
-			any_scope_building = {
-				OR = {
-					is_building_type = building_iron_mine
-					is_building_type = building_infres_iron_mine
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_CONSTANTINE
+				building = building_iron_mine
+				levels >= 5
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_CONSTANTINE
+				building = building_infres_iron_mine
+				levels >= 5
 			}
 		}
 	}
@@ -61,6 +62,12 @@ TRY_REPLACE:company_societe_mokta_el_hadid = {
 
 	ai_construction_targets = {
 		building_iron_mine = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_CONSTANTINE
+			}
+		}
+		building_infres_iron_mine = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_CONSTANTINE
@@ -120,13 +127,11 @@ TRY_REPLACE:company_dmc = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_BURGUNDY
+		has_building_levels_in_state_region = {
+			region = STATE_BURGUNDY
+			building = building_textile_mill
+			levels >= 5
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_textile_mill
-				level >= 5
-			}
 		}
 		has_technology_researched = cotton_gin
 	}
@@ -153,6 +158,12 @@ TRY_REPLACE:company_dmc = {
 
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
+		if = {
+			limit = {
+				divided_monarchists_ai_backs_orleanist = yes
+			}
+			add = 6
+		}
 	}
 }
 
@@ -189,16 +200,18 @@ TRY_REPLACE:company_cgv = {
 
 	possible = {
 		has_technology_researched = joint_stock_companies
-		any_scope_state = {
-			state_region = s:STATE_CHAMPAGNE
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_vineyard
-					is_building_type = building_infres_vineyard
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_CHAMPAGNE
+				building = building_vineyard
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_CHAMPAGNE
+				building = building_infres_vineyard
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}
@@ -219,6 +232,12 @@ TRY_REPLACE:company_cgv = {
 
 	ai_construction_targets = {
 		building_vineyard = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_CHAMPAGNE
+			}
+		}
+		building_infres_vineyard = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_CHAMPAGNE
@@ -263,16 +282,18 @@ TRY_REPLACE:company_mines_anzin = {
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_FRENCH_LOW_COUNTRIES
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_coal_mine
-					is_building_type = building_infres_coal_mine
-				}
-
-				level >= 5
+		OR = {
+			has_building_levels_in_state_region = {
+				region = STATE_FRENCH_LOW_COUNTRIES
+				building = building_coal_mine
+				levels >= 5
+				is_incorporated = yes
+			}
+			has_building_levels_in_state_region = {
+				region = STATE_FRENCH_LOW_COUNTRIES
+				building = building_infres_coal_mine
+				levels >= 5
+				is_incorporated = yes
 			}
 		}
 	}

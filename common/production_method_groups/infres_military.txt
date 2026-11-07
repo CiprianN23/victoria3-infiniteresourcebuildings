@@ -1,4 +1,4 @@
-﻿REPLACE_OR_CREATE:pmg_infres_barrack = {
+﻿﻿RY_REPLACE:pmg_infres_barrack = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
 	ai_selection = most_productive
 
@@ -7,7 +7,7 @@
 	}
 }
 
-REPLACE_OR_CREATE:pmg_infres_barrack_conscription = {
+TRY_REPLACE:pmg_infres_barrack_conscription = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
 	ai_selection = most_productive
 

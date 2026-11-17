@@ -11,7 +11,7 @@ TRY_REPLACE:company_societe_mokta_el_hadid = {
 		building_iron_mine
 		building_sulfur_mine
 
-		uilding_infres_iron_mine
+		building_infres_iron_mine
 		building_infres_sulfur_mine
 	}
 

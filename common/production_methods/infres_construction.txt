@@ -1,4 +1,4 @@
-﻿﻿RY_REPLACE:pm_infres_no_bonus_construction = {
+﻿pm_infres_no_bonus_construction = {
 	texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
 
 	state_modifiers = {
@@ -9,7 +9,7 @@
 	}
 }
 
-TRY_REPLACE:pm_infres_one_hundred_construction = {
+pm_infres_one_hundred_construction = {
 	texture = "gfx/interface/icons/production_method_icons/arc_welded_buildings.dds"
 
 	is_default = yes

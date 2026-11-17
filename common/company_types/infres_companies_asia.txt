@@ -289,7 +289,7 @@ TRY_REPLACE:company_allatini_mills = {
 				state_region = s:STATE_MACEDONIA
 			}
 		}
-		building_infress_wheat_farm = {
+		building_infres_wheat_farm = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_MACEDONIA
@@ -743,7 +743,7 @@ TRY_REPLACE:company_san_miguel = {
 		building_maize_farm
 		building_rye_farm
 
-		uilding_infres_wheat_farm
+		building_infres_wheat_farm
 		building_infres_maize_farm
 		building_infres_rye_farm
 	}

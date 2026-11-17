@@ -235,6 +235,26 @@ building_infres_gold_field = {
 }
 
 building_infres_copper_mine = {
+	can_build_private = {
+		OR = {
+			AND = {
+				scope:investor_country = { is_player = yes }
+				has_game_rule = infres_private_construction_allowed
+			}
+			AND = {
+				has_game_rule = infres_player_and_ai_allowed
+				has_game_rule = infres_private_construction_allowed
+			}
+		}
+	}
+
+	can_build_government = {
+		OR = {
+			scope:investor_country = { is_player = yes }
+			has_game_rule = infres_player_and_ai_allowed
+		}
+	}
+
 	building_group = bg_infres_mining
 	icon = "gfx/interface/icons/building_icons/copper_mine.dds"
 	city_type = mine
